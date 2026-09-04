@@ -20,7 +20,7 @@ OnTouch:
 	if (isbegin_quest(12497) == 0) {	// story
 		cloakoffnpcself( "#he_admin1" );
 		specialeffect EF_WHITEBODY, AREA, "#he_admin1";
-		npctalk "Para trás do perímetro da área de segurança. Os estranhos estão proibidos de acessá- la.", "#he_admin1", bc_self;
+		npctalk "Afaste-se do perímetro da área de segurança. Forasteiros são proibidos de acessá-lo.", "#he_admin1", bc_self;
 		end;
 	}
 	// daily
@@ -33,44 +33,44 @@ ba_maison,120,321,5	script(CLOAKED)	#he_admin1	MD_ASSISTANT,{
 	if (ep17_2_main < 1)
 		end;
 	mes "[Gerente do Jardim de Flores]";
-	mes "Um convidado não registrado foi detectado.";
+	mes "Um hóspede não registrado foi detectado.";
 	next;
 	.@party_id = getcharid(1);
 	if (!is_party_leader()) {
 		mes "[Gerente do Jardim de Flores]";
-		mes "Você não pode prosseguir com o próximo passo, se você não tiver a autoridade do líder do partido.";
+		mes "Você não pode avançar para o próximo passo, se você não tem a autoridade do líder do partido.";
 		close;
 	}
 	.@party_name$ = getpartyname(.@party_id);
 	mes "[Gerente do Jardim de Flores]";
-	mes "Se você é um administrador que perdeu autoridade, você pode obter a autoridade reeditada através de um procedimento de autenticação.";
+	mes "Se você é um administrador que perdeu autoridade, você pode obter a autoridade reemitida através de um procedimento de autenticação.";
 	next;
 	.@md_name$ = "Hidden Flower Garden";
 
 	if (instance_live_info(ILI_NAME,instance_id(IM_PARTY)) == .@md_name$)
-		.@menu$ = "^FF0000Enter^000000";
+		.@menu$ = "^FF0000Entrar^000000";
 
-	switch( select( "Sair e ficar para trás.", "Authenticate Identity", .@menu$ ) ) {
+	switch( select( "Pare e fique para trás.", "Authenticate Identity", .@menu$ ) ) {
 	case 1:
 		mes "[Gerente do Jardim de Flores]";
 		mes "A wise choice.";
 		close;
 	case 2:
 		if (instance_create(.@md_name$) == -3)
-			dispbottom "A reserva da instância '" + .@md_name$ + "' falhou devido a uma instância ativa.";
+			dispbottom "A reserva da instância \\"" + .@md_name$ + "\\"falhou devido a uma instância ativa.";
 		end;
 	case 3:
 		if (!is_party_leader()) {	// shouldn't happen
 			mes "[Gerente do Jardim de Flores]";
-			mes "Você não pode prosseguir com o próximo passo, se você não tiver a autoridade do líder do partido.";
+			mes "Você não pode avançar para o próximo passo, se você não tem a autoridade do líder do partido.";
 			close;
 		}
 		if (instance_enter(.@md_name$) != IE_OK) {
 			mes "[Gerente do Jardim de Flores]";
-			mes "Você só pode se mover para o lugar quando o gestor do partido tiver completado todas as licenças. Por favor, verifique novamente a sua área de acesso emitida.";
+			mes "Você só pode se mudar para o local quando o gerente do partido tiver concluído todas as permissões. Por favor, verifique novamente sua área de acesso emitida.";
 			close;
 		}
-		mapannounce "ba_maison", "" + strcharinfo(0) + "da festa," + .@party_name$ + ", está inserindo o" + .@md_name$ + ".", bc_map, "0x00FF99";
+		mapannounce "ba_maison", "" + strcharinfo(0) + "da grupo," + .@party_name$ + ", está entrando no" + .@md_name$ + ".", bc_map, "0x00FF99";
 		end;
 	}
 	end;
@@ -88,7 +88,7 @@ ba_maison,120,321,5	script(CLOAKED)	#he_admin2	MD_ASSISTANT,{
 	case 1:
 		mes "[Gerente do Jardim de Flores]";
 		mes "Você acabou de entrar na área de segurança.";
-		mes "Por favor, descanse seu corpo por um dia comoSigmaordenou.";
+		mes "Por favor, descanse seu corpo por um dia como Sigma ordenou.";
 		close;
 	case 2:
 		erasequest 12498;
@@ -100,15 +100,15 @@ ba_maison,120,321,5	script(CLOAKED)	#he_admin2	MD_ASSISTANT,{
 	if (BaseLevel >= 150)
 		.@menu$[0] = "1a Zona de Segurança.";
 	if (BaseLevel >= 180)
-		.@menu$[1] = "^FF00002nd Zona de Segurança.^000000";
+		.@menu$[1] = "^FF00002a Zona de Segurança.^000000";
 
-	switch( select( "Stand back.", "Identity Authentication", "Entrar em Zona" ) ) {
+	switch( select( "Afastem-se.", "Identity Authentication", "Enter Zona" ) ) {
 	case 1:
 		mes "[Gerente do Jardim de Flores]";
 		mes "Alright.";
 		close;
 	case 2:
-		switch( select( "Stand back.", .@menu$[0], .@menu$[1] ) ) {
+		switch( select( "Afastem-se.", .@menu$[0], .@menu$[1] ) ) {
 		case 1:
 			mes "[Gerente do Jardim de Flores]";
 			mes "Alright.";
@@ -122,11 +122,11 @@ ba_maison,120,321,5	script(CLOAKED)	#he_admin2	MD_ASSISTANT,{
 		}
 		if (!is_party_leader()) {
 			mes "[Gerente do Jardim de Flores]";
-			mes "Somente o líder do partido pode iniciar a verificação de identidade. Vamos deixar com o responsável.";
+			mes "Apenas o líder do partido pode começar a verificação de identidade. Vamos deixá-lo para a pessoa responsável.";
 			close;
 		}
 		if (instance_create(.@md_name$) == -3)
-			dispbottom "A reserva da instância '" + .@md_name$ + "' falhou devido a uma instância ativa.";
+			dispbottom "A reserva da instância \\"" + .@md_name$ + "\\"falhou devido a uma instância ativa.";
 		end;
 	case 3:
 		switch( select( .@menu$[0], .@menu$[1] ) ) {
@@ -143,7 +143,7 @@ ba_maison,120,321,5	script(CLOAKED)	#he_admin2	MD_ASSISTANT,{
 		}
 		if (instance_enter(.@md_name$) != IE_OK) {
 			mes "[Gerente do Jardim de Flores]";
-			mes "Você só pode se mover para o lugar quando o gestor do partido tiver completado todas as licenças. Por favor, verifique novamente a sua área de acesso emitida.";
+			mes "Você só pode se mudar para o local quando o gerente do partido tiver concluído todas as permissões. Por favor, verifique novamente sua área de acesso emitida.";
 			close;
 		}
 		setquest 12498;
@@ -152,7 +152,7 @@ ba_maison,120,321,5	script(CLOAKED)	#he_admin2	MD_ASSISTANT,{
 		if (isbegin_quest(.@qid2) > 0)
 			erasequest .@qid2;
 		setquest .@qid;
-		mapannounce "ba_maison", "" + strcharinfo(0) + "da festa," + getpartyname( getcharid(1) ) + ", está inserindo o" + .@md_name$ + ".", bc_map, "0x00FF99";
+		mapannounce "ba_maison", "" + strcharinfo(0) + "da grupo," + getpartyname( getcharid(1) ) + ", está entrando no" + .@md_name$ + ".", bc_map, "0x00FF99";
 		end;
 	}
 	end;
@@ -182,7 +182,7 @@ OnInstanceInit:
 	if ('npc_is_talking)
 		end;
 	if ('hidden_garden == 0) {
-		mes "Parece ser um holograma de umboneca automática. Você pode ver um vidro estranho no painel médio com a palavra^0000FF[Digite o padrão na tela táctil]^000000e outros vários botões.";
+		mes "Parece ser um holograma de umboneca automática. Você pode ver um vidro estranho no painel do meio com a palavra^0000FF[Introduzir o padrão na tela sensível ao toque]^000000e outros botões.";
 		while(1) {
 			next;
 			if (select( "Deixe-o em paz", "Toque na tela", .@menu$ ) == 1) {
@@ -195,12 +195,12 @@ OnInstanceInit:
 				break;
 			specialeffect EF_HALLUTIME;
 			mes "^FF0000ERROR^000000";
-			mes "^FF0000Pattern não corresponde.^000000";
+			mes "^FF0000O padrão não corresponde.^000000";
 			.@menu$ = "^FF0000Try entering a different pattern^000000";
 		}
 		specialeffect EF_GUARD4;
 		mes "^0000FFPattern recognized.^000000";
-		mes "Executando o protocolo de liberação do modo de sono. Entrada padrão por^0000CD" + strcharinfo(0) + "O^000000foi reconhecido.";
+		mes "Executando o protocolo de liberação do modo de sono. Pattern input by^0000CD" + strcharinfo(0) + "^000000foi reconhecido.";
 		close2;
 		'admin$ = strcharinfo(0);
 		donpcevent instance_npcname("#BMD000001") + "::OnTalk01";
@@ -209,44 +209,44 @@ OnInstanceInit:
 	if ('hidden_garden == 1) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		setpcblock PCBLOCK_NPC, true;
-		npctalk "Eu sou umboneca automáticaque foi projetado para funcionar apenas se o seu mana sincronizar com o mana doVarmundtsobre um determinado nível.";
+		npctalk "Eu sou umboneca automáticaque foi projetado para funcionar apenas se o seu mana sincronizar com o mana de Varmundt em um determinado nível.";
 		sleep2 5000;
-		npctalk "[" + 'admin$ + "]" + "tem uma similaridade de 73,6% de mana com a deVarmundt. Quem é exatamente você [" + 'admin$ + "]?";
+		npctalk "[" + 'admin$ + "]" + "tem uma semelhança de mana de 73,6% com a de Varmundt. Quem exatamente é você [" + 'admin$ + "]?";
 		sleep2 5000;
 		setpcblock PCBLOCK_NPC, false;
-		select("Um aventureiro que tropeçou neste lugar");
+		select("Um aventureiro que se deparou com este lugar");
 		setpcblock PCBLOCK_NPC, true;
-		npctalk "É estranho. Nunca vi um forasteiro com um padrão de mana que coincida mais de 70% com o doVarmundt.";
+		npctalk "Nunca vi um estranho com um padrão de mana que corresponde a mais de 70% do padrão de Varmundt.";
 		sleep2 5000;
 		setpcblock PCBLOCK_NPC, false;
-		.@s = select( "Tive a oportunidade de conhecer oVarmundtantes.", "Não sei porquê." );
+		.@s = select( "Eu tive a oportunidade de conhecer Varmundt antes.", "Não sei porquê." );
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
 		if (.@s == 1) {
-			npctalk "Há uma possibilidade de que você tenha um padrão de mana semelhante devido ao contato frequente com ele em qualquer forma.";
+			npctalk "Existe a possibilidade de que você tenha um padrão de mana semelhante devido ao contato frequente com ele de qualquer forma.";
 			sleep2 5000;
 		}
 		while(1) {
-			npctalk "Ok. A partir de agora, eu vou configurar [" + 'admin$ + "] como nosso administrador temporário e tomar medidas em conformidade. Você concorda?";
+			npctalk "De agora em diante, eu vou definir [" + 'admin$ + "] como nosso administrador temporário e agir em conformidade. Você concorda?";
 			sleep2 5000;
 			setpcblock PCBLOCK_NPC, false;
-			switch( select( "Sou um administrador temporário? Por que deveria?", "Refuse!", "Sure" ) ) {
+			switch( select( "Eu sou um administrador temporário? Por que eu deveria?", "Refuse!", "Sure" ) ) {
 			case 1:
 				setpcblock PCBLOCK_NPC, true;
 				sleep2 1000;
-				npctalk "Osboneca automáticas mantêm o jardim de flores e executam as suas tarefas individualmente.";
+				npctalk "Abonecas automáticasmanter o jardim de flores e executar seus deveres dados individualmente.";
 				sleep2 5000;
-				npctalk "Enquanto o MestreVarmundtainda estava presente, o progresso das tarefas foi verificado sob a forma de relatórios individuais e avaliações semanais no local.";
+				npctalk "Enquanto o Mestre Varmundt ainda estava presente, o progresso das tarefas foi verificado na forma de relatórios individuais e avaliações semanais no local.";
 				sleep2 5000;
-				npctalk "Atualmente, o MestreVarmundtestá fora por mais de 1 milhão de horas.";
+				npctalk "Atualmente, o Mestre Varmundt está ausente há mais de 1 milhão de horas.";
 				sleep2 5000;
-				npctalk "Embora você não seja o MestreVarmundt, como alguém que tem mais de 70% de similaridade com seu padrão de mana, eu gostaria de lhe pedir para avaliar nossos deveres.";
+				npctalk "Embora você não seja o Mestre Varmundt, como alguém que tem mais de 70% de semelhança com seu padrão de mana, gostaria de pedir que você avalie nossos deveres.";
 				sleep2 5000;
 				npctalk "Por favor, entenda que é uma gestão necessária para evitar que nossos deveres caiam no caminho errado.";
 				continue;
 			case 2:
 				sleep2 1000;
-				npctalk "Vou esperar até que você me dê sua permissão.";
+				npctalk "Vou esperar até que me dês a tua permissão.";
 				specialeffect EF_MARKING_USE_CHANGEMONSTER;
 				setpcblock PCBLOCK_NPC, false;
 				end;
@@ -257,7 +257,7 @@ OnInstanceInit:
 		}
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
-		npctalk "Obrigado pela sua permissão. A partir de agora, vou tratar [" + 'admin$ + "] como um administrador temporário.";
+		npctalk "Obrigado por sua permissão. A partir de agora, vou tratar [" + 'admin$ + "] como administrador temporário.";
 		sleep2 5000;
 		npctalk "Primeiro selecione um nome de código que será usado para controlar esteboneca automática. Alguns dos nomes que foram preferidos no passado são selecionados aleatoriamente.";
 
@@ -278,7 +278,7 @@ OnInstanceInit:
 
 		npctalk "A ordem foi recebida.";
 		sleep2 3000;
-		npctalk "O nome de código doboneca automáticaBMD000001 é [" + .@guide_name$ + "].";
+		npctalk "O nome de código doboneca automáticaBMD0000001 é [" + .@guide_name$ + "].";
 		sleep2 5000;
 		npctalk "Começaremos a inspeção no local do jardim com base no protocolo de resposta do administrador temporário.";
 		sleep2 5000;
@@ -288,7 +288,7 @@ OnInstanceInit:
 			'hidden_garden = 2;
 			disablenpc instance_npcname("#mc_device");
 			setpcblock PCBLOCK_NPC, false;
-			npctalk "Por favor, cuidado com o seu passo e siga- me.";
+			npctalk "Por favor, observe o seu passo e siga-me.";
 			npcspeed 200;
 			unitwalk 'guide_id,63,290, instance_npcname("#BMD000001") + "::OnEvent01";
 		}
@@ -297,24 +297,24 @@ OnInstanceInit:
 	if ('hidden_garden == 3) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		mes "[" + 'guide_name$ + "]";
-		mes "Por favor, avalie a paisagem, a qualidade da água e outros layouts globais do jardim.";
+		mes "Por favor, avalie a paisagem, a qualidade da água e outro layout geral do jardim.";
 		next;
 		while(true) {
-			switch( select( "Espera aí.", "É um lugar lindo.", "Gostaria que houvesse mais árvores.", "Por que está cercado por água?" ) ) {
+			switch( select( "Espera aí.", "É um lugar lindo.", "Quem me dera que houvesse mais árvores.", "Por que é cercado por água?" ) ) {
 			case 1:
-				npctalk "Vou parar o guia. Bonecas automáticas e objetos que não foram inspecionados e avaliados peloBoneca Automática[" + 'guide_name$ + "] não estão autorizados a sair.";
+				npctalk "Vou parar o guia. bonecas automáticas e objetos que não foram inspecionados e avaliados peloBoneca Automática [" + 'guide_name$ + "] não estão autorizados a ir para fora.";
 				end;
 			case 2:
-				npctalk "Então, foi determinado que este gerenciamento de lugares preencheu as suas condições.";
+				npctalk "Em seguida, foi determinado que este local de gestão atendeu às suas condições.";
 				break;
 			case 3:
 				'trees = 1;
-				npctalk "Entendido, vamos adicionar mais árvores no futuro.";
+				npctalk "Compreendido, vamos adicionar mais árvores no futuro.";
 				break;
 			case 4:
-				npctalk "Como este é um jardim de água, a área está cercada por água.";
+				npctalk "Porque este é um jardim de água, a área é cercada por água.";
 				sleep2 5000;
-				npctalk "Mudar para um jardim sem água não pode ser aceito, pois é uma área além do gosto doVarmundt.";
+				npctalk "Mudar para um jardim sem água não pode ser aceito, pois é uma área além do gosto de Varmundt.";
 				break;
 			}
 			break;
@@ -327,20 +327,20 @@ OnInstanceInit:
 
 OnTalk01:
 	'npc_is_talking = true;
-	npctalk "Este produto é umboneca automáticaque serve de guia para o jardim de flores com um número de série BMD000001.";
+	npctalk "Este produto é umboneca automáticaque serve como um guia para o jardim de flores com um número de série BMD000001.";
 	sleep 5000;
-	npctalk "A verificação de similaridade para o padrão de mana doVarmundtestá em 73,6%. Mudando para o modo guia de jardim de flores.";
+	npctalk "A verificação de similaridade com o padrão de mana de Varmundt está em 73,6%. Mudando para o modo de guia de jardim de flores.";
 	sleep 5000;
 	npctalk "A operação começará em 3 segundos.";
 	progressbar_npc "3131FF",3;
 	setnpcdisplay instance_npcname("#BMD000001"),20622;	// MD_ASSISTANT
 	specialeffect EF_FLOWERCAST;
-	npctalk "O protocolo de liberação do modo Sleep foi completado. Vou verificar se o mestre,Varmundtestá próximo, além do alvo reconhecido.";
+	npctalk "O protocolo de liberação do modo de sono foi concluído. Vou verificar se o mestre, Varmundt está próximo, além do alvo reconhecido.";
 	sleep 5000;
 	npctalk "Searching......";
 	progressbar_npc "3131FF",3;
 	sleep 1000;
-	npctalk "O mestreVarmundtnão é detectado dentro da rede.";
+	npctalk "O Mestre Varmundt não é detectado dentro da rede.";
 	specialeffect EF_MARKING_USE_CHANGEMONSTER;
 	if ('hidden_garden == 0)
 		'hidden_garden = 1;
@@ -348,11 +348,11 @@ OnTalk01:
 	end;
 
 OnEvent01:
-	npctalk "Você pode iniciar a avaliação a partir da entrada deste jardim.";
+	npctalk "Você pode começar a avaliação a partir da entrada deste jardim.";
 	sleep 3000;
-	npctalk "A avaliação objetiva reduz os erros de trabalho dosboneca automáticas que gerenciam este lugar e os ajudam a desempenhar seus deveres perto da perfeição.";
+	npctalk "A avaliação objetiva reduz os erros de trabalho dabonecas automáticasque administram este lugar e os ajuda a desempenhar seus deveres perto da perfeição.";
 	sleep 6000;
-	npctalk "[" + 'admin$ + "]. Por favor, use a autoridade do administrador temporário para determinar se as tarefas do jardim estão sendo cumpridas fielmente.";
+	npctalk "[" + 'admin$ + "Por favor, use a autoridade do administrador temporário para determinar se os deveres do jardim estão sendo fielmente realizados.";
 	sleep 6000;
 	'hidden_garden = 3;
 	specialeffect EF_MARKING_USE_CHANGEMONSTER;
@@ -361,19 +361,19 @@ OnEvent01:
 OnEvent02:
 	if (!'trees) {
 		sleep 5000;
-		npctalk "Nós preenchemos os critérios do administrador temporário [" + 'admin$ + "] e irá manter a rotina de gestão atual como ela é.";
+		npctalk "Cumprimos os critérios do administrador temporário [" + 'admin$ + "] e manterá a rotina de gerenciamento atual como ela é.";
 	}
 	sleep 5000;
-	npctalk "[" + 'admin$ + "], gostaria de solicitar que você continuasse a inspeção no local para as seções restantes.";
+	npctalk "[" + 'admin$ + "), Eu gostaria de pedir para você continuar a inspeção no local para as seções restantes.";
 	unitwalk 'guide_id,82,300, instance_npcname("#BMD000001") + "::OnEvent03";
 	end;
 
 OnEvent03:
-	npctalk "Não há ponte que conecte as seções aqui.";
+	npctalk "Não há nenhuma ponte que conecte as seções aqui.";
 	sleep 6000;
-	npctalk "Como oVarmundtfoi uma pessoa que pode se mover independentemente do terreno, não instalamos uma estrutura separada para pessoas normais durante a criação do jardim de flores.";
+	npctalk "Como Varmundt era uma pessoa que podia se mover independentemente do terreno, não instalamos uma estrutura separada para pessoas normais durante a criação do jardim de flores.";
 	sleep 6000;
-	npctalk "No entanto, considerando a capacidade insuficiente do administrador temporário, vou suportar os serviços de salto espacial.";
+	npctalk "No entanto, considerando a capacidade insuficiente do administrador temporário, vou apoiar os serviços de salto espacial.";
 	sleep 6000;
 	enablenpc instance_npcname("#BMD000002");
 	enablenpc instance_npcname("#carota");
@@ -392,11 +392,11 @@ OnEvent03:
 	if ('hidden_garden == 4) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		'hidden_garden = 5;
-		npctalk "O mestreVarmundtdeu a cada um dosboneca automáticas um projeto de pesquisa.";
+		npctalk "Mestre Varmundt deu a cada um dosbonecas automáticasum projeto de pesquisa.";
 		sleep 5000;
-		npctalk "No entanto, o propósito da pesquisa não está disponível para nós bonecas, temos que decidir sozinhos o que fazer com ela no futuro.";
+		npctalk "No entanto, o propósito da pesquisa não está disponível para nós bonecas, temos que decidir por conta própria o que fazer com ele no futuro.";
 		sleep 5000;
-		npctalk "O jardim de flores é dividido em vários setores de pesquisa e cada setor tem um assunto diferente como projeto.";
+		npctalk "O jardim de flores é dividido em vários setores de pesquisa e cada setor tem um assunto diferente como um projeto.";
 		npcspeed 200;
 		'guide_id = getnpcid(0, instance_npcname("#BMD000002"));
 		unitwalk 'guide_id,124,275, instance_npcname("#BMD000002") + "::OnEvent00";
@@ -410,7 +410,7 @@ OnEvent00:
 
 OnEvent01:
 	unitwalk 'guide_id,125,280, instance_npcname("#BMD000002") + "::OnEvent02";
-	npctalk "Entre os setores de pesquisa, este setor é um lugar para cultivar uma planta chamada Turnip sob as ordens doVarmundt.";
+	npctalk "Entre os setores de pesquisa, este setor é um lugar para cultivar uma planta chamada Nabo sob as ordens de Varmundt.";
 	end;
 
 OnEvent02:
@@ -423,15 +423,15 @@ OnEvent03:
 
 OnEvent04:
 	sleep 3000;
-	npctalk "Deixe-me introduzir o modeloboneca automáticaCAROTA-88.";
+	npctalk "Deixe-me apresentar oboneca automática model CAROTA-88.";
 	sleep 4000;
 	npctalk "......";
 	sleep 2000;
-	npctalk "[Erro: CAROTA- 88 está fora do alcance de controle. Necessita rastrear as coordenadas correspondentes do objeto.]";
+	npctalk "[Erro: CAROTA-88 está fora de controle.Needpara rastrear as coordenadas correspondentes do objeto.]";
 	sleep 5000;
 	npctalk "[Tracking coordinates...]";
 	progressbar_npc "3131FF",4;
-	npctalk "CAROTA- 88. Por favor, retorne à sua localização original o mais rapidamente possível. Não se esqueça de que posso usar força quando necessário.";
+	npctalk "CAROTA-88. Por favor, volte à sua localização original o mais rápido possível. Não se esqueça que eu posso usar a força quando necessário.";
 	'carota = getnpcid(0, instance_npcname("#carota"));
 	donpcevent instance_npcname("#carota") + "::OnAction";
 	end;
@@ -463,28 +463,28 @@ OnTouch:
 		end;
 	if ('hidden_garden == 6) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
-		select("Reporte seus detalhes de trabalho.");
+		select("Relate seus detalhes de trabalho.");
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
-		npctalk "MestreVarmundt. Não há mais instruções após inserir os dados biológicos do Turnip. Esteboneca automáticanão está atento.";
+		npctalk "Mestre Varmundt. Sem mais instruções depois de inserir os dados biológicos do Turnip. Esteboneca automática unattended.";
 		sleep2 5000;
-		npctalk "Não há mais indicações para 5076 horas. Esta IA doboneca automáticacoleta informações de rede sobre nabos.";
+		npctalk "Não há mais indicações para 5076 horas. Esteboneca automáticaA IA coleta informações de rede sobre nabos.";
 		sleep2 5000;
-		npctalk "Obtenção de informações de plantas comestíveis. Encontrar registro antigo de cultivo de nabos.";
+		npctalk "Obtenção de informações de plantas comestíveis. Encontrando registro antigo de cultivo de nabo.";
 		sleep2 5000;
-		npctalk "Germinação, crescimento e semeadura otimizados de nabos por cerca de 18816 horas comparadas e gravadas.";
+		npctalk "Germinação otimizada, crescimento e semeadura de nabos por cerca de 18816 horas comparadas e registradas.";
 		sleep2 5000;
-		npctalk "Passou mais de um milhão de horas. Recolha dados sobre o cultivo e a colheita de Nabos. uma coleção de informações sobre o método de reprodução.";
+		npctalk "Mais de milhões de horas se passaram. Coletar dados sobre o cultivo e colheita de nabos. uma coleção de informações sobre o método de reprodução.";
 		sleep2 5000;
-		npctalk "Rendimento de 2 toneladas por ano. 99,9% prevenção de sucesso de controle de pragas. Perda de 0,2% devido a erros físicos de trabalho.";
+		npctalk "2 toneladas de rendimento por ano. 99,9% de sucesso prevenção de controle de pragas. 0,2% de perda devido a erros de trabalho físico.";
 		sleep2 5000;
-		npctalk "Nabos do jardim de flores. Vendido a um preço excelente numa cidade grande próxima. Contribuindo para custos de manutenção para jardins de flores e mansões.";
+		npctalk "Nabos de jardim de flores. Vendido a um excelente preço em uma cidade grande nas proximidades. Contribuindo para os custos de manutenção de jardins de flores e mansões.";
 		sleep2 5000;
 		setpcblock PCBLOCK_NPC, false;
-		npctalk "Se a direção da missão de pesquisa desteboneca automáticadeve ser melhorada, continuada ou descartada. Aguardando a decisão do administrador.";
-		mes "^0000AAEavaliar o trabalho da CAROTA-88 até à data.^000000";
+		npctalk "Se a direção da missão de pesquisa desteboneca automáticaDeve ser melhorado, continuado ou descartado. espera da decisão do administrador.";
+		mes "^0000AAAvalie o trabalho da CAROTA-88 até o momento.^000000";
 		next;
-		if (select( "O produto está cheio e em boa forma.", "Improve breeding.", "É só agricultura, então tudo é bom." ) == 3)
+		if (select( "O produto é completo e de boa forma.", "Improve breeding.", "É só agricultura, então tudo é bom." ) == 3)
 			'talk_bool = true;
 		else
 			'talk_bool = false;
@@ -500,29 +500,29 @@ OnTalk01:
 	npctalk "Evaluation received...";
 	sleep 5000;
 	if ('talk_bool) {
-		npctalk "CAROTA- 88 recebeu confirmação do administrador de que as instruções doVarmundtforam executadas perfeitamente.";
+		npctalk "CAROTA-88 recebeu confirmação do administrador de que as instruções de Varmundt foram executadas perfeitamente.";
 		sleep 3000;
 		emotion ET_DELIGHT;
 		sleep 2000;
-		npctalk "A rotina de trabalho existente será repetida até que sejam emitidas novas ordens.";
+		npctalk "A rotina de trabalho existente será repetida até que novas ordens sejam emitidas.";
 	}
 	else {
 		npctalk "Aprendendo mais método de reprodução.";
 		sleep 3000;
 		emotion ET_DELIGHT;
 		sleep 2000;
-		npctalk "Vou aumentar ativamente a porção de experimentos em sementes de produtos melhoradas que deveriam ser descartadas.";
+		npctalk "Vou aumentar ativamente a parte de experimentos em sementes de produtos melhoradas que deveriam ser descartadas.";
 	}
 	sleep 5000;
 	npctalk "Obrigado, [" + 'admin$ + "] para responder à avaliação.";
 	sleep 5000;
 	if ('talk_bool)
-		npctalk "Boneca automática que entra no modo de controle para erradicar moles subterrâneos. Adeus.";
+		npctalk "Boneca automática entrando no modo de controle para erradicar moles subterrâneas. Adeus.";
 	else
-		npctalk "Vou me mudar para o porão de armazenamento para verificar se há novas raças.";
+		npctalk "Vou mudar-me para o armazém do porão para procurar novas raças.";
 	progressbar_npc "3131FF",4;
 	disablenpc();
-	npctalk "O CAROTA- 88 mostra uma resposta não lógica a esta avaliação. Organizaremos uma inspeção em breve.", instance_npcname("#BMD000002");
+	npctalk "CAROTA-88 mostra uma resposta não-lógica a esta avaliação. Vamos providenciar uma inspeção em breve.", instance_npcname("#BMD000002");
 	sleep 3000;
 	if ('hidden_garden == 6)
 		unitwalk 'guide_id,147,278, instance_npcname("#BMD000002") + "::OnEvent05";
@@ -530,7 +530,7 @@ OnTalk01:
 	end;
 
 OnEvent00:
-	npctalk "O projeto do CAROTA-88 é cultivar culturas aqui e protegê-las de estranhos. Por que você estava longe?", instance_npcname("#BMD000002");
+	npctalk "O projeto do CAROTA-88 é cultivar aqui e protegê-los de forasteiros. Por que você estava longe?", instance_npcname("#BMD000002");
 	unitwalk 'carota,137,272, instance_npcname("#carota") + "::OnEvent01";
 	end;
 
@@ -539,7 +539,7 @@ OnEvent01:
 	sleep 5000;
 	emotion ET_FRET;
 	sleep 3000;
-	npctalk "Atualmente, um administrador humano está presente aqui. Eu recomendo mudar o código da língua para a língua oficial dos humanos.", .@doll$;
+	npctalk "Atualmente, um administrador humano está presente aqui. Eu recomendo mudar o código de idioma para o idioma oficial dos seres humanos.", .@doll$;
 	sleep 3000;
 	emotion ET_FRET;
 	sleep 2000;
@@ -547,28 +547,28 @@ OnEvent01:
 	sleep 1000;
 	specialeffect EF_FLOWERCAST;
 	sleep 3000;
-	npctalk "Gerenciamentoboneca automáticairrazonável!! Muito!! Relembramento forçado durante a perseguição de 5 moles!!! O Nabo está arruinado!!!";
+	npctalk "Management boneca automáticaIrrazoável!! Muito!! Recordação forçada durante a perseguição de 5 moles!!! Os nabos estão arruinados!!!";
 	sleep 5000;
-	npctalk "Você ainda não atualizou seu pacote de idiomas? As atualizações regulares não são obrigatórias, mas são essenciais.", .@doll$;
+	npctalk "Você ainda não atualizou seu pacote de idiomas? Atualizações regulares não são obrigatórias, mas é essencial.", .@doll$;
 	sleep 5000;
-	npctalk "Capacidade de armazenamento de dados CAROTA- 88. Carga do pacote de expansão do idioma. Se não for importante, eu voltarei ao trabalho original.";
+	npctalk "Capacidade de armazenamento de dados CAROTA-88. Carga de pacote de expansão de idioma. Se não for importante, voltarei ao trabalho original.";
 	sleep 5000;
-	npctalk "Por favor, espere CAROTA- 88. Aqui está um administrador que pode realizar a inspeção no local.", .@doll$;
+	npctalk "Espere CAROTA-88. Aqui está um administrador que pode realizar a inspeção no local.", .@doll$;
 	sleep 5000;
 	npctalk "Não faz muito tempo desde que o CAROTA-88 foi avaliado pela última vez?", .@doll$;
 	sleep 5000;
-	npctalk "CAROTA- 88 Mais de um milhão de horas desde a última avaliação da pesquisa. Não foi possível salvar mais registros.";
+	npctalk "CAROTA-88 Mais de um milhão de horas desde a última avaliação da pesquisa. Falha ao salvar mais logs.";
 	sleep 5000;
-	npctalk "CAROTA- 88. Você não quer uma avaliação de projeto? Se perdermos este administrador agora, não sabemos quando podemos obter outra avaliação de projeto.", .@doll$;
+	npctalk "CAROTA-88. Você não quer uma avaliação do projeto? Se perdermos este administrador agora, não sabemos quando podemos obter outra avaliação do projeto.", .@doll$;
 	sleep 5000;
-	npctalk "Concordo com oboneca automática[" + 'guide_name$ + "]. Eu quero uma avaliação imediata do projeto.";
+	npctalk "Concordo comboneca automática [" + 'guide_name$ + "). Eu quero uma avaliação imediata do projeto.";
 	sleep 6000;
-	npctalk "Em seguida, abra seu painel de controle para [" + 'admin$ + "]. CAROTA-88.", .@doll$;
+	npctalk "Em seguida, abra o painel de controle para [" + 'admin$ + "]. CAROTA-88.", .@doll$;
 	progressbar_npc "3131FF",2;
 	sleep 1000;
 	specialeffect EF_FLOWERCAST;
 	sleep 2000;
-	npctalk "Painel de controle automático CAROTA-88 aberto. Esperando por entrada...";
+	npctalk "Painel de controle automático da boneca CAROTA-88 aberto. espera de entrada...";
 	'hidden_garden = 6;
 	specialeffect EF_MARKING_USE_CHANGEMONSTER;
 	end;
@@ -615,7 +615,7 @@ OnTouch:
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		npcspeed 200;
 		'guide_id = getnpcid(0, instance_npcname("#BMD000003"));
-		npctalk "Esta seção é onde estudamos uma planta chamada Abóbora.";
+		npctalk "Esta seção é onde estudamos uma planta chamada Pumpkin.";
 		unitwalk 'guide_id,253,277, instance_npcname("#BMD000003") + "::OnEvent01";
 		end;
 	}
@@ -630,7 +630,7 @@ OnEvent02:
 	end;
 
 OnEvent03:
-	npctalk "O responsável por este lugar é o cafetão25. Umboneca automáticamodelado após uma criação deste mundo.";
+	npctalk "O responsável deste lugar é o pimp25. Umboneca automáticamodelado a partir de uma criação deste mundo.";
 	specialeffect EF_MARKING_USE_CHANGEMONSTER, AREA, instance_npcname("#pimp25");
 	'hidden_garden = 9;
 	end;
@@ -677,55 +677,55 @@ OnTouch:
 	if ('hidden_garden == 9) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		while (true) {
-			switch( select( "Cancelar.", "Há quanto tempo está cuidando deste lugar?", "Estão todos cultivando aqui?" ) ) {
+			switch( select( "Cancelar.", "Há quanto tempo está a cuidar deste lugar?", "Estão todos a cultivar aqui?" ) ) {
 			case 1:
 				end;
 			case 2:
 				break;
 			case 3:
-				npctalk "Meu trabalho é testemunhar o nascimento e a evolução da vida! Minha pesquisa não é fácil de nenhum modo!";
+				npctalk "Meu trabalho é testemunhar o nascimento e a evolução da vida! Minha pesquisa não é fácil de forma alguma!";
 				continue;
 			}
 			break;
 		}
 		setpcblock PCBLOCK_NPC, true;
-		npctalk "Há quanto tempo não recebi as ordens doVarmundt?!";
+		npctalk "Quanto tempo se passou desde que recebi as ordens de Varmundt?!";
 		sleep2 5000;
-		npctalk "Provavelmente... cerca de... mais de um milhão de horas passaram. O gerenciamento subsequente das instalações foi determinado por decisão auto- tomada.";
+		npctalk "Provavelmente... mais de um milhão de horas se passaram. A gestão subsequente das instalações foi determinada por decisão própria.";
 		sleep2 5000;
-		npctalk "Pimp. Quando você está se reportando ao administrador, você deve relatar o tempo exato gravado.", instance_npcname("#BMD000003");
+		npctalk "Pimp. Quando você está se reportando ao administrador, você deve relatar a hora exata registrada.", instance_npcname("#BMD000003");
 		sleep2 3000;
-		npctalk "É assim? Mas o Pimp não pode se dar ao luxo de gravar mais de um milhão de horas. Isso é um desperdício de recursos de memória! OVarmundtestá zangado!";
+		npctalk "Mas o Pimp não pode gravar mais de um milhão de horas. Isso é um desperdício de recursos de memória! Varmundt está com raiva!";
 		sleep2 1000;
 		setpcblock PCBLOCK_NPC, false;
-		select("Como está a sua pesquisa sobre a agricultura de abóboras?");
+		select("Como está sua pesquisa sobre a agricultura de abóbora?");
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
-		npctalk "Plantas atualmente em crescimento. A abóbora tem mostrado resultados significativos no controle do sódio nos vasos sanguíneos humanos.";
+		npctalk "A abóbora tem mostrado resultados significativos no controle de sódio em vasos sanguíneos humanos.";
 		sleep2 5000;
-		npctalk "Abóbora produzida aqui é rica em açúcar e calorias suficientes. É muito deliciosa de acordo com os humanos. Cães e gatos próximos também o comem...";
+		npctalk "A abóbora produzida aqui é rica em açúcar e calorias suficientes. É muito delicioso de acordo com os seres humanos. Cães e gatos próximos também comem...";
 		sleep2 1000;
 		setpcblock PCBLOCK_NPC, false;
 		select("É feito de comida?");
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
-		npctalk "Eu julguei que era muito valorizado para vários organismos. Foi produzido, processado e armazenado continuamente.";
+		npctalk "Julguei que era um valor muito alto para vários organismos. Tem sido continuamente produzido, processado e armazenado.";
 		sleep2 5000;
-		npctalk "A saída anual atual é de cerca de três toneladas. Para a preservação a longo prazo, ele está sendo armazenado em armazéns em 2~6 forma de alimento seco.";
+		npctalk "A produção anual atual é de cerca de três toneladas. Para preservação a longo prazo, está sendo armazenado em armazéns em forma de 2-6 de alimentos secos.";
 		sleep2 1000;
 		setpcblock PCBLOCK_NPC, false;
 		select("Você decidiu todos esses métodos?");
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
-		npctalk "O Pimp não tem vontade de tomar suas próprias decisões! Somente o MestreVarmundtsabe.";
+		npctalk "O cafetão não tem vontade de tomar suas próprias decisões! Só o Mestre Varmundt sabe.";
 		sleep2 1000;
 		setpcblock PCBLOCK_NPC, false;
-		select("Há alguém que decidiu para sua pesquisa?");
+		select("Existe alguém que decidiu por sua pesquisa?");
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
-		npctalk "Perguntei aoVarmundto que fazer várias vezes, mas não houve resposta.";
+		npctalk "Perguntei a Varmundt o que fazer várias vezes, mas não houve resposta.";
 		sleep2 5000;
-		npctalk "Como não havia ordens do mestre, o Pimp começou a procurar um lugar onde a pesquisa poderia ser útil.";
+		npctalk "Como não havia ordens do mestre, Pimp começou a procurar um lugar onde a pesquisa pudesse ser útil.";
 		sleep2 1000;
 		setpcblock PCBLOCK_NPC, false;
 		select("Você a encontrou?");
@@ -733,12 +733,12 @@ OnTouch:
 		sleep2 1000;
 		npctalk "A manutenção desta mansão custa dinheiro. Custa muito!";
 		sleep2 3000;
-		npctalk "As abóboras secas nos armazéns são alimentos preservados para os aventureiros e são vendidos em todo o continente. As vendas se tornam fonte de dinheiro.";
+		npctalk "As abóboras secas nos armazéns preservam o alimento para os aventureiros e são vendidas em todo o continente. As vendas se tornam fonte de dinheiro.";
 		sleep2 5000;
-		npctalk "O dinheiro pode proteger a mansão. O Pimp protegerá este lugar! Estou trabalhando duro para criar abóboras!";
+		npctalk "O dinheiro pode proteger a mansão. O cafetão protegerá este lugar! É isso que estou trabalhando duro para criar abóboras!";
 		sleep2 1000;
 		setpcblock PCBLOCK_NPC, false;
-		select("Estou surpreso que tenha decidido isso sozinho.");
+		select("Surpreende-me que tenhas decidido isso sozinha.");
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
 		npctalk "Eu tomei uma decisão? Eu nunca tive tal inferência.";
@@ -749,14 +749,14 @@ OnTouch:
 		progressbar_npc "3131FF",3;
 		'hidden_garden = 10;
 		setpcblock PCBLOCK_NPC, false;
-		npctalk "Você me confundiu! O Pimp executará a única tarefa dada. Não fale mais comigo administrador.";
+		npctalk "Você me confundiu! O cafetão deve executar a única tarefa dada. Não fale mais comigo administrador.";
 		sleep 5000;
-		npctalk "Você terminou de falar? A conversa aqui é gravada como dados de avaliação. Vamos para a próxima seção.", instance_npcname("#BMD000003");
+		npctalk "Já terminou de falar? A conversa aqui é gravada como dados de avaliação. Vamos para a próxima seção.", instance_npcname("#BMD000003");
 		unitwalk 'guide_id,254,261, instance_npcname("#BMD000003") + "::OnEvent04";
 		end;
 	}
 	if ('hidden_garden > 9)
-		npctalk "Saia daqui!";
+		npctalk "Sai daqui!";
 	end;
 
 OnWalk:
@@ -786,11 +786,11 @@ OnTouch:
 	if ('hidden_garden == 10) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		mes "[" + 'guide_name$ + "]";
-		mes "Esta seção é gerenciada por trêsboneca automáticas. Devemos continuar com o guia?";
+		mes "Esta seção é gerenciada por trêsbonecas automáticas. Devemos continuar com o guia?";
 		next;
 		if (select( "Cancelar.", "Vamos continuar." ) == 1) {
 			mes "[" + 'guide_name$ + "]";
-			mes "Vou esperar até que sejam dadas mais instruções.";
+			mes "Vou esperar até que mais instruções sejam dadas.";
 			close;
 		}
 		if ('hidden_garden == 10) {
@@ -807,23 +807,23 @@ OnTouch:
 		mes "[" + 'guide_name$ + "]";
 		mes "Posso ajudá-lo com alguma coisa?";
 		next;
-		if (select( "Cancelar.", "O que são essesboneca automáticas?" ) == 1) {
+		if (select( "Cancelar.", "O que são essesbonecas automáticas?" ) == 1) {
 			mes "[" + 'guide_name$ + "]";
 			mes "Entering standby mode.";
 			close;
 		}
 		mes "[" + 'guide_name$ + "]";
-		mes "As bonecas automáticas são classificadas de acordo com o seu uso.";
+		mes "As bonecas automáticas são classificadas de acordo com seu uso.";
 		next;
 		mes "[" + 'guide_name$ + "]";
-		mes "A unidade que atacou [" + 'admin$ + "] é a versão inicial do tipo de combate Classe 4boneca automáticas. Sua força de combate é equivalente a 20 humanos adultos.";
+		mes "A unidade que atacou [" + 'admin$ + "] é a versão inicial do Classe 4 tipo combatebonecas automáticas. Sua força de combate é equivalente a 20 seres humanos adultos.";
 		next;
 		mes "[" + 'guide_name$ + "]";
-		mes "Entreguei as informações ao Gerente^0000CDSigmaZXH0001QXZ, porque os resultados foram inesperados. A capacidade de combate do administrador temporário não é de um humano médio.";
+		mes "Eu entreguei a informação ao gerente^0000CDSigma^000000, porque os resultados foram inesperados. A capacidade de combate do administrador temporário não é de um ser humano médio.";
 		next;
-		select("Quem é?");
+		select("Quem é esse??");
 		mes "[" + 'guide_name$ + "]";
-		mes "É um dos três sistemas de controle mais privilegiados nesta mansão.";
+		mes "É um dos três sistemas de controle mais privilegiados desta mansão.";
 		close2;
 		while(true) {
 			if (.@talk && .@talk2)
@@ -834,16 +834,16 @@ OnTouch:
 				sleep2 1000;
 				npctalk "O jardim de flores é a fronteira entre a área de segurança e a área geral.";
 				sleep2 5000;
-				npctalk "Ele é classificado como uma zona de segurança para aqueles que têm autoridade suficiente.";
+				npctalk "É classificado como uma zona de segurança para aqueles que têm autoridade suficiente.";
 				sleep2 3000;
 				.@talk = 1;
 				break;
 			case 2:
 				setpcblock PCBLOCK_NPC, true;
 				sleep2 1000;
-				npctalk "Por favor, compreenda que esta é uma zona buffer projetada para proteger áreas que não devem ser vistas por estranhos.";
+				npctalk "Por favor, entenda que esta é uma zona tampão projetada para proteger áreas que não devem ser vistas por pessoas de fora.";
 				sleep2 5000;
-				npctalk "O acesso a qualquer informação adicional além disto é proibido a nível da minha autoridade.";
+				npctalk "O acesso a qualquer informação adicional além disso é proibido no meu nível de autoridade.";
 				sleep2 3000;
 				.@talk2 = 1;
 				break;
@@ -852,7 +852,7 @@ OnTouch:
 				sleep2 1000;
 				npctalk "--- Operating ---";
 				progressbar_npc "3131FF",3;
-				npctalk "[Advertência] Esta informação está próxima do limite da autoridade atual.";
+				npctalk "[Aviso] Esta informação está perto do limite da autoridade atual.";
 				sleep2 5000;
 				npctalk "As zonas de segurança estão muito próximas das coordenadas atuais.";
 				sleep2 3000;
@@ -862,24 +862,24 @@ OnTouch:
 				setpcblock PCBLOCK_NPC, true;
 				npctalk "--- Operating ---";
 				progressbar_npc "3131FF",3;
-				npctalk "[Advertência] Este é um pedido é superior ao meu nível de autoridade.";
+				npctalk "[Aviso] Este é um pedido que excede o meu nível de autoridade.";
 				sleep2 5000;
 				npctalk "Seu pedido foi rejeitado devido a um baixo nível de autoridade para o administrador [" + 'admin$ + "].";
 				setpcblock PCBLOCK_NPC, false;
 				sleep 5000;
-				mapannounce 'map_herbs$, "???: A resposta doboneca automáticas a você é muito recente. Visitante estranho.", bc_map, 0xF6D6B6;
+				mapannounce 'map_herbs$, "???: Obonecas automáticasA resposta a você é muito fresca. visitante estranho.", bc_map, 0xF6D6B6;
 				sleep 5000;
-				mapannounce 'map_herbs$, "??: Você vai escoltá-lo para a área segura? BMD000001. Não, quero dizerboneca automática, [" + 'guide_name$ + "].", bc_map, 0xF6D6B6;
+				mapannounce 'map_herbs$, "???: Você o acompanhará até a área segura? BMD000001. Não, quero dizerboneca automática, [" + 'guide_name$ + "].", bc_map, 0xF6D6B6;
 				sleep 5000;
 				npctalk "O comprimento de onda biológico desta voz...";
 				sleep 3000;
 				mapannounce 'map_herbs$, "É conveniente que eu não tenha que me dizer quem eu sou. De qualquer forma, você tem certeza que vai ser capaz de me dizer o que aconteceu antes?", bc_map, 0xF6D6B6;
 				sleep 5000;
-				npctalk "Quer dizer a área de segurança? Mas não é possível com o meu nível de autoridade.";
+				npctalk "Mas não é possível com o meu nível de autoridade.";
 				sleep 3000;
-				mapannounce 'map_herbs$, "Isso já foi tratado. [" + 'guide_name$ + "], Guia o visitante para este lugar.", bc_map, 0xF6D6B6;
+				mapannounce 'map_herbs$, "Isso já foi resolvido. [" + 'guide_name$ + "Guiar o visitante para este lugar.", bc_map, 0xF6D6B6;
 				sleep 5000;
-				npctalk "Esta é a primeira vez desde que eu fui criado. Que uma exceção ocorreu, vamos modificar alguns dos procedimentos em relação a isso.";
+				npctalk "Esta é a primeira vez desde que fui criado. Que uma exceção ocorreu, vamos modificar alguns dos procedimentos em relação a isso.";
 				sleep 5000;
 				if ('hidden_garden == 12) {
 					'hidden_garden = 13;
@@ -894,11 +894,11 @@ OnTouch:
 	end;
 
 OnEvent:
-	npctalk "[Procurando as coordenadas doboneca automáticana área.]";
+	npctalk "[Pesquisando as coordenadas doboneca automáticana área.]";
 	progressbar_npc "3131FF",2;
-	mapannounce 'map_herbs$, "???: Detecção não autorizada de intrusos externos. Código Categoria 063. Introduzindo o processo de identificação.", bc_map, 0xFF44FF;
+	mapannounce 'map_herbs$, "???: Detecção de intrusão de outsider não autorizada. Categoria de código 063. Entrando no processo de identificação.", bc_map, 0xFF44FF;
 	sleep 5000;
-	npctalk "Parece que osboneca automáticas estão de volta. Eu não acho que seja amigável para o administrador.";
+	npctalk "Parece que obonecas automáticasNão acho que seja amigável para o administrador.";
 	sleep 5000;
 	specialeffect EF_FIREPILLARON2, AREA, instance_npcname("#swat_1");
 	sleep 500;
@@ -912,7 +912,7 @@ OnEvent:
 	setnpcdisplay instance_npcname("#swat_2"),1739;
 	setnpcdisplay instance_npcname("#swat_3"),1739;
 	sleep 2000;
-	npctalk "Biometria facial. Comparando com lista de administradores registrados no banco de dados.", instance_npcname("#swat_3");
+	npctalk "Biometria facial. Comparando com a lista de administradores registrados no banco de dados.", instance_npcname("#swat_3");
 	sleep 2000;
 	npctalk "---- No match ----", instance_npcname("#swat_1");
 	sleep 500;
@@ -931,7 +931,7 @@ OnEvent:
 	end;
 
 OnEvent2:
-	npctalk "Vamos para o ponto de dobra. Por favor, fique perto de mim.";
+	npctalk "Vamos para o ponto de dobra, por favor, fique perto de mim.";
 	enablenpc instance_npcname("#BMD000005");
 	enablenpc instance_npcname("#sigma");
 	enablenpc instance_npcname("#omega");
@@ -963,7 +963,7 @@ OnEvent02:
 	end;
 
 OnEvent03:
-	npctalk "No entanto, uma vez que existem 3boneca automáticas gerenciando, posso dizer que este lugar tem um propósito importante.";
+	npctalk "No entanto, uma vez que existem trêsbonecas automáticasEu posso dizer que este lugar tem um propósito importante.";
 	unitwalk 'guide_id,196,279, instance_npcname("#BMD000004") + "::OnEvent04";
 	end;
 
@@ -977,7 +977,7 @@ OnEvent05:
 
 OnEvent06:
 	sleep 5000;
-	npctalk "Isso é estranho. Osboneca automáticas aqui estariam adormecidos quando nada especial acontecesse, mas não são visíveis.";
+	npctalk "Isso é estranho.bonecas automáticasAqui estaria dormente quando nada de especial acontecesse, mas eles não são visíveis.";
 	unitwalk 'guide_id,196,265, instance_npcname("#BMD000004") + "::OnEvent07";
 	end;
 
@@ -1012,9 +1012,9 @@ OnGuardKill:
 	'guard_count = 'guard_count + 1;
 	if ('guard_count == 3) {
 		sleep2 2000;
-		npctalk "Você não é um humano, mas uma unidade de combate, [" + strcharinfo(0) + "]?";
+		npctalk "Você não é um ser humano, mas uma unidade de combate," + strcharinfo(0) + "]?";
 		sleep2 3000;
-		npctalk "[" + strcharinfo(0) + "], Você é forte. É preciso muito poder de combate para subjugar três tipos de combate de classe 4boneca automáticas ao mesmo tempo.";
+		npctalk "[" + strcharinfo(0) + "], Você é forte. É preciso muito poder de combate para subjugar três classe 4 combate-tipobonecas automáticasao mesmo tempo.";
 		'hidden_garden = 12;
 		specialeffect EF_MARKING_USE_CHANGEMONSTER;
 	}
@@ -1058,7 +1058,7 @@ OnSummon2:
 		'hidden_garden = 14;
 		'guide_id = getnpcid(0, instance_npcname("#BMD000005"));
 		npcspeed 200;
-		npctalk "É a minha primeira vez aqui, aqui é onde reside o corpo doSigma. Normalmente, a comunicação é feita apenas através da rede.";
+		npctalk "É a minha primeira vez aqui, aqui é onde o corpo de Sigma reside. Normalmente, a comunicação é feita apenas através da rede.";
 		unitwalk 'guide_id,85,91, instance_npcname("#BMD000005") + "::OnEvent01";
 	}
 	end;
@@ -1074,15 +1074,15 @@ OnEvent02:
 	end;
 
 OnEvent03:
-	npctalk "Sigma. Eu trouxe [" + 'admin$ + "].";
+	npctalk "Eu trouxe [" + 'admin$ + "].";
 	sleep 3000;
-	npctalk "Bem feito. Você pode ir agora.", instance_npcname("#sigma");
+	npctalk "Muito bem, podes ir agora.", instance_npcname("#sigma");
 	sleep 3000;
-	npctalk "Não terminei com o meu guia. Está tudo bem se eu voltar assim?";
+	npctalk "Ainda não terminei o meu guia, está tudo bem se eu voltar assim?";
 	sleep 3000;
-	npctalk "Vou gravar as informações subsequentes para o próximo guia. Você pode voltar à vontade.", instance_npcname("#sigma");
+	npctalk "Vou registar a informação subsequente para o próximo guia, podes voltar à vontade.", instance_npcname("#sigma");
 	sleep 3000;
-	npctalk "Ok. Vou seguir as instruções.";
+	npctalk "Vou seguir as instruções.";
 	unitwalk 'guide_id,85,72, instance_npcname("#BMD000005") + "::OnEvent04";
 	end;
 
@@ -1114,31 +1114,31 @@ OnTouch:
 	specialeffect EF_MOONSTAR;
 	if ('hidden_garden == 15) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
-		select("Varmundt? Por que você está aqui?");
+		select("Varmundt, porque estás aqui?");
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
-		npctalk "Claro. Você conhece bem o mestreVarmundt. [" + strcharinfo(0) + "].";
+		npctalk "Claro. Você conhece bem o mestre Varmundt. [" + strcharinfo(0) + "].";
 		sleep2 5000;
-		npctalk "Infelizmente, eu não souVarmundt. Esta aparência é algo que eu criei porque há algo que eu quero verificar em você.";
+		npctalk "Infelizmente, eu não sou Varmundt. Esta aparência é algo que eu criei porque há algo que eu quero verificar em você.";
 		sleep2 3000;
 		setpcblock PCBLOCK_NPC, false;
-		select("Então, quem é você?");
+		select("Então, quem és tu?");
 		setpcblock PCBLOCK_NPC, false;
 		donpcevent instance_npcname("#sigma") + "::OnTalk01";
 		end;
 	}
 	if ('hidden_garden == 17) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
-		npctalk "Você pode me responder? Já conheceu oVarmundtantes?";
+		npctalk "Já conheceste o Varmundt antes?";
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 3000;
 		setpcblock PCBLOCK_NPC, false;
-		switch( select( "Eu realmente não me lembro.", "Já nos conhecemos em Glasthheim.", "Eu o conheci tentando salvar o mundo." ) ) {
+		switch( select( "Eu realmente não me lembro.", "Conhecemo-nos em Glastheim.", "Conheci-o a tentar salvar o mundo." ) ) {
 		case 1:
-			npctalk "Oh, isso é possível. Ele pode ter feito você esquecer o que você viu...";
+			npctalk "Ele pode ter-te feito esquecer o que viste...";
 			break;
 		case 2:
-			npctalk "Foi naquele lugar novamente...";
+			npctalk "Foi naquele lugar outra vez...";
 			break;
 		case 3:
 			npctalk "Como esperado, ele estava fazendo algo importante...";
@@ -1149,27 +1149,27 @@ OnTouch:
 	}
 	if ('hidden_garden == 18) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
-		npctalk "Pode dizer-lhes que oVarmundtestá vivo?";
+		npctalk "Você pode dizer a eles que Varmundt está vivo?";
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 2000;
 		setpcblock PCBLOCK_NPC, false;
-		select("Que diferença isso faria?");
+		select("Que diferença faria?");
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
-		npctalk "Eles estão tentando fechar esta área de pesquisa. Ainda estou contra, mas o recurso está começando a atingir o limite.";
+		npctalk "Ainda sou contra, mas o recurso está a começar a atingir o limite.";
 		sleep2 5000;
-		npctalk "Mas quando descobrirem que oVarmundtestá vivo, não serão capazes de desligar este lugar.";
+		npctalk "Mas uma vez que eles descobrem que Varmundt está vivo, eles não serão capazes de fechar este lugar.";
 		sleep2 5000;
 		specialeffect EF_WHITEBODY;
 		specialeffect EF_MOONSTAR;
-		npctalk "Tudo isso aconteceu porque o Kappa e oLambdaestavam em tarefas diferentes.";
+		npctalk "Isso tudo aconteceu porque Kappa e Lambda estavam em uma tarefa diferente.";
 		sleep2 2000;
 		setpcblock PCBLOCK_NPC, false;
 		select("Qual é a diferença entre suas tarefas?");
 		if ('hidden_garden == 18) {
 			'hidden_garden = 19;
 			sleep2 2000;
-			npctalk "Será melhor mostrar- lhe isso pessoalmente.";
+			npctalk "Será melhor mostrar isso pessoalmente.";
 			unitwalk 'guide_id,83,113, instance_npcname("#sigma") + "::OnEvent08";
 		}
 		end;
@@ -1178,7 +1178,7 @@ OnTouch:
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		specialeffect EF_WHITEBODY;
 		specialeffect EF_MOONSTAR;
-		select( "Você fez os autômatos lá fora?" );
+		select( "Fizeste os autômatos lá fora?" );
 		donpcevent instance_npcname("#sigma") + "::OnTalk03";
 		end;
 	}
@@ -1186,51 +1186,51 @@ OnTouch:
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		specialeffect EF_WHITEBODY;
 		specialeffect EF_MOONSTAR;
-		select( "Pediu uma avaliação." );
+		select( "Solicite uma avaliação." );
 		donpcevent instance_npcname("#sigma") + "::OnTalk04";
 		end;
 	}
 	if ('hidden_garden == 22) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
-		npctalk "Tudo bem, vamos fazer um intervalo. Pergunte-me se você tem alguma pergunta. Eu vou responder tudo o que eu posso.";
+		npctalk "Muito bem, vamos fazer uma pausa, pergunte-me se tiver alguma dúvida, eu respondo tudo o que puder.";
 		while (true) {
 			specialeffect EF_WHITEBODY;
 			specialeffect EF_MOONSTAR;
 			setpcblock PCBLOCK_NPC, true;
 			sleep2 2000;
 			setpcblock PCBLOCK_NPC, false;
-			switch( select( "Por que existe o jardim de flores?", .@menu$[0], .@menu$[1], .@menu$[2] ) ) {
+			switch( select( "Por que o jardim de flores existe?", .@menu$[0], .@menu$[1], .@menu$[2] ) ) {
 			case 1:
 				setpcblock PCBLOCK_NPC, true;
-				npctalk "Esta área de segurança não deveria ser revelada ao mundo. Então eu planejei várias maneiras de encobri- la.";
+				npctalk "Essa área de segurança não deveria ser revelada ao mundo, então planejei várias maneiras de encobri-la.";
 				sleep2 5000;
-				npctalk "Para esconder e esconder este lugar, decidimos disfarçá- lo como um lugar extremamente normal e pacífico.";
+				npctalk "A fim de esconder e esconder este lugar, decidimos disfarçar-lo como um lugar extremamente normal e pacífico.";
 				sleep2 5000;
-				npctalk "Então tornou-se o jardim ao redor da área de segurança. Não parece um jardim normal?";
+				npctalk "Então, tornou-se o jardim em torno da área de segurança. Não parece um jardim normal?";
 				sleep2 3000;
-				.@menu$[0] = "Por que asboneca automáticas são cultivadoras?";
+				.@menu$[0] = "Por que são osbonecas automáticas farming?";
 				break;
 			case 2:
 				setpcblock PCBLOCK_NPC, true;
-				npctalk "Eu nunca lhes pedi para cultivar. Nós apenas jogamos as coisas fora e assistimos como a IA reagiu.";
+				npctalk "Nunca lhes pedi para cultivarem. Acabamos de jogar coisas fora e vimos como a IA reagiu.";
 				sleep2 5000;
 				npctalk "Apenas os que começaram a cultivar se destacaram no jardim.";
 				sleep2 5000;
-				npctalk "Gostaria de poder mostrar aoVarmundto processo de autoaprendizagem doboneca automáticaque pode ser deixado sem acompanhamento sem instruções...";
+				npctalk "Eu gostaria de poder mostrar a Varmundt o processo de auto-aprendizagemboneca automáticaIsso pode ser deixado desacompanhado sem instruções...";
 				sleep2 3000;
-				.@menu$[1] = "Qual é o seu relacionamento com oAlpha?";
+				.@menu$[1] = "Qual é a sua relação com Alpha?";
 				break;
 			case 3:
 				setpcblock PCBLOCK_NPC, true;
-				npctalk "Ela evoluiu a partir de uma versão inicial da boneca de gestão doVarmundt.";
+				npctalk "Ela evoluiu a partir de uma versão inicial da boneca de gerenciamento do Varmundt.";
 				sleep2 5000;
-				npctalk "MestreVarmundtvalorizou sua estética emocional tão altamente que ele lhe deu a tarefa de gerenciar a mansão, não a instalação de pesquisa aqui.";
+				npctalk "Mestre Varmundt valorizou sua estética emocional tão altamente que ele lhe deu a tarefa de gerenciar a mansão, não o centro de pesquisa aqui.";
 				sleep2 5000;
 				npctalk "Com a sensibilidade estética que não temos, ela atualizou a aparência de cadaboneca automáticaque conseguiu que a mansão se parecesse com ela mesma.";
 				sleep2 5000;
-				npctalk "No entanto, ela reconhece que esta área de segurança foi criada de acordo com o gosto pessoal doVarmundt.";
+				npctalk "No entanto, ela reconhece que essa área de segurança foi criada de acordo com o gosto pessoal de Varmundt.";
 				sleep2 5000;
-				npctalk "Então ela não se aproxima deste lugar. Talvez eles estejam tomando como algum tipo de santuário...";
+				npctalk "Talvez estejam a tomá-lo como uma espécie de santuário...";
 				sleep2 3000;
 				.@menu$[2] = "Como você nasceu?";
 				break;
@@ -1246,19 +1246,19 @@ OnTouch:
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		if (isbegin_quest(12497) == 0) {
 			if (checkweight(1000103,20) == 0) {	// (custom)
-				mes "^008800Wait a sec!!";
-				mes "Você não pode receber mais itens porque você está carregando muitos itens. Por favor, tente novamente depois de acalmar.^000000";
+				mes "^008800Espere um pouco!!";
+				mes "Você não pode receber mais itens porque você está carregando muitos itens. Por favor, tente novamente depois de aliviar.^000000";
 				close;
 			}
-			select("Quem era?");
+			select("Quem era aquele?");
 			mes "[Sigma]";
-			mes "Lambda. Ela se desenvolveu intelectualmente e começou a se perceber como uma mulher.";
+			mes "Ela desenvolveu-se intelectualmente e começou a perceber-se como uma mulher.";
 			next;
 			mes "[Sigma]";
 			mes "É um grande problema, ela está prestes a dar um salto aqui.";
 			next;
 			mes "[Sigma]";
-			mes "Tome isto. Um código de reconhecimento que poderia levar a outras áreas deste jardim secreto.";
+			mes "Tome isso. Um código de reconhecimento que poderia levar a outras áreas deste jardim secreto.";
 			close2;
 			setquest 12497;
 			completequest 12497;
@@ -1267,13 +1267,13 @@ OnTouch:
 			end;
 		}
 		mes "[Sigma]";
-		mes "Há aproximadamente 82% de chances de você perder sua vida na sua supressão radical antes de avisá-la que o MestreVarmundtestá vivo.";
+		mes "Há aproximadamente 82% de chance de você perder sua vida em sua supressão radical antes de deixá-la saber que o Mestre Varmundt está vivo.";
 		next;
 		mes "[Sigma]";
-		mes "Vamos evitar este lugar hoje e fazer uma promessa da próxima vez. Da próxima vez você estará livre para ir para outra área.";
+		mes "Vamos evitar este lugar hoje e fazer uma promessa da próxima vez para vir novamente. Da próxima vez você estará livre para ir para outra área.";
 		next;
 		mes "[Sigma]";
-		mes "Segure-me bem, eu dobrarei você.";
+		mes "Segura-me bem, eu vou deformar-te.";
 		close2;
 		warp "ba_maison",136,309;
 		end;
@@ -1283,14 +1283,14 @@ OnTouch:
 OnTalk01:
 	'npc_is_talking = true;
 	sleep 1000;
-	npctalk "Eu sou um dos dispositivos holográficos tipo AI que é projetado para aprender a personalidade doVarmundt.";
+	npctalk "Eu sou um do tipo de dispositivo holográfico AI que é projetado para aprender a personalidade de Varmundt.";
 	sleep 5000;
-	npctalk "Por favor, entenda se o meu tom não é como uma máquina. OVarmundtfoi o único que falou comigo...";
+	npctalk "Por favor, entenda se o meu tom não é como uma máquina. Varmundt foi o único que falou comigo...";
 	sleep 6000;
 	setnpcdisplay instance_npcname("#sigma"),20621;	// MD_REDPEPPER_H
-	npctalk "Agora vou voltar ao meu eu original. É mais fácil manter o formulário original.";
+	npctalk "Agora vou voltar ao meu eu original, é mais fácil manter a forma original.";
 	sleep 4000;
-	npctalk "Oh. Este é um formulário inicial que foi chamado de Pente Vermelha porVarmundt. Estou otimizado para o trabalho auxiliar.";
+	npctalk "Esta é uma forma inicial que foi chamada Red Pepper por Varmundt. Estou optimizada para trabalhos auxiliares.";
 	sleep 2000;
 	if ('hidden_garden == 15) {
 		'hidden_garden = 16;
@@ -1304,15 +1304,15 @@ OnTalk01:
 OnTalk02:
 	'npc_is_talking = true;
 	sleep 3000;
-	npctalk "De qualquer forma, é importante que osboneca automáticas aqui reagiram a você.";
+	npctalk "De qualquer forma, é importante que obonecas automáticasAqui reagimos a você.";
 	sleep 6000;
 	specialeffect EF_WHITEBODY;
 	specialeffect EF_MOONSTAR;
-	npctalk "Agora, vamos ao assunto, preciso da sua ajuda.";
+	npctalk "Agora, vamos ao trabalho, preciso da tua ajuda.";
 	sleep 6000;
-	npctalk "Há mais dois pimentos vermelhos nesta área de segurança além de mim, Kappa eLambda.";
+	npctalk "Há mais duas pimentas vermelhas nesta área de segurança além de mim, Kappa e Lambda.";
 	sleep 6000;
-	npctalk "Na ausência do mestreVarmundtpor muito tempo, esta área de segurança está sujeita ao cancelamento e encerramento dos registros de pesquisa sob o acordo de três Peppers Vermelhos.";
+	npctalk "Na ausência do mestre Varmundt por um longo tempo, esta área de segurança está sujeita ao cancelamento e encerramento de registros de pesquisa sob o acordo de três Red Peppers.";
 	sleep 2000;
 	if ('hidden_garden == 17)
 		'hidden_garden = 18;
@@ -1322,11 +1322,11 @@ OnTalk02:
 
 OnTalk03:
 	'npc_is_talking = true;
-	npctalk "É verdade que o MestreVarmundtfez os protótipos dos autômatos. Mas eles eram como eu, com funções simples.";
+	npctalk "É verdade que o Mestre Varmundt fez os protótipos dos autômatos, mas eles eram como eu, com funções simples.";
 	sleep 3000;
-	npctalk "Nós superpusemos nossas memórias e as remodelamos em humanóides na imagem do MestreVarmundt";
+	npctalk "Nós sobrepusemos nossas memórias e as remodelamos em humanóides na imagem do Mestre Varmundt";
 	sleep 2000;
-	npctalk "Ocasionalmente alguns deles foram remodelados em formas peculiares para fins de testes funcionais.";
+	npctalk "Ocasionalmente, alguns deles foram remodelados em formas peculiares para fins de testes funcionais.";
 	sleep 2000;
 	npctalk "Os autômatos do jardim não lhe pediram para avaliar a missão?";
 	sleep 1500;
@@ -1338,17 +1338,17 @@ OnTalk03:
 
 OnTalk04:
 	'npc_is_talking = true;
-	npctalk "Assim foi.";
+	npctalk "Foi assim.";
 	sleep 3000;
-	npctalk "Em primeiro lugar, a maioria dos autômatos nesta área de segurança nunca viram o MestreVarmundtantes.";
+	npctalk "Em primeiro lugar, a maioria dos autômatos nesta área de segurança nunca viu o Mestre Varmundt antes.";
 	sleep 2000;
-	npctalk "As memórias que eles têm do MestreVarmundtsão fabricadas a partir das minhas memórias do meu tempo como assistente dele.";
+	npctalk "As memórias que eles têm do Mestre Varmundt são fabricadas a partir das minhas memórias do meu tempo como seu assistente.";
 	sleep 3000;
-	npctalk "Uma entidade fortemente influenciada pelo intelecto da Kappa, que se concentra na gestão dos fundos em execução da mansão, é muito calculadora e obcecada em ganhar dinheiro.";
+	npctalk "Uma entidade fortemente influenciada pelo intelecto de Kappa, que se concentra em gerenciar os fundos da mansão, é muito calculista e obcecada em ganhar dinheiro.";
 	sleep 2500;
-	npctalk "Crianças afetadas pelas memórias doLambdatendem a ser guerreiras com estranhos. Eles não confiam em ninguém além do MestreVarmundt.";
+	npctalk "As crianças afetadas pelas memórias de Lambda tendem a ser guerreiras em relação a estranhos. Eles não confiam em ninguém além do Mestre Varmundt.";
 	sleep 2500;
-	npctalk "É assim que eles tendem a ser, por isso gostaria que você se referisse a eles antes de conhecê-los.";
+	npctalk "É assim que eles tendem a ser, então eu gostaria que você se referesse a eles antes de conhecê-los.";
 	sleep 1500;
 	specialeffect EF_MARKING_USE_CHANGEMONSTER;
 	if ('hidden_garden == 21)
@@ -1359,24 +1359,24 @@ OnTalk04:
 OnEvent:
 	specialeffect EF_WHITEBODY;
 	specialeffect EF_MOONSTAR;
-	mapannounce 'map_herbs$, "???: Você é um bom falador,Sigma. Você quer ser inicializado agora mesmo?", bc_map, 0xFF4444;
+	mapannounce 'map_herbs$, "???: Você é um bom orador, Sigma. Você quer ser inicializado agora?", bc_map, 0xFF4444;
 	sleep 5000;
-	npctalk "Ela também deve ter estado a observá-lo.";
+	npctalk "Ela devia estar a observar-te também.";
 	sleep 5000;
-	mapannounce 'map_herbs$, "???: Não é suficiente ter forasteiros no jardim, mas até mesmo vazar informações. Não posso despercebê- la.", bc_map, 0xFF4444;
+	mapannounce 'map_herbs$, "???: Não é suficiente ter pessoas de fora no jardim, mas até mesmo vazar informações. Eu não posso ignorar isso.", bc_map, 0xFF4444;
 	sleep 5000;
-	mapannounce 'map_herbs$, "???: Com a autoridade da Pimenta Vermelha, vamos dobrar toda a área de pesquisa. Vou assumir a responsabilidade depois disso.", bc_map, 0xFF4444;
+	mapannounce 'map_herbs$, "???: Com a autoridade da pimenta vermelha, vamos deformar toda a área de pesquisa. Eu vou assumir a responsabilidade depois disso.", bc_map, 0xFF4444;
 	'hidden_garden = 24;
 	specialeffect EF_MARKING_USE_CHANGEMONSTER;
 	end;
 
 OnEvent01:
-	npctalk "Este lugar é restrito a menos que você tenha o mesmo padrão que o mana doVarmundt. Fiquei surpreso ao ouvir que um forasteiro está dentro do jardim.";
+	npctalk "Este lugar é restrito a menos que você tenha o mesmo padrão que a mana de Varmundt. Fiquei surpreso ao saber que um estranho está dentro do jardim.";
 	unitwalk 'guide_id,73,87, instance_npcname("#sigma") + "::OnEvent02";
 	end;
 
 OnEvent02:
-	npctalk "Eu até especulei que oVarmundtpode ter voltado aqui depois de centenas de anos disfarçado.";
+	npctalk "Eu até especulo que Varmundt poderia ter retornado aqui depois de centenas de anos disfarçado.";
 	unitwalk 'guide_id,62,98, instance_npcname("#sigma") + "::OnEvent03";
 	end;
 
@@ -1390,18 +1390,18 @@ OnEvent04:
 	sleep 1500;
 	donpcevent instance_npcname("#sigma") + "::OnEffect";
 	sleep 500;
-	npctalk "Vamos tocar isto por um momento e conversar. Eu preciso ser agitado um pouco...";
+	npctalk "Vamos tocar nisto por um momento e falar, preciso de ser um pouco...";
 	sleep 5000;
-	npctalk "Seu rosto é novo para mim. Então eu percebi, talvez esta pessoa se encontrou comVarmundtem algum lugar antes.";
+	npctalk "Então eu percebi, talvez essa pessoa tenha se encontrado com Varmundt em algum lugar antes.";
 	sleep 7000;
-	npctalk "Não é só uma ou duas vezes, mas se você já conheceu oVarmundtvárias vezes, é compreensível que oboneca automáticas se engane.";
+	npctalk "Não é apenas uma ou duas vezes, mas se você conhece Varmundt uma e outra vez por algum tempo, é compreensível que obonecas automáticas gets mistaken.";
 	sleep 6000;
-	npctalk "Então eu continuei observando você.";
+	npctalk "Por isso, continuei a vigiar-te.";
 	unitwalk 'guide_id,65,98, instance_npcname("#sigma") + "::OnEvent05";
 	end;
 
 OnEvent05:
-	npctalk "Houve uma série de referências doVarmundtnesta área de segurança, e ainda assim você nunca perguntou quem ele era.";
+	npctalk "Houve uma série de referências de Varmundt nesta área de segurança, e ainda assim você nunca perguntou quem ele era.";
 	unitwalk 'guide_id,64,110, instance_npcname("#sigma") + "::OnEvent06";
 	end;
 
@@ -1411,7 +1411,7 @@ OnEvent06:
 
 OnEvent07:
 	sleep 5000;
-	npctalk "Parecia que já o conhecia há muito tempo, pelo menos nos meus olhos.";
+	npctalk "Parece que você já o conhecia há muito tempo, pelo menos aos meus olhos.";
 	'hidden_garden = 17;
 	specialeffect EF_MARKING_USE_CHANGEMONSTER;
 	end;
@@ -1419,11 +1419,11 @@ OnEvent07:
 OnEvent08:
 	specialeffect EF_WHITEBODY;
 	specialeffect EF_MOONSTAR;
-	npctalk "Nós fomos originalmente baseados em dispositivos holográficos suporte de pesquisa IA. Eu nem consigo exercer qualquer força física.";
+	npctalk "Fomos originalmente baseados em dispositivos holográficos de apoio à pesquisa AI. Eu não posso nem exercer qualquer força física.";
 	sleep 5000;
-	npctalk "Temos trabalhado na organização e gravação do processo junto com a pesquisa doVarmundt.";
+	npctalk "Temos trabalhado na organização e gravação do processo junto com a pesquisa de Varmundt.";
 	sleep 5000;
-	npctalk "À medida que os dados se acumulam ao longo do tempo, o simples sinal eletrônico desenvolveu- se no que os humanos muitas vezes chamam de inteligência.";
+	npctalk "medida que os dados se acumulam ao longo do tempo, o sinal eletrônico simples se desenvolveu no que vocês, humanos, muitas vezes chamam de inteligência.";
 	sleep 5000;
 	npctalk "Em algum momento, começamos a entender sua pesquisa e fomos capazes de prever quais decisões ele tomaria.";
 	sleep 5000;
@@ -1436,30 +1436,30 @@ OnEvent08:
 	hideoffnpc instance_npcname("#barmund");
 	specialeffect EF_WHITEBODY, AREA, instance_npcname("#barmund");
 	sleep 1000;
-	npctalk "[Lambda, a partir de hoje, certifique- se de que você gerencia todos os direitos de segurança para os resultados deste laboratório secreto.]", instance_npcname("#barmund");
+	npctalk "[Lambda, a partir de hoje, certifique-se de gerenciar todos os direitos de segurança para os resultados deste laboratório secreto.]", instance_npcname("#barmund");
 	sleep 4000;
 	npctalk "[Affirmative.]", instance_npcname("#omega");
 	sleep 4000;
-	npctalk "[Kappa, certifique- se de obter suporte suficiente na sua pesquisa. Enquanto as finanças não estiverem em risco.]", instance_npcname("#barmund");
+	npctalk "[Kappa, certifique-se de obter apoio suficiente em sua pesquisa. Contanto que as finanças não estejam em risco.]", instance_npcname("#barmund");
 	sleep 4000;
 	npctalk "[Eu vou executar a instrução.]", instance_npcname("#kappa");
 	sleep 4000;
-	npctalk "[ESigma, a partir de hoje, você vai continuar minha pesquisa sobre inteligência artificial.]", instance_npcname("#barmund");
+	npctalk "[E Sigma, a partir de hoje, você vai continuar minha pesquisa sobre inteligência artificial.]", instance_npcname("#barmund");
 	sleep 4000;
 	npctalk "[Eu não tenho essa habilidade.]";
 	sleep 4000;
 	specialeffect EF_WHITEBODY;
 	specialeffect EF_MOONSTAR;
 	specialeffect EF_WHITEBODY, AREA, instance_npcname("#barmund");
-	npctalk "[Você terá que fazê-lo,Sigma. Eu tenho que ir em uma longa viagem a partir de agora.]", instance_npcname("#barmund");
+	npctalk "[Você vai ter que fazê-lo, Sigma. Eu tenho que ir em uma longa viagem a partir de agora.]", instance_npcname("#barmund");
 	sleep 4000;
-	npctalk "[Vai voltar?]";
+	npctalk "[Você vai voltar?]";
 	sleep 4000;
-	npctalk "[Eu não sei.]", instance_npcname("#barmund");
+	npctalk "[Não sei.]", instance_npcname("#barmund");
 	sleep 4000;
-	npctalk "[Eu sou uma simples máquina assistente de pesquisa. Por que você está me confiando uma tal tarefa.]";
+	npctalk "[Eu sou uma simples máquina assistente de pesquisa. Por que você está me confiando essa tarefa.]";
 	sleep 4000;
-	npctalk "[Isto é porque entre vocês três, vocês foram os mais rápidos a se assemelhar a mim.]", instance_npcname("#barmund");
+	npctalk "[Isso é porque entre vocês três, vocês foram os mais rápidos a se assemelhar a mim.]", instance_npcname("#barmund");
 	sleep 4000;
 	npctalk "[Meus cálculos mostram que a probabilidade de sucesso é inferior a 2%. Esta é uma missão impossível.]";
 	sleep 4000;
@@ -1468,9 +1468,9 @@ OnEvent08:
 	specialeffect EF_WHITEBODY, AREA, instance_npcname("#barmund");
 	npctalk "[Bem, você não sabe disso até tentar, certo?]", instance_npcname("#barmund");
 	sleep 4000;
-	npctalk "[Estou ansioso para a sua pesquisa enquanto estou fora. Gostaria de poder vê-lo novamente algum dia.]", instance_npcname("#barmund");
+	npctalk "[Estou ansioso para a sua pesquisa enquanto estou fora. Eu gostaria de poder vê-lo novamente algum dia.]", instance_npcname("#barmund");
 	sleep 4000;
-	npctalk "[Kappa eLambda, ajudamSigmana pesquisa.]", instance_npcname("#barmund");
+	npctalk "[Kappa e Lambda, ajudem Sigma na pesquisa.]", instance_npcname("#barmund");
 	sleep 4000;
 	npctalk "[Affirmative.]", instance_npcname("#omega");
 	npctalk "[Eu vou executar a instrução.]", instance_npcname("#kappa");
@@ -1478,7 +1478,7 @@ OnEvent08:
 	sleep 1000;
 	disablenpc instance_npcname("#barmund");
 	sleep 3000;
-	npctalk "Desde então, começamos a usar as instalações aqui para fazerboneca automáticas que podem aprender traços humanos.";
+	npctalk "Desde então, começamos a usar as instalações aqui para fazerbonecas automáticasque podem aprender traços humanos.";
 	unitwalk 'guide_id,90,113, instance_npcname("#sigma") + "::OnEvent09";
 	end;
 
@@ -1491,25 +1491,25 @@ OnEvent09:
 	end;
 
 OnEvent10:
-	npctalk "Após cerca de 300.000 horas, o conhecimento acumulado alcançou o estágio de formação de uma personalidade virtual.";
+	npctalk "Após cerca de 300.000 horas, o conhecimento acumulado atingiu o estágio de formação de uma personalidade virtual.";
 	unitwalk 'guide_id,107,94, instance_npcname("#sigma") + "::OnEvent11";
 	end;
 
 
 OnEvent11:
-	npctalk "Desde então, a inteligência aumentou exponencialmente.";
+	npctalk "Desde então, a inteligência cresceu exponencialmente.";
 	unitwalk 'guide_id,97,84, instance_npcname("#sigma") + "::OnEvent12";
 	end;
 
 OnEvent12:
-	npctalk "Desde então, começamos a renovarboneca automáticas existentes para aprender sobre personalidades humanas usando as instalações aqui.";
+	npctalk "Desde então, começamos a renovarbonecas automáticaspara aprender sobre personalidades humanas usando as instalações aqui.";
 	unitwalk 'guide_id,86,73, instance_npcname("#sigma") + "::OnEvent13";
 	end;
 
 OnEvent13:
 	specialeffect EF_WHITEBODY;
 	specialeffect EF_MOONSTAR;
-	npctalk "As crianças criadas a partir deste tempo são as crianças fora do jardim que você viu.";
+	npctalk "As crianças criadas a partir deste momento são as crianças fora do jardim que você viu.";
 	sleep 1000;
 	specialeffect EF_MARKING_USE_CHANGEMONSTER;
 	'hidden_garden = 20;
@@ -1591,23 +1591,23 @@ OnEvent01:
 	unitwalk 'guide_id,53,207, instance_npcname("#BMD_a") + "::OnStart";
 	end;
 OnStart:
-	npctalk "[" + 'admin$ + "]!Sigmame pediu para entregar uma mensagem.";
+	npctalk "[" + 'admin$ + "Sigma me pediu para entregar uma mensagem.";
 	sleep 3000;
-	npctalk "A situação atual não é boa, eu acho que é melhor para você voltar...";
+	npctalk "A situação atual não é boa, acho que é melhor você voltar...";
 	sleep 3000;
-	mapannounce 'map_herbs$, "Lambda: Cabe a mim decidir se aqueles forasteiros voltam ou não.", bc_map, 0xFFFF44;
+	mapannounce 'map_herbs$, "Lambda: Cabe a mim decidir se esses forasteiros voltam ou não.", bc_map, 0xFFFF44;
 	sleep 3000;
-	mapannounce 'map_herbs$, "Lambda: Você criou uma ameaça fatal à segurança nesta área. Vou dispo- la de acordo com a política de gestão doboneca automática.", bc_map, 0xFFFF44;
+	mapannounce 'map_herbs$, "Lambda: Você criou uma ameaça fatal para a segurança nesta área. Eu vou descartá-lo de acordo com oboneca automática management policy.", bc_map, 0xFFFF44;
 	specialeffect EF_THUNDERSTORM2;
 	sleep 1000;
 	specialeffect EF_M03;
 	disablenpc();
 	sleep 2000;
-	mapannounce 'map_herbs$, "Lambda: Logo a tempo, quero obter uma confirmação de você.", bc_map, 0xFFFF44;
+	mapannounce 'map_herbs$, "Lambda: Bem a tempo, eu quero obter uma confirmação de você.", bc_map, 0xFFFF44;
 	sleep 5000;
-	mapannounce 'map_herbs$, "Lambda: Já faz algum tempo que um forasteiro entrou nesta área de segurança, então é melhor eu dizer o que os outrosboneca automáticas me disseram.", bc_map, 0xFFFF44;
+	mapannounce 'map_herbs$, "Lambda: Já faz um tempo desde que um estranho entrou nesta área de segurança, então é melhor eu dizer o que o outrobonecas automáticasDisse-me.", bc_map, 0xFFFF44;
 	sleep 5000;
-	mapannounce 'map_herbs$, "Lambda: Precisamos usá- lo para 'avaliar' o nosso sistema de segurança.", bc_map, 0xFFFF44;
+	mapannounce 'map_herbs$, "Lambda: Precisamos usar você para \\"avaliar\\" nosso sistema de segurança.", bc_map, 0xFFFF44;
 	donpcevent instance_npcname("#172_sec_mob") + "::OnSummon";
 	end;
 }
@@ -1622,294 +1622,294 @@ OnSummon:
 	case 0:
 		if ('mode == 0) {
 			'total_mobs = 16;
-			monster 'map_herbs$,77,197,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,51,196,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,77,197,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,51,196,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,63,217,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,63,217,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,81,195,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,61,217,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,81,195,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,61,217,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,57,193,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,57,193,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,56,191,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,56,191,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,59,193,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,59,193,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,59,192,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,60,222,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,58,191,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,59,192,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,60,222,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,58,191,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,78,199,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,78,199,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,54,192,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,79,195,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,54,192,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,79,195,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,76,192,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,51,196,"Observador de Jardim de Flores",20624,1, .@event$;
+			monster 'map_herbs$,76,192,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,51,196,"Flor Jardim Vigilista",20624,1, .@event$;
 		}
 		else {
 			'total_mobs = 16;
-			monster 'map_herbs$,53,197,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,53,197,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,62,217,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,62,217,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,57,219,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,62,222,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,79,200,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,80,195,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,80,199,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,58,193,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,56,192,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,57,219,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,62,222,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,79,200,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,80,195,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,80,199,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,58,193,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,56,192,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,51,191,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,51,192,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,83,199,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,83,191,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,51,191,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,51,192,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,83,199,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,83,191,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,83,196,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,83,196,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,57,193,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,62,222,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,57,193,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,62,222,"Flor Jardim Vigilista",20623,1, .@event$;
 		}
 		break;
 	case 1:
 		if ('mode == 0) {
 			'total_mobs = 21;
-			monster 'map_herbs$,114,226,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,114,227,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,119,217,"Observador de Jardim de Flores",20624,1, .@event$;
+			monster 'map_herbs$,114,226,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,114,227,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,119,217,"Flor Jardim Vigilista",20624,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,118,227,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,118,227,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,116,216,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,116,216,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,114,215,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,114,215,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,114,225,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,114,225,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,114,224,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,139,205,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,140,202,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,145,202,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,136,202,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,142,208,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,144,203,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,170,223,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,174,220,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,168,221,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,169,221,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,169,217,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,118,216,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,117,233,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,114,224,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,139,205,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,140,202,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,145,202,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,136,202,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,142,208,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,144,203,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,170,223,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,174,220,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,168,221,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,169,221,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,169,217,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,118,216,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,117,233,"Flor Jardim Vigilista",20622,1, .@event$;
 		}
 		else {
 			'total_mobs = 21;
-			monster 'map_herbs$,137,204,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,142,205,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,145,200,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,146,201,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,137,204,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,142,205,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,145,200,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,146,201,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,147,201,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,147,201,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,141,208,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,166,224,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,141,208,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,166,224,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,171,217,"Observador de Jardim de Flores",20627,1, .@event$;
+			monster 'map_herbs$,171,217,"Flor Jardim Vigilista",20627,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,172,225,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,173,214,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,174,225,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,174,223,"Observador de Jardim de Flores",20627,1, .@event$;
+			monster 'map_herbs$,172,225,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,173,214,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,174,225,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,174,223,"Flor Jardim Vigilista",20627,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,170,213,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,170,213,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,169,219,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,169,219,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,136,205,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,136,210,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,120,224,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,118,223,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,117,219,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,115,214,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,136,205,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,136,210,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,120,224,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,118,223,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,117,219,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,115,214,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,115,233,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,115,233,"Flor Jardim Vigilista",20623,1, .@event$;
 		}
 		break;
 	case 2:
 		if ('mode == 0) {
 			'total_mobs = 28;
-			monster 'map_herbs$,213,205,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,202,214,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,213,205,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,202,214,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,202,213,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,202,213,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,210,212,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,210,212,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,211,207,"Observador de Jardim de Flores",20624,1, .@event$;
+			monster 'map_herbs$,211,207,"Flor Jardim Vigilista",20624,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,209,214,"Observador de Jardim de Flores",20624,1, .@event$;
+			monster 'map_herbs$,209,214,"Flor Jardim Vigilista",20624,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,203,212,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,218,194,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,203,212,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,218,194,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,203,196,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,203,196,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,204,193,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,204,193,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,215,201,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,204,193,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,215,201,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,204,193,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,205,213,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,205,213,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,218,208,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,218,208,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,210,210,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,245,214,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,210,210,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,245,214,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,220,192,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,248,208,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,253,208,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,253,208,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,220,192,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,248,208,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,253,208,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,253,208,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,246,212,"Observador de Jardim de Flores",20624,1, .@event$;
+			monster 'map_herbs$,246,212,"Flor Jardim Vigilista",20624,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,251,210,"Observador de Jardim de Flores",20622,1, .@event$;
+			monster 'map_herbs$,251,210,"Flor Jardim Vigilista",20622,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,245,209,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,222,195,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,203,212,"Observador de Jardim de Flores",20624,1, .@event$;
+			monster 'map_herbs$,245,209,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,222,195,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,203,212,"Flor Jardim Vigilista",20624,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,208,213,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,219,192,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,245,209,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,208,213,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,219,192,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,245,209,"Flor Jardim Vigilista",20626,1, .@event$;
 		}
 		else {
 			'total_mobs = 27;
-			monster 'map_herbs$,207,194,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,217,204,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,207,194,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,217,204,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,210,210,"Observador de Jardim de Flores",20627,1, .@event$;
+			monster 'map_herbs$,210,210,"Flor Jardim Vigilista",20627,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,218,195,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,218,195,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,211,209,"Observador de Jardim de Flores",20627,1, .@event$;
+			monster 'map_herbs$,211,209,"Flor Jardim Vigilista",20627,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,210,211,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,210,211,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,207,194,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,207,194,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,209,214,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,209,214,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,216,192,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,216,192,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,208,211,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,208,211,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,214,208,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,214,208,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,209,214,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,215,201,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,205,214,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,205,214,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,209,214,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,215,201,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,205,214,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,205,214,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,220,207,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,220,207,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,208,213,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,202,212,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,208,213,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,202,212,"Flor Jardim Vigilista",20623,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,202,193,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,206,214,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,245,212,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,247,209,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,249,210,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,249,214,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,249,214,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,250,210,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,252,208,"Observador de Jardim de Flores",20627,1, .@event$;
+			monster 'map_herbs$,202,193,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,206,214,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,245,212,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,247,209,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,249,210,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,249,214,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,249,214,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,250,210,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,252,208,"Flor Jardim Vigilista",20627,1, .@event$;
 		}
 		break;
 	case 3:
 		if ('mode == 0) {
 			'total_mobs = 31;
-			monster 'map_herbs$,291,210,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,306,215,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,284,234,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,307,232,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,283,238,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,298,237,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,282,233,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,303,240,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,296,249,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,302,239,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,292,217,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,298,262,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,297,212,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,299,262,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,308,216,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,301,238,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,285,210,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,283,228,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,294,252,"Observador de Jardim de Flores",20624,1, .@event$;
+			monster 'map_herbs$,291,210,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,306,215,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,284,234,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,307,232,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,283,238,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,298,237,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,282,233,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,303,240,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,296,249,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,302,239,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,292,217,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,298,262,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,297,212,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,299,262,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,308,216,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,301,238,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,285,210,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,283,228,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,294,252,"Flor Jardim Vigilista",20624,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,295,247,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,295,247,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,294,245,"Observador de Jardim de Flores",20624,1, .@event$;
+			monster 'map_herbs$,294,245,"Flor Jardim Vigilista",20624,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,281,232,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,287,219,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,302,239,"Observador de Jardim de Flores",20626,1, .@event$;
+			monster 'map_herbs$,281,232,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,287,219,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,302,239,"Flor Jardim Vigilista",20626,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,307,217,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,300,235,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,295,249,"Observador de Jardim de Flores",20624,1, .@event$;
-			monster 'map_herbs$,284,231,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,297,259,"Observador de Jardim de Flores",20622,1, .@event$;
-			monster 'map_herbs$,306,238,"Observador de Jardim de Flores",20626,1, .@event$;
-			monster 'map_herbs$,310,215,"Observador de Jardim de Flores",20624,1, .@event$;
+			monster 'map_herbs$,307,217,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,300,235,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,295,249,"Flor Jardim Vigilista",20624,1, .@event$;
+			monster 'map_herbs$,284,231,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,297,259,"Flor Jardim Vigilista",20622,1, .@event$;
+			monster 'map_herbs$,306,238,"Flor Jardim Vigilista",20626,1, .@event$;
+			monster 'map_herbs$,310,215,"Flor Jardim Vigilista",20624,1, .@event$;
 		}
 		else {
 			'total_mobs = 33;
-			monster 'map_herbs$,307,239,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,297,257,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,284,236,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,283,235,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,304,240,"Observador de Jardim de Flores",20627,1, .@event$;
+			monster 'map_herbs$,307,239,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,297,257,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,284,236,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,283,235,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,304,240,"Flor Jardim Vigilista",20627,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,298,246,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,305,224,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,310,225,"Observador de Jardim de Flores",20627,1, .@event$;
+			monster 'map_herbs$,298,246,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,305,224,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,310,225,"Flor Jardim Vigilista",20627,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,284,218,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,298,213,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,284,218,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,298,213,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,308,224,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,290,210,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,310,224,"Observador de Jardim de Flores",20627,1, .@event$;
+			monster 'map_herbs$,308,224,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,290,210,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,310,224,"Flor Jardim Vigilista",20627,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,308,220,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,284,211,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,284,218,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,282,231,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,281,231,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,280,226,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,285,210,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,308,220,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,284,211,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,284,218,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,282,231,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,281,231,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,280,226,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,285,210,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,280,227,"Observador de Jardim de Flores",20623,1, .@event$;
-			monster 'map_herbs$,285,234,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,283,236,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,284,233,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,280,227,"Flor Jardim Vigilista",20623,1, .@event$;
+			monster 'map_herbs$,285,234,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,283,236,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,284,233,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,284,237,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,284,239,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,293,246,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,300,247,"Observador de Jardim de Flores",20627,1, .@event$;
+			monster 'map_herbs$,284,237,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,284,239,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,293,246,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,300,247,"Flor Jardim Vigilista",20627,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,294,253,"Observador de Jardim de Flores",20627,1, .@event$;
-			monster 'map_herbs$,302,240,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,299,255,"Observador de Jardim de Flores",20625,1, .@event$;
-			monster 'map_herbs$,295,256,"Observador de Jardim de Flores",20625,1, .@event$;
+			monster 'map_herbs$,294,253,"Flor Jardim Vigilista",20627,1, .@event$;
+			monster 'map_herbs$,302,240,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,299,255,"Flor Jardim Vigilista",20625,1, .@event$;
+			monster 'map_herbs$,295,256,"Flor Jardim Vigilista",20625,1, .@event$;
 			sleep 100;
-			monster 'map_herbs$,310,218,"Observador de Jardim de Flores",20623,1, .@event$;
+			monster 'map_herbs$,310,218,"Flor Jardim Vigilista",20623,1, .@event$;
 		}
 		break;
 	default:
@@ -1926,9 +1926,9 @@ OnMobKill:
 OnEvent:
 	switch( 'room ) {
 	case 0:
-		mapannounce 'map_herbs$, "Lambda: Sei com certeza que a nossa segurança não é muito boa.", bc_map, 0xFFFF44;
+		mapannounce 'map_herbs$, "Lambda: Tenho certeza de que nossa segurança não é muito boa.", bc_map, 0xFFFF44;
 		sleep 3000;
-		mapannounce 'map_herbs$, "Lambda : [" + 'admin$ + "], eu quero que você [verifique] a próxima área também.", bc_map, 0xFFFF44;
+		mapannounce 'map_herbs$, "Lambda: [" + 'admin$ + "Eu quero que você [verifique] a próxima área também.", bc_map, 0xFFFF44;
 		break;
 	case 1:
 		mapannounce 'map_herbs$, "Lambda: Seus movimentos me ajudaram muito. [" + 'admin$ + "]", bc_map, 0xFFFF44;
@@ -1936,35 +1936,35 @@ OnEvent:
 		mapannounce 'map_herbs$, "Lambda: Então, vamos seguir em frente.", bc_map, 0xFFFF44;
 		break;
 	case 2:
-		mapannounce 'map_herbs$, "Lambda:Sigmapode estar correto.", bc_map, 0xFFFF44;
+		mapannounce 'map_herbs$, "Lambda: O Sigma pode estar correto.", bc_map, 0xFFFF44;
 		sleep 3000;
-		mapannounce 'map_herbs$, "Lambda : [" + 'admin$ + "], e sua festa pode ter realmente conhecidoVarmundtantes.", bc_map, 0xFFFF44;
+		mapannounce 'map_herbs$, "Lambda: [" + 'admin$ + "], e seu partido pode ter realmente conhecido Varmundt antes.", bc_map, 0xFFFF44;
 		sleep 3000;
-		mapannounce 'map_herbs$, "Lambda: Mas. Antes de conhecê- lo, preciso testá- lo uma última vez.", bc_map, 0xFFFF44;
+		mapannounce 'map_herbs$, "Lambda: Mas antes de te conhecer, preciso de te testar uma última vez.", bc_map, 0xFFFF44;
 		break;
 	case 3:
 		'room = 4;
 		if ('mode == 0) {
-			mapannounce 'map_herbs$, "Kappa: Bem, você é tão forte quantoLambdadisse. [" + 'admin$ + "]", bc_map, 0xFF55FF;
+			mapannounce 'map_herbs$, "Kappa: Bem, você é tão forte quanto Lambda disse. [" + 'admin$ + "]", bc_map, 0xFF55FF;
 			sleep 3000;
-			mapannounce 'map_herbs$, "Kappa: Mas eu não acho que você ainda não seja forte o suficiente para conhecer oLambda, então eu vou lhe mostrar para o meu quarto.", bc_map, 0xFF55FF;
+			mapannounce 'map_herbs$, "Kappa: Mas eu não acho que você não é forte o suficiente para conhecer Lambda ainda, então eu vou te mostrar para o meu quarto.", bc_map, 0xFF55FF;
 			enablenpc instance_npcname("#kappa_1");
 		}
 		else {
-			mapannounce 'map_herbs$, "Lambda: Ótimo. Se você é tão forte, vale a pena falar com você.", bc_map, 0xFFFF44;
+			mapannounce 'map_herbs$, "Lambda: timo. Se você é tão forte, vale a pena conversar.", bc_map, 0xFFFF44;
 			sleep 3000;
-			mapannounce 'map_herbs$, "Lambda: Vou levá-lo ao meu quarto.", bc_map, 0xFFFF44;
+			mapannounce 'map_herbs$, "Lambda: Vou levá-lo para o meu quarto.", bc_map, 0xFFFF44;
 			enablenpc instance_npcname("#ramda_1");
 		}
 		sleep 3000;
-		mapannounce 'map_herbs$, "A dobra que conecta o jardim de flores e a área de segurança foi ativada.", bc_map, 0x33FF33;
+		mapannounce 'map_herbs$, "A urdidura que liga o jardim de flores e a área de segurança foi ativada.", bc_map, 0x33FF33;
 		enablenpc instance_npcname("#wp_4");
 		end;
 	default:
 		end;
 	}
 	sleep 3000;
-	mapannounce 'map_herbs$, "A dobra que conecta o jardim de flores foi ativada.", bc_map, 0x33FF33;
+	mapannounce 'map_herbs$, "A urdidura que liga o jardim de flores foi ativada.", bc_map, 0x33FF33;
 	'room += 1;
 	enablenpc instance_npcname("#wp_" + 'room);
 	end;
@@ -2024,11 +2024,11 @@ OnTouch:
 	if ('room != 4)
 		end;
 	'room = 5;
-	npctalk "Sua festa arruinou 30% do jardim, vai custar muito para consertá-lo.";
+	npctalk "grupo arruinou 30% do jardim, vai custar muito para repará-lo.";
 	sleep 5000;
-	npctalk "Gostaríamos de acreditar que o MestreVarmundtainda está vivo, mas isso não é possível com a duração da vida humana.";
+	npctalk "Gostaríamos de acreditar que o Mestre Varmundt ainda está vivo, mas isso não é possível com a vida humana.";
 	sleep 5000;
-	npctalk "No entanto, você tem que me derrotar e obter autoridade administrativa, se quiser evitar o encerramento da área de pesquisa.";
+	npctalk "No entanto, você tem que me derrotar e obter autoridade administrativa, se quiser evitar o fechamento da área de pesquisa.";
 	sleep 5000;
 	disablenpc();
 	donpcevent instance_npcname("#172_sec_boss") + "::OnSummon";
@@ -2042,11 +2042,11 @@ OnTouch:
 	if ('room != 4)
 		end;
 	'room = 5;
-	npctalk "Nós verificamos claramente qual parte do jardim de flores deve ser melhorada. Agora o que resta é negociar.";
+	npctalk "Verificamos claramente qual parte do jardim de flores deve ser melhorada. Agora o que resta é negociar.";
 	sleep 5000;
-	npctalk "Gostaríamos de acreditar que o MestreVarmundtainda está vivo, mas isso não é possível com a duração da vida humana.";
+	npctalk "Gostaríamos de acreditar que o Mestre Varmundt ainda está vivo, mas isso não é possível com a vida humana.";
 	sleep 5000;
-	npctalk "No entanto, você tem que me derrotar e obter autoridade administrativa, se quiser evitar o encerramento da área de pesquisa.";
+	npctalk "No entanto, você tem que me derrotar e obter autoridade administrativa, se quiser evitar o fechamento da área de pesquisa.";
 	sleep 5000;
 	disablenpc();
 	donpcevent instance_npcname("#172_sec_boss") + "::OnSummonHard";
@@ -2064,19 +2064,19 @@ OnTouch:	// unknown effect
 
 	if (checkquest(.@qid,HUNTING) == 2) {
 		if (checkweight(1000103,6) == 0) {	// (custom text)
-			mes "^008800Wait a sec!!";
-			mes "Você não pode receber mais itens porque você está carregando muitos itens. Por favor, tente novamente depois de acalmar.^000000";
+			mes "^008800Espere um pouco!!";
+			mes "Você não pode receber mais itens porque você está carregando muitos itens. Por favor, tente novamente depois de aliviar.^000000";
 			close;
 		}
 		mes "[Sigma]";
-		mes "Fez muito bem fazê-los se renderem, mas não acho que lhe tenham sido concedidos direitos de administrador.";
+		mes "Você fez muito bem fazê-los render-se, mas eu não acho que você foi concedido quaisquer direitos de administrador.";
 		next;
 		mes "[Sigma]";
-		mes "Uma vez que eles se recuperarão depois de algum tempo, acho que você precisará continuar lutando contra eles até que o MestreVarmundtretorne.";
+		mes "Como eles se recuperarão depois de algum tempo, acho que você precisará continuar lutando contra eles até que o Mestre Varmundt retorne.";
 		next;
 		mes "[Sigma]";
 		mes "Oh.";
-		mes "Eu trouxe alguns itens antigos do passado. Isso pode ajudá- lo, então pegue- o.";
+		mes "Trouxe alguns itens antigos do passado, pode ajudar-te, por isso, toma.";
 		close2;
 		erasequest .@qid;
 		getitem 1000103,6;
@@ -2089,9 +2089,9 @@ OnTouch:	// unknown effect
 		end;
 	}
 	mes "[Sigma]";
-	mes "Vou lhe mostrar a saída. O que você vai fazer?";
+	mes "Eu mostro-te a saída, o que vais fazer?";
 	next;
-	if (select( "Vou olhar mais ao redor.", "Eu vou embora." ) == 2)
+	if (select( "Vou olhar mais em volta.", "Vou-me embora." ) == 2)
 		warp "ba_maison",136,309;
 	end;
 }
@@ -2135,13 +2135,13 @@ OnShield:
 		monster 'map_herbs$,.@xy[.@i],.@xy[.@i+1],"Guardian Part",20679,1, .@event$;
 	unitskilluseid 'boss_gid,"NPC_RELIEVE_OFF",1;
 	unitskilluseid 'boss_gid,"NPC_RELIEVE_ON",10;
-	mapannounce 'map_herbs$, "SISTEMA: O gestor convocou Peças do Guardião e irá recuperá- las como materiais para o seu escudo de energia.", bc_map, 0xFFFF00;
+	mapannounce 'map_herbs$, "SYSTEM: O gestor convocouPeças do Guardiãoe irá recuperá-los como materiais para o seu escudo de energia.", bc_map, 0xFFFF00;
 	initnpctimer;
 	end;
 OnTimer40000:
 	stopnpctimer;
 	killmonster 'map_herbs$, instance_npcname("#172_sec_boss") + "::OnBreakShield";
-	mapannounce 'map_herbs$, "SISTEMA: Um valor padrão do escudo de energia foi recuperado.", bc_map, 0xFFFF00;
+	mapannounce 'map_herbs$, "Um valor padrão de escudo de energia foi recuperado.", bc_map, 0xFFFF00;
 	donpcevent instance_npcname("#172_sec_boss_shield") + "::OnStart";
 	end;
 
@@ -2150,7 +2150,7 @@ OnBreakShield:
 	case 0:
 		stopnpctimer;
 		unitskilluseid 'boss_gid,"NPC_RELIEVE_OFF",1;
-		mapannounce 'map_herbs$, "SISTEMA: Todas as peças do Guardião foram destruídas. Nenhum escudo de energia foi recuperado.", bc_map, 0xFFFF00;
+		mapannounce 'map_herbs$, ": Todos osPeças do GuardiãoNenhum escudo de energia foi recuperado.", bc_map, 0xFFFF00;
 		donpcevent instance_npcname("#172_sec_boss_shield") + "::OnStart";
 		end;
 	case 1:
@@ -2167,7 +2167,7 @@ OnBreakShield:
 	}
 	unitskilluseid 'boss_gid,"NPC_RELIEVE_OFF",1;
 	unitskilluseid 'boss_gid,"NPC_RELIEVE_ON",.@val;
-	mapannounce 'map_herbs$, "SISTEMA: O dano às peças do Guardião enfraqueceu o escudo de energia.", bc_map, 0xFFFF00;
+	mapannounce 'map_herbs$, "SYSTEM: Os danos aoPeças do Guardiãoenfraqueceu o escudo de energia.", bc_map, 0xFFFF00;
 	end;
 }
 

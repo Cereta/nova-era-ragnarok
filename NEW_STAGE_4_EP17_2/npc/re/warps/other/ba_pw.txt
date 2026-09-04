@@ -10,7 +10,7 @@ ba_pw01,91,291,0	script	#ep172_pw1_to_lab	WARPNPC,1,1,{
 	end;
 OnTouch:
 	if (ep17_2_main < 6) {
-		mes "Ainda há algum trabalho a ser feito aqui. Vamos dar uma olhada em torno de mais.";
+		mes "Ainda há trabalho a fazer aqui, vamos dar uma vista de olhos.";
 		close;
 	}
 	warp "ba_in01",23,315;
@@ -23,7 +23,7 @@ ba_pw02,7,149,0	script	#ep172_pw2_to_pw1	WARPNPC,1,1,{
 	end;
 OnTouch:
 	if (ep17_2_main < 4) {
-		mes "Ainda há algum trabalho a ser feito aqui. Vamos dar uma olhada em torno de mais.";
+		mes "Ainda há trabalho a fazer aqui, vamos dar uma vista de olhos.";
 		close;
 	}
 	warp "ba_pw01",13,115;
@@ -36,7 +36,7 @@ sp_cor,258,287,0	script	#ep172_cor_to_pw2	WARPNPC,1,1,{
 	end;
 OnTouch:
 	if (ep17_2_main < 2) {
-		npctalk "Rookie: Oh? Eu ainda não o abri! Espere por um tempo, estamos fazendo o nosso melhor para abri-lo!", "Rookie#rm171_2", bc_self;
+		npctalk "Rookie: Oh? Eu não abri ainda! Segure-se por um tempo, estamos fazendo o nosso melhor para abri-lo!", "Rookie#rm171_2", bc_self;
 		end;
 	}
 	warp "ba_pw02",275,20;

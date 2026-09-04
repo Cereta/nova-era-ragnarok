@@ -1,0 +1,1 @@
+{'converted': [{'file': 'npc/re/quests/quests_17_2.txt', 'from': 'cp1252', 'to': 'utf-8', 'cp949_repairs': 21}, {'file': 'npc/re/merchants/enchan_sage_legacy_17_2.txt', 'from': 'cp1252', 'to': 'utf-8', 'cp949_repairs': 0}], 'cp949_repairs': 21}

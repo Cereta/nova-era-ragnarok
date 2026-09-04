@@ -11,12 +11,12 @@
 
 ba_in01,87,370,3	script	Lisa#ep172_merchant	20698,{
 	if (checkweight(1201,3) == 0) {
-		mes "^ff0000Parece que o tipo ou peso do item que você tem é demais. Por favor, organize o seu inventário.^000000";
+		mes "^ff0000Parece que o tipo ou peso do item que você tem é demais. Por favor, organize seu inventário.^000000";
 		close;
 	}
 	disable_items;
 	mes "[Lisa]";
-	mes "Bem-vindos bem-vindos~";
+	mes "Bem-vindo";
 	next;
 	switch( select( "Explore Devices", "Automatic Engine Wing Enhancement", "Automatic Armor Enhancement", "Automatic Leg Enhancement", "Automatic Accessories(R) Enhancement", "Automatic Accessories(L) Enhancement" ) ) {
 	case 1:
@@ -24,10 +24,10 @@ ba_in01,87,370,3	script	Lisa#ep172_merchant	20698,{
 		mes "Se você trouxer equipamentos automáticos e módulos de reforço, podemos encantar o módulo apropriado no equipamento.";
 		next;
 		mes "[Lisa]";
-		mes "Isto é feito de acordo com o módulo de especificação, para que o equipamento não seja destruído. No entanto, o número de atualizações pode variar dependendo do módulo.";
+		mes "Isso é feito de acordo com o módulo de especificação, para que o equipamento não seja destruído. No entanto, o número de atualizações pode variar dependendo do módulo.";
 		next;
 		mes "[Lisa]";
-		mes "Então, por favor, visite novamente quando você precisar de ajuda~";
+		mes "Por favor, visite novamente quando precisar de ajuda.";
 		close;
 	case 2:
 		.@part = EQI_GARMENT;
@@ -61,7 +61,7 @@ ba_in01,87,370,3	script	Lisa#ep172_merchant	20698,{
 	next;
 	mes "[Lisa]";
 	mes strcharinfo(0) + ".";
-	mes "Por favor, selecione o grau de módulo que deseja usar.";
+	mes "Por favor, selecione o grau de módulo que você deseja usar.";
 	next;
 	switch( select( "Cancelar", "Normal Grade", "Rare Grade", "Unique Grade", "Legendary Grade", "Epic Grade 1", "Epic Grade 2", "Epic Grade 3" ) ) {
 	case 1:
@@ -114,17 +114,17 @@ ba_in01,87,370,3	script	Lisa#ep172_merchant	20698,{
 
 	if (countitem(.@module_id) < 1) {
 		mes "[Lisa]";
-		mes "Você deve possuir um módulo no seu inventário que coincida com a eficácia para prosseguir com o realce.";
+		mes "Você deve possuir um módulo em seu inventário que corresponda à eficácia para prosseguir com o aprimoramento.";
 		close;
 	}
 	if (.@equip_required[0] != .@equip_id && .@equip_required[1] != .@equip_id) {
 		mes "[Lisa]";
-		mes "Por favor, certifique- se de que você tem equipado o equipamento automático adequado que você deseja melhorar.";
+		mes "Por favor, certifique-se de ter equipado o equipamento automático adequado que você deseja melhorar.";
 		close;
 	}
 	if (.@card[1] > 0) {
 		mes "[Lisa]";
-		mes "Este equipamento automático já está na sua capacidade máxima.";
+		mes "Este equipamento automático já está em sua capacidade máxima.";
 		mes "Por favor, tente outro equipamento automático.";
 		close;
 	}
@@ -164,7 +164,7 @@ ba_in01,87,370,3	script	Lisa#ep172_merchant	20698,{
 
 	if (.@data_index == -1) {
 		mes "[Lisa]";
-		mes "Você não pode encantar este módulo com este equipamento automático.";
+		mes "Você não pode encantar este módulo para este equipamento automático.";
 		close;
 	}
 	// Max number of the selected module allowed
@@ -194,9 +194,9 @@ ba_in01,87,370,3	script	Lisa#ep172_merchant	20698,{
 		close;
 	}
 	mes "[Lisa]";
-	mes "Tem certeza de que deseja alternar o seu^FF0000" + .@equip_name$ + "^000000com^0000CD" + getitemname(.@module_id) + "^000000? Este processo não pode ser revertido.";
+	mes "Você tem certeza de que quer melhorar seu^FF0000" + .@equip_name$ + "^000000com^0000CD" + getitemname(.@module_id) + "^000000Este processo não pode ser revertido.";
 	next;
-	if (select( "Espere... Não", "Tenho certeza." ) == 1) {
+	if (select( "Espera... não.", "- Tenho a certeza." ) == 1) {
 		mes "[Lisa]";
 		mes "Stopping conversation.";
 		close;
@@ -215,7 +215,7 @@ ba_in01,87,370,3	script	Lisa#ep172_merchant	20698,{
 	delequip .@part;
 	getitem2 .@equip_id,1,1,.@refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
 	mes "[Lisa]";
-	mes "Woaaaah~ Já posso sentir o poder do seu equipamento automático~!";
+	mes "Eu posso sentir o poder do seu equipamento automático já!";
 	close;
 }
 
@@ -228,26 +228,26 @@ ba_in01,87,386,3	script	Child Manager ©¬#ep172_pet	EP17_2_CHILD_ADMIN1,{
 		mes "Por favor, limpe seu inventário e tente novamente. -";
 		close;
 	}
-	mes "[Gestão de crianças ©¬]";
-	mes "Eu tenho um monte de coisas pequenas!";
+	mes "[Gestor Criança ]";
+	mes "Eu tenho um monte de pequenas coisas!";
 	next;
-	switch( select( "Pequeno Gerenciador", "Cloud Cotton", "Little Headress", "Cancelar" ) ) {
+	switch( select( "Pequeno Gerente", "Cloud Cotton", "Little Headress", "Cancelar" ) ) {
 	case 1:
-		mes "[Gestão de crianças ©¬]";
-		mes "Se você quiser jogar com o pequeno gerente, isso lhe custaria 30 bilhetes Barmeal.";
+		mes "[Gestor Criança ]";
+		mes "Se você quiser brincar com o pequeno gerente, custaria 30 Barmeal Tickets.";
 		next;
 		if (select( "Exchange.", "Stop." ) == 2) {
-			mes "[Gestão de crianças ©¬]";
+			mes "[Gestor Criança ]";
 			mes "Então, é hora de eu jogar!";
 			close;
 		}
 		if (countitem(1000103) < 30) {
-			mes "[Gestão de crianças ©¬]";
-			mes "Como eu disse, se você quiser jogar com o pequeno gerente, você precisará de 30 bilhetes Barmeal!";
+			mes "[Gestor Criança ]";
+			mes "Como eu disse, se você quiser jogar com o pequeno gerente, você vai precisar de 30 Barmeal Tickets!";
 			close;
 		}
-		mes "[Gestão de crianças ©¬]";
-		mes "Divirta-se com o seu novo amigo!";
+		mes "[Gestor Criança ]";
+		mes "Divirta-se com seu novo amigo!";
 		delitem 1000103,30;
 		getitem 9123,1;
 		close;
@@ -258,7 +258,7 @@ ba_in01,87,386,3	script	Child Manager ©¬#ep172_pet	EP17_2_CHILD_ADMIN1,{
 		callshop "barter_Ep_17_2_C_Admin_Acc";
 		end;
 	case 4:
-		mes "[Gestão de crianças ©¬]";
+		mes "[Gestor Criança ]";
 		mes "Então, é hora de eu jogar!";
 		close;
 	}
@@ -270,8 +270,8 @@ ba_in01,87,386,3	script	Child Manager ©¬#ep172_pet	EP17_2_CHILD_ADMIN1,{
 
 ba_in01,87,376,3	script	Cube Lane#ep172cube	4_EP17_GUARD_B,{
 	mes "[Cube Lane]";
-	mes "Estamos oferecendo cubos de reforço que refinarão o seu^0000CD+4ZXH0001QXZ Ilusão e equipamento automático para o^FF0000+7^000000num instante!";
-	mes "Varmundté sem dúvida o melhor homem do mundo!";
+	mes "Estamos oferecendo cubos de reforço que refinarão sua^0000CD+4^000000Ilusão e Equipamento Automático para^FF0000+7^000000Em um instante!";
+	mes "Varmundt é sem dúvida o melhor homem do mundo!";
 	close2;
 	callshop "ep172cubeshop00";
 	end;
@@ -294,20 +294,20 @@ ba_in01,87,383,3	script	Yeoncheong#equipment_exchange	4_EP17_CLEANER_W,{
 	disable_items;
 	cutin "ep172_omega",2;
 	mes "[Yeoncheong]";
-	mes "Nós aceitamos ingressos Barmeal para atualizar seu equipamento de ilusão em equipamentos automáticos.";
+	mes "Aceitamos bilhetes de barmeal para atualizar seu equipamento de ilusão em requisitos automáticos.";
 	mes "O que você gostaria de trocar?";
 	next;
 	switch( select( "Exchange Information", "Automatic Equipment Exchange", "Automatic Accessory Exchange", "Quit" ) ) {
 	case 1:
 		mes "[Yeoncheong]";
-		mes "Você pode trocar sua armadura de ilusão^0000CD+9 para o^FF0000Armadura automática, motor ou Leg^000000.";
+		mes "Você pode trocar seu^0000CD+9 Illusion Armadura, Motor ou Perna e 900 Ingressos de Barmeal^000000E-mail^FF0000Automatic Armor, Engine, or Leg^000000.";
 		next;
 		mes "[Yeoncheong]";
-		mes "Os acessórios automáticos^FF0000Z^000000podem ser trocados por acessórios^0000CDIllusion e 1500 bilhetes de barra^000000.";
+		mes "A^FF0000Automatic Accessories^000000Pode ser trocado por^0000CDAcessórios de Ilusão e 1500 Bilhetes de Barmeal^000000.";
 		next;
 		mes "[Yeoncheong]";
-		mes "O equipamento que deseja trocar deve estar no seu inventário e falar comigo.";
-		mes "^FF0000Trazer apenas um equipamento que você deseja trocar e prosseguir.^000000";
+		mes "O equipamento que você quer trocar deve estar em seu inventário e falar comigo.";
+		mes "^FF0000Traga apenas um equipamento que você deseja trocar e prossiga.^000000";
 		close3;
 	case 2:
 		.@shop$ = "barter_auto_equip_1";
@@ -317,12 +317,12 @@ ba_in01,87,383,3	script	Yeoncheong#equipment_exchange	4_EP17_CLEANER_W,{
 		break;
 	case 4:
 		mes "[Yeoncheong]";
-		mes "Tenha um bom dia, querido convidado~";
+		mes "Tenha um bom dia, querido convidado";
 		close3;
 	}
 	mes "[Yeoncheong]";
-	mes "^FF0000Trazer apenas um equipamento que você deseja trocar e prosseguir.^000000";
-	mes "Se houver vários equipamentos no seu inventário, ele será trocado aleatoriamente se ele cumprir a condição.";
+	mes "^FF0000Traga apenas um equipamento que você deseja trocar e prossiga.^000000";
+	mes "Se houver vários equipamentos em seu inventário, ele será trocado aleatoriamente se atender à condição.";
 	close2;
 	cutin "",255;
 	callshop .@shop$;
@@ -340,29 +340,29 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 	disable_items;
 	cutin "ep172_omega",2;
 	mes "[Yecheon]";
-	mes "Posso fornecer- lhe um Módulo Automático, Dispositivo de Melhoria Física Automática e Dispositivo de Melhoria Mágica Automática. Ele irá ajudá- lo a melhorar os recursos dos seus equipamentos automáticos.";
+	mes "Eu posso fornecer-lhe um módulo automático, dispositivo de melhoria automática física e dispositivo de melhoria automática mágica. Ele irá ajudá-lo a melhorar as abilites de seus equipamentos automáticos.";
 	next;
 	cutin "",255;
-	switch( select( "Mais informações.", "Obter Módulo Automático", "Obter o dispositivo de melhoria física automática", "Obter o dispositivo de melhoria automática mágica", "Cancelar" ) ) {
+	switch( select( "Mais informações.", "Obter módulo automático", "Obter dispositivo de melhoria física automática", "Obter dispositivo de melhoria automática mágica", "Cancelar" ) ) {
 	case 1:
 		cutin "ep172_omega",2;
 		mes "[Yecheon]";
-		mes "Você pode obter um módulo automático^FF0000Z^000000para^0000CD90 Barmeal Tickets^000000. Eu lhe darei um módulo automático aleatório, excluindo os módulos de grau épico.";
+		mes "Você pode obter um^FF0000automatic module^000000^0000CD90 Barmeal Tickets^000000. Eu lhe darei um módulo automático aleatório excluindo os módulos de grau épico.";
 		next;
 		mes "[Yecheon]";
-		mes "Também estou fornecendo^FF0000Physical Automatic Improvement Device e Magical Automatic Improvement Device^000000. Você pode trocá- lo por^0000CD45 Barmeal Tickets^000000, ou^0000CD1500000 Zeny^000000.";
+		mes "Eu também estou fornecendo^FF0000Dispositivo de Melhoria Automática Física e Dispositivo de Melhoria Automática Mágica^000000. Você pode trocá-lo por^0000CD45 Barmeal Tickets^000000, or ^0000CD1500000 Zeny^000000.";
 		next;
 		mes "[Yecheon]";
-		mes "Então, convidado especializado em combate, melhore com segurança suas habilidades.";
+		mes "Então, convidado especializado em combate, faça com segurança melhorar suas habilidades.";
 		close3;
 	case 2:
 		.@price = 90;
 		cutin "ep172_omega",2;
 		mes "[Yecheon]";
-		mes "Vou trocar 1 Módulo Automático Aleatório excluindo os módulos de grau épico por" + .@price + " " + mesitemlink(1000103) + ".";
+		mes "Eu trocarei 1 Módulo Automático aleatório excluindo os módulos de grau épico para" + .@price + "" + mesitemlink(1000103) + ".";
 		next;
 		cutin "",255;
-		if (select( "Exchange Barmeal Ticket.", "Não trocar" ) == 2) {
+		if (select( "Exchange Barmeal Ticket.", "Do not exchange" ) == 2) {
 			mes "[Yecheon]";
 			mes "Transaction ended.";
 			close3;
@@ -370,7 +370,7 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 		cutin "ep172_omega",2;
 		if (countitem(1000103) < .@price) {
 			mes "[Yecheon]";
-			mes "Você não tem bilhetes Barmeal suficientes para a troca.";
+			mes "Você não tem bilhetes de Barmeal suficientes para a troca.";
 			close3;
 		}
 		mes "[Yecheon]";
@@ -383,15 +383,15 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 		.@zeny = 1500000;
 		cutin "ep172_omega",2;
 		mes "[Yecheon]";
-		mes "Vou trocar o dispositivo de melhoria automática física^FF00001 por^000000" + .@price + " " + mesitemlink(1000103) + "ou" + .@zeny + " Zeny.";
+		mes "eu trocarei^FF00001 Physical Automatic Improvement Device^000000" + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
 		next;
 		cutin "",255;
-		switch( select( "Troque por Bilhete de Barmeal.", "Troca para 1500000 Zeny.", "Não troque." ) ) {
+		switch( select( "Troca de Barmeal Ticket.", "Troca por 1500000 Zeny.", "Do not exchange." ) ) {
 		case 1:
 			cutin "ep172_omega",2;
 			if (countitem(1000103) < .@price) {
 				mes "[Yecheon]";
-				mes "Você não tem bilhetes Barmeal suficientes para a troca.";
+				mes "Você não tem bilhetes de Barmeal suficientes para a troca.";
 				close3;
 			}
 			delitem 1000103,.@price;
@@ -411,7 +411,7 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 			close3;
 		}
 		mes "[Yecheon]";
-		mes "Troquei por um dispositivo de melhoria física automática aleatória.";
+		mes "Eu troquei por um dispositivo aleatório de melhoria automática física.";
 		.@r = rand(100);
 		if (.@r < 50)
 			getitem 100164,1;
@@ -425,15 +425,15 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 		.@zeny = 1500000;
 		cutin "ep172_omega",2;
 		mes "[Yecheon]";
-		mes "Vou trocar o dispositivo de melhoria automática mágica^FF00001 por^000000" + .@price + " " + mesitemlink(1000103) + "ou" + .@zeny + " Zeny.";
+		mes "eu trocarei^FF00001 Magical Automatic Improvement Device^000000" + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
 		next;
 		cutin "",255;
-		switch( select( "Troque por Bilhete de Barmeal.", "Troca para 1500000 Zeny.", "Não troque." ) ) {
+		switch( select( "Troca de Barmeal Ticket.", "Troca por 1500000 Zeny.", "Do not exchange." ) ) {
 		case 1:
 			cutin "ep172_omega",2;
 			if (countitem(1000103) < .@price) {
 				mes "[Yecheon]";
-				mes "Você não tem bilhetes Barmeal suficientes para a troca.";
+				mes "Você não tem bilhetes de Barmeal suficientes para a troca.";
 				close3;
 			}
 			delitem 1000103,.@price;
@@ -453,7 +453,7 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 			close3;
 		}
 		mes "[Yecheon]";
-		mes "Troquei por um dispositivo de melhoria automática mágica aleatória.";
+		mes "Eu troquei por um dispositivo de melhoria automática mágica aleatório.";
 		.@r = rand(100);
 		if (.@r < 50)
 			getitem 100167,1;
@@ -473,12 +473,12 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 ba_in01,87,389,2	script	Butterfly Merchant#ba_in01	4_EP17_MASTER_A,{
 	if (ep17_2_main < 8) {
 		mes "[Butterfly Merchant]";
-		mes "Desculpe. O registro é necessário para comprar borboletas.";
+		mes "O registo é necessário para comprar borboletas.";
 		close;
 	}
 	mes "[Butterfly Merchant]";
 	mes "Bem-vindo.";
-	mes "Você precisa de asas para se mover para a Mansão Barmund?";
+	mes "Você precisa de asas para se mudar para Barmund Mansion?";
 	close2;
 	callshop "barter_Teleport_Ep17_02";
 	end;

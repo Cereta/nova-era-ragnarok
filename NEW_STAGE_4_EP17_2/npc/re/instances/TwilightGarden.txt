@@ -53,19 +53,19 @@ OnTouch:
 		end;
 	if ('twilight_story == 0) {
 		'twilight_story = 1;
-		npctalk "Est: É escuro e silencioso. Se você quiser executar o plano, agora é a hora perfeita. Certo?";
+		npctalk "Est: É escuro e silencioso. Se você quiser executar o plano, agora é o momento perfeito. Certo?";
 		sleep 2000;
-		npctalk "Est:Elenadisse que ela se juntaria a nós mais tarde, mas há uma boa chance de ela não conseguir participar.";
+		npctalk "EstElena disse que se juntaria a nós mais tarde, mas há uma boa chance de ela não poder participar.";
 		sleep 2000;
-		npctalk "Est: Mesmo assim, não há necessidade de se preocupar. Os outros estão preparados e esperando pelo sinal de emboscada.";
+		npctalk "Est: Mesmo assim, não há necessidade de se preocupar. Os outros estão preparados e esperando o sinal de emboscada.";
 		sleep 2000;
-		npctalk "Est: Tudo o que temos que fazer é andar por aí como uma patrulha e pegá- los desprevenidos.";
+		npctalk "Est: Tudo o que temos a fazer é andar por aí como uma patrulha e pegá-los desprevenidos.";
 		sleep 2000;
-		npctalk "Est: Vá pela estrada até ao edifício principal da mansão. Vou espreitar atrás de você.";
+		npctalk "Est: Vá ao longo da estrada para o edifício principal da mansão. Eu vou me esconder atrás de você.";
 		sleep 2000;
-		npctalk "Est: Não olhe muito em volta, e finja que não está vigilante, entendeu?";
+		npctalk "EstNão olhe muito ao redor e finja que não está vigilante, entendeu?";
 		sleep 2000;
-		npctalk "Est: Agora, vamos.";
+		npctalk "Est: Agora, vamos lá.";
 		for ( .@i = 1; .@i < 6; ++.@i )
 			enablenpc instance_npcname("Heart Hunter#md_hh0" + .@i);
 		end;
@@ -75,8 +75,8 @@ OnTouch:
 	if ('twilight_story == 2) {
 		cutin "ep162_est01",2;
 		mes "[Est]";
-		mes "Eles devem estar esperando também.";
-		mes "Vamos fazer isso mais silenciosamente.";
+		mes "Eles também devem ter esperado.";
+		mes "Vamos fazer isto mais calmamente.";
 		close3;
 	}
 	end;
@@ -89,9 +89,9 @@ OnTouch_:
 		end;
 	if ('twilight_story == 1) {
 		'twilight_story = 2;
-		npctalk "Entregue- se silenciosamente ou retorne de onde veio.";
+		npctalk "Render-se silenciosamente ou voltar para onde você veio.";
 		sleep 2000;
-		npctalk "Bem, isso não significa que vamos deixá-lo voltar.";
+		npctalk "Bem, isso não significa que vamos deixar-te voltar.";
 		sleep 1000;
 		for ( .@i = 1; .@i < 6; ++.@i )
 			disablenpc instance_npcname("Heart Hunter#md_hh0" + .@i);
@@ -110,12 +110,12 @@ OnTouch_:
 	end;
 OnStart:
 	.@event$ = instance_npcname("twilight_story_mob_1") + "::OnMobDead";
-	monster 'map_bamn$,119,308,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,128,308,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,121,300,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,118,293,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,124,294,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,130,308,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,119,308,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,128,308,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,121,300,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,118,293,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,124,294,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,130,308,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
 	end;
 OnMobDead:
 	.@event$ = instance_npcname("twilight_story_mob_1") + "::OnMobDead";
@@ -134,23 +134,23 @@ OnMobDead:
 	if ('twilight_story == 3) {
 		cutin "ep162_est01",2;
 		mes "[Est]";
-		mes "Não sei se devemos definir uma armadilha, ou dar-lhe uma chance.";
-		mes "Ativar o rastreador que obtivemos doElyumina.";
+		mes "Não sei se devíamos armar uma armadilha ou dar-te uma hipótese.";
+		mes "Ative o rastreador que recebemos de Elyumina.";
 		next;
 		cutin "",255;
-		unittalk getcharid(3), "" + strcharinfo(0) + ": Tracker: De acordo com a intuição do grandeElyumina... Too Doo Too Doo Too~";
+		unittalk getcharid(3), "" + strcharinfo(0) + ": Rastreador: De acordo com a intuição do grande Elyumina... Too Doo Too Doo Too Too";
 		sleep2 2000;
-		unittalk getcharid(3), "" + strcharinfo(0) + ": Rastreador: Lá! Beep!";
+		unittalk getcharid(3), "" + strcharinfo(0) + ": Rastreador: Ali! Beep!";
 		navigateto("1@bamn",206,273);
 		sleep2 2000;
 		cutin "ep162_est01",2;
 		mes "[Est]";
-		mes "Isso é uma coisa alta.";
+		mes "Isso é uma coisa barulhenta.";
 		mes "Você vai sair primeiro?";
 		mes "Eu tenho um lugar para ir por um segundo.";
 		next;
 		mes "[Est]";
-		mes "Vou me juntar a vocês em breve.";
+		mes "Juntar-me-ei a ti em breve.";
 		close2;
 		if ('twilight_story == 3) {
 			'twilight_story = 4;
@@ -167,11 +167,11 @@ OnMobDead:
 	end;
 OnStart:
 	.@event$ = instance_npcname("twilight_story_mob_2") + "::OnMobDead";
-	monster 'map_bamn$,208,283,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,210,285,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,210,282,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,213,284,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,213,281,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,208,283,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,210,285,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,210,282,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,213,284,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,213,281,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
 	end;
 OnMobDead:
 	.@event$ = instance_npcname("twilight_story_mob_2") + "::OnMobDead";
@@ -188,22 +188,22 @@ OnMobDead:
 	if ('twilight_story == 5) {
 		cutin "ep162_est01",2;
 		mes "[Est]";
-		mes "Pensei que seria melhor jogar mais isca, então fui pedir a ajuda dosboneca automáticas.";
-		mes "Além disso,Almonddisse que ela tinha que sair e verificar algo.";
+		mes "Eu pensei que poderia ser melhor jogar mais isca, então eu fui pedir a ajuda dobonecas automáticas.";
+		mes "Além disso, Almond disse que ela tinha que sair e verificar algo.";
 		next;
 		cutin "ep172_beta",0;
 		mes "[Almond]";
-		mes "O repetidor está morto novamente. É por isso que tenho que consertá- lo.";
+		mes "O repetidor está morto outra vez. É por isso que tenho de o corrigir.";
 		mes "O repetidor é o alvo favorito dos intrusos, então não podemos deixá-lo quebrado, certo?";
 		next;
 		cutin "ep162_est01",2;
 		mes "[Est]";
-		mes "Por essa razão, gostaria de pedir que escoltasse o Almon aqui para verificar o repetidor.";
+		mes "Por essa razão, eu gostaria de pedir-lhe para escoltar Almon aqui para verificar o repetidor.";
 		mes "Vou olhar ao redor e encontrar outras rotas.";
 		next;
 		cutin "ep172_beta",0;
 		mes "[Almond]";
-		mes "Vamos juntos sempre que estiver pronto.";
+		mes "Vamos juntos sempre que estiveres pronto.";
 		close2;
 		cutin "",255;
 		if ('twilight_story == 5)
@@ -213,7 +213,7 @@ OnMobDead:
 	if ('twilight_story == 6) {
 		cutin "ep162_est01",2;
 		mes "[Est]";
-		mes "Fale com oAlmond, quando estiver pronto para se mover.";
+		mes "Fala com o Almond, quando estiveres pronto para te mudares.";
 		close3;
 	}
 	end;
@@ -224,7 +224,7 @@ OnMobDead:
 		cutin "ep172_beta",2;
 		mes "[Almond]";
 		mes "Todos deveriam estar na mansão hoje.";
-		mes "Surgiu algo importante. É por isso que estou aqui com oEst.";
+		mes "Algo importante surgiu. É por isso que estou aqui comEst.";
 		close3;
 	}
 	if ('twilight_story == 6) {
@@ -240,11 +240,11 @@ OnMobDead:
 		end;
 	if ('twilight_story == 8) {
 		'twilight_story = 9;
-		unittalk getcharid(3), "" + strcharinfo(0) + ": Tracker: Pyo-o-o-o-o!";
+		unittalk getcharid(3), "" + strcharinfo(0) + ": Rastreador: Pyo-o-o-o-o! Lá!!";
 		setpcblock PCBLOCK_NPC, true;
 		navigateto("1@bamn",242,206);
 		sleep2 2000;
-		npctalk "Ahahaha, é barulhento.";
+		npctalk "Ahaha, é barulhento.";
 		sleep2 2000;
 		npctalk "Estou curioso, devemos ir rápido?";
 		sleep2 2000;
@@ -257,14 +257,14 @@ OnMobDead:
 		end;
 	}
 	if ('twilight_story == 10 || 'twilight_story == 11 || 'twilight_story == 12) {
-		npctalk "Tenha cuidado!";
+		npctalk "Tem cuidado!";
 		end;
 	}
 	if ('twilight_story == 13) {
 		'twilight_story = 14;
 		npcspeed 200;
 		setpcblock PCBLOCK_NPC, true;
-		npctalk "Vamos verificar o repetidor.";
+		npctalk "Vamos ver o repetidor.";
 		sleep2 2000;
 		setpcblock PCBLOCK_NPC, false;
 		sleep2 1000;
@@ -280,13 +280,13 @@ OnMobDead:
 			enablenpc instance_npcname("Rebellion#md_rb0" + .@i);
 		for ( .@i = 6; .@i < 9; ++.@i )
 			enablenpc instance_npcname("Heart Hunter#md_hh0" + .@i);
-		unittalk getcharid(3), "" + strcharinfo(0) + ": Tracker: Kakakakakakakil! O culpado está por aí! Eles estão no meu radar! É por ali!";
+		unittalk getcharid(3), "" + strcharinfo(0) + ": Rastreador: Kakakakakakakakil! O culpado está por perto! Eles estão no meu radar! É por ali!";
 		navigateto("1@bamn",332,143);
 		sleep2 2000;
 		setpcblock PCBLOCK_NPC, false;
 		sleep2 1000;
 		npcspeed 80;
-		npctalk "Há outro intruso! Não é de admirar que eu esteja começando a ficar excitado~!";
+		npctalk "Não é de admirar que eu esteja começando a ficar animado!";
 		unitwalk 'guide,332,169;
 		end;
 	}
@@ -295,14 +295,14 @@ OnMobDead:
 	if ('twilight_story == 18) {
 		npcspeed 200;
 		'twilight_story = 19;
-		npctalk "Você está bem, aventureiro? Então, podemos continuar.";
+		npctalk "Estás bem, aventureiro? Então, podemos continuar.";
 		unitwalk 'guide,332,143, instance_npcname("Almond#amond01") + "::OnEvent11";
 		end;
 	}
 	if ('twilight_story == 19)
 		end;
 	if ('twilight_story == 20) {
-		npctalk "Não deveria falar com oEst? Parece que ela estava esperando.";
+		npctalk "Você não deveria falar comEstParece que ela estava à espera.";
 		end;
 	}
 	end;
@@ -316,14 +316,14 @@ OnFollow00:
 	unitwalk 'guide,245,248, instance_npcname("Almond#amond01") + "::OnEvent01";
 	end;
 OnEvent01:
-	npctalk "Vamos ver o repetidor que é freqüentemente hackeado.";
+	npctalk "Vamos ver o Repetidor que é frequentemente hackeado.";
 	sleep 2000;
-	npctalk "O que você está carregando agora?";
+	npctalk "O que estás a carregar agora, tira-o e mostra-mo.";
 	'twilight_story = 8;
 	end;
 
 OnEvent02:
-	npctalk "Adventurer, há um intruso!";
+	npctalk "Aventureiro, há um intruso!";
 	unitwalk 'guide,245,215, instance_npcname("Almond#amond01") + "::OnEvent03";
 	end;
 OnEvent03:
@@ -331,7 +331,7 @@ OnEvent03:
 	end;
 
 OnEvent04:
-	npctalk "... verificando o sinal.";
+	npctalk "...verificando o sinal.";
 	sleep 2000;
 	npctalk "...hacking channel checked.";
 	sleep 2000;
@@ -341,40 +341,40 @@ OnEvent04:
 	sleep 2000;
 	npctalk "...recovery completed.";
 	sleep 2000;
-	npctalk "Devemos ir ao repetidor?";
+	npctalk "Vamos ao repetidor?";
 	sleep 2000;
 	unitwalk 'guide,245,204, instance_npcname("Almond#amond01") + "::OnEvent05";
 	end;
 OnEvent05:
-	npctalk "Adventurer. Você gosta de amêndoas? Um cliente que gostou de amêndoas me chamou.";
+	npctalk "Aventureiro. Você gosta de amêndoas? Um cliente que gostava de amêndoas me nomeou. Será que me convém?";
 	sleep 3000;
 	unitwalk 'guide,265,204, instance_npcname("Almond#amond01") + "::OnEvent06";
 	end;
 OnEvent06:
-	npctalk "Aquele garoto há algum tempo atrás, já o vi antes.";
+	npctalk "Aquele miúdo há algum tempo atrás, eu já o vi antes.";
 	unitwalk 'guide,285,204, instance_npcname("Almond#amond01") + "::OnEvent07";
 	end;
 OnEvent07:
-	npctalk "Mas ele sempre correu tão bem, é a primeira vez que o vejo corretamente~";
+	npctalk "Mas ele sempre correu tão bem, É a primeira vez que eu o vi corretamente";
 	unitwalk 'guide,300,204, instance_npcname("Almond#amond01") + "::OnEvent08";
 	end;
 OnEvent08:
-	npctalk "OPitaya's aqui é bonito~ Eles dizem que as amêndoas são deliciosas? Você já comeu amêndoas antes?";
+	npctalk "O Pitaya está aqui é bonito Eles dizem que Amêndoas é delicioso? Você já comeu amêndoas antes?";
 	sleep 2000;
 	npctalk "Por aqui.";
 	unitwalk 'guide,300,190, instance_npcname("Almond#amond01") + "::OnEvent09";
 	end;
 OnEvent09:
-	npctalk "Faz um tempo desde que estou tão confortável~";
+	npctalk "Já faz algum tempo desde que me sinto tão confortável...";
 	unitwalk 'guide,327,189, instance_npcname("Almond#amond01") + "::OnEvent10";
 	end;
 OnEvent10:
-	npctalk "Adventurer. Essa coisa barulhenta está piscando de novo? Vamos verificá- la por um segundo.";
+	npctalk "Aventureiro. Essa coisa barulhenta está piscando de novo? Vamos verificar por um segundo.";
 	'twilight_story = 15;
 	end;
 
 OnEvent11:
-	npctalk "... verificando o sinal.";
+	npctalk "...verificando o sinal.";
 	sleep 2000;
 	npctalk "...hacking channel checked.";
 	sleep 2000;
@@ -384,7 +384,7 @@ OnEvent11:
 	sleep 2000;
 	npctalk "...recovery completed.";
 	sleep 2000;
-	npctalk "Vamos para o próximo repetidor~";
+	npctalk "Vamos para o próximo repetidor";
 	sleep 2000;
 	unitwalk 'guide,320,139, instance_npcname("Almond#amond01") + "::OnFollow12";
 	end;
@@ -392,15 +392,15 @@ OnFollow12:
 	unitwalk 'guide,300,139, instance_npcname("Almond#amond01") + "::OnEvent12";
 	end;
 OnEvent12:
-	npctalk "É o garoto de antes, certo? Ele é um intruso. Isso é estranho, tipo como amêndoas...";
+	npctalk "É o miúdo de antes, certo? Ele é um intruso. Isso é estranho, tipo amêndoas...";
 	unitwalk 'guide,285,139, instance_npcname("Almond#amond01") + "::OnEvent13";
 	end;
 OnEvent13:
-	npctalk "Devemos ir mais rápido? Há um som vindo de lá...";
+	npctalk "Vamos mais rápido? Há um som vindo de lá...";
 	unitwalk 'guide,285,118, instance_npcname("Almond#amond01") + "::OnEvent14";
 	end;
 OnEvent14:
-	npctalk "É mais silencioso do que eu pensava. Onde os intrusos foram?";
+	npctalk "É mais calmo do que eu pensava. Para onde foram os intrusos?";
 	unitwalk 'guide,285,98, instance_npcname("Almond#amond01") + "::OnEvent15";
 	end;
 OnEvent15:
@@ -409,7 +409,7 @@ OnEvent15:
 	end;
 OnEvent16:
 	npcspeed 80;
-	npctalk "É oEst!";
+	npctalk "ÉEst!";
 	'twilight_story = 20;
 	unitwalk 'guide,261,87;
 	end;
@@ -419,10 +419,10 @@ OnEvent16:
 	end;
 OnStart:
 	.@event$ = instance_npcname("twilight_story_mob_3") + "::OnMobDead";
-	monster 'map_bamn$,246,208,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,248,208,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,246,206,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
-	monster 'map_bamn$,248,206,"Caçador de Corações","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,246,208,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,248,208,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,246,206,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
+	monster 'map_bamn$,248,206,"Caçador de Coração","G_EP17_2_HEART_HUNTER",1, .@event$;
 	enablenpc instance_npcname("Intruder#sweety02");
 	end;
 OnMobDead:
@@ -435,7 +435,7 @@ OnMobDead:
 }
 
 1@bamn,243,208,5	script	Repeater#wifi03	CLEAR_NPC,{
-	mes "Não há maneira de descobrir qual é o estado do repetidor. O chip de comunicação parece estar instalado corretamente.";
+	mes "Não há como descobrir qual é o estado do repetidor. O chip de comunicação parece estar devidamente instalado.";
 	close;
 }
 
@@ -446,9 +446,9 @@ OnMobDead:
 	}
 	if ('twilight_story == 11) {
 		'twilight_story = 12;
-		npctalk "Acha que pode me pegar?";
+		npctalk "Achas que me consegues apanhar?";
 		sleep 2000;
-		npctalk "Vá sofrer!";
+		npctalk "Go suffer!";
 		sleep 500;
 		disablenpc();
 		donpcevent instance_npcname("twilight_story_mob_4") + "::OnStart";
@@ -461,8 +461,8 @@ OnMobDead:
 	end;
 OnStart:
 	.@event$ = instance_npcname("twilight_story_mob_4") + "::OnMobDead";
-	monster 'map_bamn$,248,206,"Caçador de Corações Commander","G_BELLARE3",1, .@event$;
-	monster 'map_bamn$,248,208,"Caçador de Corações Commander","G_BELLARE3",1, .@event$;
+	monster 'map_bamn$,248,206,"Caçador de Coração Commander","G_BELLARE3",1, .@event$;
+	monster 'map_bamn$,248,208,"Caçador de Coração Commander","G_BELLARE3",1, .@event$;
 	end;
 OnMobDead:
 	.@event$ = instance_npcname("twilight_story_mob_4") + "::OnMobDead";
@@ -479,16 +479,16 @@ OnMobDead:
 OnTouch:
 	if ('twilight_story == 16) {
 		'twilight_story = 17;
-		npctalk "Nós vamos assumir este lugar, basta assistir!";
+		npctalk "Vamos tomar conta deste lugar, apenas observem!";
 		sleep 1000;
 		specialeffect EF_DESPERADO, AREA, instance_npcname("Heart Hunter#md_hh06");
 		sleep 1000;
-		npctalk "Kakaka, vamos derrubá-los com uma explosão!", instance_npcname("Rebellion#md_rb04");
+		npctalk "Kakaka, vamos derrotá-los com uma explosão!", instance_npcname("Rebellion#md_rb04");
 		specialeffect EF_TRIPLEACTION, AREA, instance_npcname("Heart Hunter#md_hh07");
 		sleep 1000;
 		specialeffect EF_DESPERADO, AREA, instance_npcname("Heart Hunter#md_hh07");
 		sleep 2000;
-		npctalk "Obrigado por se mostrarem!", instance_npcname("Rebellion#md_rb03");
+		npctalk "Obrigado por se mostrarem, seus bastardos!", instance_npcname("Rebellion#md_rb03");
 		sleep 2000;
 		specialeffect EF_DESPERADO, AREA, instance_npcname("Heart Hunter#md_hh08");
 		sleep 2000;
@@ -498,7 +498,7 @@ OnTouch:
 		sleep 1000;
 		npctalk "...", instance_npcname("Heart Hunter#md_hh08");
 		sleep 1000;
-		npctalk "Que sinal você está enviando um para o outro?";
+		npctalk "Que sinal vocês estão enviando um para o outro?";
 		sleep 1000;
 		specialeffect EF_DESPERADO, AREA, instance_npcname("Heart Hunter#md_hh07");
 		for ( .@i = 1; .@i < 5; ++.@i )
@@ -507,12 +507,12 @@ OnTouch:
 		for ( .@i = 6; .@i < 9; ++.@i )
 			disablenpc instance_npcname("Heart Hunter#md_hh0" + .@i);
 		sleep 1000;
-		npctalk "O quê? Eles fugiram?! Saiam!";
+		npctalk "O quê? Eles correram?! Movam-se!";
 		sleep 2000;
 		for ( .@i = 1; .@i < 5; ++.@i )
 			disablenpc instance_npcname("Rebellion#md_rb0" + .@i);
 		enablenpc instance_npcname("Intruder#sweety03");
-		npctalk "O quê?", instance_npcname("Intruder#sweety03");
+		npctalk "O que...?", instance_npcname("Intruder#sweety03");
 	}
 	end;
 }
@@ -528,24 +528,24 @@ OnTouch:
 	if ('twilight_story == 17) {
 		setpcblock PCBLOCK_NPC, true;
 		'twilight_story = 18;
-		npctalk "Para onde foram os outros caras?";
+		npctalk "Para onde foram os outros tipos?";
 		sleep2 2000;
-		npctalk "Você fez isso?";
+		npctalk "Foste tu que o fizeste?";
 		sleep2 2000;
-		npctalk "Você é muito bom, não é?";
+		npctalk "És muito bom, não és?";
 		sleep2 2000;
-		npctalk "Repeater : (... .. ..)", instance_npcname("Repeater#wifi02");
-		npctalk "Oh, há uma mensagem. Fique aí por um tempo. Sim, Olá.";
+		npctalk "Repeater: (.......)", instance_npcname("Repeater#wifi02");
+		npctalk "Oh, há uma mensagem, fique aí por um tempo.";
 		sleep2 2000;
-		npctalk "Repeater : (... ??... ??)", instance_npcname("Repeater#wifi02");
+		npctalk "Repeater: (...??...??)", instance_npcname("Repeater#wifi02");
 		sleep2 2000;
-		npctalk "Agora? Mais tempo... Sim, não... Ah...";
+		npctalk "Mais tempo... Sim, não... Ah...";
 		sleep2 2000;
-		npctalk "... ... so far... no?!... Okay...";
+		npctalk "...... so far... no?!... Okay...";
 		sleep2 2000;
 		emotion ET_THINK;
 		sleep2 2000;
-		npctalk "Você é a razão pela qual não tenho tempo agora! Vou matá-lo na próxima vez que nos encontrarmos!";
+		npctalk "Você é a razão pela qual eu não tenho tempo agora! Eu mato-o na próxima vez que nos encontrarmos!";
 		sleep2 2000;
 		disablenpc();
 		enablenpc instance_npcname("Est#est04");
@@ -564,30 +564,30 @@ OnTouch:
 	if ('twilight_story == 20) {
 		cutin "ep162_est01",2;
 		mes "[Est]";
-		mes "Encontrou um cara parecido com o líder?";
-		mes "Acho que o resto dos membros também são bons.";
+		mes "Já ouvi o relatório, encontraste um tipo que se parecia com o líder?";
+		mes "Eu acho que o resto dos membros também são um pouco bons.";
 		next;
 		mes "[Est]";
 		mes "O que aconteceu com o repetidor?";
 		next;
 		cutin "ep172_beta",2;
 		mes "[Almond]";
-		mes "Estávamos a caminho do outro.";
-		mes "Mas está muito longe daqui.";
+		mes "Estavam a caminho do outro.";
+		mes "Mas é bem longe daqui.";
 		next;
 		cutin "ep162_est01",2;
 		mes "[Est]";
-		mes "Vamos fazer isso?";
-		mes "O cara que você perdeu é um menino com cabelo roxo, certo?";
-		mes "Vamos arrastá-lo.";
+		mes "Vamos fazer isto?";
+		mes "O tipo que perdeste é um rapaz de cabelo roxo, certo?";
+		mes "Vamos atirá-lo para fora.";
 		next;
 		mes "[Est]";
-		mes "Eu lidarei com os outros que estão escondidos no jardim.";
-		mes "Eu também escoltarei oAlmond.";
+		mes "Eu trato do resto que está escondido no jardim.";
+		mes "Também vou escoltar a Almond.";
 		next;
 		mes "[Est]";
-		mes "Ele provavelmente foi para a parte ocidental da mansão, então vá para lá.";
-		mes "Você tem o rastreador doElyumina. Ele irá ativar, se você se aproximar dele.";
+		mes "Ele provavelmente foi para a parte ocidental da mansão, então vá até lá.";
+		mes "Você tem o rastreador da Elyumina, ele será ativado, se você se aproximar dele.";
 		if ('twilight_story == 20) {
 			'twilight_story = 21;
 			enablenpc instance_npcname("#to_bamq");
@@ -599,11 +599,11 @@ OnTouch:
 	}
 	if ('twilight_story == 21) {
 		mes "[Est]";
-		mes "Ele provavelmente foi para a parte ocidental da mansão, então vá para lá.";
-		mes "Você tem o rastreador doElyumina, se você chegar perto dele, ele irá ativar.";
+		mes "Ele provavelmente foi para a parte ocidental da mansão, então vá até lá.";
+		mes "Você tem o rastreador de Elyumina, se você chegar perto dele, ele será ativado.";
 		next;
 		mes "[Est]";
-		mes "Não se preocupe, eu cuidarei doAlmonddaqui.";
+		mes "Não se preocupe, eu vou cuidar de Almond a partir daqui.";
 		close3;
 	}
 	end;
@@ -616,17 +616,17 @@ OnTouch:
 
 // 1@bamn,254,80,7	script	Rebellion#md_rb06	4_F_REBELLION,7,7,{	// unknown effect
 1@bamn,254,80,7	script(DISABLED)	Rebellion#md_rb06	4_F_REBELLION,{
-	npctalk "Finalmente está na hora da vingança.";
+	npctalk "Finalmente está na hora da vingança...";
 	end;
 }
 
 1@bamn,258,80,1	script(DISABLED)	Rebellion#md_rb07	4_M_REBELLION,{
-	npctalk "Se houver um inimigo causando conmoção, devemos atacá-los com mais números.";
+	npctalk "Se há um inimigo causando comoção, devemos atacá-los com mais números.";
 	end;
 }
 
 1@bamn,202,84,3	script(DISABLED)	Rebellion#md_rb08	4_M_REBELLION2,{
-	npctalk "Você está procurando por um menino com cabelo roxo, certo?";
+	npctalk "Andas à procura de um rapaz de cabelo roxo, certo?";
 	end;
 }
 
@@ -635,7 +635,7 @@ OnTouch:
 	end;
 OnTouch:
 	if ('twilight_story == 21) {
-		unittalk getcharid(3), "" + strcharinfo(0) + ": Tracker: Pyo-o-o-o-o! Por ali! Pyo-pyo~!";
+		unittalk getcharid(3), "" + strcharinfo(0) + ": Rastreador: Pyo-o-o-o-o! Por ali! Pyo-pyo!";
 		navigateto("1@bamn",33,224);
 	}
 	end;
@@ -646,9 +646,9 @@ OnTouch:
 1@bamn,67,195,3	script(DISABLED)	Heart Hunter#md_hh10	G_BELLARE3,5,5,{
 	end;
 OnTouch:
-	monster 'map_bamn$,67,195,"Caçador de Corações Commander","G_BELLARE3",1;
-	monster 'map_bamn$,65,199,"Caçador de Corações Commander","G_BELLARE3",1;
-	monster 'map_bamn$,71,197,"Caçador de Corações Commander","G_BELLARE3",1;
+	monster 'map_bamn$,67,195,"Caçador de Coração Commander","G_BELLARE3",1;
+	monster 'map_bamn$,65,199,"Caçador de Coração Commander","G_BELLARE3",1;
+	monster 'map_bamn$,71,197,"Caçador de Coração Commander","G_BELLARE3",1;
 	disablenpc();
 	end;
 }
@@ -657,9 +657,9 @@ OnTouch:
 	end;
 OnTouch:
 	emotion ET_GO;
-	monster 'map_bamn$,78,204,"Caçador de Corações Commander","G_BELLARE3",1;
-	monster 'map_bamn$,83,204,"Caçador de Corações Commander","G_BELLARE3",1;
-	monster 'map_bamn$,76,200,"Caçador de Corações Commander","G_BELLARE3",1;
+	monster 'map_bamn$,78,204,"Caçador de Coração Commander","G_BELLARE3",1;
+	monster 'map_bamn$,83,204,"Caçador de Coração Commander","G_BELLARE3",1;
+	monster 'map_bamn$,76,200,"Caçador de Coração Commander","G_BELLARE3",1;
 	disablenpc();
 	end;
 }
@@ -668,9 +668,9 @@ OnTouch:
 	end;
 OnTouch:
 	emotion ET_GO;
-	monster 'map_bamn$,61,214,"Caçador de Corações Commander","G_BELLARE3",1;
-	monster 'map_bamn$,58,212,"Caçador de Corações Commander","G_BELLARE3",1;
-	monster 'map_bamn$,64,214,"Caçador de Corações Commander","G_BELLARE3",1;
+	monster 'map_bamn$,61,214,"Caçador de Coração Commander","G_BELLARE3",1;
+	monster 'map_bamn$,58,212,"Caçador de Coração Commander","G_BELLARE3",1;
+	monster 'map_bamn$,64,214,"Caçador de Coração Commander","G_BELLARE3",1;
 	disablenpc();
 	end;
 }
@@ -684,11 +684,11 @@ OnTouch:
 	if ('twilight_story == 21) {
 		setpcblock PCBLOCK_NPC, true;
 		'twilight_story = 22;
-		npctalk "Chegaram tarde demais, idiotas!";
+		npctalk "Chegaram tarde demais, seus idiotas!";
 		sleep2 2000;
 		npctalk "Eles já escaparam usando os dirigíveis!";
 		sleep2 2000;
-		npctalk "Agora, eu,Sweetycuidarei dos idiotas que acabaram de chegar!";
+		npctalk "Agora, eu, Sweety, vou cuidar dos idiotas que acabaram de entrar!";
 		sleep2 2000;
 		setpcblock PCBLOCK_NPC, false;
 		disablenpc();
@@ -718,8 +718,8 @@ OnMobDead:
 1@bamq,123,39,3	script(DISABLED)	Broken Sweety#sweety04	4_EP17_SWEETY,{
 	specialeffect EF_NPC_STOP;
 	npctalk "... sim... s... ir... não... dois...";
-	mes "A eletricidade rebota e não se move, como se a máquina estivesse quebrada.";
-	mes "Visto que ele evita o olhar, ele não parece completamente quebrado.";
+	mes "A eletricidade salta e não se move, como se a máquina estivesse quebrada.";
+	mes "Vendo que ele desvia o olhar, ele não parece completamente quebrado.";
 	close;
 }
 
@@ -727,20 +727,20 @@ OnMobDead:
 	cutin "ep162_est01",2;
 	mes "[Est]";
 	mes "É um pouco tarde, mas acabou.";
-	mes "Então é você, o cara que estava arrastando os pés no jardim.";
+	mes "O tipo que estava a arrastar os pés para o jardim.";
 	next;
 	mes "[Est]";
-	mes "Este cara pensou que controlar osboneca automáticas o ajudará a ganhar tempo?";
+	mes "Será que esse cara acha que controlar obonecas automáticasVocê vai ajudá-lo a ganhar tempo?";
 	next;
 	cutin "ep162_est02",2;
 	mes "[Est]";
-	mes "Afinal, eles são apenasboneca automáticas, certo?";
-	mes "Eu não tive escolha a não ser explodir osboneca automáticas da mansão...";
+	mes "Afinal, eles são apenasbonecas automáticas, certo?";
+	mes "Eu não tive escolha a não ser explodir obonecas automáticasA Mansão...";
 	next;
 	cutin "ep162_est01",2;
 	mes "[Est]";
 	mes "Vamos sair daqui.";
-	mes "Estarei esperando na pousada.";
+	mes "Estarei à espera na casa de hóspedes.";
 	close3;
 }
 
@@ -791,21 +791,21 @@ OnTouch:
 	if ('sweety == 0) {
 		cutin "ep172_Sweety01",2;
 		mes "[Sweety]";
-		mes "Ei, você está pronto?";
-		mes "Venha comigo a qualquer hora.";
-		mes "Tenho certeza de que me sentirei melhor assim que te vencer.";
+		mes "Estás pronto?";
+		mes "Vem ter comigo a qualquer hora.";
+		mes "Tenho a certeza que me sentirei melhor quando te vencer.";
 		next;
-		if (select( "Espere um pouco.", "Vamos lá!" ) == 1) {
+		if (select( "Espera um pouco.", "Vamos embora!" ) == 1) {
 			mes "[Sweety]";
-			mes "O que, você veio aqui para explorar o jardim?";
-			mes "O Caçador de Corações não sabe o que aconteceu comigo, mas...";
+			mes "Vieste aqui para explorar o jardim?";
+			mes "O caçador de corações não sabe o que me aconteceu, mas...";
 			next;
 			cutin "ep172_Sweety02",2;
 			mes "[Sweety]";
 			mes "O quê, porquê?";
-			mes "Não sou como eles, sou uma criatura excelente!";
-			mes "Assim como os professores.";
-			mes "Mas, esses caras não são nada além de falhas.";
+			mes "Não sou como eles, sou uma excelente criatura!";
+			mes "Assim fizeram os professores.";
+			mes "Mas esses caras não são nada além de fracassos.";
 			close3;
 
 		}
@@ -818,8 +818,8 @@ OnTouch:
 	}
 	specialeffect EF_NPC_STOP;
 	mes "Ele não está respondendo a nada.";
-	mes "Acho que ele desmaiou dos meus ataques.";
-	npctalk "... ...";
+	mes "Acho que desmaiou dos meus ataques.";
+	npctalk "......";
 	close;
 }
 
@@ -830,7 +830,7 @@ OnStart:
 	end;
 OnMobDead:
 	killmonster 'map_bamq$, instance_npcname("twilight_daily") + "::OnMobDead";
-	mapannounce 'map_bamq$, "Almond:Sweety~ Faça com moderação~", bc_map, 0xFF00;
+	mapannounce 'map_bamq$, "Amêndoa: Docinho Faça isso com moderação", bc_map, 0xFF00;
 	enablenpc instance_npcname("Sweety#sweety_boss");
 	'sweety = 2;
 	end;
@@ -841,8 +841,8 @@ OnMobDead:
 	specialeffect EF_NPC_STOP;
 	sleep2 500;
 	setpcblock PCBLOCK_NPC, false;
-	npctalk " ... ... ";
-	mes "Eu desmaiei por causa do choque.";
+	npctalk "......";
+	mes "Desmaiei do choque.";
 	mes "Looks like he passed out.";
 	close;
 }
@@ -852,21 +852,21 @@ OnMobDead:
 		cutin "ep172_beta",2;
 		mes "[Almond]";
 		mes "Não consigo entender.";
-		mes "Por que oSweetygosta de empurrar o seu corpo para o limite...";
+		mes "Por que Sweety gosta de empurrar seu corpo até o limite...";
 		next;
 		mes "[Almond]";
-		mes "E é meu trabalho consertar o corpo destruído dele.";
-		mes "Por favor, lide com ele o suficiente para deixá- lo satisfeito.";
+		mes "E é meu trabalho consertar seu corpo destruído.";
+		mes "Por favor, lide com ele o suficiente para deixá-lo satisfeito.";
 		close3;
 	}
 	cutin "ep172_beta",2;
 	mes "[Almond]";
-	mes "Eu cuidarei de mover oSweety.";
+	mes "Eu vou cuidar de mover Sweety.";
 	mes "Você quer terminar agora?";
 	next;
-	if (select( "Vamos encerrar.", "Vou explorar o jardim primeiro." ) == 2) {
+	if (select( "Vamos terminar.", "Vou explorar o jardim primeiro." ) == 2) {
 		mes "[Almond]";
-		mes "Ainda há alguns intrusos lá fora.";
+		mes "Ainda há alguns intrusos por aí.";
 		mes "Você está ciente disso?";
 		close3;
 	}
@@ -887,22 +887,22 @@ OnMobDead:
 1@bamn,150,47,3	script	#bam_body01	4_EP17_BROKENBETA,{
 	if (isbegin_quest(18024) == 1) {
 		if (checkweight(1000226,1) == 0) {	// (custom)
-			mes "^008800Wait a sec!!";
-			mes "Você não pode receber mais itens porque você está carregando muitos itens. Por favor, tente novamente depois de acalmar.^000000";
+			mes "^008800Espere um pouco!!";
+			mes "Você não pode receber mais itens porque você está carregando muitos itens. Por favor, tente novamente depois de aliviar.^000000";
 			close;
 		}
 		.@id = atoi(replacestr(strnpcinfo(2), "bam_body0", ""));
 
 		if ('broken_beta[.@id] == 0) {
-			mes "O corpo do GerenciadorBetaestá escondido sob as paisagens.";
+			mes "O corpo do Manager Beta está escondido sob as paisagens.";
 			next;
 			if (rand(1,10) < 5)
-				mes "A fenda do núcleo está vazia.";
+				mes "O slot principal está vazio.";
 			else {
-				mes "Eu recuperei o núcleo.";
+				mes "Recuperei o núcleo.";
 				getitem 1000226,1;
 			}
-			mes "Vou deixar oAlphasaber mais tarde para que ela possa recuperar o corpo da boneca.";
+			mes "Vou avisar a Alpha mais tarde para que ela possa recuperar o corpo da boneca.";
 			'broken_beta[.@id] = 1;
 		}
 	}

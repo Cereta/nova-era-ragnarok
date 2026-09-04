@@ -1,0 +1,1 @@
+{"status": "FAIL", "stats": {"files": 16, "visible_occurrences": 6779, "english_visible_residuals": 1, "untranslated_visible_literals": 0, "mojibake_or_placeholders": 0, "hangul_visible_residuals": 0, "control_token_mismatches": 0, "structure_mismatches": 4, "unlocalized_monster_names": 0, "spacing_anomalies": 16}, "failures": 25, "warnings": 0}

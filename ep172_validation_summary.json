@@ -1,1 +1,178 @@
-{"status": "FAIL", "stats": {"files": 16, "visible_occurrences": 6758, "english_visible_residuals": 330, "technical_visible_leaks": 0, "mojibake": 8, "control_token_mismatches": 3, "skeleton_mismatches": 1, "untranslated_tab_monster_names": 23}, "failures": 343, "warnings": 23}
+{
+  "status": "FAIL",
+  "stats": {
+    "files": 16,
+    "visible_occurrences": 6779,
+    "english_visible_residuals": 1,
+    "untranslated_visible_literals": 0,
+    "mojibake_or_placeholders": 0,
+    "hangul_visible_residuals": 0,
+    "control_token_mismatches": 0,
+    "structure_mismatches": 4,
+    "unlocalized_monster_names": 0,
+    "spacing_anomalies": 16
+  },
+  "failures": [
+    {
+      "kind": "structure_changed",
+      "file": "npc/re/quests/quests_17_2.txt"
+    },
+    {
+      "kind": "visible_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "upstream": 4691,
+      "stage": 4706
+    },
+    {
+      "kind": "structure_changed",
+      "file": "npc/re/instances/HiddenGarden.txt"
+    },
+    {
+      "kind": "visible_literal_count_changed",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "upstream": 631,
+      "stage": 634
+    },
+    {
+      "kind": "structure_changed",
+      "file": "npc/re/instances/WaterGarden.txt"
+    },
+    {
+      "kind": "visible_literal_count_changed",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "upstream": 321,
+      "stage": 322
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 58,
+      "name": "Elena",
+      "text": "EstElena disse que se juntaria a nós mais tarde, mas há uma boa chance de ela não poder participar."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 66,
+      "name": "Est",
+      "text": "EstNão olhe muito ao redor e finja que não está vigilante, entendeu?"
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 227,
+      "name": "Est",
+      "text": "Algo importante surgiu. É por isso que estou aqui comEst."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 249,
+      "name": "Est",
+      "text": "Estou curioso, devemos ir rápido?"
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 298,
+      "name": "Est",
+      "text": "Estás bem, aventureiro? Então, podemos continuar."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 305,
+      "name": "Est",
+      "text": "Você não deveria falar comEstParece que ela estava à espera."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 412,
+      "name": "Est",
+      "text": "ÉEst!"
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 575,
+      "name": "Est",
+      "text": "Estavam a caminho do outro."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 743,
+      "name": "Est",
+      "text": "Estarei à espera na casa de hóspedes."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 794,
+      "name": "Est",
+      "text": "Estás pronto?"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 897,
+      "text": "O corpo do Manager Beta está escondido sob as paisagens."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 905,
+      "name": "Alp",
+      "text": "Vou avisar a Alpha mais tarde para que ela possa recuperar o corpo da boneca."
+    },
+    {
+      "kind": "structure_changed",
+      "file": "npc/re/instances/LostFarm.txt"
+    },
+    {
+      "kind": "visible_literal_count_changed",
+      "file": "npc/re/instances/LostFarm.txt",
+      "upstream": 698,
+      "stage": 701
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
+      "line": 127,
+      "name": "Est",
+      "text": "Este equipamento automático já está em sua capacidade máxima."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
+      "line": 192,
+      "name": "Est",
+      "text": "Este equipamento automático já maximizou o aprimoramento deste módulo."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
+      "line": 197,
+      "name": "Est",
+      "text": "^000000Este processo não pode ser revertido."
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
+      "line": 273,
+      "name": "Est",
+      "text": "Estamos oferecendo cubos de reforço que refinarão sua^0000CD+4^000000Ilusão e Equipamento Automático para^FF0000+7^000000Em um instante!"
+    },
+    {
+      "kind": "glued_proper_name",
+      "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
+      "line": 428,
+      "name": "Magi",
+      "text": "eu trocarei^FF00001 Magical Automatic Improvement Device^000000"
+    }
+  ],
+  "warnings": [],
+  "failure_count": 25,
+  "warning_count": 0
+}

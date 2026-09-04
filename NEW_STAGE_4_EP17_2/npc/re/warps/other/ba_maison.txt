@@ -8,7 +8,7 @@ ba_in01,12,321,0	script	#ep172_lab1_out	WARPNPC,1,1,{
 	end;
 OnTouch:
 	if (ep17_2_main < 7) {
-		mes "Ainda há algum trabalho a ser feito aqui. Vamos dar uma olhada em torno de mais.";
+		mes "Ainda há trabalho a fazer aqui, vamos dar uma vista de olhos.";
 		close;
 	}
 	warp "ba_maison",75,146;
