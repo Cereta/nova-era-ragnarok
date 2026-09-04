@@ -1,0 +1,104 @@
+name: Build Stage4 Episode 17.2 v7
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/ep172_pipeline_v7.py'
+      - 'tools/ep172_validate_v7.py'
+      - 'tools/normalize_ep172_encoding_v4.py'
+      - '.github/workflows/build-stage4-ep172-v7.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout workspace
+        uses: actions/checkout@v4
+
+      - name: Checkout pinned rAthena
+        shell: bash
+        run: |
+          rm -rf upstream
+          git clone --filter=blob:none https://github.com/rathena/rathena.git upstream
+          cd upstream
+          git checkout e985006171d2eb320ee512a653f4c83aea3d81b6
+          test "$(git rev-parse HEAD)" = "e985006171d2eb320ee512a653f4c83aea3d81b6"
+
+      - name: Recover legacy encoding and normalize UTF-8
+        shell: bash
+        run: python tools/normalize_ep172_encoding_v4.py upstream | tee ep172_encoding_summary.txt
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Cache Hugging Face model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-opus-mt-tc-big-en-pt-v1
+
+      - name: Install translation dependencies
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          pip install 'transformers<5' sentencepiece sacremoses
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Rebuild Episode 17.2 PT-BR v7
+        shell: bash
+        run: |
+          rm -rf NEW_STAGE_4_EP17_2
+          python tools/ep172_pipeline_v7.py upstream NEW_STAGE_4_EP17_2 | tee ep172_build_summary.json
+
+      - name: Full closure validation v7
+        id: validation
+        shell: bash
+        run: |
+          set +e
+          python tools/ep172_validate_v7.py upstream NEW_STAGE_4_EP17_2 | tee ep172_validation_console.json
+          code=${PIPESTATUS[0]}
+          echo "validator_exit=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Preserve stage, caches and audits
+        shell: bash
+        run: |
+          git config user.name "Nova Era Stage Builder"
+          git config user.email "actions@users.noreply.github.com"
+          git add NEW_STAGE_4_EP17_2 translation_cache/ep172_en_ptbr_v6.json ep172_build_summary.json ep172_validation_summary.json ep172_validation_console.json ep172_encoding_summary.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "EP17.2 quinto passe auditado v7 [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Upload audited artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NEW_STAGE_4_EP17_2_AUDITED_V7
+          path: |
+            NEW_STAGE_4_EP17_2
+            ep172_build_summary.json
+            ep172_validation_summary.json
+            ep172_encoding_summary.txt
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Enforce 100 percent gate
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          data=json.load(open('ep172_validation_summary.json',encoding='utf-8'))
+          print(json.dumps({'status':data['status'],'stats':data['stats'],'failure_count':data['failure_count'],'warning_count':data['warning_count']},ensure_ascii=False))
+          raise SystemExit(0 if data['status']=='PASS' else 1)
+          PY
