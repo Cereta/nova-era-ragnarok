@@ -80,7 +80,7 @@ ba_pw02,90,93,0	script	???????????????#ep172_bapw2-00	4_ENERGY_BLUE,{
 		cutin "bu_du3",2;
 		mes "[Dew]";
 		mes "Se não fosse por você, eu acordaria no Igreja de Prontera!";
-		mes "Por um momento, eu vi Mark smiling brightly carrying a donation bag...";
+		mes "Por um momento, vi Mark sorrindo alegremente enquanto carregava uma sacola de doações...";
 		next;
 		cutin "bu_du5",2;
 		mes "[Dew]";
@@ -118,7 +118,7 @@ ba_pw02,90,93,0	script	???????????????#ep172_bapw2-00	4_ENERGY_BLUE,{
 		cutin "bu_du1",2;
 		mes "[Dew]";
 		mes "Muito bem, ali!";
-		mes "Eu acho que posso ouvir MagiA voz de lá!!!";
+		mes "Acho que consigo ouvir a voz de Magi vindo de lá!!!";
 		close2;
 		cutin "",255;
 		navigateto("ba_pw01",14,115);
@@ -180,7 +180,7 @@ OnTouch:
 		next;
 		cutin "",255;
 		mes "[Lasis]";
-		mes "Está tudo bem, MarkAs habilidades de cura quase me curaram completamente.";
+		mes "Está tudo bem. As habilidades de cura de Mark quase me curaram completamente.";
 		next;
 		cutin "bu_du1",2;
 		mes "[Dew]";
@@ -198,12 +198,12 @@ OnTouch:
 		cutin "",255;
 		mes "[Lasis]";
 		mes "Oh!";
-		mes "Esse é o cara Markestá à procura?";
+		mes "Esse é o cara Mark está à procura?";
 		next;
 		mes "[Lasis]";
 		mes "Prazer em conhecê-lo.";
 		mes "Eu sou... Lasis da Rebelião.";
-		mes "És tu. DewEu vi-te na base antes...";
+		mes "És tu. Dew Eu vi-te na base antes...";
 		next;
 		cutin "bu_maggi1",2;
 		mes "[Magi]";
@@ -239,7 +239,7 @@ OnTouch:
 		next;
 		cutin "",255;
 		mes "[Lasis]";
-		mes "MarkDê uma olhada neste lugar.";
+		mes "Mark Dê uma olhada neste lugar.";
 		next;
 		cutin "bu_mark1",2;
 		mes "[Mark]";
@@ -443,7 +443,7 @@ ba_maison,70,145,3	script	Tamarin#ep172_bamaison-00	4_EP17_TAMARIN,{
 	}
 	if (ep17_2_main < 10) {
 		mes "[Tamarin]";
-		mes "Eu ouvi que o VarmundtA mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros.";
+		mes "Eu ouvi que o Varmundt A mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros.";
 		cutin "ep172_tamarin01.bmp",2;
 		close3;
 	}
@@ -581,7 +581,7 @@ ba_maison,70,145,3	script	Tamarin#ep172_bamaison-00	4_EP17_TAMARIN,{
 	}
 	if (ep17_2_library < 5) {
 		mes "[Tamarin]";
-		mes "Eu ouvi que o VarmundtA mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros.";
+		mes "Eu ouvi que o Varmundt A mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros.";
 		cutin "ep172_tamarin01.bmp",2;
 		close3;
 	}
@@ -670,7 +670,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		mes "É um prazer conhecê-lo, estava preocupado que se perdesse na mansão.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Nós lhe emitimos uma licença de convidado. Ao contrário de um convite formal de VarmundtEste cartão é apenas temporário.";
+		mes "Nós lhe emitimos uma licença de convidado. Ao contrário de um convite formal de Varmundt Este cartão é apenas temporário.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Como você não cometeu nenhum dano à propriedade, como vandalismo ou roubo, ao contrário dos outros intrusos, você recebeu uma licença temporária para a investigação.";
@@ -748,7 +748,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		specialeffect EF_VALLENTINE;
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "" + strcharinfo(0) + ". Bem-vindo ao VarmundtMansão, prazer em conhecê-lo, sou o gerente desta mansão.";
+		mes "" + strcharinfo(0) + ". Bem-vindo ao Varmundt Mansão, prazer em conhecê-lo, sou o gerente desta mansão.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "De agora em diante." + strcharinfo(0) + ", Como convidado de honra, você está livre para usar as instalações nesta mansão. Se você tiver alguma dúvida, não hesite em contactar o mais próximo bonecas automáticas.";
@@ -843,7 +843,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		sleep2 2000;
 		npctalk "O sinal falhou...", "", bc_self;
 		sleep2 2000;
-		npctalk "Warehouse... Signal received...", "", bc_self;
+		npctalk "Armazém... Sinal recebido...", "", bc_self;
 		sleep2 2000;
 		npctalk "O sinal falhou...", "", bc_self;
 		cutin "ep172_alpha",2;
@@ -869,8 +869,8 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		cutin "",255;
 		select( "Sim, estou com eles." );
 		mes "[Meimei]";
-		mes "Esta é a mansão. Varmundt's Mansion!";
-		npctalk "Esta é a mansão. Varmundt's Mansion!", "Meimei#172nw01", bc_self;
+		mes "Esta é a Mansão Varmundt!";
+		npctalk "Esta é a Mansão Varmundt!", "Meimei#172nw01", bc_self;
 		next;
 		mes "[Tommy]";
 		mes "Aventureiro! O movimento das Ilusões foi confirmado dentro da mansão. Em breve vamos formar uma equipe, descobrir a estrutura da mansão e iniciar a operação.";
@@ -968,7 +968,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		sleep2 2000;
 		npctalk "Pavilion... Signal received...", "", bc_self;
 		sleep2 2000;
-		npctalk "Warehouse... Signal received...", "", bc_self;
+		npctalk "Armazém... Sinal recebido...", "", bc_self;
 		sleep2 2000;
 		npctalk "Jardim... Sinal recebido...", "", bc_self;
 		cutin "ep172_alpha",2;
@@ -1445,7 +1445,7 @@ ba_maison,334,143,3	script	Repeater#172nw02	2_POSTBOX,{
 		mes "Ouvi os falcões vagarem pela mansão e arruiná-la.";
 		next;
 		mes "[Kimchi]";
-		mes "Lamento interrompê-lo no seu intervalo. Por favor, aproveite esta área do VarmundtMansão para o seu coração contente.";
+		mes "Lamento interrompê-lo no seu intervalo. Por favor, aproveite esta área do Varmundt Mansão para o seu coração contente.";
 		next;
 		mes "[Worry]";
 		mes "Como essa coisa pode ser tão animada?";
@@ -1558,7 +1558,7 @@ OnTouch:
 		sleep2 1500;
 		npctalk "Calling. Area 4. Area 4.", "", bc_self;
 		sleep2 2000;
-		npctalk "Escritório de Segurança: Esta é a área 4, over.", "", bc_self;
+		npctalk "Escritório de Segurança: Esta é a área 4, câmbio.", "", bc_self;
 		sleep2 2000;
 		npctalk "Preciso de apoio, há um intruso na área 7, câmbio.", "", bc_self;
 		sleep2 2000;
@@ -1624,7 +1624,7 @@ OnTouch:
 		mes "Além disso, não é muito, mas por favor aceite isso como um pedido de desculpas.";
 		next;
 		mes "[Gabriel]";
-		mes "Se este for o último, por favor volte para <NAVI>[Alpha]<INFO>ba_maison,74,150,0,0,0</INFO></NAVI>. Também... Bem-vindo ao VarmundtSe você precisar de ajuda, sinta-se à vontade para pedir qualquer boneca automática.";
+		mes "Se este for o último, por favor volte para <NAVI>[Alpha]<INFO>ba_maison,74,150,0,0,0</INFO></NAVI>. Também... Bem-vindo ao Varmundt Se você precisar de ajuda, sinta-se à vontade para pedir qualquer boneca automática.";
 		ep17_2_main = 14;
 		erasequest 17337;
 		setquest 17338;
@@ -1670,8 +1670,8 @@ ba_in01,206,106,3	script	Philofontes#jh5_1	4_M_PHILOFONTES,{
 	if (ep17_2_main == 15) {
 		cutin "ep16_tes01",2;
 		mes "[Tess]";
-		mes "DienPor favor, verifique a autenticidade novamente.";
-		mes "Este é um documento que o governo examinou quando os mercenários ficaram aqui no Varmundt Mansion.";
+		mes "Dien Por favor, verifique a autenticidade novamente.";
+		mes "Este é um documento que o governo examinou quando os mercenários ficaram aqui na Mansão Varmundt.";
 		next;
 		cutin "ep162_dn01",2;
 		mes "[Dien]";
@@ -1724,7 +1724,7 @@ ba_in01,206,106,3	script	Philofontes#jh5_1	4_M_PHILOFONTES,{
 	if (ep17_2_main == 17) {
 		cutin "ep16_tes01",2;
 		mes "[Tess]";
-		mes "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui em Varmundt Mansion.";
+		mes "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui na Mansão Varmundt.";
 		close3;
 	}
 	if (ep17_2_main == 18) {
@@ -1813,7 +1813,7 @@ ba_in01,203,103,5	script	Dien#jh5_1	4_F_DIENE,{
 		next;
 		cutin "ep162_rds02",2;
 		mes "[Ridsh]";
-		mes "LuckyPor que você não está nos ouvindo e tomando o lado do governo?";
+		mes "Lucky Por que você não está nos ouvindo e tomando o lado do governo?";
 		next;
 		cutin "ep16_tes01",2;
 		mes "[Tess]";
@@ -1846,7 +1846,7 @@ ba_in01,203,103,5	script	Dien#jh5_1	4_F_DIENE,{
 		next;
 		cutin "ep16_tes03",2;
 		mes "[Tess]";
-		mes "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui em Varmundt Mansion.";
+		mes "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui na Mansão Varmundt.";
 		next;
 		if (select( "Accept.", "Refuse." ) == 2) {
 			cutin "ep16_tes02",2;
@@ -1934,7 +1934,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 		select( "Entregar dados específicos." );
 		cutin "ep162_rds03",2;
 		mes "[Ridsh]";
-		mes "Esta pessoa realmente não se parece com um mercenário. Por que uma pessoa como esta estaria perto Varmundt Mansão e ser morto?";
+		mes "Esta pessoa realmente não se parece com um mercenário. Por que uma pessoa como esta estaria perto Mansão Varmundt e ser morto?";
 		next;
 		cutin "ep16_tes01",2;
 		mes "[Tess]";
@@ -1956,7 +1956,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 		next;
 		mes "[Tess]";
 		mes "Diz-se que o comissário não voltou depois de ser enviado, o comissário foi mais tarde presumido como uma pessoa desaparecida.";
-		mes "Mais tarde, porém, foi encontrado morto no Varmundt Mansion.";
+		mes "Mais tarde, porém, foi encontrado morto na Mansão Varmundt.";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -1985,7 +1985,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 			next;
 			cutin "ep16_tes03",2;
 			mes "[Tess]";
-			mes "Mesmo que seja a oposição do governo, teria sido difícil cometer assassinato sem escapar dos olhos dos mercenários e dos trabalhadores dentro do Varmundt Mansion.";
+			mes "Mesmo que seja a oposição do governo, teria sido difícil cometer assassinato sem escapar dos olhos dos mercenários e dos trabalhadores dentro da Mansão Varmundt.";
 			break;
 		case 3:
 			cutin "ep162_dn03",2;
@@ -2000,7 +2000,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Teria sido difícil evitar os olhos dos mercenários e dos trabalhadores na Varmundt Mansion.";
+		mes "Teria sido difícil evitar os olhos dos mercenários e dos trabalhadores na Mansão Varmundt.";
 		mes "Mas os mercenários não são os culpados.";
 		next;
 		cutin "",255;
@@ -2038,7 +2038,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 		next;
 		cutin "ep162_dn03",2;
 		mes "[Dien]";
-		mes "Pedi a alguém para \"descartar\" o pessoal do governo para evitar o contacto com os mercenários... E disse-lhe para entrar. Varmundt Mansão e roubo VarmundtOs dados de pesquisa...";
+		mes "Pedi a alguém para \"descartar\" o pessoal do governo para evitar o contacto com os mercenários... E disse-lhe para entrar. Mansão Varmundt e roubo Varmundt Os dados de pesquisa...";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -2181,7 +2181,7 @@ ba_in01,208,110,3	script	Ridsh#jh5_1	4_F_LEEDSH,{
 		next;
 		mes "[Kaya Toss]";
 		mes "O assunto do memorando é vagamente escrito, mas pode ser claramente compreendido.";
-		mes "Isso, ele estava em Varmundt Mansion...";
+		mes "Isso, ele estava na Mansão Varmundt...";
 		next;
 		cutin "ep162_dn03",2;
 		mes "[Dien]";
@@ -2229,7 +2229,7 @@ ba_in01,207,102,3	script	Kaya Toss#jh5_1	4_EP17_KAYA,{
 		cutin "ep171_kaya02",2;
 		mes "[Kaya Toss]";
 		mes "Peço desculpa.";
-		mes "Como o Vice-PresidenteEu me sinto responsável por tudo isso.";
+		mes "Como Vice-Presidente, eu me sinto responsável por tudo isso.";
 		next;
 		cutin "ep162_dn01",2;
 		mes "[Dien]";
@@ -2297,7 +2297,7 @@ ba_in01,205,109,3	script(CLOAKED)	Tatio#jh5_1	4_M_TATIO,{
 		next;
 		cutin "ep15_tatio01",2;
 		mes "[Tatio]";
-		mes "Pelo que ouvi do GreyParecia um assunto urgente.";
+		mes "Pelo que ouvi do Grey Parecia um assunto urgente.";
 		mes "Eu decidi que seria melhor visitar pessoalmente o mais rápido possível.";
 		next;
 		cutin "ep162_dn02",2;
@@ -2325,14 +2325,14 @@ ba_in01,205,109,3	script(CLOAKED)	Tatio#jh5_1	4_M_TATIO,{
 		next;
 		cutin "ep15_tatio01",2;
 		mes "[Tatio]";
-		mes "Saí assim que entrei em contato de Vice-Presidente Kaya Toss E acabou de chegar.";
+		mes "Saí assim que entrei em contato com o Vice-Presidente Kaya Toss e acabei de chegar.";
 		mes "Eu sei o que você quer ouvir, mas eu não posso simplesmente decidir tudo aqui.";
 		next;
 		mes "[Tatio]";
 		mes "No entanto, vou dizer-lhe todas as promessas que posso fazer com a minha autoridade.";
 		next;
 		mes "[Tatio]";
-		mes "Vice-Presidente TossEu vi os relatos de que você trabalhou com os agentes do governo e aventureiros.";
+		mes "Vice-Presidente Toss, vi os relatórios de que você trabalhou com agentes do governo e aventureiros.";
 		mes "Obrigado pelo seu trabalho duro.";
 		next;
 		cutin "ep171_kaya01",2;
@@ -2361,7 +2361,7 @@ ba_in01,205,109,3	script(CLOAKED)	Tatio#jh5_1	4_M_TATIO,{
 		next;
 		cutin "ep15_tatio01",2;
 		mes "[Tatio]";
-		mes "Também aceitaremos Vice-Presidente Kaya Toss\"opinião e analisar completamente o que ele investigou até agora, e distribuir as compensações e punição em conformidade.";
+		mes "Também aceitaremos a opinião do Vice-Presidente Kaya Toss, analisaremos tudo o que ele investigou até agora e aplicaremos as recompensas e punições adequadas.";
 		next;
 		cutin "ep162_dn01",2;
 		mes "[Dien]";
@@ -2469,7 +2469,7 @@ ba_maison,103,92,3	script	Kaya Toss#jh5_2	4_EP17_KAYA,{
 		next;
 		cutin "",255;
 		mes "[???]";
-		mes "Vice-PresidenteEstou com o Conselho do Rekenber, não precisas de saber a minha identidade.";
+		mes "Sou o Vice-Presidente do Conselho da Rekenber. Você não precisa saber minha identidade.";
 		next;
 		cutin "ep171_kaya03",2;
 		mes "[Kaya Toss]";
@@ -2477,7 +2477,7 @@ ba_maison,103,92,3	script	Kaya Toss#jh5_2	4_EP17_KAYA,{
 		next;
 		cutin "",255;
 		mes "[???]";
-		mes "A empresa está preocupada com o Vice-Presidenteação. Quanto tempo você vai ser influenciado pela eloquência deles? O que você faria se um representante da empresa repetidamente agisse contra o interesse da empresa?";
+		mes "A empresa está preocupada com as ações do Vice-Presidente. Por quanto tempo você continuará sendo influenciado pela eloquência deles? O que faria se um representante agisse repetidamente contra os interesses da empresa?";
 		next;
 		cutin "ep171_kaya01",2;
 		mes "[Kaya Toss]";
@@ -2708,7 +2708,7 @@ ba_maison,189,56,3	script	Yunas#jh5	4_EP17_BASIC_B,{
 		emotion ET_THINK, getnpcid(0,"Mercenary#jh5_2");
 		next;
 		mes "[Mercenary]";
-		mes "Que tipo de pessoa é VarmundtQuem nos aceitou de bom grado?";
+		mes "Que tipo de pessoa é Varmundt Quem nos aceitou de bom grado?";
 		emotion ET_QUESTION, getnpcid(0,"Mercenary#jh5_1");
 		next;
 		mes "[Mercenary]";
@@ -2803,7 +2803,7 @@ ba_maison,189,56,3	script	Yunas#jh5	4_EP17_BASIC_B,{
 	}
 	cutin "ep172_beta",2;
 	mes "[Yunas]";
-	mes "Bem-vindo ao Varmundt Mansão. A Varmundt A Mansion oferece vários benefícios, como serviços médicos, compras e entretenimento e atividades de lazer.";
+	mes "Bem-vindo à Mansão Varmundt. A Mansão Varmundt oferece vários benefícios, como serviços médicos, compras e entretenimento e atividades de lazer.";
 	next;
 	mes "[Yunas]";
 	mes "Não é isso, por engano, disse-te a coisa errada.";
@@ -3244,7 +3244,7 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		mes "Eu acho que eles estão trabalhando depois que o sol se põe, mas eles estão em apuros de muitas maneiras.";
 		next;
 		mes "[Rookie]";
-		mes "Anyway, Alpha Dito isto, temos que lidar com os robôs automáticos que não são capazes de distinguir o código de identificação e recuperar os núcleos.";
+		mes "De qualquer forma, Alpha disse que precisamos lidar com as bonecas automáticas incapazes de distinguir o código de identificação e recuperar seus núcleos.";
 		mes "Gostarias de vir comigo?";
 		next;
 		cloakoffnpcself( "Elyumina#ep172_m_el01" );
@@ -3260,7 +3260,7 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		next;
 		cutin "16loo_03",0;
 		mes "[Rookie]";
-		mes "Um... MinaVocê pode falar com as pessoas sem mordê-las?";
+		mes "Um... Mina Você pode falar com as pessoas sem mordê-las?";
 		mes "Não percebo o que estás a dizer, falaste uma língua humana agora?";
 		next;
 		cutin "ep171_elyumina02",2;
@@ -3281,7 +3281,7 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		next;
 		cutin "16loo_02",0;
 		mes "[Rookie]";
-		mes "Eu ouvi uma história semelhante de AlphaE nunca pensei que fosses tu.";
+		mes "Eu ouvi uma história semelhante de Alpha E nunca pensei que fosses tu.";
 		mes "Se me contasse assim que o incidente acontecesse, teria sido óptimo.";
 		mes "Bem, estás bem?";
 		next;
@@ -3312,8 +3312,8 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		cloakonnpcself( "Rebellion#ep172_m_rb01" );
 		cutin "16loo_02",0;
 		mes "[Rookie]";
-		mes "Eu não posso evitar. Estou preocupado com Elyumina's safety.";
-		mes "Também estou preocupado com os gerentes que perderam seu código de identificação que Alpha mentioned.";
+		mes "Não posso evitar. Estou preocupado com a segurança de Elyumina.";
+		mes "Também estou preocupado com os gerentes que perderam o código de identificação mencionado por Alpha.";
 		next;
 		mes "[Rookie]";
 		mes "Vamos recuperar os núcleos primeiro? Se você encontrou um 'Gerente Quebrado', recupere seu núcleo.";
@@ -3632,7 +3632,7 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		cutin "ep171_elyumina04",2;
 		mes "[Elyumina]";
 		mes "Por que eu seria mantido aqui quando eu não sou sequer um dos Illusion!";
-		mes "O que devo fazer, você não reconheceu o Grande ElyuminaQueres que te bata na cabeça?";
+		mes "O que devo fazer, você não reconheceu o Grande Elyumina Queres que te bata na cabeça?";
 		next;
 		cutin "ep16_eisen01",0;
 		mes "[Eisen]";
@@ -3665,7 +3665,7 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		next;
 		cutin "ep171_elyumina04",2;
 		mes "[Elyumina]";
-		mes "- Ouviste isso? RookieChama-se \"chip\".";
+		mes "- Ouviste isso? Rookie Chama-se \"chip\".";
 		mes "Esta coisa estúpida arrancou-lhe tudo da boca.";
 		mes "Malditos bastardos, deixaram-me em paz.";
 		mes "Quer dizer, eu que estava no meio de tudo isso, era apenas um peão, certo?";
@@ -3678,13 +3678,13 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		mes "[Elyumina]";
 		mes "É tarde demais para fazer uma expressão estúpida agora?";
 		mes "Você é um auto-proclamado membro de elite da Ilusão?";
-		mes "RookieVou arrancar isto do pescoço dele e fazer um localizador para localizar aqueles \"chips\"!";
+		mes "Rookie Vou arrancar isto do pescoço dele e fazer um localizador para localizar aqueles \"chips\"!";
 		next;
 		mes "[Elyumina]";
 		mes "Sim, vamos lá! Vingança contra os traidores! Caos! Destruição! Vingança! Queda!";
 		close2;
 		setpcblock PCBLOCK_NPC, true;
-		npctalk "RookieUsa essa coisa ali!", "Elyumina#ep172_elmn02", bc_self;
+		npctalk "Rookie Usa essa coisa ali!", "Elyumina#ep172_elmn02", bc_self;
 		sleep2 1500;
 		npctalk "E agora?", "Rookie#ep172_rk02", bc_self;
 		specialeffect EF_GRIMTOOTH, AREA, "Rookie#ep172_rk02";
@@ -3699,7 +3699,7 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		cutin "ep171_elyumina01",2;
 		mes "[Elyumina]";
 		mes "Como te atreves a brincar comigo?";
-		mes "Como você se atreve a ignorar o Grande ElyuminaA linha é muito curta, não é?";
+		mes "Como você se atreve a ignorar o Grande Elyumina A linha é muito curta, não é?";
 		next;
 		cutin "162elena_02",2;
 		mes "[Elena Bolkova]";
@@ -3768,11 +3768,11 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		cutin "162elena_01",2;
 		mes "[Elena]";
 		mes "Onde está Eisen Werner?";
-		mes "Ele foi tomado por TessParece que vão interrogá-lo por conta própria.";
+		mes "Ele foi tomado por Tess Parece que vão interrogá-lo por conta própria.";
 		next;
 		mes "[Elena]";
 		mes "E ele ficará preso em algum lugar pelo resto de sua vida.";
-		mes "Elyumina Também teria sido assim. ElyuminaTem muita sorte, certo?";
+		mes "Elyumina Também teria sido assim. Elyumina Tem muita sorte, certo?";
 		next;
 		mes "[Elena]";
 		mes "Não te preocupes com este lugar, vou mantê-lo seguro.";
@@ -3940,7 +3940,7 @@ ba_in01,51,157,3	script	Est#ep172_est01	4_F_ESTLOVELOY,{
 			mes "Vamos?";
 			next;
 			.@md_name$ = "Twilight Garden";
-			if (select( "Criar '" + .@md_name$ + "'.", "Enter '" + .@md_name$ + "'.'" ) == 1) {
+			if (select( "Criar '" + .@md_name$ + "'.", "Entrar '" + .@md_name$ + "'.'" ) == 1) {
 				if (!is_party_leader()) {
 					mes "^4D4DFFEste lugar é um Masmorra Memorial.";
 					mes "Você tem que ser um líder do partido para criar um Masmorra Memorial.^000000";
@@ -4184,7 +4184,7 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		mes "Os \"colaboradores\" naquele local parecem desconhecer os movimentos de seus líderes ainda.";
 		next;
 		mes "[Elly]";
-		mes "Embora ainda não saibamos o paradeiro da Master's Collection No. 3, precisamos continuar a coletar informações vindas daqui...";
+		mes "Embora ainda não saibamos o paradeiro da Coleção do Mestre nº 3, precisamos continuar coletando informações por aqui...";
 		mes "O que devemos fazer?";
 		next;
 		select( "O que foi?" );
@@ -4618,7 +4618,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		cloakoffnpcself( "Cyan#172ba01" );
 		cutin "ep172_beta",2;
 		mes "[Shrine]";
-		mes "Peço desculpa. É Varmundt A política da Mansion para manter os hóspedes de ^0000CDsituações perigosas^000000Por favor, espere um pouco mais.";
+		mes "Peço desculpas. É política da Mansão Varmundt manter os hóspedes longe de ^0000CDsituações perigosas^000000. Por favor, espere mais um pouco.";
 		npctalk "Por que demora tanto tempo a procurar? Deixe-nos entrar. Posso encontrá-lo mais rápido.", "Denny#172ba01", bc_self;
 		npctalk "Somos especialistas nesta área.", "Molar#172ba01", bc_self;
 		next;
@@ -4640,7 +4640,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		mes "[Rookie]";
 		mes "É-nos dito para cooperar com o bonecas automáticas Mas se você não se mover no final, não temos escolha a não ser usar a força, certo?";
 		next;
-		if (select( "RookieO que se passa?", "Parece complicado, vou passar por ele." ) == 2) {
+		if (select( "Rookie O que se passa?", "Parece complicado, vou passar por ele." ) == 2) {
 			cutin "ep172_beta",2;
 			mes "[Shrine]";
 			mes "Então, não temos escolha a não ser chamar os guardas.";
@@ -4669,7 +4669,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		next;
 		cutin "16loo_02",2;
 		mes "[Rookie]";
-		mes "Eu tive que descobrir o que realmente estava dentro, se era a brincadeira estranha da Ilusão, é por isso que desta vez ^0000CDGonie^000000 É perfeito mover-se calmamente sozinho.";
+		mes "Eu tive que descobrir o que realmente estava dentro, se era a brincadeira estranha da Ilusão, é por isso que desta vez ^0000CD Gonie^000000 É perfeito mover-se calmamente sozinho.";
 		next;
 		select( "Por que você está aqui...?" );
 		cutin "16loo_01",2;
@@ -4778,8 +4778,8 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		next;
 		cutin "",255;
 		mes "[Magenta]";
-		mes "Há... tu sabes, LuckyNão me interprete mal, não seria melhor se Lucky Fica aqui?";
-		npctalk "Sim, é isso mesmo. Vamos procurar por GonieÉ melhor ficares aqui.", "Cyan#172ba01", bc_self;
+		mes "Há... tu sabes, Lucky Não me interprete mal, não seria melhor se Lucky Fica aqui?";
+		npctalk "Sim, é isso mesmo. Vamos procurar por Gonie É melhor ficares aqui.", "Cyan#172ba01", bc_self;
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -4787,7 +4787,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		next;
 		cutin "",255;
 		mes "[Magenta]";
-		mes "No!! Lucky Você é o melhor! O melhor!! Você sabe que realmente não podemos viver sem LuckyMas...";
+		mes "No!! Lucky Você é o melhor! O melhor!! Você sabe que realmente não podemos viver sem Lucky Mas...";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -5531,7 +5531,7 @@ ba_bath,203,58,3	script(CLOAKED)	Rookie#172ba04	4_M_ROOKIE,{
 		cloakoffnpcself( "Molar#172ba03" );
 		cloakoffnpcself( "Magenta#172ba03" );
 		mes "[Magenta]";
-		mes "LuckyPensei que te tivesse acontecido alguma coisa porque estavas sozinho!";
+		mes "Lucky Pensei que te tivesse acontecido alguma coisa porque estavas sozinho!";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -5541,7 +5541,7 @@ ba_bath,203,58,3	script(CLOAKED)	Rookie#172ba04	4_M_ROOKIE,{
 		cloakoffnpcself( "Denny#172ba03" );
 		cutin "",255;
 		mes "[Denny]";
-		mes "LuckyFoi você que disparou o sinal? Por que nos telefonou, não nos disse para irmos para o lago?";
+		mes "Lucky Foi você que disparou o sinal? Por que nos telefonou, não nos disse para irmos para o lago?";
 		next;
 		cloakoffnpcself( "Danae#172ba03" );
 		cloakoffnpcself( "Cyan#172ba03" );
@@ -5554,7 +5554,7 @@ ba_bath,203,58,3	script(CLOAKED)	Rookie#172ba04	4_M_ROOKIE,{
 		next;
 		cutin "",255;
 		mes "[Denny]";
-		mes "Claro! Se Lucky não é LuckyEntão, quem é?";
+		mes "Claro! Se Lucky não é Lucky Então, quem é?";
 		npctalk "Eu não mentiria para você.", "Cyan#172ba03", bc_self;
 		next;
 		cutin "16loo_03",2;
@@ -5607,7 +5607,7 @@ ba_bath,203,58,3	script(CLOAKED)	Rookie#172ba04	4_M_ROOKIE,{
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "DennyPreparem-se para montar uma armadilha.";
+		mes "Denny Preparem-se para montar uma armadilha.";
 		npctalk "Nunca pensei que usaria uma armadilha aqui, estou feliz por tê-la trazido.", "Denny#172ba03", bc_self;
 		next;
 		mes "[Rookie]";
@@ -5852,7 +5852,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		cloakoffnpcself( "Unknown Creature#172ba01" );
 		cloakoffnpcself( "Gonie#172ba01" );
 		mes "[Denny]";
-		mes "Não é isso? GonieE há... dois Lucky?";
+		mes "Não é isso? Gonie E há... dois Lucky?";
 		npctalk "Lucky...?", "Denny#172ba04", bc_self;
 		npctalk "Quem é real?", "Magenta#172ba05", bc_self;
 		next;
@@ -5894,16 +5894,16 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		cloakoffnpcself( "Rookie#172ba06" );
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Gonie, GonieBebe isto, podes beber?";
-		npctalk "LuckyÉ melhor ficares um pouco para trás, acho que vou ficar confuso quando te aproximares demais.", "Canine#172ba04", bc_self;
+		mes "Gonie, Gonie Bebe isto, podes beber?";
+		npctalk "Lucky É melhor ficares um pouco para trás, acho que vou ficar confuso quando te aproximares demais.", "Canine#172ba04", bc_self;
 		next;
 		cutin "",255;
 		mes "[Magenta]";
-		mes "Lucky, afaste-se um pouco. Isso é realmente GonieNão é falso, vamos ver.";
+		mes "Lucky, afaste-se um pouco. Isso é realmente Gonie Não é falso, vamos ver.";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Como poderia não ser GonieHá literalmente um falso eu ali.";
+		mes "Como poderia não ser Gonie Há literalmente um falso eu ali.";
 		next;
 		cutin "16go_03.bmp",2;
 		mes "[Gonie]";
@@ -5911,7 +5911,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "GonieEstás acordada agora, estás bem?";
+		mes "Gonie Estás acordada agora, estás bem?";
 		next;
 		mes "[Rookie]";
 		mes "Todos se protejam! Você também aventureiro!";
@@ -5939,7 +5939,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		mes "[Denny]";
 		mes "Agora, Gonie... há dois deles.";
 		npctalk "Hey, Lucky. Gonie Nem sequer sabe o código. O que devemos fazer?", "Denny#172ba05", bc_self;
-		npctalk "A esquerda não se parece com GonieParece que está a ter dificuldades?", "Magenta#172ba06", bc_self;
+		npctalk "A esquerda não se parece com Gonie Parece que está a ter dificuldades?", "Magenta#172ba06", bc_self;
 		npctalk "Gonie É obviamente o da direita, olha para aqueles olhos.", "Canine#172ba04", bc_self;
 		next;
 		cutin "16loo_02",2;
@@ -6267,7 +6267,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "ep172_beta",2;
 		mes "[Boiler]";
-		mes "Do que estás a falar? Este é o balneário do Varmundt Mansion.";
+		mes "Do que estás a falar? Este é o balneário da Mansão Varmundt.";
 		next;
 		cutin "",255;
 		mes "[Princess]";
@@ -6289,7 +6289,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "ep172_beta",1;
 		mes "[Shrine]";
-		mes "O legítimo proprietário desta mansão é Varmundte mesmo um residente de longa duração não pode reivindicar a propriedade.";
+		mes "O legítimo proprietário desta mansão é Varmundt e mesmo um residente de longa duração não pode reivindicar a propriedade.";
 		mes "Quando o mestre Varmundt Voltamos mais tarde, vamos discutir isso nós mesmos. Não é algo que possamos dizer-lhe sobre como convidado.";
 		npctalk "O estado real é assustador.", "Danae#172ba04", bc_self;
 		npctalk "Pessoas como nós devem seguir a lei.", "Denny#172ba05", bc_self;
@@ -6625,7 +6625,7 @@ ba_bath,259,191,3	script	Footbath#bathifo	4_BOARD3,{
 
 ba_bath,162,139,3	script	Fountain of Wisdom#bathifo	4_BOARD3,{
 	mes "^006600Fonte de Sabedoria - Banho Público^000000";
-	mes "^006600O banho mais antigo e mais famoso em Varmundt Mansão. Mergulhe neste banho e pense nas coisas mais profundas e difíceis em seu coração. A resposta certamente surgirá.^000000";
+	mes "^006600O banho mais antigo e mais famoso na Mansão Varmundt. Mergulhe neste banho e pense nas coisas mais profundas e difíceis em seu coração. A resposta certamente surgirá.^000000";
 	close;
 }
 
@@ -6687,10 +6687,10 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		mes "Lembro-me do ditado que diz que o ser humano não tem paciência.";
 		next;
 		mes "[Chirp]";
-		mes "Este é o segundo armazém do Varmundt Mansion.";
+		mes "Este é o segundo armazém da Mansão Varmundt.";
 		next;
 		cutin "",255;
-		select( "Warehouse...?" );
+		select( "Armazém...?" );
 		cutin "ep172_beta",2;
 		mes "[Chirp]";
 		mes "O armazém é onde você armazena coisas que você não usa.";
@@ -6714,7 +6714,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 			mes "Eu não pensei que haveria qualquer humano visitando o armazém. Normalmente os humanos que vêm até aqui eram geralmente ladrões.";
 			next;
 			mes "[Chirp]";
-			mes "Isso não significa que você é um ladrão. Becayse você não teria qualificado como convidado. O Varmundt A Mansion não convida todos como convidados.";
+			mes "Isso não significa que você é um ladrão. Becayse você não teria qualificado como convidado. O Mansão Varmundt não convida todos como convidados.";
 			next;
 			mes "[Chirp]";
 			mes "Mesmo que você tenha essa intenção, não será fácil encontrar o que você quer aqui de qualquer maneira.";
@@ -7192,7 +7192,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 	mes "Você está aqui para cumprir a nossa promessa?";
 	mes "Qual trabalho você gostaria de assumir?";
 	next;
-	.@quest_menu$[0] = callsub( S_Menu, 17359,17360, "Warehouse Clearance" );
+	.@quest_menu$[0] = callsub( S_Menu, 17359,17360, "Autorização do Armazém" );
 	.@quest_menu$[1] = callsub( S_Menu, 17361,17362, "Basement Clearance" );
 
 	switch( select( .@quest_menu$[0], .@quest_menu$[1], "Passa-se alguma coisa?" ) ) {
@@ -7768,7 +7768,7 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 	npctalk "(¢Á_¢Á*) ¢Ï Connect!!", "", bc_self;
 	sleep2 1000;
 	if (ep17_2_main < 9) {
-		npctalk "Robô de Limpeza: Unauthorized user. Communication terminated.", "", bc_self;
+		npctalk "Robô de Limpeza: Usuário não autorizado. Comunicação encerrada.", "", bc_self;
 		setpcblock PCBLOCK_NPC, false;
 		end;
 	}
@@ -7783,7 +7783,7 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 		select( "Prazer em conhecê-lo." );
 		mes "[Robô de Limpeza]";
 		mes "A tarefa do robô de limpeza é limpar o esgoto e a primeira usina.";
-		npctalk "┏(^▽^)┛Cleaning..", "", bc_self;
+		npctalk "┏(^▽^)┛Limpeza..", "", bc_self;
 		next;
 		mes "[Robô de Limpeza]";
 		mes "Mas Robô de Limpeza não pode limpar agora Sad";
@@ -7846,11 +7846,11 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 		npctalk "(≥▽≤)~♬", "", bc_self;
 		break;
 	case 4:
-		npctalk "┏(^▽^)┛ Cleaning..", "", bc_self;
+		npctalk "┏(^▽^)┛ Limpeza..", "", bc_self;
 		break;
 	}
-	.@quest_menu$[0] = callsub( S_Menu, 5893,5894,5895,5896, "Sewage Plant Cleaning" );
-	.@quest_menu$[1] = callsub( S_Menu, 5897,5898,5899,5900, "1st Power Plant Cleaning" );
+	.@quest_menu$[0] = callsub( S_Menu, 5893,5894,5895,5896, "Limpeza da Estação de Esgoto" );
+	.@quest_menu$[1] = callsub( S_Menu, 5897,5898,5899,5900, "Limpeza da 1ª Usina" );
 
 	mes "[Robô de Limpeza]";
 	mes "A limpeza é divertida –";
@@ -7867,7 +7867,7 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 	case 3:
 		npctalk "(¥È_¥È)..(¥è_¥è)..(zZzZ)", "", bc_self;
 		mes "[Robô de Limpeza]";
-		mes "Communication ended.";
+		mes "Comunicação encerrada.";
 		close;
 	}
 	switch( checkquest(.@cd,PLAYTIME) ) {
@@ -8830,7 +8830,7 @@ ba_maison,306,206,5	script	Cotton#greeen	4_EP17_BASIC_B,{
 		close;
 	case 2:
 		mes "[Cotton]";
-		mes "Parece que você tem descanso suficiente, você quer brincar com os Pitayas novamente?";
+		mes "Parece que você tem descanso suficiente, você quer brincar com os Pitaya s novamente?";
 		erasequest 8595;
 		close;
 	}
@@ -8850,7 +8850,7 @@ ba_maison,306,206,5	script	Cotton#greeen	4_EP17_BASIC_B,{
 				case 8594: .@color$ = "^9ABF94Green"; break;
 			}
 			mes "[Cotton]";
-			mes "Por favor, cuide de 20" + .@color$ + "Pitayas^000000 Não, quero dizer, apenas acaricie-os!";
+			mes "Por favor, cuide de 20" + .@color$ + "Pitaya s^000000 Não, quero dizer, apenas acaricie-os!";
 			close;
 		case 2:
 			switch( .@quest_id[.@i] ) {
@@ -8861,7 +8861,7 @@ ba_maison,306,206,5	script	Cotton#greeen	4_EP17_BASIC_B,{
 				case 8594: .@color$ = "green"; break;
 			}
 			mes "[Cotton]";
-			mes "Ah! Há um monte de" + .@color$ + "Em você... Ah, você tem brincado com os Pitayas.";
+			mes "Ah! Há um monte de" + .@color$ + "Em você... Ah, você tem brincado com os Pitaya s.";
 			mes "Muito obrigado!";
 			mes "Aqui está o seu pagamento pelo seu trabalho duro.";
 			setquest 8595;
@@ -8889,7 +8889,7 @@ ba_maison,306,206,5	script	Cotton#greeen	4_EP17_BASIC_B,{
 		}
 		mes "[Cotton]";
 		mes "Muito obrigado!";
-		mes "Por hoje. Eu gostaria que você jogasse com 20" + .@color$ + "Pitayas^000000 Por favor.";
+		mes "Por hoje. Eu gostaria que você jogasse com 20" + .@color$ + "Pitaya s^000000 Por favor.";
 		mes "Você pode distingui-los pela cor. Você pode entrar agora mesmo. Divirta-se!";
 		setquest .@quest;
 		break;
@@ -8900,8 +8900,8 @@ ba_maison,306,206,5	script	Cotton#greeen	4_EP17_BASIC_B,{
 		break;
 	case 3:
 		mes "[Cotton]";
-		mes "Você só tem que ir para dentro da fazenda e brincar com os Pitayas. Se você aceitar o pedido, eu vou escolher uma cor, mas você pode matar apenas 20 por dia... Não, quero dizer, apenas acaricio-os.";
-		mes "Não se preocupe. Pitayas são naturalmente violentos quando jogam, geralmente somos mordidos quando brincamos com eles.";
+		mes "Você só tem que ir para dentro da fazenda e brincar com os Pitaya s. Se você aceitar o pedido, eu vou escolher uma cor, mas você pode matar apenas 20 por dia... Não, quero dizer, apenas acaricio-os.";
+		mes "Não se preocupe. Pitaya s são naturalmente violentos quando jogam, geralmente somos mordidos quando brincamos com eles.";
 		next;
 		mes "[Cotton]";
 		mes "Demorou muito tempo para perceber que o jogo igualmente violento era apropriado.";
@@ -8973,7 +8973,7 @@ ba_maison,79,278,3	script	Europa#eorpa	4_EP17_BASIC_B,{
 			mes "O meu nome é Europa...";
 			next;
 			mes "[Europa]";
-			mes "Bem-vindo ao Varmundt Mansão... bem-vindo... *buzz*...";
+			mes "Bem-vindo à Mansão Varmundt... bem-vindo... *buzz*...";
 			next;
 			select( "Não pareces bem." );
 			mes "[Europa]";
@@ -9164,7 +9164,7 @@ ba_in01,28,255,5	script	Manager Beta Almond#ep172_amd01	4_EP17_BASIC_B,{
 		mes "Você está no comando deste lugar a partir de hoje? Eu vou limpar bem.";
 		next;
 		mes "[Almond]";
-		mes "eu estou reparando SweetyAs partes quebradas, ele é bom em quebrá-las.";
+		mes "eu estou reparando Sweety As partes quebradas, ele é bom em quebrá-las.";
 		mes "Ele quer lutar muitas vezes, então você tem que ter cuidado";
 		next;
 		mes "[Almond]";
@@ -9218,7 +9218,7 @@ ba_in01,28,255,5	script	Manager Beta Almond#ep172_amd01	4_EP17_BASIC_B,{
 			setquest 18024;
 		}
 		next;
-		if (select( "Criar '" + .@md_name$ + "'.", "Enter '" + .@md_name$ + "'.'" ) == 1) {
+		if (select( "Criar '" + .@md_name$ + "'.", "Entrar '" + .@md_name$ + "'.'" ) == 1) {
 			if (!is_party_leader()) {
 				mes "^4D4DFFEste lugar é um Masmorra Memorial.";
 				mes "Você tem que ser um líder do partido para criar um Masmorra Memorial.^000000";
@@ -9598,7 +9598,7 @@ ba_pw02,42,267,5	script	Lensis#jh_ba	20629,{
 		next;
 		cutin "ep172_beta",2;
 		mes "[Lensis]";
-		mes "Network check, automatic error correction. Reconfirming packets......";
+		mes "Verificação de rede, correção automática de erros. Reconfirmando pacotes......";
 		mes "Eu confirmei.";
 		mes "No entanto, mais de 62% dos intrusos tinham padrões de comportamento semelhantes, então eu considerei você como um intruso.";
 		next;
@@ -9625,7 +9625,7 @@ ba_pw02,42,267,5	script	Lensis#jh_ba	20629,{
 		select( "Não devias ir ao médico?" );
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Aventureiro, você pode ir em frente no <NAVI>[mansion]<INFO>ba_maison,169,270,0,101,0</INFO></NAVI> e dizer-lhes para prepararem uma instalação médica?";
+		mes "Aventureiro, você pode ir em frente no <NAVI>[mansão]<INFO>ba_maison,169,270,0,101,0</INFO></NAVI> e dizer-lhes para prepararem uma instalação médica?";
 		mes "Eu e a Lazy cuidaremos de Elyumina e siga rapidamente.";
 		next;
 		cutin "",255;
@@ -9963,7 +9963,7 @@ ba_maison,234,51,5	script	Elyumina#jh_ba3	4_EP17_ELYUMINA,{
 		mes "De qualquer maneira, você," + strcharinfo(0) + "Obrigado por me arranjares o antídoto.";
 		next;
 		mes "[Elyumina]";
-		mes "E tu... foste Rocky? Lucky? Anyways, RebeliãoObrigado por correr por mim.";
+		mes "E tu... foste Rocky? Lucky? De qualquer forma, RebeliãoObrigado por correr por mim.";
 		npctalk "......Rookie, é Rookie.", "Rookie#jh_ba3", bc_self;
 		npctalk "Não estás a agradecer-me?", "Lazy#jh_ba3", bc_self;
 		next;
@@ -10020,7 +10020,7 @@ ba_maison,234,51,5	script	Elyumina#jh_ba3	4_EP17_ELYUMINA,{
 	next;
 	cutin "ep171_elyumina02",2;
 	mes "[Elyumina]";
-	mes "Você, se você vai tirar minha preciosa oportunidade de falar com o bonecas automáticas VarmundtEu mato-te!";
+	mes "Você, se você vai tirar minha preciosa oportunidade de falar com o bonecas automáticas Varmundt Eu mato-te!";
 	close2;
 	cutin "",255;
 	cloakonnpcself();
@@ -10199,7 +10199,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 		cutin "16loo_03",2;
 		mes "[Rookie]";
 		mes "Quer se trate de uma peça de vingança ou de um romance, devíamos fazer um antídoto primeiro e falar depois de melhorares.";
-		mes "MinaEles dizem que é perigoso por dentro...";
+		mes "Mina Eles dizem que é perigoso por dentro...";
 		next;
 		cutin "ep171_elyumina03",2;
 		mes "[Elyumina]";
@@ -10275,7 +10275,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 			next;
 			cutin "16lei_01",2;
 			mes "[Lazy]";
-			mes "Nós temos as folhas da Silva PapillaEntão vou pedir a alguém para criar um antídoto.";
+			mes "Nós temos as folhas da Silva Papilla Então vou pedir a alguém para criar um antídoto.";
 			next;
 			cutin "ep172_beta",2;
 			mes "[Seihyu]";

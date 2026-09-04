@@ -383,7 +383,7 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 		.@zeny = 1500000;
 		cutin "ep172_omega",2;
 		mes "[Yecheon]";
-		mes "eu trocarei ^FF00001 Physical Automatic Improvement Device^000000" + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
+		mes "Vou trocar por ^FF00001 Dispositivo Físico de Aprimoramento Automático^000000." + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
 		next;
 		cutin "",255;
 		switch( select( "Troca de Barmeal Ticket.", "Troca por 1500000 Zeny.", "Do not exchange." ) ) {
@@ -425,7 +425,7 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 		.@zeny = 1500000;
 		cutin "ep172_omega",2;
 		mes "[Yecheon]";
-		mes "eu trocarei ^FF00001 Magical Automatic Improvement Device^000000" + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
+		mes "Vou trocar por ^FF00001 Dispositivo Mágico de Aprimoramento Automático^000000." + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
 		next;
 		cutin "",255;
 		switch( select( "Troca de Barmeal Ticket.", "Troca por 1500000 Zeny.", "Do not exchange." ) ) {
@@ -478,7 +478,7 @@ ba_in01,87,389,2	script	Butterfly Merchant#ba_in01	4_EP17_MASTER_A,{
 	}
 	mes "[Butterfly Merchant]";
 	mes "Bem-vindo.";
-	mes "Você precisa de asas para se mudar para Barmund Mansion?";
+	mes "Você precisa de asas para se deslocar até a Mansão Barmund?";
 	close2;
 	callshop "barter_Teleport_Ep17_02";
 	end;

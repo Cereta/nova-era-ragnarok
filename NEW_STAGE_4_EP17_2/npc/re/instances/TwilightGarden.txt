@@ -302,7 +302,7 @@ OnMobDead:
 	if ('twilight_story == 19)
 		end;
 	if ('twilight_story == 20) {
-		npctalk "Você não deveria falar com EstParece que ela estava à espera.";
+		npctalk "Você não deveria falar com Est Parece que ela estava à espera.";
 		end;
 	}
 	end;
@@ -359,7 +359,7 @@ OnEvent07:
 	unitwalk 'guide,300,204, instance_npcname("Almond#amond01") + "::OnEvent08";
 	end;
 OnEvent08:
-	npctalk "A PitayaEles dizem que Amêndoas é delicioso? Você já comeu amêndoas antes?";
+	npctalk "A Pitaya Eles dizem que Amêndoas é delicioso? Você já comeu amêndoas antes?";
 	sleep 2000;
 	npctalk "Por aqui.";
 	unitwalk 'guide,300,190, instance_npcname("Almond#amond01") + "::OnEvent09";
@@ -587,7 +587,7 @@ OnTouch:
 		next;
 		mes "[Est]";
 		mes "Ele provavelmente foi para a parte ocidental da mansão, então vá até lá.";
-		mes "Você tem ElyuminaVai activar-se, se te aproximares dele.";
+		mes "Você tem Elyumina Vai activar-se, se te aproximares dele.";
 		if ('twilight_story == 20) {
 			'twilight_story = 21;
 			enablenpc instance_npcname("#to_bamq");
@@ -600,7 +600,7 @@ OnTouch:
 	if ('twilight_story == 21) {
 		mes "[Est]";
 		mes "Ele provavelmente foi para a parte ocidental da mansão, então vá até lá.";
-		mes "Você tem ElyuminaSe você chegar perto dele, ele vai ativar.";
+		mes "Você tem Elyumina Se você chegar perto dele, ele vai ativar.";
 		next;
 		mes "[Est]";
 		mes "Não se preocupe, eu vou cuidar Almond A partir daqui.";
@@ -830,7 +830,7 @@ OnStart:
 	end;
 OnMobDead:
 	killmonster 'map_bamq$, instance_npcname("twilight_daily") + "::OnMobDead";
-	mapannounce 'map_bamq$, "Almond: SweetyFaça isso com moderação", bc_map, 0xFF00;
+	mapannounce 'map_bamq$, "Almond: Sweety Faça isso com moderação", bc_map, 0xFF00;
 	enablenpc instance_npcname("Sweety#sweety_boss");
 	'sweety = 2;
 	end;

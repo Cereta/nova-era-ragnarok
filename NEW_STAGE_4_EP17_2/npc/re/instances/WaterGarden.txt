@@ -82,7 +82,7 @@ ba_maison,238,44,5	script	Harad#jh_ba1	4_EP17_BASIC_B,{
 			}
 			cutin "ep172_beta",2;
 			mes "[Harad]";
-			mes "Enter o ^CC0000" + .@instance_name$ + "^000000.";
+			mes "Entrar o ^CC0000" + .@instance_name$ + "^000000.";
 			next;
 			cutin "",255;
 			if (select( "^0000CDEntrar Jardim Aquático", "Entrar Jardim Aquático Difícil^000000" ) == 1)
@@ -193,8 +193,8 @@ OnTouch:
 	if ('water_garden == 1) {
 		mes "[Hetilla]";
 		mes "Bem-vindo ao jardim da água,";
-		mes "Você vai ver Papilla? Papillatem sido muito sensível sobre os intrusos ultimamente...";
-		npctalk "Bem-vindo ao jardim da água. Você vai ver Papilla? Papillatem sido muito sensível sobre os intrusos ultimamente...";
+		mes "Você vai ver Papilla? Papilla tem sido muito sensível sobre os intrusos ultimamente...";
+		npctalk "Bem-vindo ao jardim da água. Você vai ver Papilla? Papilla tem sido muito sensível sobre os intrusos ultimamente...";
 		next;
 		mes "[Hetilla]";
 		mes "Papilas estão brincando aqui e ali.";
@@ -319,7 +319,7 @@ OnStart:
 	initnpctimer;
 	end;
 OnTimer2000:
-	mapannounce 'map_ghg$, "A magia da PapillaO 's foi activado. Tem cuidado!", bc_map, 0xFFFF99;
+	mapannounce 'map_ghg$, "A magia da Papilla foi activado. Tem cuidado!", bc_map, 0xFFFF99;
 	end;
 OnTimer4000:
 	callsub( S_Spawn, 240,73,20676,9 );
@@ -360,8 +360,8 @@ OnMobDead:
 1@ghg,316,69,3	script(DISABLED)	Gardener#ghg_g2	4_EP17_SCISSORE,{
 	if ('water_garden == 3) {
 		mes "[Juventus]";
-		mes "Cuidado, Papillas e outros tipos de Papillas parecem estar vagando.";
-		npctalk "Cuidado, Papillas e outros tipos de Papillas parecem estar vagando.";
+		mes "Cuidado, Papilla s e outros tipos de Papilla s parecem estar vagando.";
+		npctalk "Cuidado, Papilla s e outros tipos de Papilla s parecem estar vagando.";
 		next;
 		mes "[Juventus]";
 		mes "O alcance do ataque varia de acordo com a cor do Papilla.";
@@ -462,7 +462,7 @@ OnStart:
 	deletearray 'gid_area_2;
 	deletearray 'type_area_2;
 
-	mapannounce 'map_ghg$, "A Papillas has devolvido!", bc_map, 0xFFFF99;
+	mapannounce 'map_ghg$, "Papilla voltou!", bc_map, 0xFFFF99;
 
 	setarray .@xy[0],
 		320,91,325,91,330,91,335,91,340,91,345,91,
@@ -765,8 +765,8 @@ OnTouch_:
 	}
 	progressbar_npc "00FF00",5;
 	mes "[Higel]";
-	mes "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado...";
-	npctalk "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado...";
+	mes "Próximo jardim... criação do portal concluída... Mova-se na direção das 12 horas para utilizá-lo... Obrigado...";
+	npctalk "Próximo jardim... criação do portal concluída... Mova-se na direção das 12 horas para utilizá-lo... Obrigado...";
 	next;
 	mes "[Higel]";
 	mes "Depois da mudança... Papilla No labirinto... Por favor, poda todos eles.";
@@ -1012,7 +1012,7 @@ OnTouchNPC:
 1@ghg,187,287,3	script(DISABLED)	Gardener#ghg_gb1	4_EP17_SCISSORE,2,2,{
 	if ('water_garden == 10) {
 		mes "[Velkina]";
-		mes "Você não esqueceu o seu pedido de SeiyuE entrou aqui, certo?";
+		mes "Você não esqueceu o seu pedido de Seiyu E entrou aqui, certo?";
 		next;
 		mes "[Velkina]";
 		mes "Não se esqueça de sair e conversar Seiyu E-mail ^0000CDReceba suas recompensas^000000 do trabalho de hoje.";

@@ -134,7 +134,7 @@ ba_maison,311,206,3	script	Luina#greeen	4_EP17_BASIC_B,{
 		mes "Você pode entrar se quiser olhar ao redor.";
 		next;
 		mes "[Luina]";
-		mes "Nós conversamos sobre CottonO trabalho primeiro, mas na verdade é a colheita que é mais urgente.";
+		mes "Nós conversamos sobre Cotton O trabalho primeiro, mas na verdade é a colheita que é mais urgente.";
 		mes "Se você está confiante em suas habilidades de combate, eu gostaria que você ajudasse com a colheita.";
 		mes "Espero que você possa me ajudar com a colheita...";
 		mes "Temos que alimentar a Boss Kitty também.";
@@ -185,7 +185,7 @@ ba_maison,311,206,3	script	Luina#greeen	4_EP17_BASIC_B,{
 		next;
 		mes "- Quando Luina estendeu a mão para o gato, colocou as cabeças até a mão dela.";
 		next;
-		mes "- LuinaO rosto do gato tornou-se complexo com uma expressão satisfeita enquanto acariciava o gato.";
+		mes "- Luina O rosto do gato tornou-se complexo com uma expressão satisfeita enquanto acariciava o gato.";
 		next;
 		mes "[Luina]";
 		mes "Hmm...";
@@ -197,7 +197,7 @@ ba_maison,311,206,3	script	Luina#greeen	4_EP17_BASIC_B,{
 		next;
 		mes "[Luina]";
 		mes "Por favor, ajude-me Silk Amanhã também.";
-		mes "Então, um dia... você será capaz de fazer amizade com todos os Pitayas!";
+		mes "Então, um dia... você será capaz de fazer amizade com todos os Pitaya s!";
 		mes "Aqui... é um sinal de promessa.";
 		completequest 8589;
 		getitem 1000103,20;
@@ -325,7 +325,7 @@ OnTouch:
 		}
 		end;
 	}
-	npctalk "Silk Acalme-se os Pitayas!";
+	npctalk "Silk Acalme-se os Pitaya s!";
 	end;
 
 OnStart:
@@ -381,8 +381,8 @@ OnMobDead:
 	npctalk "Silk:...";
 	next;
 	mes "[Silk]";
-	mes "Dear guest...";
-	npctalk "Silk: Dear guest...";
+	mes "Caro convidado...";
+	npctalk "Silk: Caro convidado...";
 	next;
 	mes "[Silk]";
 	mes "Eu entendo por que Luina Pediu mais trabalhadores porque ela mesma não conseguia colher rapidamente.";
@@ -479,7 +479,7 @@ OnMobDead:
 }
 
 1@lost,214,146,3	script(DISABLED)	Wooden Box#02	4_WOODBOX,{
-	npctalk "Silk: Salve-me! Eu vou ser comido pelos Pitayas!";
+	npctalk "Silk: Salve-me! Eu vou ser comido pelos Pitaya s!";
 	end;
 OnStart:
 	enablenpc();
@@ -684,8 +684,8 @@ OnMobDead:
 		npctalk "Silk: Há uma razão pela qual eu sempre guio os convidados.";
 		next;
 		mes "[Silk]";
-		mes "A próxima é perto da entrada, mas de acordo com Luinainformação, é uma área sonolenta. Você acha que está prestes a acordar?";
-		npctalk "Silk: Próximo para cima é perto da entrada, mas de acordo com LuinaA informação, é uma zona sonolenta, achas que ele está prestes a acordar?";
+		mes "A próxima é perto da entrada, mas de acordo com Luina informação, é uma área sonolenta. Você acha que está prestes a acordar?";
+		npctalk "Silk: Próximo para cima é perto da entrada, mas de acordo com Luina A informação, é uma zona sonolenta, achas que ele está prestes a acordar?";
 		close2;
 		if ('lost_farm == 10) {
 			'lost_farm = 11;
@@ -757,8 +757,8 @@ OnMobDead:
 		npctalk "Silk Eu não quero ter medo.";
 		next;
 		mes "[Silk]";
-		mes "Então vamos seguir em frente... Os Pitayas aqui são dorminhocos, então as respostas podem ser um pouco diferentes. Agora, pessoal... Venham aqui...";
-		npctalk "Silk: Então vamos seguir em frente... Os Pitayas aqui são sonolentos, então as respostas podem ser um pouco diferentes. Agora, pessoal... Venham aqui...";
+		mes "Então vamos seguir em frente... Os Pitaya s aqui são dorminhocos, então as respostas podem ser um pouco diferentes. Agora, pessoal... Venham aqui...";
+		npctalk "Silk: Então vamos seguir em frente... Os Pitaya s aqui são sonolentos, então as respostas podem ser um pouco diferentes. Agora, pessoal... Venham aqui...";
 		close2;
 		if ('lost_farm == 11) {
 			'lost_farm = 12;
@@ -881,8 +881,8 @@ OnMobDead:
 		npctalk "Silk: Tudo isso graças à sua ajuda... muito obrigado.";
 		next;
 		mes "[Silk]";
-		mes "Então, deixe-me chamar os Pitayas por aqui...";
-		npctalk "Silk: Então deixe-me chamar os Pitayas por aqui...";
+		mes "Então, deixe-me chamar os Pitaya s por aqui...";
+		npctalk "Silk: Então deixe-me chamar os Pitaya s por aqui...";
 		close2;
 		if ('lost_farm == 14) {
 			'lost_farm = 15;
@@ -897,8 +897,8 @@ OnMobDead:
 		npctalk "Silk: Sigh...";
 		next;
 		mes "[Silk]";
-		mes "De acordo com LuinaAs instruções, o que resta agora é...";
-		npctalk "Silk: De acordo com LuinaAs instruções, o que resta agora é...";
+		mes "De acordo com Luina As instruções, o que resta agora é...";
+		npctalk "Silk: De acordo com Luina As instruções, o que resta agora é...";
 		next;
 		mes "[Silk]";
 		mes "Atualizando... Hotéis similares";
@@ -933,7 +933,7 @@ OnMobDead:
 			sleep 3000;
 			npctalk "Silk: O jardim de rosas é onde o chefe Meow geralmente dorme, fica no segundo andar.";
 			sleep 3000;
-			npctalk "Silk: Vamos ver, LuinaTenho de acordar um Big Meow para lá chegar.";
+			npctalk "Silk: Vamos ver, Luina Tenho de acordar um Big Meow para lá chegar.";
 			sleep 3000;
 			npctalk "Silk O chefe Meow e o Big Meow têm uma hierarquia, por isso têm um local específico para dormir antes das refeições.";
 			sleep 3000;
@@ -1213,7 +1213,7 @@ OnTouch_:
 // boss
 1@lost,161,315,3	script(DISABLED)	Wooden Box#10	4_WOODBOX,{
 	if ('lost_farm < 19) {
-		npctalk "Silk: Você deve brincar com todos os Pitayas no seu caminho para cá.";
+		npctalk "Silk: Você deve brincar com todos os Pitaya s no seu caminho para cá.";
 		end;
 	}
 	if (!is_party_leader()) {
@@ -1242,8 +1242,8 @@ OnTouch_:
 	}
 	if ('lost_farm == 21) {
 		mes "[Silk]";
-		mes "Guest... Huh...";
-		npctalk "Silk: Guest... Huh...";
+		mes "Convidado... Hã...";
+		npctalk "Silk: Convidado... Hã...";
 		next;
 		mes "[Silk]";
 		mes "Isto não é... não é medo, é mais como ressentimento...";
@@ -1287,7 +1287,7 @@ OnMobDead:
 1@lost,161,315,3	script(DISABLED)	Wooden Box#10-1	4_WOODBOX,{
 	switch (rand(1,3)) {
 	case 1:
-		npctalk "Silk: He-Help me!";
+		npctalk "Silk: A-Ajude-me!";
 		break;
 	case 2:
 		npctalk "Silk: Ca-calm Boss Meow down~~~";

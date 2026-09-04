@@ -20,18 +20,8 @@
     "npc/re/mobs/dungeons/ba_pw.txt"
   ],
   "visible_string_occurrences": 6757,
-  "english_residual_count": 10,
+  "english_residual_count": 2,
   "english_residuals": [
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 1561,
-      "text": "Escritório de Segurança: Esta é a área 4, over."
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 3943,
-      "text": "Enter '"
-    },
     {
       "file": "npc/re/quests/quests_17_2.txt",
       "line": 9002,
@@ -39,40 +29,10 @@
     },
     {
       "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9221,
-      "text": "Enter '"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
       "line": 9824,
       "text": "O hamster no jardim come qualquer coisa."
-    },
-    {
-      "file": "npc/re/instances/WaterGarden.txt",
-      "line": 85,
-      "text": "Enter o ^CC0000"
-    },
-    {
-      "file": "npc/re/instances/WaterGarden.txt",
-      "line": 465,
-      "text": "A Papillas has devolvido!"
-    },
-    {
-      "file": "npc/re/instances/WaterGarden.txt",
-      "line": 768,
-      "text": "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado..."
-    },
-    {
-      "file": "npc/re/instances/WaterGarden.txt",
-      "line": 769,
-      "text": "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado..."
-    },
-    {
-      "file": "npc/re/instances/LostFarm.txt",
-      "line": 1290,
-      "text": "Silk: He-Help me!"
     }
   ],
-  "translated_literal_occurrences": 4198,
+  "translated_literal_occurrences": 4216,
   "localized_monster_display_names": 18
 }

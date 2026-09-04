@@ -88,7 +88,7 @@ ba_maison,120,321,5	script(CLOAKED)	#he_admin2	MD_ASSISTANT,{
 	case 1:
 		mes "[Gerente do Jardim de Flores]";
 		mes "Você acabou de entrar na área de segurança.";
-		mes "Por favor, descanse seu corpo por um dia como Sigma ordered.";
+		mes "Por favor, descanse por um dia, conforme Sigma ordenou.";
 		close;
 	case 2:
 		erasequest 12498;
@@ -209,7 +209,7 @@ OnInstanceInit:
 	if ('hidden_garden == 1) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
 		setpcblock PCBLOCK_NPC, true;
-		npctalk "Eu sou um boneca automática que foi projetado para funcionar somente se a sua mana sincronizar com Varmundtde mana sobre um certo nível.";
+		npctalk "Eu sou um boneca automática que foi projetado para funcionar somente se a sua mana sincronizar com a mana de Varmundt sobre um certo nível.";
 		sleep2 5000;
 		npctalk "[" + 'admin$ + "]" + "tem uma semelhança de mana de 73,6% com a de Varmundt. Quem exatamente é você [" + 'admin$ + "]?";
 		sleep2 5000;
@@ -236,9 +236,9 @@ OnInstanceInit:
 				sleep2 1000;
 				npctalk "A bonecas automáticas manter o jardim de flores e executar seus deveres dados individualmente.";
 				sleep2 5000;
-				npctalk "While Mestre Varmundt ainda estava presente, o andamento das tarefas foi verificado na forma de relatórios individuais e avaliações semanais no local.";
+				npctalk "Enquanto Mestre Varmundt ainda estava presente, o andamento das tarefas era verificado por relatórios individuais e avaliações semanais no local.";
 				sleep2 5000;
-				npctalk "Currently, Mestre Varmundt Está ausente há mais de 1 milhão de horas.";
+				npctalk "Atualmente, Mestre Varmundt está ausente há mais de 1 milhão de horas.";
 				sleep2 5000;
 				npctalk "Embora você não seja Mestre Varmundt, como alguém que tem mais de 70% de semelhança com seu padrão de mana, gostaria de pedir-lhe para avaliar nossos deveres.";
 				sleep2 5000;
@@ -329,7 +329,7 @@ OnTalk01:
 	'npc_is_talking = true;
 	npctalk "Este produto é um boneca automática que serve como um guia para o jardim de flores com um número de série BMD000001.";
 	sleep 5000;
-	npctalk "A verificação de similaridade para VarmundtO padrão de mana está em 73,6%. Mudando para o modo guia de jardim de flores.";
+	npctalk "A verificação de similaridade para Varmundt O padrão de mana está em 73,6%. Mudando para o modo guia de jardim de flores.";
 	sleep 5000;
 	npctalk "A operação começará em 3 segundos.";
 	progressbar_npc "3131FF",3;
@@ -371,7 +371,7 @@ OnEvent02:
 OnEvent03:
 	npctalk "Não há nenhuma ponte que conecte as seções aqui.";
 	sleep 6000;
-	npctalk "Since Varmundt era uma pessoa que pode se mover independentemente do terreno, não instalamos uma estrutura separada para pessoas normais durante a criação do jardim de flores.";
+	npctalk "Como Varmundt podia se mover independentemente do terreno, não instalamos uma estrutura separada para pessoas comuns durante a criação do jardim de flores.";
 	sleep 6000;
 	npctalk "No entanto, considerando a capacidade insuficiente do administrador temporário, vou apoiar os serviços de salto espacial.";
 	sleep 6000;
@@ -809,7 +809,7 @@ OnTouch:
 		next;
 		if (select( "Cancelar.", "O que são esses bonecas automáticas?" ) == 1) {
 			mes "[" + 'guide_name$ + "]";
-			mes "Entering standby mode.";
+			mes "Entrando em modo de espera.";
 			close;
 		}
 		mes "[" + 'guide_name$ + "]";
@@ -819,7 +819,7 @@ OnTouch:
 		mes "A unidade que atacou [" + 'admin$ + "] é a versão inicial do Classe 4 tipo combate bonecas automáticas. Sua força de combate é equivalente a 20 seres humanos adultos.";
 		next;
 		mes "[" + 'guide_name$ + "]";
-		mes "Eu entreguei a informação ao gerente ^0000CDSigma^000000, porque os resultados foram inesperados. A capacidade de combate do administrador temporário não é de um ser humano médio.";
+		mes "Eu entreguei a informação ao gerente ^0000CD Sigma^000000, porque os resultados foram inesperados. A capacidade de combate do administrador temporário não é de um ser humano médio.";
 		next;
 		select("Quem é esse??");
 		mes "[" + 'guide_name$ + "]";
@@ -920,11 +920,11 @@ OnEvent:
 	sleep 500;
 	npctalk "---- No match ----", instance_npcname("#swat_3");
 	sleep 2000;
-	npctalk "Suppress unauthorized outsider.", instance_npcname("#swat_1");
+	npctalk "Neutralizar intruso não autorizado.", instance_npcname("#swat_1");
 	sleep 500;
-	npctalk "---- Combat Mode ----", instance_npcname("#swat_2");
+	npctalk "---- Modo de Combate ----", instance_npcname("#swat_2");
 	sleep 500;
-	npctalk "---- Combat Mode ----", instance_npcname("#swat_3");
+	npctalk "---- Modo de Combate ----", instance_npcname("#swat_3");
 	sleep 500;
 	for ( .@i = 1; .@i < 4; ++.@i )
 		donpcevent instance_npcname("#swat_" + .@i) + "::OnSummon";
@@ -1058,7 +1058,7 @@ OnSummon2:
 		'hidden_garden = 14;
 		'guide_id = getnpcid(0, instance_npcname("#BMD000005"));
 		npcspeed 200;
-		npctalk "É a minha primeira vez aqui, aqui é onde SigmaNormalmente, a comunicação é feita apenas através da rede.";
+		npctalk "É a minha primeira vez aqui, aqui é onde Sigma Normalmente, a comunicação é feita apenas através da rede.";
 		unitwalk 'guide_id,85,91, instance_npcname("#BMD000005") + "::OnEvent01";
 	}
 	end;
@@ -1114,7 +1114,7 @@ OnTouch:
 	specialeffect EF_MOONSTAR;
 	if ('hidden_garden == 15) {
 		removespecialeffect EF_MARKING_USE_CHANGEMONSTER;
-		select("VarmundtPorque estás aqui?");
+		select("Varmundt Porque estás aqui?");
 		setpcblock PCBLOCK_NPC, true;
 		sleep2 1000;
 		npctalk "Claro. Você conhece o mestre Varmundt well. [" + strcharinfo(0) + "].";
@@ -1346,7 +1346,7 @@ OnTalk04:
 	sleep 3000;
 	npctalk "Uma entidade fortemente influenciada pelo intelecto de Kappa, que se concentra em gerenciar os fundos da mansão, é muito calculista e obcecada em ganhar dinheiro.";
 	sleep 2500;
-	npctalk "Children affected by LambdaAs memórias das memórias tendem a ser guerreiras em relação a estranhos. Eles não confiam em ninguém, mas Mestre Varmundt.";
+	npctalk "As crianças afetadas pelas memórias de Lambda tendem a ser hostis com estranhos. Elas não confiam em ninguém além de Mestre Varmundt.";
 	sleep 2500;
 	npctalk "É assim que eles tendem a ser, então eu gostaria que você se referesse a eles antes de conhecê-los.";
 	sleep 1500;
@@ -1371,7 +1371,7 @@ OnEvent:
 	end;
 
 OnEvent01:
-	npctalk "Este lugar é restrito a menos que você tenha o mesmo padrão que VarmundtFiquei surpreso ao saber que um estranho está dentro do jardim.";
+	npctalk "Este lugar é restrito a menos que você tenha o mesmo padrão que Varmundt Fiquei surpreso ao saber que um estranho está dentro do jardim.";
 	unitwalk 'guide_id,73,87, instance_npcname("#sigma") + "::OnEvent02";
 	end;
 
@@ -1421,7 +1421,7 @@ OnEvent08:
 	specialeffect EF_MOONSTAR;
 	npctalk "Fomos originalmente baseados em dispositivos holográficos de apoio à pesquisa AI. Eu não posso nem exercer qualquer força física.";
 	sleep 5000;
-	npctalk "Temos vindo a trabalhar na organização e gravação do processo ao lado de Varmundtda pesquisa.";
+	npctalk "Temos vindo a trabalhar na organização e gravação do processo ao lado de da pesquisa de Varmundt.";
 	sleep 5000;
 	npctalk "medida que os dados se acumulam ao longo do tempo, o sinal eletrônico simples se desenvolveu no que vocês, humanos, muitas vezes chamam de inteligência.";
 	sleep 5000;
