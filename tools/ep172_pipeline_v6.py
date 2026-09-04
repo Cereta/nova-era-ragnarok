@@ -7,15 +7,9 @@ from pathlib import Path
 
 import ep172_pipeline_v4 as base
 
-# Guarda as implementações originais antes dos monkey patches.
 BASE_NEEDS = base.needs
 BASE_NORMALIZE = base.normalize
 
-# v6 corrige a causa-raiz do v5:
-# 1) codec de literais não duplica escapes de aspas;
-# 2) espaços nas bordas dos nomes/tokens protegidos são preservados;
-# 3) cache novo evita reaproveitar segmentos defeituosos do v4/v5;
-# 4) resíduos reais conhecidos recebem terminologia PT-BR determinística.
 base.GLOSSARY.update({
     "Manager Beta": "Gerente Beta",
     "Cleaning Robot ¥Ø": "Robô de Limpeza",
@@ -27,6 +21,7 @@ base.GLOSSARY.update({
     "Enter Zone": "Entrar na Área",
     "Water Garden Hard": "Jardim Aquático Difícil",
     "Water Garden": "Jardim Aquático",
+    "Rebellion": "Rebelião",
 })
 
 base.EXACT.update({
@@ -64,8 +59,6 @@ def decode_literal_v6(token: str) -> str:
 
 
 def encode_literal_v6(text: str) -> str:
-    # Escapa exatamente uma vez. Tags, cores e demais caracteres do texto
-    # visível permanecem semanticamente idênticos.
     out = []
     for ch in text:
         if ch == '\\':
@@ -86,7 +79,6 @@ def protected_re_v6():
         r'\\[nrt]',
         r'\{[^{}]{1,80}\}',
     ]
-    # Glossário antes de nomes próprios para proteger frases compostas.
     parts += [re.escape(x) for x in sorted(base.GLOSSARY, key=len, reverse=True)]
     parts += [
         r'(?<![A-Za-zÀ-ÿ])' + re.escape(x) + r'(?![A-Za-zÀ-ÿ])'
@@ -139,6 +131,7 @@ def normalize_v6(text: str, source: str = '') -> str:
         r'\bMaster Varmundt\b': 'Mestre Varmundt',
         r'\bEnter Zone\b': 'Entrar na Área',
         r'\bWait a sec!!\b': 'Espere um pouco!!',
+        r'\bRebellion\b': 'Rebelião',
     }
     for pattern, replacement in fixes.items():
         text = re.sub(pattern, replacement, text, flags=re.I)
@@ -224,7 +217,6 @@ def translate_v6(text: str, cache):
     return result.strip()
 
 
-# As funções do módulo-base consultam estes globais durante a execução.
 base.decode_literal = decode_literal_v6
 base.encode_literal = encode_literal_v6
 base.split = split_v6
