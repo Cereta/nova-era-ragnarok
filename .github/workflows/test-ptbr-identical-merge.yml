@@ -1,0 +1,87 @@
+name: Test PTBR identical merge
+
+on:
+  push:
+    branches: [migration/ptbr-identical-merge]
+    paths:
+      - 'tools/merge_ptbr_identical.py'
+      - '.github/workflows/test-ptbr-identical-merge.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Synthetic fail-closed tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/ne-old /tmp/ne-new /tmp/ne-out
+          mkdir -p /tmp/ne-old/npc/test /tmp/ne-new/npc/test
+          cat > /tmp/ne-old/npc/test/ok.txt <<'EOF'
+          test,1,1,0 script Test#same 1,{
+              mes "[Guia]";
+              mes "Texto traduzido.";
+              mapannounce "prontera","Mensagem traduzida",bc_map;
+              cutin "same_file",2;
+              close;
+          }
+          EOF
+          cat > /tmp/ne-new/npc/test/ok.txt <<'EOF'
+          test,1,1,0 script Test#same 1,{
+              mes "[Guide]";
+              mes "Original text.";
+              mapannounce "prontera","Original message",bc_map;
+              cutin "same_file",2;
+              close;
+          }
+          EOF
+          cat > /tmp/ne-old/npc/test/reject.txt <<'EOF'
+          test,1,1,0 script Reject#same 1,{
+              mes "Traduzido";
+              cutin "legacy_file",2;
+              close;
+          }
+          EOF
+          cat > /tmp/ne-new/npc/test/reject.txt <<'EOF'
+          test,1,1,0 script Reject#same 1,{
+              mes "Original";
+              cutin "new_file",2;
+              close;
+          }
+          EOF
+          printf '%s\n' npc/test/ok.txt npc/test/reject.txt > /tmp/ne-allow.txt
+          python tools/merge_ptbr_identical.py /tmp/ne-old /tmp/ne-new /tmp/ne-out --allow-list /tmp/ne-allow.txt --report /tmp/ne-report.json
+          grep -F 'mes "Texto traduzido.";' /tmp/ne-out/npc/test/ok.txt
+          grep -F 'mapannounce "prontera","Mensagem traduzida",bc_map;' /tmp/ne-out/npc/test/ok.txt
+          grep -F 'cutin "new_file",2;' /tmp/ne-out/npc/test/reject.txt
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/ne-report.json',encoding='utf-8'))
+          by={x['path']:x for x in r['files']}
+          assert by['npc/test/ok.txt']['status']=='imported', by
+          assert by['npc/test/reject.txt']['status']=='rejected', by
+          assert by['npc/test/reject.txt']['reason']=='structure_or_nonvisible_content_differs', by
+          assert r['summary']['visible_strings_replaced']==3, r
+          print(r['summary'])
+          PY
+
+      - name: Audit EP17.2 translated tree against pinned upstream
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --filter=blob:none https://github.com/rathena/rathena.git /tmp/rathena
+          git -C /tmp/rathena checkout e985006171d2eb320ee512a653f4c83aea3d81b6
+          python tools/merge_ptbr_identical.py NEW_STAGE_4_EP17_2 /tmp/rathena /tmp/ep172-out --report /tmp/ep172-merge-report.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/ep172-merge-report.json',encoding='utf-8'))
+          print(json.dumps(r['summary'],ensure_ascii=False,indent=2))
+          for item in r['files']:
+              if item['status']!='identical_no_change':
+                  print(item['status'], item['path'], item.get('reason',''), item.get('replaced_visible_strings',''))
+          PY
