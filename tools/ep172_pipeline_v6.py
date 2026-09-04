@@ -60,13 +60,20 @@ def decode_literal_v6(token: str) -> str:
 
 def encode_literal_v6(text: str) -> str:
     out = []
-    for ch in text:
+    i = 0
+    while i < len(text):
+        ch = text[i]
         if ch == '\\':
+            if i + 1 < len(text) and text[i + 1] in 'nrt':
+                out.append('\\' + text[i + 1])
+                i += 2
+                continue
             out.append('\\\\')
         elif ch == '"':
             out.append('\\"')
         else:
             out.append(ch)
+        i += 1
     return '"' + ''.join(out) + '"'
 
 
