@@ -271,7 +271,7 @@ ba_in01,87,386,3	script	Child Manager ©¬#ep172_pet	EP17_2_CHILD_ADMIN1,{
 ba_in01,87,376,3	script	Cube Lane#ep172cube	4_EP17_GUARD_B,{
 	mes "[Cube Lane]";
 	mes "Estamos oferecendo cubos de reforço que refinarão sua^0000CD+4^000000Ilusão e Equipamento Automático para^FF0000+7^000000Em um instante!";
-	mes "Varmundt é sem dúvida o melhor homem do mundo!";
+	mes "VarmundtÉ sem dúvida o melhor homem do mundo!";
 	close2;
 	callshop "ep172cubeshop00";
 	end;

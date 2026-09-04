@@ -2,177 +2,3862 @@
   "status": "FAIL",
   "stats": {
     "files": 16,
-    "visible_occurrences": 6779,
-    "english_visible_residuals": 1,
-    "untranslated_visible_literals": 0,
-    "mojibake_or_placeholders": 0,
-    "hangul_visible_residuals": 0,
-    "control_token_mismatches": 0,
-    "structure_mismatches": 4,
+    "visible_occurrences": 6729,
+    "english_visible_residuals": 38,
+    "untranslated_visible_literals": 3,
+    "mojibake_or_placeholders": 21,
+    "hangul_visible_residuals": 1,
+    "control_token_mismatches": 1,
+    "structure_mismatches": 27,
+    "internal_reference_mismatches": 0,
     "unlocalized_monster_names": 0,
-    "spacing_anomalies": 16
+    "proper_name_boundary_errors": 361
   },
   "failures": [
     {
-      "kind": "structure_changed",
-      "file": "npc/re/quests/quests_17_2.txt"
-    },
-    {
-      "kind": "visible_literal_count_changed",
+      "kind": "proper_name_missing_or_glued",
       "file": "npc/re/quests/quests_17_2.txt",
-      "upstream": 4691,
-      "stage": 4706
+      "line": 83,
+      "name": "Mark",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Por um momento, eu viMark smiling brightly carrying a donation bag..."
     },
     {
-      "kind": "structure_changed",
-      "file": "npc/re/instances/HiddenGarden.txt"
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 114,
+      "name": "Mark",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Bem, devemos ir e encontrar-nos comMarke os outros."
     },
     {
-      "kind": "visible_literal_count_changed",
-      "file": "npc/re/instances/HiddenGarden.txt",
-      "upstream": 631,
-      "stage": 634
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 121,
+      "name": "Magi",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu acho que posso ouvirMagiA voz de lá!!!"
     },
     {
-      "kind": "structure_changed",
-      "file": "npc/re/instances/WaterGarden.txt"
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 183,
+      "name": "Mark",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Está tudo bem,MarkAs habilidades de cura quase me curaram completamente."
     },
     {
-      "kind": "visible_literal_count_changed",
-      "file": "npc/re/instances/WaterGarden.txt",
-      "upstream": 321,
-      "stage": 322
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 196,
+      "name": "Mark",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Nós esperamos por muito tempo e você não apareceu, entãoMarkFoi procurar por você!"
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 58,
-      "name": "Elena",
-      "text": "EstElena disse que se juntaria a nós mais tarde, mas há uma boa chance de ela não poder participar."
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 201,
+      "name": "Mark",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Esse é o caraMarkestá à procura?"
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 66,
-      "name": "Est",
-      "text": "EstNão olhe muito ao redor e finja que não está vigilante, entendeu?"
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 205,
+      "name": "Lasis",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu sou...LasisdaRebellion."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 227,
-      "name": "Est",
-      "text": "Algo importante surgiu. É por isso que estou aqui comEst."
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 205,
+      "name": "Rebellion",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu sou...LasisdaRebellion."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 249,
-      "name": "Est",
-      "text": "Estou curioso, devemos ir rápido?"
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 206,
+      "name": "Dew",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "És tu.DewEu vi-te na base antes..."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 298,
-      "name": "Est",
-      "text": "Estás bem, aventureiro? Então, podemos continuar."
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 210,
+      "name": "Lasis",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu conheciLasismais cedo no caminho até aqui."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 305,
-      "name": "Est",
-      "text": "Você não deveria falar comEstParece que ela estava à espera."
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 211,
+      "name": "Mark",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "QuandoMarkE eu estava sozinho, de repente um grande número de inimigos veio do nada."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 412,
-      "name": "Est",
-      "text": "ÉEst!"
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 242,
+      "name": "Mark",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "MarkDê uma olhada neste lugar."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 575,
-      "name": "Est",
-      "text": "Estavam a caminho do outro."
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 260,
+      "name": "Alp",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tenho um aviso deAlp... que eles encontraram a porta no caminho de volta, então vamos chegar lá antes que fique mais perigoso."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 743,
-      "name": "Est",
-      "text": "Estarei à espera na casa de hóspedes."
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 277,
+      "name": "Alp",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tenho um aviso deAlp... que eles encontraram a porta no caminho de volta, então vamos chegar lá antes que fique mais perigoso."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 794,
-      "name": "Est",
-      "text": "Estás pronto?"
+      "kind": "visible_literal_untranslated",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 320,
+      "text": "[알프]"
+    },
+    {
+      "kind": "hangul_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 320,
+      "text": "[알프]"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 402,
+      "name": "Dew",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Desculpe-me...DewDe repente, desapareceu de novo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 430,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Fale comAlphaperto da porta, ela vai registrá-lo como convidados."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 446,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu ouvi que oVarmundtA mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 584,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu ouvi que oVarmundtA mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 591,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu tenho uma tarefa temporária deAlphae estou pedindo ajuda de outros aventureiros."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 673,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Nós lhe emitimos uma licença de convidado. Ao contrário de um convite formal deVarmundtEste cartão é apenas temporário."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 751,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": ". Bem-vindo aoVarmundtMansão, prazer em conhecê-lo, sou o gerente desta mansão."
     },
     {
       "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1043,
+      "text": "O fornecimento de chips de comunicação do repetidor é suficiente."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1048,
+      "text": "Você está aqui hoje para me ajudar a obter chips de comunicação sobressalentes para o repetidor?"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1060,
+      "text": "Por favor me traga^0000CD10 Boneca Automática Communication Chips^000000para o repetidor. Eu acho que isso será suficiente para os dias de fornecimento."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1063,
+      "text": "Ele também nos ajuda com o quebradobonecas automáticasPor favor, cuide de qualquerBeta Quebradoestá vagando ao redor da mansão e trazer seus chips de comunicação com você."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1086,
+      "text": "Embora seja reparado após a descoberta, é um problema que ocorre continuamente. A demanda necessária de chips de comunicação é difícil de fornecer."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1102,
+      "text": "Por favor me traga^0000CD10 Boneca Automática Communication Chips^000000para o repetidor. Eu acho que isso será suficiente para os dias de fornecimento."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1105,
+      "text": "Ele também nos ajuda com o quebradobonecas automáticasPor favor, cuide de qualquerBeta Quebradoestá vagando ao redor da mansão e trazer seus chips de comunicação com você."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1118,
+      "text": "Por favor me traga^0000CD10 Boneca Automática Communication Chips^000000para o repetidor. Eu acho que isso será suficiente para os dias de fornecimento."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1121,
+      "text": "Ele também nos ajuda com o quebradobonecas automáticasPor favor, cuide de qualquerBeta Quebradovagueie pela mansão e traga seus chips de comunicação com você."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1236,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Oh, não admira! A rede parou de funcionar de repente. O repetidor não está funcionando! Então por que não estáAlpha coming?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1238,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Alphaestá ocupado agora."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1240,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "AlphaEstá muito ocupado para vir? De jeito nenhum. Oh, você estava tentando me ajudar voluntariamente? Que convidado incomum. Venha pensar nisso, houve um^0000CDcliente como esse antes^000000."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1287,
+      "text": "Todos os chips de comunicação são padrão, por isso, se forem substituídos por um novo, acho que voltará ao normal."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1309,
+      "name": "Beta",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Por favor, cuide daBeta Quebradoe trazer^0000CD1 Boneca Automática Communication Chip^000000."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1448,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Lamento interrompê-lo no seu intervalo. Por favor, aproveite esta área doVarmundtMansão para o seu coração contente."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1561,
+      "text": "Escritório de Segurança: Esta é a área 4, over."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1627,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Se este for o último, por favor volte para<NAVI>[Alpha]<INFO>ba_maison,74,150,0,0,0</INFO></NAVI>. Também... Bem-vindo aoVarmundtSe você precisar de ajuda, sinta-se à vontade para pedir qualquerboneca automática."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1665,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "você pode conhecerAlphaPrimeiro e depois voltar aqui na casa de chá?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1673,
+      "name": "Dien",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "DienPor favor, verifique a autenticidade novamente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1674,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Este é um documento que o governo examinou quando os mercenários ficaram aqui noVarmundt Mansion."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1708,
+      "name": "Rebellion",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Estou a falar com oRebellion <NAVI>[Elders]<INFO>ba_in01,203,103,0,0,0</INFO></NAVI>, mas é difícil verificar eventos que aconteceram no passado..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1717,
+      "name": "Rebellion",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Estou a falar com oRebellion <NAVI>[Elders]<INFO>ba_in01,203,103,0,0,0</INFO></NAVI>, mas eles são bastante teimosos, talvez porque eles já são idosos."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1727,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui emVarmundt Mansion."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1731,
+      "name": "Ridsh",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tess: Por favor, preste atenção aRidsh."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1735,
+      "name": "Toss",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tess: Eu achoKaya TossTem algo a dizer."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1735,
+      "name": "Kaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tess: Eu achoKaya TossTem algo a dizer."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1812,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Sim, oVarmundtNão é humano, mas provavelmente é uma fonte de dados mais neutra."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1816,
+      "name": "Lucky",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "LuckyPor que você não está nos ouvindo e tomando o lado do governo?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1849,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui emVarmundt Mansion."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1882,
+      "name": "Ridsh",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Dien: Você se importaria de ouvirRidsh's story?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1937,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Esta pessoa realmente não se parece com um mercenário. Por que uma pessoa como esta estaria pertoVarmundtMansão e ser morto?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1959,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Mais tarde, porém, foi encontrado morto noVarmundt Mansion."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 1988,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Mesmo que seja a oposição do governo, teria sido difícil cometer assassinato sem escapar dos olhos dos mercenários e dos trabalhadores dentro doVarmundt Mansion."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2003,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Teria sido difícil evitar os olhos dos mercenários e dos trabalhadores naVarmundt Mansion."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2041,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2071,
+      "name": "Ridsh",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Rookie: Vamos ouvirRidsh."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2081,
+      "name": "Kaya",
+      "expected_occurrences": 2,
+      "found_occurrences": 1,
+      "text": "Sr. Aventureiro, Sr.Kayaestava muito deprimido. você se importa de verificar o Sr.Kaya?"
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2134,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2180,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2184,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Isso, ele estava emVarmundt Mansion..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2245,
+      "name": "Rebellion",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O passado? Não. É sobre o que está acontecendo agora, o tempo presente. AquelesRebellioncrianças e aqueles que ainda estão doentes em Cor estão acontecendo agora."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2269,
+      "name": "Toss",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Kaya TossEu voltarei depois de organizar meus pensamentos por um momento."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2300,
+      "name": "Grey",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Pelo que ouvi doGreyParecia um assunto urgente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2328,
+      "name": "Toss",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Saí assim que entrei em contato com o vice-presidenteKaya TossE acabou de chegar."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2328,
+      "name": "Kaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Saí assim que entrei em contato com o vice-presidenteKaya TossE acabou de chegar."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2335,
+      "name": "Toss",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Vice President TossEu vi os relatos de que você trabalhou com os agentes do governo e aventureiros."
+    },
+    {
+      "kind": "script_structure_line_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2364,
+      "upstream": "\t\tmes \"<STRING>\";",
+      "stage": "\t\tmes \"<STRING>\"opinião e analisar completamente o que ele investigou até agora, e distribuir as compensações e punição em conformidade.\";"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2364,
+      "name": "Kaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Também aceitaremos o vice-presidenteKaya Toss\\\\"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2435,
+      "name": "Ridsh",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Cotnes: Parece queRidshTem algo a dizer."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2658,
+      "name": "Ridsh",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "RidshDiga ao presidente para sair!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2711,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Que tipo de pessoa éVarmundtQuem nos aceitou de bom grado?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2720,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Sim, estamos vivos graças ao Sr.Varmundte o Sr. H"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 2806,
+      "name": "Varmundt",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "Bem-vindo aoVarmundtMansão. AVarmundtA Mansion oferece vários benefícios, como serviços médicos, compras e entretenimento e atividades de lazer."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3219,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Alphadisse que podemos consertar qualquer coisa que está quebrada, mas há um problema maior..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3222,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O hackeadoboneca automáticaé imediatamente cortado da rede para evitar contaminação, assumindo queAlphatem um sinal forte."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3226,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Alphadisse que teremos que usar a força parabonecas automáticasAssim."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3230,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3247,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Anyway, AlphaDito isto, temos que lidar com os robôs automáticos que não são capazes de distinguir o código de identificação e recuperar os núcleos."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3263,
+      "name": "Mina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Um... MinaVocê pode falar com as pessoas sem mordê-las?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3275,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O gerente que trouxe a refeição de repente mudou e atacouElyumina."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3279,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O gerente usou a bandeja que estava carregando para baterElyuminana cabeça tão forte, que fez um som alto."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3284,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu ouvi uma história semelhante deAlphaE nunca pensei que fosses tu."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3292,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3301,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Vamos recuperar os núcleos dos gerentes hackeados queAlphaSobre o que se falou."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3315,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu não posso evitar. Estou preocupado comElyumina's safety."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3316,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Também estou preocupado com os gerentes que perderam seu código de identificação queAlpha mentioned."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3356,
+      "name": "Beta",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O corpo deGerente Betaescondido sob as paisagens."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3359,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu vou deixarAlphaSaiba mais tarde para que ela possa recuperar o corpo da boneca."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3417,
+      "name": "Lucky",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "LuckyPediu-me um favor."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3418,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "ElyuminaParece ter sido atacado novamente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3516,
+      "name": "Elena",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu não sei o que você está planejando, mas euElenaO Bolkova vai levar-te."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3524,
+      "name": "Rookie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Vou levar este tipo comigo.RookieProvavelmente também está lá."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3590,
+      "name": "Lucky",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Oh, aqui está você, desta forma, éLuckyAinda não está aqui?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3596,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu falei comAlphaPor um momento."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3635,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O que devo fazer, você não reconheceu o GrandeElyuminaQueres que te bata na cabeça?"
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3668,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3681,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3687,
+      "name": "Rookie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "RookieUsa essa coisa ali!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3702,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Como você se atreve a ignorar o GrandeElyuminaA linha é muito curta, não é?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3771,
+      "name": "Tess",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Ele foi tomado porTessParece que vão interrogá-lo por conta própria."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3775,
+      "name": "Elyumina",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "ElyuminaTambém teria sido assim.ElyuminaTem muita sorte, certo?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3841,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "É uma desgraça para mim, o grandeElyumina."
+    },
+    {
+      "kind": "visible_literal_untranslated",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3943,
+      "text": "Enter '"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3943,
+      "text": "Enter '"
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3950,
+      "upstream": 2,
+      "stage": 3
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3967,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Entregámos o prisioneiro aAlpha."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3973,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Alphavai fazer mais pesquisas sobre o hangar do dirigível, então vá conferir."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 3994,
+      "name": "Rebellion",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Vou explicar ao resto doRebellionPrimeiro, vá em frente e cuide disso."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4036,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Agora estou de volta emAlpha's request."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4052,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4063,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu disseAlphaque os dados analisáveis no estado atual acabaram."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4108,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4112,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4118,
+      "name": "Tess",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "TessParece estar trabalhando duro na coordenação com as empresas, então isso é tudo para nós."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4137,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Então eu vou deixar todo mundo e ajudarAlpha."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4143,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu eAlmondvai cuidar disso."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4184,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4222,
+      "name": "Rebellion",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Sim. Se oRebellionIsso pode se tornar uma questão diplomática."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4335,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu eAlphaanalisará a informação corretamente, assim que eu gostaria que você limpasse o resto dos intrusos."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4377,
+      "name": "Prontera",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Se você está agendado está aberto, você não vai vir comigo para oProntera Palace?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4406,
+      "name": "Rebellion",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "ARebellionatualmente estão usando-o como uma sala de estar, está tudo bem se você esperar lá?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4481,
+      "name": "Prontera",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu cheguei com Crux para oPronteraPalácio, o palácio estava cheio de uma estranha emoção."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4621,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Peço desculpa. ÉVarmundtA política da Mansion para manter os hóspedes de^0000CDsituações perigosas^000000Por favor, espere um pouco mais."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4643,
+      "name": "Rookie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "RookieO que se passa?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4677,
+      "name": "Gonie",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "Bem... Já faz algum tempo desde queGonieEntrei, mas ainda não saiu. Se alguém com um poder comoGonienão sai após o limite de tempo, isso significa que há um problema."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4686,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "E éGonieÉ muito frio para perdas em meio a isso."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4745,
+      "name": "Boiler",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Literalmente comoBoilerdisse. Desde há muito tempo atrás, o cabelo desconhecido era frequentemente encontrado. Talvez o cabelo e os perigos desconhecidos do banho sejam os mesmos."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4781,
+      "name": "Lucky",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "Há... tu sabes,LuckyNão me interprete mal, não seria melhor seLuckyFica aqui?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4782,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Sim, é isso mesmo. Vamos procurar porGonieÉ melhor ficares aqui."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4790,
+      "name": "Lucky",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "No!! LuckyVocê é o melhor! O melhor!! Você sabe que realmente não podemos viver semLuckyMas..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4870,
+      "name": "Varmundt",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "VarmundtA casa de banho da mansão é famosa há muito tempo.VarmundtÉ uma pessoa que valoriza descansar no final de um dia cansativo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4904,
+      "name": "Canine",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "DennyeCanine. Os seres humanos são susceptíveis de ser individuais ou grupos de restos de ilusão ou de um terceiro. Há também a possibilidade de eles usarem uma saída diferente do que é conhecido, portanto, verifique as instalações com cuidado."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4904,
+      "name": "Denny",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "DennyeCanine. Os seres humanos são susceptíveis de ser individuais ou grupos de restos de ilusão ou de um terceiro. Há também a possibilidade de eles usarem uma saída diferente do que é conhecido, portanto, verifique as instalações com cuidado."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 4950,
+      "name": "Boiler",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu vou para oBoilerQuarto."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5370,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu vou perguntarAlphaNão sei se é possível, mas, logicamente, é mais eficiente se houver dois de mim."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5534,
+      "name": "Lucky",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "LuckyPensei que te tivesse acontecido alguma coisa porque estavas sozinho!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5544,
+      "name": "Lucky",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "LuckyFoi você que disparou o sinal? Por que nos telefonou, não nos disse para irmos para o lago?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5557,
+      "name": "Lucky",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "Claro! SeLuckynão éLuckyEntão, quem é?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5583,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Dadas as circunstâncias, é uma vida inteligente e não significa nos machucar. Está apenas tentando nos tirar deste lugar. Há uma grande possibilidade de queGonie's safe."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5610,
+      "name": "Denny",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "DennyPreparem-se para montar uma armadilha."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5714,
+      "name": "Lucky",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": ": Eu coloquei a armadilha ondeLuckyPerguntei-me também. Vamos passar para o próximo local."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5855,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Não é isso?GonieE há... doisLucky?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5855,
+      "name": "Lucky",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Não é isso?GonieE há... doisLucky?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5862,
+      "name": "Lucky",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Isto éLucky. Correcto."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5897,
+      "name": "Gonie",
+      "expected_occurrences": 2,
+      "found_occurrences": 1,
+      "text": "Gonie, GonieBebe isto, podes beber?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5898,
+      "name": "Lucky",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "LuckyÉ melhor ficares um pouco para trás, acho que vou ficar confuso quando te aproximares demais."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5902,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Lucky, afaste-se um pouco. Isso é realmenteGonieNão é falso, vamos ver."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5906,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Como poderia não serGonieHá literalmente um falso eu ali."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5914,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "GonieEstás acordada agora, estás bem?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5941,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Hey, Lucky. GonieNem sequer sabe o código. O que devemos fazer?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5942,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "A esquerda não se parece comGonieParece que está a ter dificuldades?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5943,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "GonieÉ obviamente o da direita, olha para aqueles olhos."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5947,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Todos fiquem quietos. Temos uma maneira fácil e segura de reconhecer o realGonie."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5948,
+      "name": "Gonie",
+      "expected_occurrences": 2,
+      "found_occurrences": 1,
+      "text": "Gonie? Qual é o realGonie?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 5997,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Hahaha! NossaGonieÉ uma pessoa muito silenciosa!!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6044,
+      "name": "Gonie",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "Eu estava procurando porGonie, mas isso não é tudo o que eu estava procurando. Eu estive procurando por aquele que colocouGonieem perigo. Pode ferir outras pessoas também."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6093,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Mesmo se você me chamar assim de qualquer maneira, não há ninguém aqui que discuta sobre isso. Acima de tudo, não somos os mesmos convidados deVarmundt."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6131,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tenho andado a vaguear para longe de casa. É assim queVarmundtFoi capaz de me deixar usar a casa de banho da mansão sem ninguém entrar em contato com ele sobre mim."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6134,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Não me lembro a hora exata desde que já faz algum tempo... eVarmundtNão aparece há muito tempo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6148,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu tenho ficado na água por aqui. Então eu conheciVarmundtque estava dando um passeio fora da mansão."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6149,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "VarmundtSabia da minha situação e foi muito gentil para me convidar para sua mansão e fazer a casa de banho disponível para mim a qualquer momento."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6153,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "VarmundtTambém me deu um acesso especial para poder entrar na casa de banho."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6210,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "É por isso queVarmundtDesde que fui perseguida há muito tempo, parei reflexivamente... é disso que se trata a minha ansiedade."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6234,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Obrigado por esperar. Princesa do Mar do Leste, eu o registrei como um convidado oficial deVarmundtPeço desculpa se levou algum tempo desde que a comunicação é instável."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6235,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "A princesa pode agora ficar nesta mansão como hóspede deVarmundt. Por favor, sinta-se livre para usá-lo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6239,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Estou curioso sobre alguma coisa. ÉVarmundtTenho andado à procura dele, mas ele não apareceu há algum tempo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6240,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu deveria pensar queVarmundtNão vai aparecer em nenhum momento no futuro?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6270,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Do que estás a falar? Este é o balneário doVarmundt Mansion."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6274,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Varmundtvai entender. Ele tem um amplo senso de compreensão, então ele vai me permitir vaguear de sua casa, assim como ele me ajudou a me esconder neste balneário. Alegremente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6279,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Por favor, não ignore a bondade do mestreVarmundte mostrar cortesia."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6285,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Por que você não me reconhece como o sucessor oficial do legado deVarmundt. Você não pode reivindicar a propriedade legítima durante a ausência dos proprietários?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6287,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Isso soa plausível, mas é estranho se você ouvi-lo com cuidado. Você forçouVarmundtpara adotá-lo?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6292,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O legítimo proprietário desta mansão éVarmundte mesmo um residente de longa duração não pode reivindicar a propriedade."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6293,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Quando o mestreVarmundtVoltamos mais tarde, vamos discutir isso nós mesmos. Não é algo que possamos dizer-lhe sobre como convidado."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6308,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Existe alguém que entenda uma dessas coisas?VarmundtTambém não quer que a casa de banho seja abandonada e esquecida no longo tempo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6354,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Desculpe-me por lhe causar problemas. Perdoe-me. Mas você sabe que as amizades se tornam carinhosas depois de uma briga? Nós não somos os mesmos convidados deVarmundt."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6363,
+      "name": "Boiler",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Aventureiro, sempre que você estiver livre, por favor, venha para oBoilerVou dar-te uma coisa."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6374,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "EncontrámosGonie, e confirmamos que não há perigo na casa de banho, então vamos."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6375,
+      "name": "Gonie",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Obrigado por nos ajudar a encontrarGonie, aventureiro."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6628,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "^006600O banho mais antigo e mais famoso emVarmundtMansão. Mergulhe neste banho e pense nas coisas mais profundas e difíceis em seu coração. A resposta certamente surgirá.^000000"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6690,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Este é o segundo armazém doVarmundt Mansion."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6717,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Isso não significa que você é um ladrão. Becayse você não teria qualificado como convidado. OVarmundtA Mansion não convida todos como convidados."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6726,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "É claro que é um antigo armazém deVarmundt."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6875,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Varmundttambém é humano."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 6953,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Ao contrário deste espaço, apenasVarmundtpode entrar no porão. Há um monte de segredos e coisa perigosa lá."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7099,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Que bom que você voltou, eu já estava pensando em uma maneira de dizerAlphaA notícia de que o convidado"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7488,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu não souVarmundt."
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7771,
+      "text": "Cleaning Robot ¥Ø: Unauthorized user. Communication terminated."
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7780,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7784,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7788,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7792,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7796,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7801,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7806,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7818,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7855,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7869,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7879,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7883,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7894,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7899,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7905,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7910,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7918,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7922,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7932,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "mojibake_or_placeholder",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 7937,
+      "text": "[Cleaning Robot ¥Ø]"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8063,
+      "text": "I'm Mansion Manager of [A Mansão do Grande Sábio]Varmundt]."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8127,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Como esperado, você sabe alguma coisa!!! É o grande sábioVarmundt!!! Ele é uma lenda, que ninguém nunca o superou durante e depois de seu tempo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8146,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O Grande SábioVarmundtDiz-se que é excelente em magia e cura, certo?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8177,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Como esperado, você sabe alguma coisa!!! É o grande sábioVarmundt!!! Ele é uma lenda, que ninguém nunca o superou durante e depois de seu tempo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8196,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O Grande SábioVarmundtDiz-se que é excelente em magia e cura, certo?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8208,
+      "name": "Dew",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "- É a fonte ondeDewlavou seu corpo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8603,
+      "name": "Prontera",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu não posso acreditar que existem tantos livros que eu não poderia encontrar noProntera library!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8976,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Bem-vindo aoVarmundtMansão... bem-vindo... *buzz*..."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8980,
+      "text": "Você pode dar uma olhada no... chips na minha frente..."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 8996,
+      "text": "Para uma comunicação eficiente... *buzz*... por favor, manuseie os chips... *buzz*"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9002,
+      "text": "Come."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9015,
+      "text": "Muito obrigado. A remoção dos chips de bio-interferência foi confirmada."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9024,
+      "text": "Olá. Obrigado por lidar com os chips de biointerferência. Agora eu posso me comunicar com a rede corretamente. Eu sou Europa, o gerente da segunda usina."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9027,
+      "text": "Deixe-me falar sobre os biochips que você acabou de manusear. Os chips são instalados pelas Ilusões chamadas^0000CDMagic Poisoned Sanare^000000na segunda usina de potência com o único propósito de bloquear ondas de rádio."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9033,
+      "text": "Eu mesmo entrei na segunda usina e recuperei os chips, mas não havia como lidar com eles, e tornou-se uma situação difícil por causa da falha da rede."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9036,
+      "text": "O problema foi resolvido, graças a você lidar com os chips."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9043,
+      "text": "Como já mencionei, a ilusão,^0000CDMagic Poisoned Sanare^000000, ainda estão instalando os chips de bloqueio que mencionei na segunda usina de potência. Se eu entrei assim, provavelmente vou acabar funcionando mal novamente."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9046,
+      "text": "Aventureiro, você poderia ir na segunda usina de cavalos de potência e coletar 10^0000CDChips de Batata^000000?"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9054,
+      "text": "A melhor maneira é se livrar do^0000CDMagic Poisoned Sanare^000000e recolher os chips antes de instalá-lo."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9057,
+      "text": "Colete por favor 10^0000CDChips de Batata^000000."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9104,
+      "text": "Então, você poderia coletar 10^0000CDChips de Batata^000000da^0000CDMagic Poisoned Sanare^000000Na segunda fábrica de cavalos de novo?"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9112,
+      "text": "Então, por favor, colete 10^0000CDChips de Batata^000000."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9167,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "eu estou reparandoSweetyAs partes quebradas, ele é bom em quebrá-las."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9178,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SweetyEle pode saber alguma coisa."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9186,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Almondnão entendeu metade do queSweetyEstava a dizer."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9186,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Almondnão entendeu metade do queSweetyEstava a dizer."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9208,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você vai jogar contraSweetyOutra vez?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9214,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SweetyInscrições para uma batalha?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9215,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tudo bem, desde queAlmondFique de olho nele."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9217,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "visible_literal_untranslated",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9221,
+      "text": "Enter '"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9221,
+      "text": "Enter '"
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9228,
+      "upstream": 2,
+      "stage": 3
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9258,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você vai jogar contraSweetyMais tarde?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9264,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Sweetie deve ser consertado e o autômato deve ser restaurado.Almondestá ocupado"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9271,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Repairing Sweety. Oboneca automática AlmondEstá ocupado."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9342,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Alphadisse que a base do corpo de Sweety é a mesma que a nossa."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9371,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Do meu ponto de vista...SweetyTem o cérebro de uma pessoa, certo?"
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9399,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9410,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SweetyEspera-se que expresse estresse extremo devido à ansiedade."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9413,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Não seria melhor se você lidasse com ele sempre queSweetyVai a um rampage?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9468,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Mas há um problema. Se você quiser lutar comigo, você tem que convencerAlmond."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9486,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Vamos lá, diz-meAlmond!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9596,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Esta pessoa está connosco. Eu não sou um intruso.AlphaVocê disse que pode se comunicar com ela, mas por que você fez isso?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9612,
+      "name": "Mina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você sabeMinaNão é mais uma ilusão."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9629,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu e a Lazy cuidaremos deElyuminae siga rapidamente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9635,
+      "name": "Mina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Aventureiro, não há como você pensarMinaAinda é uma ilusão, certo?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9636,
+      "name": "Mina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tendo recebido as armas e os módulos feitos porMina herself!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9671,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Elyumina: Acabei de perceber que o meu modo de pensar está errado. Este tipo chamou-meVarmundt isn't he amazing?"
+    },
+    {
+      "kind": "script_structure_line_changed",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9756,
+      "upstream": "\t\tmes \"<STRING>\";",
+      "stage": "\t\tmes \"<STRING>\"Hmm, isso é um grande negócio - bem, não é um grande negócio!\";"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9784,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Alright, ^0000CDcomo um mercenário que veio aqui como convidado deVarmundt!!!^000000"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9789,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "... Por que você está fazendo isso? O que estou dizendo? Claro, eu sou o GrandeElyumina, mas tu..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9794,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você pode fazer um antídoto usando o^0000CDFolhas da SilvaPapilla^000000, um material do jardim de água. Foi criado pelo mestre para esse fim."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9816,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você pode fazer um antídoto usando o^0000CDFolhas da SilvaPapilla^000000, um material do<NAVI>[jardim de água]<INFO>ba_maison,239,47,0,101,0</INFO></NAVI>. Foi criado pelo mestre para esse fim."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9824,
+      "text": "O hamster no jardim come qualquer coisa."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9838,
+      "name": "Mina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Rookie: Ah, Minaé tão fraco, eu não posso me acostumar com isso -!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9901,
+      "name": "Mina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu preciso ficar de olhoMina, então eu vou ficar aqui, aventureiro."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9966,
+      "name": "Rebellion",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "E tu... foste Rocky?Lucky? Anyways, RebellionObrigado por correr por mim."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 9967,
+      "name": "Rookie",
+      "expected_occurrences": 2,
+      "found_occurrences": 1,
+      "text": "......Rookie, éRookie."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10023,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você, se você vai tirar minha preciosa oportunidade de falar com obonecas automáticasVarmundtEu mato-te!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10080,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Podemos entrar no jardim da água? Eu tenho que obter um^0000CDFolha de PrataPapilla^000000Por dentro."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10099,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "E nós compará-lo para produzir o melhor resultado. Em seguida, excluímos os intrusos, este é o curso de ação deAlpha."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10114,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "ElyuminaÉ o nosso colega."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10202,
+      "name": "Mina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "MinaEles dizem que é perigoso por dentro..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10211,
+      "name": "Mina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Bem, então eu acho que vou ter que ficar para ficar de olho emMina."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10212,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Aventureiro, você poderia entrar e pegar as folhas da SilvaPapilla?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10278,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Nós temos as folhas da SilvaPapillaEntão vou pedir a alguém para criar um antídoto."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10283,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Em primeiro lugar, as folhas de SilvaPapillaem si é um antídoto para vários tipos de sintomas, então tudo o que você precisa fazer é mudar para a formulação para tornar mais fácil para o hóspede a ingestão."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10291,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tudo bem. Dê as folhas de SilvaPapillaPara mim."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10294,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Mão sobre as folhas de SilvaPapilla"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10374,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Como você já sabe, uma planta chamada SilvaPapillavive na parte mais profunda do jardim da água."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10403,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você garantiu uma SilvaPapilla."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10428,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Desde o GrandPapillaEu prefiro perguntar isso se você já está mais acostumado com o jardim da água."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10455,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Como você já sabe, uma planta chamada GrandePapillavive na parte mais profunda do jardim da água."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/quests/quests_17_2.txt",
+      "line": 10485,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você garantiu um GrandPapilla."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 60,
+      "upstream": 2,
+      "stage": 3
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 91,
+      "name": "Sigma",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Por favor, descanse seu corpo por um dia comoSigma ordered."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 105,
+      "text": "Enter Zona"
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 129,
+      "upstream": 2,
+      "stage": 3
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 212,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu sou umboneca automáticaque foi projetado para funcionar somente se a sua mana sincronizar comVarmundtde mana sobre um certo nível."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 214,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "tem uma semelhança de mana de 73,6% com a deVarmundt. Quem exatamente é você ["
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 219,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "É estranho. Eu nunca vi um estranho com um padrão de mana que corresponde mais de 70% ao deVarmundt's."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 222,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tive a oportunidade de conhecerVarmundtAntes."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 239,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "While Master Varmundtainda estava presente, o andamento das tarefas foi verificado na forma de relatórios individuais e avaliações semanais no local."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 241,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Currently, Master VarmundtEstá ausente há mais de 1 milhão de horas."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 243,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Embora você não seja mestreVarmundt, como alguém que tem mais de 70% de semelhança com seu padrão de mana, gostaria de pedir-lhe para avaliar nossos deveres."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 332,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "A verificação de similaridade paraVarmundtO padrão de mana está em 73,6%. Mudando para o modo guia de jardim de flores."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 338,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O protocolo de liberação do modo de sono foi concluído. Vou verificar se o mestre,Varmundtestá nas proximidades, além do alvo reconhecido."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 343,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Master Varmundtnão é detectado dentro da rede."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 374,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Since Varmundtera uma pessoa que pode se mover independentemente do terreno, não instalamos uma estrutura separada para pessoas normais durante a criação do jardim de flores."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 395,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Master Varmundtdeu a cada um dosbonecas automáticasum projeto de pesquisa."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 413,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Entre os setores de pesquisa, este setor é um lugar para cultivar uma planta chamada Nariz sob as ordens deVarmundt."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 503,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "CAROTA-88 recebeu confirmação do administrador queVarmundtAs instruções foram executadas perfeitamente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 692,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Quanto tempo se passou desde que recebi as ordens deVarmundt?!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 698,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Mas o cafetão não pode gravar mais de um milhão de horas. Isso é um desperdício de recursos de memória!VarmundtEstá zangada!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 720,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O cafetão não tem vontade de tomar suas próprias decisões! Apenas MestreVarmundt knows."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 726,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu pergunteiVarmundtO que fazer várias vezes, mas não houve resposta."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1061,
+      "name": "Sigma",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "É a minha primeira vez aqui, aqui é ondeSigmaNormalmente, a comunicação é feita apenas através da rede."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1117,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "VarmundtPorque estás aqui?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1120,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Claro. Você conhece o mestreVarmundt well. ["
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1122,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Infelizmente, não souVarmundt. Esta aparência é algo que eu criei porque há algo que eu quero verificar em você."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1132,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você pode me responder? Você já conheceuVarmundtAntes?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1152,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você pode dizer a eles queVarmundtEstá vivo?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1161,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Mas uma vez que eles descobremVarmundtÉ, eles não serão capazes de fechar este lugar."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1165,
+      "name": "Lambda",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Tudo isso aconteceu porque Kappa eLambdaestavam em tarefas diferentes."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1219,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu gostaria de poder mostrarVarmundtO processo de auto-aprendizagemboneca automáticaIsso pode ser deixado desacompanhado sem instruções..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1221,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Qual é a sua relação comAlpha?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1225,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Ela evoluiu a partir de uma versão inicial doVarmundt's management doll."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1227,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Master VarmundtA sua estética emocional foi tão valorizada que ele deu-lhe a tarefa de gerir a mansão, não o centro de pesquisa aqui."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1231,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "No entanto, ela reconhece que essa área de segurança foi criada de acordo comVarmundt's personal taste."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1270,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Há aproximadamente 82% de chance de você perder sua vida em sua supressão radical antes de deixá-la saber que MestreVarmundtEstá vivo."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1286,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu sou um do tipo de dispositivo holográfico AI que é projetado para aprenderVarmundt's personality."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1288,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Por favor, entenda se o meu tom não é como uma máquina.VarmundtFoi o único que falou comigo..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1293,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Esta é uma forma inicial que foi chamada de Pimenta Vermelha porVarmundt. Estou otimizado para trabalhos auxiliares."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1313,
+      "name": "Lambda",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Há mais duas pimentas vermelhas nesta área de segurança além de mim, Kappa eLambda."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1315,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Na ausência do mestreVarmundtpor um longo tempo, esta área de segurança está sujeita ao cancelamento e fechamento de registros de pesquisa sob o acordo de três Red Peppers."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1325,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "É verdade que o MestreVarmundtFizeram os protótipos dos autômatos, mas eram como eu, com funções simples."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1327,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Nós sobrepusemos nossas memórias e as remodelamos em humanóides no MestreVarmundt's image"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1343,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Em primeiro lugar, a maioria dos autômatos nesta área de segurança nunca viu MasterVarmundtAntes."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1345,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "As memórias que eles têm do MestreVarmundtsão fabricados a partir de minhas memórias do meu tempo como seu assistente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1349,
+      "name": "Lambda",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Children affected by LambdaAs memórias das memórias tendem a ser guerreiras em relação a estranhos. Eles não confiam em ninguém além do MestreVarmundt."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1349,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Children affected by LambdaAs memórias das memórias tendem a ser guerreiras em relação a estranhos. Eles não confiam em ninguém além do MestreVarmundt."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1374,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Este lugar é restrito a menos que você tenha o mesmo padrão queVarmundtFiquei surpreso ao saber que um estranho está dentro do jardim."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1379,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu até especulei queVarmundtPode ter voltado aqui depois de centenas de anos disfarçado."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1395,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Seu rosto é novo para mim. Então eu percebi, talvez essa pessoa se encontrou comVarmundtem algum lugar antes."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1397,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Não é apenas uma ou duas vezes, mas se você já conheceuVarmundtpor algum tempo, é compreensível que obonecas automáticas gets mistaken."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1404,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Há uma série de referências deVarmundtnesta área de segurança, e ainda assim você nunca perguntou quem ele era."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1424,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Temos vindo a trabalhar na organização e gravação do processo ao lado deVarmundtda pesquisa."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1447,
+      "name": "Sigma",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "[ESigma, a partir de hoje, você vai continuar minha pesquisa sobre inteligência artificial.]"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1473,
+      "name": "Lambda",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "[Kappa eLambda, assist Sigmasobre a pesquisa.]"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1473,
+      "name": "Sigma",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "[Kappa eLambda, assist Sigmasobre a pesquisa.]"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1594,
+      "name": "Sigma",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "]! SigmaPediu-me para entregar uma mensagem."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1610,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1929,
+      "name": "Lambda",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "LambdaTenho certeza de que nossa segurança não é muito boa."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1939,
+      "name": "Sigma",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Lambda: SigmaPode estar correto."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1941,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "], e grupo pode ter realmente se encontradoVarmundtAntes."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1943,
+      "name": "Lambda",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "LambdaAntes de te conhecer, preciso te testar uma última vez."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1948,
+      "name": "Lambda",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Kappa: Bem, você é tão forte quantoLambdadisse. ["
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 1950,
+      "name": "Lambda",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Kappa: Mas eu não acho que você não é forte o suficiente para se encontrarLambdaAinda assim, vou mostrar-te o meu quarto."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 2029,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Nós gostaríamos de acreditar que o MestreVarmundtainda está vivo, mas isso não é possível com a vida humana."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 2047,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Nós gostaríamos de acreditar que o MestreVarmundtainda está vivo, mas isso não é possível com a vida humana."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/HiddenGarden.txt",
+      "line": 2075,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Uma vez que eles vão se recuperar depois de algum tempo, eu acho que você vai precisar continuar lutando contra eles até MestreVarmundt returns."
+    },
+    {
+      "kind": "script_structure_line_changed",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 48,
+      "upstream": "\tmes \"<STRING>\";",
+      "stage": "\tmes \"<STRING>\"Jardim Suspenso' or 'Jardim Suspenso Avançado' deve entrar na instância para prosseguir. No caso de mudanças de líder do partido, a instância será cancelada e você não pode prosseguir.^000000\";"
+    },
+    {
+      "kind": "control_tokens_changed",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 48,
+      "before": "^FF0000The party leader who received the quest for the 'Water Garden' or 'Water Garden Hard' must enter the instance to proceed. In the case of party leader changes, the instance will be cancelled and you may not proceed.^000000",
+      "after": "^FF0000O líder do partido que recebeu a busca pelo \\\\",
+      "before_signature": {
+        "colors": [
+          "^FF0000",
+          "^000000"
+        ],
+        "info": [],
+        "navi_tags": [],
+        "printf": [],
+        "escapes": []
+      },
+      "after_signature": {
+        "colors": [
+          "^FF0000"
+        ],
+        "info": [],
+        "navi_tags": [],
+        "printf": [],
+        "escapes": []
+      }
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 85,
+      "text": "Enter o^CC0000"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 88,
+      "text": "^0000CDEnter Jardim Suspenso"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 88,
+      "text": "Enter Jardim Suspenso Avançado^000000"
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 107,
+      "upstream": 2,
+      "stage": 3
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 114,
+      "text": "MD abriu, por favor, fale comigo novamente e selecione^0000CDEnter"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 196,
+      "name": "Papilla",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "Você vai verPapilla? Papillatem sido muito sensível sobre os intrusos ultimamente..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 197,
+      "name": "Papilla",
+      "expected_occurrences": 2,
+      "found_occurrences": 0,
+      "text": "Bem-vindo ao jardim da água. Você vai verPapilla? Papillatem sido muito sensível sobre os intrusos ultimamente..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 322,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "A magia daPapillaO 's foi activado. Tem cuidado!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 367,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O alcance do ataque varia de acordo com a cor doPapilla."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 368,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O alcance do ataque varia de acordo com a cor doPapilla."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 465,
+      "text": "APapillas has devolvido!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 465,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "APapillas has devolvido!"
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 768,
+      "text": "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado..."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 769,
+      "text": "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 772,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Depois da mudança...PapillaNo labirinto... Por favor, poda todos eles."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 860,
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Não se preocupe, eu já entrei em contatoAlpha. Hehe."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 879,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Se:Papilladurante a batalha, faça-o segui-lo até o pilar da mesma cor."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 882,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Se oPapillatoca a luz, vai levar dano e morrer."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 885,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Se você pode parar com segurança SilvaPapilla, vamos lidar com o resto!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 888,
+      "name": "Papilla",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Então, vou queimar o incenso que chama SilvaPapilla..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 1015,
+      "name": "Seiyu",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você não esqueceu o seu pedido deSeiyuE entrou aqui, certo?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/WaterGarden.txt",
+      "line": 1018,
+      "name": "Seiyu",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Não se esqueça de sair e conversarSeiyuE-mail^0000CDReceba suas recompensas^000000do trabalho de hoje."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 58,
+      "name": "Elena",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Est: ElenaEla disse que se juntaria a nós mais tarde, mas há uma boa chance de ela não poder participar."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 66,
+      "name": "Est",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "EstNão olhe muito ao redor e finja que não está vigilante, entendeu?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 138,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Ative o rastreador que recebemos deElyumina."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 141,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": ": Rastreador: De acordo com a intuição do grandeElyumina... Too Doo Too Doo Too~"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 192,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Also, AlmondEla disse que tinha que sair e verificar alguma coisa."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 216,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Fale comAlmond, quando você está pronto para se mover."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 227,
+      "name": "Est",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Algo importante surgiu. É por isso que estou aqui comEst."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 305,
+      "name": "Est",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você não deveria falar comEstParece que ela estava à espera."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 362,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "APitayaEles dizem que Amêndoas é delicioso? Você já comeu amêndoas antes?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 412,
+      "name": "Est",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "ÉEst!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 586,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Ah. Eu também vou escoltarAlmond."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 590,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você temElyuminaVai activar-se, se te aproximares dele."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 603,
+      "name": "Elyumina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Você temElyuminaSe você chegar perto dele, ele vai ativar."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 606,
+      "name": "Almond",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Não se preocupe, eu vou cuidarAlmondA partir daqui."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 691,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Agora, eu,Sweetyvai cuidar dos idiotas que acabaram de entrar!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 833,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Almond: SweetyFaça isso com moderação"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 855,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Por queSweetyGosto de empurrar o corpo para o limite..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/TwilightGarden.txt",
+      "line": 864,
+      "name": "Sweety",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu vou cuidar de me moverSweety."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
       "file": "npc/re/instances/TwilightGarden.txt",
       "line": 897,
-      "text": "O corpo do Manager Beta está escondido sob as paisagens."
+      "name": "Beta",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O corpo deGerente Betaescondido sob as paisagens."
     },
     {
-      "kind": "glued_proper_name",
+      "kind": "proper_name_missing_or_glued",
       "file": "npc/re/instances/TwilightGarden.txt",
       "line": 905,
-      "name": "Alp",
-      "text": "Vou avisar a Alpha mais tarde para que ela possa recuperar o corpo da boneca."
+      "name": "Alpha",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu vou deixarAlphaSaiba mais tarde para que ela possa recuperar o corpo da boneca."
     },
     {
-      "kind": "structure_changed",
-      "file": "npc/re/instances/LostFarm.txt"
-    },
-    {
-      "kind": "visible_literal_count_changed",
+      "kind": "proper_name_missing_or_glued",
       "file": "npc/re/instances/LostFarm.txt",
-      "upstream": 698,
-      "stage": 701
+      "line": 70,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "O meu nome éLuina."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
-      "line": 127,
-      "name": "Est",
-      "text": "Este equipamento automático já está em sua capacidade máxima."
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 73,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Aqui está uma planta chamada aPitaya. É uma espécie antiga melhorada que viveu em algum lugar nesta ilha."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
-      "line": 192,
-      "name": "Est",
-      "text": "Este equipamento automático já maximizou o aprimoramento deste módulo."
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 74,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu não sei se é estranho, mas eu não sou umPitaya, mas eu sou bom em ouvir."
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
-      "line": 197,
-      "name": "Est",
-      "text": "^000000Este processo não pode ser revertido."
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 76,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "- LuinaAcariciou aPitaya. -"
     },
     {
-      "kind": "glued_proper_name",
-      "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
-      "line": 273,
-      "name": "Est",
-      "text": "Estamos oferecendo cubos de reforço que refinarão sua^0000CD+4^000000Ilusão e Equipamento Automático para^FF0000+7^000000Em um instante!"
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 76,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "- LuinaAcariciou aPitaya. -"
     },
     {
-      "kind": "glued_proper_name",
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 82,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "PitayaÉ uma criatura pequena e fofa, por isso dei-lhes um nome."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 109,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Para a cauda, você apenas pegar oPitaya, acariciá-lo assim, e deixá-los ir."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 111,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "- LuinaOPitaya, demo sobre como puxar a cauda e colocá-lo para baixo. -"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 111,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "- LuinaOPitaya, demo sobre como puxar a cauda e colocá-lo para baixo. -"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 121,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Depois de processá-lo, o colhidoPitayaA cauda sobe para a mesa."
+    },
+    {
+      "kind": "script_structure_line_changed",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 124,
+      "upstream": "\t\tmes \"<STRING>\";",
+      "stage": "\t\tmes \"<STRING>\", irá guiá-lo.\";"
+    },
+    {
+      "kind": "script_structure_line_changed",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 128,
+      "upstream": "\t\tmes \"<STRING>\";",
+      "stage": "\t\tmes \"<STRING>\"Aqui, ela é a gerente do jogo, e ela vai deixar você saber o que fazer.\";"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 137,
+      "name": "Cotton",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Nós conversamos sobreCottonO trabalho primeiro, mas na verdade é a colheita que é mais urgente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 167,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "-- O gato escondido atrásLuinaantes que ela chegasse a ele. --"
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 183,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 186,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "- QuandoLuinaestendeu a mão para o gato, colocou as cabeças até a mão dela."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 188,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "- LuinaO rosto do gato tornou-se complexo com uma expressão satisfeita enquanto acariciava o gato."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 199,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Por favor, ajude-meSilkAmanhã também."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 224,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "^0000FFNossa luta com oPitayaParece há muito tempo.^000000"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 247,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Após a próxima experiência de colheita, certifique-se de entregá-lo paraSilke sair."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 257,
+      "upstream": 2,
+      "stage": 3
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 328,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkAcalme-se os Pitayas!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 364,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Obrigado por salvar minha vida! De acordo comLuina, oPitayaÉ uma criatura gentil!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 364,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Obrigado por salvar minha vida! De acordo comLuina, oPitayaÉ uma criatura gentil!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 365,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Silk: Obrigado por salvar minha vida! De acordo comLuina, oPitayaÉ uma criatura gentil!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 365,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Silk: Obrigado por salvar minha vida! De acordo comLuina, oPitayaÉ uma criatura gentil!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 388,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Eu entendo por queLuinaPediu mais trabalhadores porque ela mesma não conseguia colher rapidamente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 389,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Silk: Eu entendo por queLuinaPediu mais trabalhadores porque ela mesma não conseguia colher rapidamente."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 393,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkMas seria mais rápido segurá-lo e brincar com ele como você fez, em vez de acariciar por 5 minutos."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 427,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkSejam plantas ou animais. A temperatura e a umidade são sempre constantes."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 431,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkOuvi dizer que não é agradável para as pessoas, que tal respirar?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 439,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkPessoal, está na hora dos bares e do arroz."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 540,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkEu espalhei a comida, então eles vão aparecer em breve!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 553,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkVocê e eu... estamos cobertos de areia..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 636,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkO que você acha? Eu acho que você está fazendo bem para um primeiro cronômetro."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 687,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "A próxima é perto da entrada, mas de acordo comLuinainformação, é uma área sonolenta. Você acha que está prestes a acordar?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 688,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Silk: Próximo para cima é perto da entrada, mas de acordo comLuinaA informação, é uma zona sonolenta, achas que ele está prestes a acordar?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 702,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkNão venhas, não venhas!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 717,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkNão venhas, não venhas!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 752,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Não com os pulmões, mas... Vem pensar nisso, como é quePitayaFazer um som?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 753,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Silk: Não com pulmões, mas... Venha pensar nisso, como é quePitayaFazer um som?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 757,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkEu não quero ter medo."
+    },
+    {
+      "kind": "string_literal_count_changed",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 780,
+      "upstream": 1,
+      "stage": 2
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 788,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkExiste uma condição que exige que você morda as pessoas para serem fofas?"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 873,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkCheira-me...? Sniff, sniff."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 900,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "De acordo comLuinaAs instruções, o que resta agora é..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 901,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Silk: De acordo comLuinaAs instruções, o que resta agora é..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 936,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Silk: Vamos ver,LuinaTenho de acordar um Big Meow para lá chegar."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 938,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkO chefe Meow e o Big Meow têm uma hierarquia, por isso têm um local específico para dormir antes das refeições."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 1253,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Somos todos iguais, mas não posso fazer o mesmo trabalho queLuina..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 1254,
+      "name": "Silk",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkSomos todos iguais, mas não posso fazer o mesmo trabalho queLuina..."
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 1254,
+      "name": "Luina",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "SilkSomos todos iguais, mas não posso fazer o mesmo trabalho queLuina..."
+    },
+    {
+      "kind": "english_visible_residual",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 1290,
+      "text": "Silk: He-Help me!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
+      "file": "npc/re/instances/LostFarm.txt",
+      "line": 1327,
+      "name": "Pitaya",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "Se você me der oPitayaA cauda que você coletou, a experiência agrícola de hoje acabou! Vamos lá, vamos lá para fora!"
+    },
+    {
+      "kind": "proper_name_missing_or_glued",
       "file": "npc/re/merchants/enchan_sage_legacy_17_2.txt",
-      "line": 428,
-      "name": "Magi",
-      "text": "eu trocarei^FF00001 Magical Automatic Improvement Device^000000"
+      "line": 274,
+      "name": "Varmundt",
+      "expected_occurrences": 1,
+      "found_occurrences": 0,
+      "text": "VarmundtÉ sem dúvida o melhor homem do mundo!"
     }
   ],
   "warnings": [],
-  "failure_count": 25,
+  "failure_count": 452,
   "warning_count": 0
 }

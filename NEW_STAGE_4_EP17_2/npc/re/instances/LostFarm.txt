@@ -67,19 +67,19 @@ ba_maison,311,206,3	script	Luina#greeen	4_EP17_BASIC_B,{
 		select( "És falante." );
 		mes "[Luina]";
 		mes "Esqueci-me que devia apresentar-me primeiro, se quisesse falar com um convidado durante muito tempo.";
-		mes "Chamo-me Luina.";
+		mes "O meu nome éLuina.";
 		next;
 		mes "[Luina]";
-		mes "Kitty aqui é uma planta chamada Pitaya. É uma espécie antiga melhorada que viveu em algum lugar nesta ilha.";
-		mes "Não sei se é estranho, mas não sou um Pitaya, mas sou bom em ouvir.";
+		mes "Aqui está uma planta chamada aPitaya. É uma espécie antiga melhorada que viveu em algum lugar nesta ilha.";
+		mes "Eu não sei se é estranho, mas eu não sou umPitaya, mas eu sou bom em ouvir.";
 		next;
-		mes "- Luina atropelou o Pitaya.";
+		mes "- LuinaAcariciou aPitaya. -";
 		npctalk "Purr.", "Kitty#greeen", bc_self;
 		next;
 		mes "[Luina]";
 		mes "Meu mestre me disse que eu deveria nomear pequenas coisas fofas.";
 		mes "Kitty, borboleta, feliz, e assim por diante.";
-		mes "Pitaya é uma criatura pequena e fofa, então dei-lhes um nome.";
+		mes "PitayaÉ uma criatura pequena e fofa, por isso dei-lhes um nome.";
 		next;
 		mes "[Luina]";
 		mes "A Kitty é a mais fofa, o pitaya aqui é a Kitty.";
@@ -106,9 +106,9 @@ ba_maison,311,206,3	script	Luina#greeen	4_EP17_BASIC_B,{
 		mes "Quando você planta as sementes, elas crescem do chão, mas eu nunca vi um broto múltiplo antes.";
 		next;
 		mes "[Luina]";
-		mes "Para a cauda, basta pegar o Pitaya, acariciá-lo assim, e deixá-los ir.";
+		mes "Para a cauda, você apenas pegar oPitaya, acariciá-lo assim, e deixá-los ir.";
 		next;
-		mes "- Luina segurou o Pitaya, demo para saber como puxar a cauda e colocá-lo para baixo. -";
+		mes "- LuinaOPitaya, demo sobre como puxar a cauda e colocá-lo para baixo. -";
 		next;
 		mes "[Luina]";
 		mes "Não, não puxei.";
@@ -118,7 +118,7 @@ ba_maison,311,206,3	script	Luina#greeen	4_EP17_BASIC_B,{
 		next;
 		mes "[Luina]";
 		mes "Você precisa remover as sementes e a pele, mas não é difícil.";
-		mes "Depois de processá-lo, a cauda de Pitaya colhida sobe para a mesa.";
+		mes "Depois de processá-lo, o colhidoPitayaA cauda sobe para a mesa.";
 		next;
 		mes "[Luina]";
 		mes "A colheita é realmente um pouco difícil, então meu colega,Silk\\", irá guiá-lo.";
@@ -164,7 +164,7 @@ ba_maison,311,206,3	script	Luina#greeen	4_EP17_BASIC_B,{
 		mes "[Kitty]";
 		mes "Cluck.";
 		next;
-		mes "O gato escondeu-se atrás de Luina antes de chegar a ela.";
+		mes "-- O gato escondido atrásLuinaantes que ela chegasse a ele. --";
 		next;
 		mes "[Luina]";
 		mes "O que...";
@@ -183,9 +183,9 @@ ba_maison,311,206,3	script	Luina#greeen	4_EP17_BASIC_B,{
 		mes "É isso que os convidados diriam como \\"embaixada\\"?";
 		npctalk "*Croak*", "Kitty#greeen", bc_self;
 		next;
-		mes "- Quando Luina estendeu a mão para o gato, colocou as cabeças na mão dela.";
+		mes "- QuandoLuinaestendeu a mão para o gato, colocou as cabeças até a mão dela.";
 		next;
-		mes "- O rosto de Luina tornou-se complexo com uma expressão satisfeita enquanto acariciava o gato. -";
+		mes "- LuinaO rosto do gato tornou-se complexo com uma expressão satisfeita enquanto acariciava o gato.";
 		next;
 		mes "[Luina]";
 		mes "Hmm...";
@@ -221,7 +221,7 @@ ba_maison,311,206,3	script	Luina#greeen	4_EP17_BASIC_B,{
 		close;
 	case 2:
 		mes "[Luina]";
-		mes "^0000FFNossa luta com o Pitaya parece há muito tempo.^000000";
+		mes "^0000FFNossa luta com oPitayaParece há muito tempo.^000000";
 		mes "^0000FFAgora eu tenho a coragem de voltar para a fazenda novamente.^000000";
 		erasequest 8587;
 		close;
@@ -361,8 +361,8 @@ OnMobDead:
 	if ('lost_farm != 2)
 		end;
 	mes "[Silk]";
-	mes "Obrigado por salvar minha vida! De acordo com Luina, os Pitaya são uma criatura gentil!";
-	npctalk "Silk: Obrigado por salvar minha vida! De acordo com Luina, os Pitaya são uma criatura gentil!";
+	mes "Obrigado por salvar minha vida! De acordo comLuina, oPitayaÉ uma criatura gentil!";
+	npctalk "Silk: Obrigado por salvar minha vida! De acordo comLuina, oPitayaÉ uma criatura gentil!";
 	next;
 	mes "[Silk]";
 	mes "Também o viste! Estou com medo!";
@@ -385,8 +385,8 @@ OnMobDead:
 	npctalk "Silk: Dear guest...";
 	next;
 	mes "[Silk]";
-	mes "Compreendo porque é que a Luina pediu mais trabalhadores porque ela própria não conseguiu colher rapidamente.";
-	npctalk "Silk: Eu entendo por que Luina pediu mais trabalhadores porque ela mesma não conseguiu colher rapidamente.";
+	mes "Eu entendo por queLuinaPediu mais trabalhadores porque ela mesma não conseguia colher rapidamente.";
+	npctalk "Silk: Eu entendo por queLuinaPediu mais trabalhadores porque ela mesma não conseguia colher rapidamente.";
 	next;
 	mes "[Silk]";
 	mes "Mas seria mais rápido segurá-lo e brincar com ele como você fez, em vez de acariciar por 5 minutos.";
@@ -684,8 +684,8 @@ OnMobDead:
 		npctalk "Silk: Há uma razão pela qual eu sempre guio os convidados.";
 		next;
 		mes "[Silk]";
-		mes "O próximo está perto da entrada, mas de acordo com as informações da Luina, é uma área sonolenta. Você acha que está prestes a acordar?";
-		npctalk "Silk: Próximo para cima é perto da entrada, mas de acordo com a informação de Luina, é uma área sonolenta. Você acha que ele está prestes a acordar?";
+		mes "A próxima é perto da entrada, mas de acordo comLuinainformação, é uma área sonolenta. Você acha que está prestes a acordar?";
+		npctalk "Silk: Próximo para cima é perto da entrada, mas de acordo comLuinaA informação, é uma zona sonolenta, achas que ele está prestes a acordar?";
 		close2;
 		if ('lost_farm == 10) {
 			'lost_farm = 11;
@@ -749,8 +749,8 @@ OnMobDead:
 		npctalk "Silk: O quê? Faz umboneca automáticaVocê não gostaria de respirar um pouco se você não pode controlar sua mente?";
 		next;
 		mes "[Silk]";
-		mes "Não com pulmões, mas... Pensando nisso, como é que o Pitaya faz um som?";
-		npctalk "Silk: Não com pulmões, mas... Pensando nisso, como Pitaya faz um som?";
+		mes "Não com os pulmões, mas... Vem pensar nisso, como é quePitayaFazer um som?";
+		npctalk "Silk: Não com pulmões, mas... Venha pensar nisso, como é quePitayaFazer um som?";
 		next;
 		mes "[Silk]";
 		mes "Não quero ter medo.";
@@ -897,8 +897,8 @@ OnMobDead:
 		npctalk "Silk: Sigh...";
 		next;
 		mes "[Silk]";
-		mes "De acordo com as instruções de Luina, o que resta agora é...";
-		npctalk "Silk: De acordo com as instruções de Luina, o que resta agora é...";
+		mes "De acordo comLuinaAs instruções, o que resta agora é...";
+		npctalk "Silk: De acordo comLuinaAs instruções, o que resta agora é...";
 		next;
 		mes "[Silk]";
 		mes "Atualizando... Hotéis similares";
@@ -933,7 +933,7 @@ OnMobDead:
 			sleep 3000;
 			npctalk "Silk: O jardim de rosas é onde o chefe Meow geralmente dorme, fica no segundo andar.";
 			sleep 3000;
-			npctalk "SilkVejamos, o registo da Luina... preciso de acordar um Big Meow.";
+			npctalk "Silk: Vamos ver,LuinaTenho de acordar um Big Meow para lá chegar.";
 			sleep 3000;
 			npctalk "SilkO chefe Meow e o Big Meow têm uma hierarquia, por isso têm um local específico para dormir antes das refeições.";
 			sleep 3000;
@@ -1250,8 +1250,8 @@ OnTouch_:
 		npctalk "Silk: Isto não é... não é medo, é mais como ressentimento...";
 		next;
 		mes "[Silk]";
-		mes "Somos todos iguais, mas não posso fazer o mesmo trabalho que a Luina...";
-		npctalk "SilkSomos todos iguais, mas não posso fazer o mesmo trabalho que a Luina...";
+		mes "Somos todos iguais, mas não posso fazer o mesmo trabalho queLuina...";
+		npctalk "SilkSomos todos iguais, mas não posso fazer o mesmo trabalho queLuina...";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "Saia por agora.";
@@ -1324,7 +1324,7 @@ OnMobDead:
 		mes "O trabalho não é para ser divertido quando acaba?";
 		next;
 		mes "[Silk]";
-		mes "Se você me der a cauda de Pitaya que coletou, a experiência agrícola de hoje acabou! Vamos lá, vamos lá para fora!";
+		mes "Se você me der oPitayaA cauda que você coletou, a experiência agrícola de hoje acabou! Vamos lá, vamos lá para fora!";
 		if ('lost_farm == 21)
 			'lost_farm = 22;
 		close;
@@ -1371,7 +1371,7 @@ OnMobDead:
 	}
 	if (isbegin_quest(8589) == 0) {	// first time entering the instance
 		mes "[Silk]";
-		mes "Luina... Terminei o relatório de extensão, por favor, diga algo ao hóspede depois disso!";
+		mes "Luina... Eu terminei o relatório de extensão, por favor, diga algo para o hóspede depois disso!";
 		mes "Eu fiz um ótimo trabalho... *sob*";
 		setquest 8589;
 	}

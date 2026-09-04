@@ -20,17 +20,12 @@
     "npc/re/mobs/dungeons/ba_pw.txt"
   ],
   "visible_string_occurrences": 6779,
-  "english_residual_count": 30,
+  "english_residual_count": 15,
   "english_residuals": [
     {
       "file": "npc/re/quests/quests_17_2.txt",
       "line": 1561,
       "text": "Escritório de Segurança: Esta é a área 4, over."
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 3356,
-      "text": "O corpo do Manager Beta está escondido sob as paisagens."
     },
     {
       "file": "npc/re/quests/quests_17_2.txt",
@@ -40,7 +35,7 @@
     {
       "file": "npc/re/quests/quests_17_2.txt",
       "line": 8063,
-      "text": "I'm Mansion Manager of [A Mansão do Grande Sábio Varmundt]."
+      "text": "I'm Mansion Manager of [A Mansão do Grande Sábio]Varmundt]."
     },
     {
       "file": "npc/re/quests/quests_17_2.txt",
@@ -54,78 +49,8 @@
     },
     {
       "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9693,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9698,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9704,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9727,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9741,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9745,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9750,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9761,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9776,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9792,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9796,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9815,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9823,
-      "text": "[Need]"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
       "line": 9824,
       "text": "O hamster no jardim come qualquer coisa."
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 9827,
-      "text": "[Need]"
     },
     {
       "file": "npc/re/instances/HiddenGarden.txt",
@@ -154,6 +79,11 @@
     },
     {
       "file": "npc/re/instances/WaterGarden.txt",
+      "line": 465,
+      "text": "APapillas has devolvido!"
+    },
+    {
+      "file": "npc/re/instances/WaterGarden.txt",
       "line": 768,
       "text": "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado..."
     },
@@ -163,16 +93,11 @@
       "text": "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado..."
     },
     {
-      "file": "npc/re/instances/TwilightGarden.txt",
-      "line": 897,
-      "text": "O corpo do Manager Beta está escondido sob as paisagens."
-    },
-    {
       "file": "npc/re/instances/LostFarm.txt",
       "line": 1290,
       "text": "Silk: He-Help me!"
     }
   ],
-  "translated_literal_occurrences": 4158,
+  "translated_literal_occurrences": 4172,
   "localized_monster_display_names": 18
 }

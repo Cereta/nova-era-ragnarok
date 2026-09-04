@@ -193,8 +193,8 @@ OnTouch:
 	if ('water_garden == 1) {
 		mes "[Hetilla]";
 		mes "Bem-vindo ao jardim da água,";
-		mes "Papilla tem sido muito sensível sobre os intrusos ultimamente...";
-		npctalk "Convidados, bem-vindos ao jardim aquático. Você vai ver Papilla? Papilla tem sido muito sensível sobre os intrusos ultimamente...";
+		mes "Você vai verPapilla? Papillatem sido muito sensível sobre os intrusos ultimamente...";
+		npctalk "Bem-vindo ao jardim da água. Você vai verPapilla? Papillatem sido muito sensível sobre os intrusos ultimamente...";
 		next;
 		mes "[Hetilla]";
 		mes "Papilas estão brincando aqui e ali.";
@@ -319,7 +319,7 @@ OnStart:
 	initnpctimer;
 	end;
 OnTimer2000:
-	mapannounce 'map_ghg$, "A magia do Papilla's foi ativada. Tenha cuidado!", bc_map, 0xFFFF99;
+	mapannounce 'map_ghg$, "A magia daPapillaO 's foi activado. Tem cuidado!", bc_map, 0xFFFF99;
 	end;
 OnTimer4000:
 	callsub( S_Spawn, 240,73,20676,9 );
@@ -364,8 +364,8 @@ OnMobDead:
 		npctalk "Cuidado, Papillas e outros tipos de Papillas parecem estar vagando.";
 		next;
 		mes "[Juventus]";
-		mes "O alcance do ataque varia dependendo da cor da papila.";
-		npctalk "O alcance do ataque varia dependendo da cor da papila.";
+		mes "O alcance do ataque varia de acordo com a cor doPapilla.";
+		npctalk "O alcance do ataque varia de acordo com a cor doPapilla.";
 		next;
 		mes "[Juventus]";
 		mes "Também alguns dos jardineiros foram destruídos pelos intrusos.";
@@ -462,7 +462,7 @@ OnStart:
 	deletearray 'gid_area_2;
 	deletearray 'type_area_2;
 
-	mapannounce 'map_ghg$, "O Papilla's voltou!", bc_map, 0xFFFF99;
+	mapannounce 'map_ghg$, "APapillas has devolvido!", bc_map, 0xFFFF99;
 
 	setarray .@xy[0],
 		320,91,325,91,330,91,335,91,340,91,345,91,
@@ -769,7 +769,7 @@ OnTouch_:
 	npctalk "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado...";
 	next;
 	mes "[Higel]";
-	mes "Após a mudança, papila no labirinto, por favor, poda todos eles.";
+	mes "Depois da mudança...PapillaNo labirinto... Por favor, poda todos eles.";
 	close2;
 	if ('water_garden == 6) {
 		// note: mobs from traps are not killed
@@ -857,7 +857,7 @@ OnMobDead:
 			getitem 1000099,1;
 			end;
 		}
-		npctalk "Não se preocupe, eu já entrei em contato Alpha. Hehe.", "", bc_self;
+		npctalk "Não se preocupe, eu já entrei em contatoAlpha. Hehe.", "", bc_self;
 		end;
 	}
 	if ('water_garden == 7) {
@@ -876,16 +876,16 @@ OnMobDead:
 1@ghg,186,287,3	script(DISABLED)	Gardener#ghg_gb	4_EP17_SCISSORE,{
 	if ('water_garden == 8) {
 		mes "[Velkina]";
-		mes "Se uma papila aparecer durante a batalha, faça com que ela siga você até o pilar da mesma cor.";
+		mes "Se:Papilladurante a batalha, faça-o segui-lo até o pilar da mesma cor.";
 		next;
 		mes "[Velkina]";
-		mes "Se a papila tocar a luz, ela sofrerá danos e morrerá.";
+		mes "Se oPapillatoca a luz, vai levar dano e morrer.";
 		next;
 		mes "[Velkina]";
-		mes "Se você pode parar com segurança Silva Papilla, vamos lidar com o resto!";
+		mes "Se você pode parar com segurança SilvaPapilla, vamos lidar com o resto!";
 		next;
 		mes "[Velkina]";
-		mes "Então, vou queimar o incenso que chama Silva Papilla...";
+		mes "Então, vou queimar o incenso que chama SilvaPapilla...";
 		close2;
 		if ('water_garden == 8) {
 			'water_garden = 9;
@@ -1012,10 +1012,10 @@ OnTouchNPC:
 1@ghg,187,287,3	script(DISABLED)	Gardener#ghg_gb1	4_EP17_SCISSORE,2,2,{
 	if ('water_garden == 10) {
 		mes "[Velkina]";
-		mes "Não te esqueceste do teu pedido ao Seiyu, e entraste aqui, certo?";
+		mes "Você não esqueceu o seu pedido deSeiyuE entrou aqui, certo?";
 		next;
 		mes "[Velkina]";
-		mes "Não se esqueça de sair e falar com Seiyu para^0000CDReceba suas recompensas^000000do trabalho de hoje.";
+		mes "Não se esqueça de sair e conversarSeiyuE-mail^0000CDReceba suas recompensas^000000do trabalho de hoje.";
 		next;
 		mes "[Velkina]";
 		mes "Então, eu vou mostrar-lhe o caminho para fora novamente!";

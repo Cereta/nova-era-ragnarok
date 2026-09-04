@@ -55,7 +55,7 @@ OnTouch:
 		'twilight_story = 1;
 		npctalk "Est: É escuro e silencioso. Se você quiser executar o plano, agora é o momento perfeito. Certo?";
 		sleep 2000;
-		npctalk "EstElena disse que se juntaria a nós mais tarde, mas há uma boa chance de ela não poder participar.";
+		npctalk "Est: ElenaEla disse que se juntaria a nós mais tarde, mas há uma boa chance de ela não poder participar.";
 		sleep 2000;
 		npctalk "Est: Mesmo assim, não há necessidade de se preocupar. Os outros estão preparados e esperando o sinal de emboscada.";
 		sleep 2000;
@@ -135,10 +135,10 @@ OnMobDead:
 		cutin "ep162_est01",2;
 		mes "[Est]";
 		mes "Não sei se devíamos armar uma armadilha ou dar-te uma hipótese.";
-		mes "Ative o rastreador que recebemos de Elyumina.";
+		mes "Ative o rastreador que recebemos deElyumina.";
 		next;
 		cutin "",255;
-		unittalk getcharid(3), "" + strcharinfo(0) + ": Rastreador: De acordo com a intuição do grande Elyumina... Too Doo Too Doo Too Too";
+		unittalk getcharid(3), "" + strcharinfo(0) + ": Rastreador: De acordo com a intuição do grandeElyumina... Too Doo Too Doo Too~";
 		sleep2 2000;
 		unittalk getcharid(3), "" + strcharinfo(0) + ": Rastreador: Ali! Beep!";
 		navigateto("1@bamn",206,273);
@@ -189,7 +189,7 @@ OnMobDead:
 		cutin "ep162_est01",2;
 		mes "[Est]";
 		mes "Eu pensei que poderia ser melhor jogar mais isca, então eu fui pedir a ajuda dobonecas automáticas.";
-		mes "Além disso, Almond disse que ela tinha que sair e verificar algo.";
+		mes "Also, AlmondEla disse que tinha que sair e verificar alguma coisa.";
 		next;
 		cutin "ep172_beta",0;
 		mes "[Almond]";
@@ -213,7 +213,7 @@ OnMobDead:
 	if ('twilight_story == 6) {
 		cutin "ep162_est01",2;
 		mes "[Est]";
-		mes "Fala com o Almond, quando estiveres pronto para te mudares.";
+		mes "Fale comAlmond, quando você está pronto para se mover.";
 		close3;
 	}
 	end;
@@ -359,7 +359,7 @@ OnEvent07:
 	unitwalk 'guide,300,204, instance_npcname("Almond#amond01") + "::OnEvent08";
 	end;
 OnEvent08:
-	npctalk "O Pitaya está aqui é bonito Eles dizem que Amêndoas é delicioso? Você já comeu amêndoas antes?";
+	npctalk "APitayaEles dizem que Amêndoas é delicioso? Você já comeu amêndoas antes?";
 	sleep 2000;
 	npctalk "Por aqui.";
 	unitwalk 'guide,300,190, instance_npcname("Almond#amond01") + "::OnEvent09";
@@ -583,11 +583,11 @@ OnTouch:
 		next;
 		mes "[Est]";
 		mes "Eu trato do resto que está escondido no jardim.";
-		mes "Também vou escoltar a Almond.";
+		mes "Ah. Eu também vou escoltarAlmond.";
 		next;
 		mes "[Est]";
 		mes "Ele provavelmente foi para a parte ocidental da mansão, então vá até lá.";
-		mes "Você tem o rastreador da Elyumina, ele será ativado, se você se aproximar dele.";
+		mes "Você temElyuminaVai activar-se, se te aproximares dele.";
 		if ('twilight_story == 20) {
 			'twilight_story = 21;
 			enablenpc instance_npcname("#to_bamq");
@@ -600,10 +600,10 @@ OnTouch:
 	if ('twilight_story == 21) {
 		mes "[Est]";
 		mes "Ele provavelmente foi para a parte ocidental da mansão, então vá até lá.";
-		mes "Você tem o rastreador de Elyumina, se você chegar perto dele, ele será ativado.";
+		mes "Você temElyuminaSe você chegar perto dele, ele vai ativar.";
 		next;
 		mes "[Est]";
-		mes "Não se preocupe, eu vou cuidar de Almond a partir daqui.";
+		mes "Não se preocupe, eu vou cuidarAlmondA partir daqui.";
 		close3;
 	}
 	end;
@@ -688,7 +688,7 @@ OnTouch:
 		sleep2 2000;
 		npctalk "Eles já escaparam usando os dirigíveis!";
 		sleep2 2000;
-		npctalk "Agora, eu, Sweety, vou cuidar dos idiotas que acabaram de entrar!";
+		npctalk "Agora, eu,Sweetyvai cuidar dos idiotas que acabaram de entrar!";
 		sleep2 2000;
 		setpcblock PCBLOCK_NPC, false;
 		disablenpc();
@@ -830,7 +830,7 @@ OnStart:
 	end;
 OnMobDead:
 	killmonster 'map_bamq$, instance_npcname("twilight_daily") + "::OnMobDead";
-	mapannounce 'map_bamq$, "Amêndoa: Docinho Faça isso com moderação", bc_map, 0xFF00;
+	mapannounce 'map_bamq$, "Almond: SweetyFaça isso com moderação", bc_map, 0xFF00;
 	enablenpc instance_npcname("Sweety#sweety_boss");
 	'sweety = 2;
 	end;
@@ -852,7 +852,7 @@ OnMobDead:
 		cutin "ep172_beta",2;
 		mes "[Almond]";
 		mes "Não consigo entender.";
-		mes "Por que Sweety gosta de empurrar seu corpo até o limite...";
+		mes "Por queSweetyGosto de empurrar o corpo para o limite...";
 		next;
 		mes "[Almond]";
 		mes "E é meu trabalho consertar seu corpo destruído.";
@@ -861,7 +861,7 @@ OnMobDead:
 	}
 	cutin "ep172_beta",2;
 	mes "[Almond]";
-	mes "Eu vou cuidar de mover Sweety.";
+	mes "Eu vou cuidar de me moverSweety.";
 	mes "Você quer terminar agora?";
 	next;
 	if (select( "Vamos terminar.", "Vou explorar o jardim primeiro." ) == 2) {
@@ -894,7 +894,7 @@ OnMobDead:
 		.@id = atoi(replacestr(strnpcinfo(2), "bam_body0", ""));
 
 		if ('broken_beta[.@id] == 0) {
-			mes "O corpo do Manager Beta está escondido sob as paisagens.";
+			mes "O corpo deGerente Betaescondido sob as paisagens.";
 			next;
 			if (rand(1,10) < 5)
 				mes "O slot principal está vazio.";
@@ -902,7 +902,7 @@ OnMobDead:
 				mes "Recuperei o núcleo.";
 				getitem 1000226,1;
 			}
-			mes "Vou avisar a Alpha mais tarde para que ela possa recuperar o corpo da boneca.";
+			mes "Eu vou deixarAlphaSaiba mais tarde para que ela possa recuperar o corpo da boneca.";
 			'broken_beta[.@id] = 1;
 		}
 	}
