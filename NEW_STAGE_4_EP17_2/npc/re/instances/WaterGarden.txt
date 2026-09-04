@@ -45,13 +45,13 @@ ba_maison,238,44,5	script	Harad#jh_ba1	4_EP17_BASIC_B,{
 	next;
 	mes "^FF0000Por favor, note que, qualquer manuseio anormal de monstros dentro da instância, como domar, não é considerado normal.^000000";
 	mes "";
-	mes "^FF0000O líder do partido que recebeu a busca pelo \\"Jardim Suspenso' or 'Jardim Suspenso Avançado' deve entrar na instância para prosseguir. No caso de mudanças de líder do partido, a instância será cancelada e você não pode prosseguir.^000000";
+	mes "^FF0000O líder do partido que recebeu a busca pelo \"Jardim Aquático' or 'Jardim Aquático Difícil' deve entrar na instância para prosseguir. No caso de mudanças de líder do partido, a instância será cancelada e você não pode prosseguir.^000000";
 	next;
 	cutin "",255;
 	.@normal = is_party_leader();
 	.@hard = (.@normal && isbegin_quest(16430) == 2);
 	.@md_name$ = "Water Garden";	// default
-	switch( select( (.@normal ? "CriarJardim Suspenso" : ""), (.@hard ? "CriarJardim Suspenso Avançado" : ""), "^0000CDEntrada do Jardim^000000" ) ) {
+	switch( select( (.@normal ? "Criar Jardim Aquático" : ""), (.@hard ? "Criar Jardim Aquático Difícil" : ""), "^0000CDEntrada do Jardim^000000" ) ) {
 	case 1:
 		.@quest_given = 16437;
 		.@other_quest = 16438;
@@ -82,10 +82,10 @@ ba_maison,238,44,5	script	Harad#jh_ba1	4_EP17_BASIC_B,{
 			}
 			cutin "ep172_beta",2;
 			mes "[Harad]";
-			mes "Enter o^CC0000" + .@instance_name$ + "^000000.";
+			mes "Enter o ^CC0000" + .@instance_name$ + "^000000.";
 			next;
 			cutin "",255;
-			if (select( "^0000CDEnter Jardim Suspenso", "Enter Jardim Suspenso Avançado^000000" ) == 1)
+			if (select( "^0000CDEntrar Jardim Aquático", "Entrar Jardim Aquático Difícil^000000" ) == 1)
 				.@md_name$ = "Water Garden";
 			else
 				.@md_name$ = "Water Garden Hard";
@@ -104,14 +104,14 @@ ba_maison,238,44,5	script	Harad#jh_ba1	4_EP17_BASIC_B,{
 		end;
 	}
 	if (instance_create(.@md_name$) == -3)
-		dispbottom "A reserva da instância \\"" + .@md_name$ + "\\"falhou devido a uma instância ativa.";
+		dispbottom "A reserva da instância \"" + .@md_name$ + "\"falhou devido a uma instância ativa.";
 	if (isbegin_quest(.@quest_given) > 0)
 		erasequest .@quest_given;
 	if (isbegin_quest(.@other_quest) > 0)
 		erasequest .@other_quest;
 	setquest .@quest_given;
 	mes "[Harad]";
-	mes "Quando o" + .@md_name$ + "MD abriu, por favor, fale comigo novamente e selecione^0000CDEnter" + .@md_name$ + "^000000.";
+	mes "Quando o" + .@md_name$ + "MD abriu, por favor, fale comigo novamente e selecione ^0000CDEntrar" + .@md_name$ + "^000000.";
 	close;
 }
 
@@ -193,8 +193,8 @@ OnTouch:
 	if ('water_garden == 1) {
 		mes "[Hetilla]";
 		mes "Bem-vindo ao jardim da água,";
-		mes "Você vai verPapilla? Papillatem sido muito sensível sobre os intrusos ultimamente...";
-		npctalk "Bem-vindo ao jardim da água. Você vai verPapilla? Papillatem sido muito sensível sobre os intrusos ultimamente...";
+		mes "Você vai ver Papilla? Papillatem sido muito sensível sobre os intrusos ultimamente...";
+		npctalk "Bem-vindo ao jardim da água. Você vai ver Papilla? Papillatem sido muito sensível sobre os intrusos ultimamente...";
 		next;
 		mes "[Hetilla]";
 		mes "Papilas estão brincando aqui e ali.";
@@ -319,7 +319,7 @@ OnStart:
 	initnpctimer;
 	end;
 OnTimer2000:
-	mapannounce 'map_ghg$, "A magia daPapillaO 's foi activado. Tem cuidado!", bc_map, 0xFFFF99;
+	mapannounce 'map_ghg$, "A magia da PapillaO 's foi activado. Tem cuidado!", bc_map, 0xFFFF99;
 	end;
 OnTimer4000:
 	callsub( S_Spawn, 240,73,20676,9 );
@@ -364,8 +364,8 @@ OnMobDead:
 		npctalk "Cuidado, Papillas e outros tipos de Papillas parecem estar vagando.";
 		next;
 		mes "[Juventus]";
-		mes "O alcance do ataque varia de acordo com a cor doPapilla.";
-		npctalk "O alcance do ataque varia de acordo com a cor doPapilla.";
+		mes "O alcance do ataque varia de acordo com a cor do Papilla.";
+		npctalk "O alcance do ataque varia de acordo com a cor do Papilla.";
 		next;
 		mes "[Juventus]";
 		mes "Também alguns dos jardineiros foram destruídos pelos intrusos.";
@@ -462,7 +462,7 @@ OnStart:
 	deletearray 'gid_area_2;
 	deletearray 'type_area_2;
 
-	mapannounce 'map_ghg$, "APapillas has devolvido!", bc_map, 0xFFFF99;
+	mapannounce 'map_ghg$, "A Papillas has devolvido!", bc_map, 0xFFFF99;
 
 	setarray .@xy[0],
 		320,91,325,91,330,91,335,91,340,91,345,91,
@@ -769,7 +769,7 @@ OnTouch_:
 	npctalk "Next garden... portal creation complete... Mover-se para a direção das 12 horas... para usar... Obrigado...";
 	next;
 	mes "[Higel]";
-	mes "Depois da mudança...PapillaNo labirinto... Por favor, poda todos eles.";
+	mes "Depois da mudança... Papilla No labirinto... Por favor, poda todos eles.";
 	close2;
 	if ('water_garden == 6) {
 		// note: mobs from traps are not killed
@@ -857,7 +857,7 @@ OnMobDead:
 			getitem 1000099,1;
 			end;
 		}
-		npctalk "Não se preocupe, eu já entrei em contatoAlpha. Hehe.", "", bc_self;
+		npctalk "Não se preocupe, eu já entrei em contato Alpha. Hehe.", "", bc_self;
 		end;
 	}
 	if ('water_garden == 7) {
@@ -876,16 +876,16 @@ OnMobDead:
 1@ghg,186,287,3	script(DISABLED)	Gardener#ghg_gb	4_EP17_SCISSORE,{
 	if ('water_garden == 8) {
 		mes "[Velkina]";
-		mes "Se:Papilladurante a batalha, faça-o segui-lo até o pilar da mesma cor.";
+		mes "Se: Papilla durante a batalha, faça-o segui-lo até o pilar da mesma cor.";
 		next;
 		mes "[Velkina]";
-		mes "Se oPapillatoca a luz, vai levar dano e morrer.";
+		mes "Se o Papilla toca a luz, vai levar dano e morrer.";
 		next;
 		mes "[Velkina]";
-		mes "Se você pode parar com segurança SilvaPapilla, vamos lidar com o resto!";
+		mes "Se você pode parar com segurança Silva Papilla, vamos lidar com o resto!";
 		next;
 		mes "[Velkina]";
-		mes "Então, vou queimar o incenso que chama SilvaPapilla...";
+		mes "Então, vou queimar o incenso que chama Silva Papilla...";
 		close2;
 		if ('water_garden == 8) {
 			'water_garden = 9;
@@ -1012,10 +1012,10 @@ OnTouchNPC:
 1@ghg,187,287,3	script(DISABLED)	Gardener#ghg_gb1	4_EP17_SCISSORE,2,2,{
 	if ('water_garden == 10) {
 		mes "[Velkina]";
-		mes "Você não esqueceu o seu pedido deSeiyuE entrou aqui, certo?";
+		mes "Você não esqueceu o seu pedido de SeiyuE entrou aqui, certo?";
 		next;
 		mes "[Velkina]";
-		mes "Não se esqueça de sair e conversarSeiyuE-mail^0000CDReceba suas recompensas^000000do trabalho de hoje.";
+		mes "Não se esqueça de sair e conversar Seiyu E-mail ^0000CDReceba suas recompensas^000000 do trabalho de hoje.";
 		next;
 		mes "[Velkina]";
 		mes "Então, eu vou mostrar-lhe o caminho para fora novamente!";

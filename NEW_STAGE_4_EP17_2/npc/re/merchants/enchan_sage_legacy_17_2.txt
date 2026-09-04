@@ -194,7 +194,7 @@ ba_in01,87,370,3	script	Lisa#ep172_merchant	20698,{
 		close;
 	}
 	mes "[Lisa]";
-	mes "Você tem certeza de que quer melhorar seu^FF0000" + .@equip_name$ + "^000000com^0000CD" + getitemname(.@module_id) + "^000000Este processo não pode ser revertido.";
+	mes "Você tem certeza de que quer melhorar seu ^FF0000" + .@equip_name$ + "^000000 com ^0000CD" + getitemname(.@module_id) + "^000000Este processo não pode ser revertido.";
 	next;
 	if (select( "Espera... não.", "- Tenho a certeza." ) == 1) {
 		mes "[Lisa]";
@@ -270,8 +270,8 @@ ba_in01,87,386,3	script	Child Manager ©¬#ep172_pet	EP17_2_CHILD_ADMIN1,{
 
 ba_in01,87,376,3	script	Cube Lane#ep172cube	4_EP17_GUARD_B,{
 	mes "[Cube Lane]";
-	mes "Estamos oferecendo cubos de reforço que refinarão sua^0000CD+4^000000Ilusão e Equipamento Automático para^FF0000+7^000000Em um instante!";
-	mes "VarmundtÉ sem dúvida o melhor homem do mundo!";
+	mes "Estamos oferecendo cubos de reforço que refinarão sua ^0000CD+4^000000 Ilusão e Equipamento Automático para ^FF0000+7^000000 Em um instante!";
+	mes "Varmundt É sem dúvida o melhor homem do mundo!";
 	close2;
 	callshop "ep172cubeshop00";
 	end;
@@ -300,10 +300,10 @@ ba_in01,87,383,3	script	Yeoncheong#equipment_exchange	4_EP17_CLEANER_W,{
 	switch( select( "Exchange Information", "Automatic Equipment Exchange", "Automatic Accessory Exchange", "Quit" ) ) {
 	case 1:
 		mes "[Yeoncheong]";
-		mes "Você pode trocar seu^0000CD+9 Illusion Armadura, Motor ou Perna e 900 Ingressos de Barmeal^000000E-mail^FF0000Automatic Armor, Engine, or Leg^000000.";
+		mes "Você pode trocar seu ^0000CD+9 Illusion Armadura, Motor ou Perna e 900 Ingressos de Barmeal^000000 E-mail ^FF0000Automatic Armor, Engine, or Leg^000000.";
 		next;
 		mes "[Yeoncheong]";
-		mes "A^FF0000Automatic Accessories^000000Pode ser trocado por^0000CDAcessórios de Ilusão e 1500 Bilhetes de Barmeal^000000.";
+		mes "A ^FF0000Automatic Accessories^000000 Pode ser trocado por ^0000CDAcessórios de Ilusão e 1500 Bilhetes de Barmeal^000000.";
 		next;
 		mes "[Yeoncheong]";
 		mes "O equipamento que você quer trocar deve estar em seu inventário e falar comigo.";
@@ -347,10 +347,10 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 	case 1:
 		cutin "ep172_omega",2;
 		mes "[Yecheon]";
-		mes "Você pode obter um^FF0000automatic module^000000^0000CD90 Barmeal Tickets^000000. Eu lhe darei um módulo automático aleatório excluindo os módulos de grau épico.";
+		mes "Você pode obter um ^FF0000automatic module^000000 ^0000CD90 Barmeal Tickets^000000. Eu lhe darei um módulo automático aleatório excluindo os módulos de grau épico.";
 		next;
 		mes "[Yecheon]";
-		mes "Eu também estou fornecendo^FF0000Dispositivo de Melhoria Automática Física e Dispositivo de Melhoria Automática Mágica^000000. Você pode trocá-lo por^0000CD45 Barmeal Tickets^000000, or ^0000CD1500000 Zeny^000000.";
+		mes "Eu também estou fornecendo ^FF0000Dispositivo de Melhoria Automática Física e Dispositivo de Melhoria Automática Mágica^000000. Você pode trocá-lo por ^0000CD45 Barmeal Tickets^000000, or ^0000CD1500000 Zeny^000000.";
 		next;
 		mes "[Yecheon]";
 		mes "Então, convidado especializado em combate, faça com segurança melhorar suas habilidades.";
@@ -383,7 +383,7 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 		.@zeny = 1500000;
 		cutin "ep172_omega",2;
 		mes "[Yecheon]";
-		mes "eu trocarei^FF00001 Physical Automatic Improvement Device^000000" + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
+		mes "eu trocarei ^FF00001 Physical Automatic Improvement Device^000000" + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
 		next;
 		cutin "",255;
 		switch( select( "Troca de Barmeal Ticket.", "Troca por 1500000 Zeny.", "Do not exchange." ) ) {
@@ -425,7 +425,7 @@ ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 		.@zeny = 1500000;
 		cutin "ep172_omega",2;
 		mes "[Yecheon]";
-		mes "eu trocarei^FF00001 Magical Automatic Improvement Device^000000" + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
+		mes "eu trocarei ^FF00001 Magical Automatic Improvement Device^000000" + .@price + "" + mesitemlink(1000103) + "or" + .@zeny + "Zeny.";
 		next;
 		cutin "",255;
 		switch( select( "Troca de Barmeal Ticket.", "Troca por 1500000 Zeny.", "Do not exchange." ) ) {

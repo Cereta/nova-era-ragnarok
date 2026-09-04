@@ -19,8 +19,8 @@
     "npc/re/mobs/dungeons/ba_lib.txt",
     "npc/re/mobs/dungeons/ba_pw.txt"
   ],
-  "visible_string_occurrences": 6779,
-  "english_residual_count": 15,
+  "visible_string_occurrences": 6757,
+  "english_residual_count": 10,
   "english_residuals": [
     {
       "file": "npc/re/quests/quests_17_2.txt",
@@ -31,11 +31,6 @@
       "file": "npc/re/quests/quests_17_2.txt",
       "line": 3943,
       "text": "Enter '"
-    },
-    {
-      "file": "npc/re/quests/quests_17_2.txt",
-      "line": 8063,
-      "text": "I'm Mansion Manager of [A Mansão do Grande Sábio]Varmundt]."
     },
     {
       "file": "npc/re/quests/quests_17_2.txt",
@@ -53,34 +48,14 @@
       "text": "O hamster no jardim come qualquer coisa."
     },
     {
-      "file": "npc/re/instances/HiddenGarden.txt",
-      "line": 105,
-      "text": "Enter Zona"
-    },
-    {
       "file": "npc/re/instances/WaterGarden.txt",
       "line": 85,
-      "text": "Enter o^CC0000"
-    },
-    {
-      "file": "npc/re/instances/WaterGarden.txt",
-      "line": 88,
-      "text": "^0000CDEnter Jardim Suspenso"
-    },
-    {
-      "file": "npc/re/instances/WaterGarden.txt",
-      "line": 88,
-      "text": "Enter Jardim Suspenso Avançado^000000"
-    },
-    {
-      "file": "npc/re/instances/WaterGarden.txt",
-      "line": 114,
-      "text": "MD abriu, por favor, fale comigo novamente e selecione^0000CDEnter"
+      "text": "Enter o ^CC0000"
     },
     {
       "file": "npc/re/instances/WaterGarden.txt",
       "line": 465,
-      "text": "APapillas has devolvido!"
+      "text": "A Papillas has devolvido!"
     },
     {
       "file": "npc/re/instances/WaterGarden.txt",
@@ -98,6 +73,6 @@
       "text": "Silk: He-Help me!"
     }
   ],
-  "translated_literal_occurrences": 4172,
+  "translated_literal_occurrences": 4198,
   "localized_monster_display_names": 18
 }

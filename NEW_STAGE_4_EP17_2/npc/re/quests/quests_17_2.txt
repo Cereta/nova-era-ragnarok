@@ -29,7 +29,7 @@ ba_pw02,90,93,0	script	???????????????#ep172_bapw2-00	4_ENERGY_BLUE,{
 			cloakonnpcself( "Dew#ep172_bapw2-00" );
 			end;
 		}
-		mes "- Parece que ele já é incapaz de fazer qualquer ação. Vamos pegar um pedaço deFolha de Yggdrasil. -";
+		mes "- Parece que ele já é incapaz de fazer qualquer ação. Vamos pegar um pedaço de Folha de Yggdrasil. -";
 		ep17_2_main = 3;
 		erasequest 18001;
 		setquest 11615;
@@ -39,7 +39,7 @@ ba_pw02,90,93,0	script	???????????????#ep172_bapw2-00	4_ENERGY_BLUE,{
 	}
 	if (ep17_2_main == 3) {
 		if (countitem(610) < 1) {
-			mes "- Parece que ele já é incapaz de fazer qualquer ação. Vamos pegar um pedaço deFolha de Yggdrasil. -";
+			mes "- Parece que ele já é incapaz de fazer qualquer ação. Vamos pegar um pedaço de Folha de Yggdrasil. -";
 			close;
 		}
 		cloakoffnpcself( "Dew#ep172_bapw2-01" );
@@ -79,8 +79,8 @@ ba_pw02,90,93,0	script	???????????????#ep172_bapw2-00	4_ENERGY_BLUE,{
 		next;
 		cutin "bu_du3",2;
 		mes "[Dew]";
-		mes "Se não fosse por você, eu acordaria noIgreja de Prontera!";
-		mes "Por um momento, eu viMark smiling brightly carrying a donation bag...";
+		mes "Se não fosse por você, eu acordaria no Igreja de Prontera!";
+		mes "Por um momento, eu vi Mark smiling brightly carrying a donation bag...";
 		next;
 		cutin "bu_du5",2;
 		mes "[Dew]";
@@ -111,14 +111,14 @@ ba_pw02,90,93,0	script	???????????????#ep172_bapw2-00	4_ENERGY_BLUE,{
 		next;
 		cutin "bu_du3",2;
 		mes "[Dew]";
-		mes "Bem, devemos ir e encontrar-nos comMarke os outros.";
+		mes "Bem, devemos ir e encontrar-nos com Mark e os outros.";
 		mes "Hmm...";
 		mes "Ohhhhhhhhhhhhhhhhh!!";
 		next;
 		cutin "bu_du1",2;
 		mes "[Dew]";
 		mes "Muito bem, ali!";
-		mes "Eu acho que posso ouvirMagiA voz de lá!!!";
+		mes "Eu acho que posso ouvir MagiA voz de lá!!!";
 		close2;
 		cutin "",255;
 		navigateto("ba_pw01",14,115);
@@ -156,7 +156,7 @@ OnTouch:
 		next;
 		mes "[Dew]";
 		mes "Estes tipos...";
-		mes "Como te atreves,Magi!";
+		mes "Como te atreves, Magi!";
 		next;
 		mes "[Dew]";
 		mes "Ignition Break...!!!";
@@ -167,7 +167,7 @@ OnTouch:
 		mes "[Lasis]";
 		mes "Magi, estás bem?";
 		mes "Você está ferido em algum lugar?";
-		mes "Eu pensei que era...Caçadores de CoraçãoSeria perigoso ser emboscado novamente em um lugar como este.";
+		mes "Eu pensei que era... Caçadores de CoraçãoSeria perigoso ser emboscado novamente em um lugar como este.";
 		next;
 		mes "[Lasis]";
 		mes "Ugh...";
@@ -180,7 +180,7 @@ OnTouch:
 		next;
 		cutin "",255;
 		mes "[Lasis]";
-		mes "Está tudo bem,MarkAs habilidades de cura quase me curaram completamente.";
+		mes "Está tudo bem, MarkAs habilidades de cura quase me curaram completamente.";
 		next;
 		cutin "bu_du1",2;
 		mes "[Dew]";
@@ -193,22 +193,22 @@ OnTouch:
 		mes "Dew?!";
 		mes "Onde você esteve!!";
 		mes "Você sabe o quão preocupado eu estava quando você de repente desapareceu?";
-		mes "Nós esperamos por muito tempo e você não apareceu, entãoMarkFoi procurar por você!";
+		mes "Nós esperamos por muito tempo e você não apareceu, então Mark Foi procurar por você!";
 		next;
 		cutin "",255;
 		mes "[Lasis]";
 		mes "Oh!";
-		mes "Esse é o caraMarkestá à procura?";
+		mes "Esse é o cara Markestá à procura?";
 		next;
 		mes "[Lasis]";
 		mes "Prazer em conhecê-lo.";
-		mes "Eu sou...LasisdaRebellion.";
-		mes "És tu.DewEu vi-te na base antes...";
+		mes "Eu sou... Lasis da Rebelião.";
+		mes "És tu. DewEu vi-te na base antes...";
 		next;
 		cutin "bu_maggi1",2;
 		mes "[Magi]";
-		mes "Eu conheciLasismais cedo no caminho até aqui.";
-		mes "QuandoMarkE eu estava sozinho, de repente um grande número de inimigos veio do nada.";
+		mes "Eu conheci Lasis mais cedo no caminho até aqui.";
+		mes "Quando Mark E eu estava sozinho, de repente um grande número de inimigos veio do nada.";
 		next;
 		cutin "bu_du3",2;
 		mes "[Dew]";
@@ -247,17 +247,17 @@ OnTouch:
 		next;
 		cutin "",255;
 		mes "[Lasis]";
-		mes "Sim, é a mesma jóia que recebemos doCaçadores de Coraçãoque você derrubou antes.";
+		mes "Sim, é a mesma jóia que recebemos do Caçadores de Coração que você derrubou antes.";
 		mes "Pergunto-me se é realmente apenas uma jóia.";
 		next;
 		cutin "bu_mark1",2;
 		mes "[Mark]";
-		mes "Desde oCaçadores de CoraçãoTem algo assim em sua posse, tenho certeza que é algo importante desde então.";
+		mes "Desde o Caçadores de Coração Tem algo assim em sua posse, tenho certeza que é algo importante desde então.";
 		mes "Vamos ficar com ele por agora.";
 		mes "Vou descobrir uma coisa mais tarde.";
 		next;
 		mes "[Mark]";
-		mes "Tenho um aviso deAlp... que eles encontraram a porta no caminho de volta, então vamos chegar lá antes que fique mais perigoso.";
+		mes "Tenho um aviso de Alp... que eles encontraram a porta no caminho de volta, então vamos chegar lá antes que fique mais perigoso.";
 		ep17_2_main = 5;
 		erasequest 11616;
 		setquest 11617;
@@ -274,7 +274,7 @@ OnTouch:
 		cloakoffnpcself( "Mark#ep172_bapw1-00" );
 		cutin "bu_mark1",2;
 		mes "[Mark]";
-		mes "Tenho um aviso deAlp... que eles encontraram a porta no caminho de volta, então vamos chegar lá antes que fique mais perigoso.";
+		mes "Tenho um aviso de Alp... que eles encontraram a porta no caminho de volta, então vamos chegar lá antes que fique mais perigoso.";
 		close2;
 		cutin "",255;
 		navigateto("ba_pw01",87,290);
@@ -317,7 +317,7 @@ ba_pw01,87,290,3	script	Alp#ep172_bapw1-00	4_M_BLACKMAN,{
 		warp "ba_in01",23,315;
 		end;
 	}
-	mes "[알프]";
+	mes "[Alp]";
 	mes "Dispositivos impressionantes...";
 	mes "Eles poderiam fornecer energia em escala suficiente para uma cidade... não, para um país inteiro.";
 	mes "Mas para que fizeram tudo isso...?";
@@ -345,7 +345,7 @@ ba_in01,20,319,3	script	Lasis#ep172_bain1-00	4_M_REBELLION,{
 		cutin "bu_mark2",2;
 		mes "[Mark]";
 		mes "Vamos em frente primeiro.";
-		mes "Obrigado,Lasis.";
+		mes "Obrigado, Lasis.";
 		next;
 		cutin "bu_maggi2",2;
 		mes "[Magi]";
@@ -399,7 +399,7 @@ ba_maison,70,145,3	script	Tamarin#ep172_bamaison-00	4_EP17_TAMARIN,{
 			cloakoffnpcself( "Magi#ep172_bamaison-00" );
 			cutin "bu_mark1",2;
 			mes "[Mark]";
-			mes "Desculpe-me...DewDe repente, desapareceu de novo.";
+			mes "Desculpe-me... Dew De repente, desapareceu de novo.";
 			next;
 			cutin "bu_du5",2;
 			mes "[Dew]";
@@ -427,7 +427,7 @@ ba_maison,70,145,3	script	Tamarin#ep172_bamaison-00	4_EP17_TAMARIN,{
 		next;
 		mes "[Tamarin]";
 		mes "Pare de rir e registre-se imediatamente.";
-		mes "Fale comAlphaperto da porta, ela vai registrá-lo como convidados.";
+		mes "Fale com Alpha perto da porta, ela vai registrá-lo como convidados.";
 		if (ep17_2_main == 7) {
 			ep17_2_main = 8;
 			completequest 11620;
@@ -443,7 +443,7 @@ ba_maison,70,145,3	script	Tamarin#ep172_bamaison-00	4_EP17_TAMARIN,{
 	}
 	if (ep17_2_main < 10) {
 		mes "[Tamarin]";
-		mes "Eu ouvi que oVarmundtA mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros.";
+		mes "Eu ouvi que o VarmundtA mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros.";
 		cutin "ep172_tamarin01.bmp",2;
 		close3;
 	}
@@ -581,14 +581,14 @@ ba_maison,70,145,3	script	Tamarin#ep172_bamaison-00	4_EP17_TAMARIN,{
 	}
 	if (ep17_2_library < 5) {
 		mes "[Tamarin]";
-		mes "Eu ouvi que oVarmundtA mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros.";
+		mes "Eu ouvi que o VarmundtA mansão foi incendiada durante a revolta dos mercenários... acho que é muito diferente do que está escrito nos livros.";
 		cutin "ep172_tamarin01.bmp",2;
 		close3;
 	}
 	cutin "ep172_tamarin01",2;
 	mes "[Tamarin]";
 	mes "Estou?" + strcharinfo(0) + ".";
-	mes "Eu tenho uma tarefa temporária deAlphae estou pedindo ajuda de outros aventureiros.";
+	mes "Eu tenho uma tarefa temporária de Alpha e estou pedindo ajuda de outros aventureiros.";
 	next;
 	switch( checkquest(11639,PLAYTIME) ) {
 	case -1:
@@ -606,8 +606,8 @@ ba_maison,70,145,3	script	Tamarin#ep172_bamaison-00	4_EP17_TAMARIN,{
 	switch( checkquest(11638,HUNTING) ) {
 	case -1:
 		mes "[Tamarin]";
-		mes "Solicitamos a coleta dePeças do Guardiãoao redor da mansão, parece ter sido atacada recentemente e está prejudicando o ambiente residencial da mansão.";
-		mes "Recolher 20Peças do Guardiãopara melhorar a imagem ambiental da mansão.";
+		mes "Solicitamos a coleta de Peças do Guardião ao redor da mansão, parece ter sido atacada recentemente e está prejudicando o ambiente residencial da mansão.";
+		mes "Recolher 20 Peças do Guardião para melhorar a imagem ambiental da mansão.";
 		next;
 		if (select( "Accept.", "Decline." ) == 2) {
 			cutin "ep172_tamarin04",2;
@@ -670,7 +670,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		mes "É um prazer conhecê-lo, estava preocupado que se perdesse na mansão.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Nós lhe emitimos uma licença de convidado. Ao contrário de um convite formal deVarmundtEste cartão é apenas temporário.";
+		mes "Nós lhe emitimos uma licença de convidado. Ao contrário de um convite formal de VarmundtEste cartão é apenas temporário.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Como você não cometeu nenhum dano à propriedade, como vandalismo ou roubo, ao contrário dos outros intrusos, você recebeu uma licença temporária para a investigação.";
@@ -711,7 +711,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		mes "Por acaso você tem uma grupo com você?";
 		next;
 		cutin "",255;
-		select( "Eu vim com as Rebeliões e alguns funcionários do governo." );
+		select( "Eu vim com o Rebeliãos e alguns funcionários do governo." );
 		mes ".....";
 		next;
 		mes ".....";
@@ -732,10 +732,10 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		mes "Eu me registrei depois de confirmar a identidade e o propósito da visita dos outros membros da parte que se reuniram de outros lugares da mansão.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "A tua^0000CDgrupo^000000foi concedido status formal automaticamente porque eles eram do^0000CDmesmo grupo^000000que visitou esta mansão no outro dia.";
+		mes "A tua ^0000CDgrupo^000000 foi concedido status formal automaticamente porque eles eram do ^0000CDmesmo grupo^000000 que visitou esta mansão no outro dia.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Além disso, eles também afirmaram que, você veio aqui para^0000CDOs intrusos capturam os intrusos^000000que estão causando uma perturbação dentro da mansão.";
+		mes "Além disso, eles também afirmaram que, você veio aqui para ^0000CDOs intrusos capturam os intrusos^000000 que estão causando uma perturbação dentro da mansão.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Portanto, também emitiremos uma licença formal de convidado para a mansão para grupo," + strcharinfo(0);
@@ -748,10 +748,10 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		specialeffect EF_VALLENTINE;
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "" + strcharinfo(0) + ". Bem-vindo aoVarmundtMansão, prazer em conhecê-lo, sou o gerente desta mansão.";
+		mes "" + strcharinfo(0) + ". Bem-vindo ao VarmundtMansão, prazer em conhecê-lo, sou o gerente desta mansão.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "De agora em diante." + strcharinfo(0) + ", Como convidado de honra, você está livre para usar as instalações nesta mansão. Se você tiver alguma dúvida, não hesite em contactar o mais próximobonecas automáticas.";
+		mes "De agora em diante." + strcharinfo(0) + ", Como convidado de honra, você está livre para usar as instalações nesta mansão. Se você tiver alguma dúvida, não hesite em contactar o mais próximo bonecas automáticas.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Além disso, se você precisar de ajuda para limpar e informações sobre os intrusos na mansão, cooperaremos plenamente.";
@@ -761,11 +761,11 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		select( "Muito obrigado." );
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "Vou compartilhar a lista dos novos convidados registrados com" + strcharinfo(0) + "para o outrobonecas automáticas.";
+		mes "Vou compartilhar a lista dos novos convidados registrados com" + strcharinfo(0) + "para o outro bonecas automáticas.";
 		next;
 		progressbar_npc "00FF00",2;
 		mes "[Gerente de Mansão ]";
-		mes "" + strcharinfo(0) + ", todos osbonecas automáticasNa mansão estão... querida... oh...";
+		mes "" + strcharinfo(0) + ", todos os bonecas automáticas Na mansão estão... querida... oh...";
 		next;
 		mes ".....";
 		next;
@@ -792,23 +792,23 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		select( "Há algum problema?" );
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "Há um problema com o^0000CDrepeaters^000000em algumas áreas. O sinal não está transmitindo ou não está sendo recebido.";
+		mes "Há um problema com o ^0000CDrepeaters^000000 em algumas áreas. O sinal não está transmitindo ou não está sendo recebido.";
 		next;
 		close2;
 		select( "Repeater?" );
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "Todos osbonecas automáticasna mansão estão conectados a uma rede sem fio.";
-		mes "Nós usamos essa rede para compartilhar informações a todos osbonecas automáticasNa mansão em um instante.";
+		mes "Todos os bonecas automáticas na mansão estão conectados a uma rede sem fio.";
+		mes "Nós usamos essa rede para compartilhar informações a todos os bonecas automáticas Na mansão em um instante.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "É importante para coisas como registro de convidados e compartilhamento de horários.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Se você quiser transmitir uma informação para qualquer lugar da mansão. Use o repetidor para transmitir a informação a todosbonecas automáticas.";
+		mes "Se você quiser transmitir uma informação para qualquer lugar da mansão. Use o repetidor para transmitir a informação a todos bonecas automáticas.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Eu já enviei as informações das listas de convidados atualizadas. Mas, eu não recebi uma confirmação de algunsbonecas automáticas.";
+		mes "Eu já enviei as informações das listas de convidados atualizadas. Mas, eu não recebi uma confirmação de alguns bonecas automáticas.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "O repetidor na área onde o sinal não está transmitindo falhou.";
@@ -818,10 +818,10 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
 		mes "O fracasso não é frequente porque o mantemos meticulosamente.";
-		mes "No entanto, quando o^0000CDintruders^000000No outro dia, eles desmontaram e extorquiram as instalações da mansão.";
+		mes "No entanto, quando o ^0000CDintruders^000000 No outro dia, eles desmontaram e extorquiram as instalações da mansão.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Algunsbonecas automáticasforam destruídos pelos intrusos.";
+		mes "Alguns bonecas automáticas foram destruídos pelos intrusos.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Vou ter que verificar qual repetidor de área não está funcionando corretamente.";
@@ -869,8 +869,8 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		cutin "",255;
 		select( "Sim, estou com eles." );
 		mes "[Meimei]";
-		mes "Esta é a mansão.Varmundt's Mansion!";
-		npctalk "Esta é a mansão.Varmundt's Mansion!", "Meimei#172nw01", bc_self;
+		mes "Esta é a mansão. Varmundt's Mansion!";
+		npctalk "Esta é a mansão. Varmundt's Mansion!", "Meimei#172nw01", bc_self;
 		next;
 		mes "[Tommy]";
 		mes "Aventureiro! O movimento das Ilusões foi confirmado dentro da mansão. Em breve vamos formar uma equipe, descobrir a estrutura da mansão e iniciar a operação.";
@@ -890,7 +890,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		mes "Então, posso tomar a liberdade de pedir-lhe um favor? Eu não queria ouvir, mas você disse que precisava descobrir a estrutura da mansão.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Você pode dizer obonecas automáticasperto do repetidor quebrado para verificar o repetidor quebrado?";
+		mes "Você pode dizer o bonecas automáticas perto do repetidor quebrado para verificar o repetidor quebrado?";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "É um bom caminho para dar uma olhada ao redor da mansão.";
@@ -908,13 +908,13 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
 		mes "Obrigado por aceitar o meu pedido problemático.";
-		mes "Hábonecas automáticasque ainda não receberam a lista de convidados atualizada, mas nós concedemos oficialmente" + strcharinfo(0) + "como convidado. As bonecas irão reconhecê-lo à medida que você se aproximar deles.";
+		mes "Há bonecas automáticas que ainda não receberam a lista de convidados atualizada, mas nós concedemos oficialmente" + strcharinfo(0) + "como convidado. As bonecas irão reconhecê-lo à medida que você se aproximar deles.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Todos os outros receberam a lista, por isso não será tão inconveniente usar a mansão. Se você precisar de alguma ajuda, não hesite em contactar o mais próximoboneca automática.";
+		mes "Todos os outros receberam a lista, por isso não será tão inconveniente usar a mansão. Se você precisar de alguma ajuda, não hesite em contactar o mais próximo boneca automática.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Em primeiro lugar, o mais próximo é o<NAVI>[restaurant]<INFO>ba_maison,146,109,0,101,0</INFO></NAVI>. Você deve ir até lá. Se você disser o mais próximoboneca automáticaperto do repetidor sobre o problema, eles vão cuidar dele para você.";
+		mes "Em primeiro lugar, o mais próximo é o <NAVI>[restaurant]<INFO>ba_maison,146,109,0,101,0</INFO></NAVI>. Você deve ir até lá. Se você disser o mais próximo boneca automática perto do repetidor sobre o problema, eles vão cuidar dele para você.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Então, por favor.";
@@ -929,25 +929,25 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 	if (ep17_2_main == 10 || ep17_2_main == 11) {
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "Em primeiro lugar, o mais próximo é o<NAVI>[restaurant]<INFO>ba_maison,146,109,0,101,0</INFO></NAVI>. Você deve ir até lá. Se você disser o mais próximoboneca automáticaperto do repetidor sobre o problema, eles vão cuidar dele para você.";
+		mes "Em primeiro lugar, o mais próximo é o <NAVI>[restaurant]<INFO>ba_maison,146,109,0,101,0</INFO></NAVI>. Você deve ir até lá. Se você disser o mais próximo boneca automática perto do repetidor sobre o problema, eles vão cuidar dele para você.";
 		close3;
 	}
 	if (ep17_2_main == 12) {
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "A<NAVI>[pavilion]<INFO>ba_maison,334,143,0,101,0</INFO></NAVI>é desta maneira. boneca automática lá vai cuidar do repetidor quebrado se você entregá-lo.";
+		mes "A <NAVI>[pavilion]<INFO>ba_maison,334,143,0,101,0</INFO></NAVI> é desta maneira. boneca automática lá vai cuidar do repetidor quebrado se você entregá-lo.";
 		close3;
 	}
 	if (ep17_2_main == 13) {
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "Diga o problema aoboneca automáticaperto do repetidor quebrado no<NAVI>[jardim central]<INFO>ba_maison,245,206,0,0,0</INFO></NAVI>área e ele vai cuidar dele.";
+		mes "Diga o problema ao boneca automática perto do repetidor quebrado no <NAVI>[jardim central]<INFO>ba_maison,245,206,0,0,0</INFO></NAVI> área e ele vai cuidar dele.";
 		close3;
 	}
 	if (ep17_2_main == 14) {
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "" + strcharinfo(0) + ", bem-vindo de volta. Você olhou ao redor da mansão? Além disso, você entregou a mensagem aobonecas automáticasperto da área do repetidor quebrado?";
+		mes "" + strcharinfo(0) + ", bem-vindo de volta. Você olhou ao redor da mansão? Além disso, você entregou a mensagem ao bonecas automáticas perto da área do repetidor quebrado?";
 		next;
 		cutin "",255;
 		select( "Entreguei todos eles." );
@@ -981,13 +981,13 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		mes "Você lidou com esses intrusos problemáticos muito bem. Isso me deu a impressão de que, você é um aventureiro muito habilidoso que lida com esse tipo de situação esplendidamente.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Você rapidamente aprendeu a geografia da mansão, e rapidamente se acostumar com abonecas automáticas. Foi impressionante.";
+		mes "Você rapidamente aprendeu a geografia da mansão, e rapidamente se acostumar com a bonecas automáticas. Foi impressionante.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Por favor, dê uma olhada ao redor da mansão e se você encontrar algum problema, eu gostaria de pedir sua ajuda.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Nósbonecas automáticasservimos os hóspedes humanos como servimos ao proprietário da mansão, já estamos familiarizados com isso. Mas temos informações insuficientes e habilidades de resposta a problemas desconhecidos.";
+		mes "Nós bonecas automáticas servimos os hóspedes humanos como servimos ao proprietário da mansão, já estamos familiarizados com isso. Mas temos informações insuficientes e habilidades de resposta a problemas desconhecidos.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Ainda não resolvemos o problema com os intrusos. Do ponto de vista não humano, parece difícil resolvê-lo porque há muitas partes que não têm informações suficientes.";
@@ -1000,20 +1000,20 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
 		mes "Não é muito, mas como um sinal de apreço, eu lhe darei isso.";
-		mes "Esta é uma^0000CDBarmeal Ticket^000000, você pode usá-lo no restaurante da mansão.";
+		mes "Esta é uma ^0000CDBarmeal Ticket^000000, você pode usá-lo no restaurante da mansão.";
 		mes "Você pode comer livremente qualquer coisa com ele, sinta-se livre para usá-lo a qualquer momento.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "A mansão é<NAVI>[restaurant]<INFO>ba_maison,146,109,0,101,0</INFO></NAVI>está localizado na parte inferior, como mostrei anteriormente.";
+		mes "A mansão é <NAVI>[restaurant]<INFO>ba_maison,146,109,0,101,0</INFO></NAVI> está localizado na parte inferior, como mostrei anteriormente.";
 		next;
 		cutin "",255;
 		select( "Viste a minha grupo?" );
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "Aqueles que vieram antes de você agora estão hospedados no<NAVI>[tea house]<INFO>ba_in01,206,106,0,101,0</INFO></NAVI>Por favor, dê uma olhada ao redor e converse com eles.";
+		mes "Aqueles que vieram antes de você agora estão hospedados no <NAVI>[tea house]<INFO>ba_in01,206,106,0,101,0</INFO></NAVI>Por favor, dê uma olhada ao redor e converse com eles.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Se você tiver algum inconveniente na mansão, por favor, sinta-se livre para dizer a qualquerbonecas automáticas. Por favor, tome este bilhete Barmeal, como um sinal de apreço pelo seu trabalho duro.";
+		mes "Se você tiver algum inconveniente na mansão, por favor, sinta-se livre para dizer a qualquer bonecas automáticas. Por favor, tome este bilhete Barmeal, como um sinal de apreço pelo seu trabalho duro.";
 		ep17_2_main = 15;
 		erasequest 17338;
 		setquest 17381;
@@ -1027,7 +1027,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 	next;
 	if (ep17_2_main == 15) {
 		mes "[Gerente de Mansão ]";
-		mes "Aqueles que vieram antes de você agora estão hospedados no<NAVI>[tea house]<INFO>ba_in01,206,106,0,101,0</INFO></NAVI>Por favor, dê uma olhada ao redor e converse com eles.";
+		mes "Aqueles que vieram antes de você agora estão hospedados no <NAVI>[tea house]<INFO>ba_in01,206,106,0,101,0</INFO></NAVI>Por favor, dê uma olhada ao redor e converse com eles.";
 		next;
 	}
 	switch( checkquest(17341,PLAYTIME) ) {
@@ -1041,7 +1041,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "O fornecimento de chips de comunicação do repetidor é suficiente.";
-		mes "Não se preocupe com o repetidor. Por favor, descanse por hoje e volte^0000CDDepois do amanhecer^000000.";
+		mes "Não se preocupe com o repetidor. Por favor, descanse por hoje e volte ^0000CDDepois do amanhecer^000000.";
 		close3;
 	case 2:
 		mes "[Gerente de Mansão ]";
@@ -1050,17 +1050,17 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		if (select( "Yes.", "No." ) == 2) {
 			mes "[Gerente de Mansão ]";
 			mes "Nesse caso, você veio aqui por causa de algum inconveniente ao usar as instalações da mansão?";
-			mes "Se você disser o mais próximoboneca automática, nós vamos cuidar disso imediatamente.";
+			mes "Se você disser o mais próximo boneca automática, nós vamos cuidar disso imediatamente.";
 			close3;
 		}
 		mes "[Gerente de Mansão ]";
 		mes "Muito obrigado pela sua ajuda hoje.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Por favor me traga^0000CD10 Boneca Automática Communication Chips^000000para o repetidor. Eu acho que isso será suficiente para os dias de fornecimento.";
+		mes "Por favor me traga ^0000CD10 Boneca Automática Chips de Comunicação^000000 para o repetidor. Eu acho que isso será suficiente para os dias de fornecimento.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Ele também nos ajuda com o quebradobonecas automáticasPor favor, cuide de qualquerBeta Quebradoestá vagando ao redor da mansão e trazer seus chips de comunicação com você.";
+		mes "Ele também nos ajuda com o quebrado bonecas automáticas Por favor, cuide de qualquer Beta Quebradoestá vagando ao redor da mansão e trazer seus chips de comunicação com você.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Então, por favor aventureiro.";
@@ -1086,7 +1086,7 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		mes "Embora seja reparado após a descoberta, é um problema que ocorre continuamente. A demanda necessária de chips de comunicação é difícil de fornecer.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Além disso, o quebradobonecas automáticasestá vagando e continua destruindo os repetidores, dobrando o suprimento necessário.";
+		mes "Além disso, o quebrado bonecas automáticas está vagando e continua destruindo os repetidores, dobrando o suprimento necessário.";
 		next;
 		cutin "",255;
 		if (select( "Posso ajudar?", "Deve ser difícil." ) == 2) {
@@ -1099,10 +1099,10 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 		mes "Muito obrigado, mas temo que esteja a tomar muito do seu tempo." + strcharinfo(0) + "Se você não se importa, eu gostaria de lhe pedir um favor.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Por favor me traga^0000CD10 Boneca Automática Communication Chips^000000para o repetidor. Eu acho que isso será suficiente para os dias de fornecimento.";
+		mes "Por favor me traga ^0000CD10 Boneca Automática Chips de Comunicação^000000 para o repetidor. Eu acho que isso será suficiente para os dias de fornecimento.";
 		next;
 		mes "[Gerente de Mansão ]";
-		mes "Ele também nos ajuda com o quebradobonecas automáticasPor favor, cuide de qualquerBeta Quebradoestá vagando ao redor da mansão e trazer seus chips de comunicação com você.";
+		mes "Ele também nos ajuda com o quebrado bonecas automáticas Por favor, cuide de qualquer Beta Quebradoestá vagando ao redor da mansão e trazer seus chips de comunicação com você.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Então, por favor aventureiro.";
@@ -1111,19 +1111,19 @@ ba_maison,74,150,3	script	Mansion Manager ¥á#172nw01	4_EP17_MASTER_A,{
 	case 1:
 		cutin "ep172_alpha",2;
 		mes "[Gerente de Mansão ]";
-		mes "Você trouxe oBoneca AutomáticaChips de comunicação que eu pedi?";
+		mes "Você trouxe o Boneca Automática Chips de Comunicação que eu pedi?";
 		next;
 		if (countitem(1000232) < 10) {
 			mes "[Gerente de Mansão ]";
-			mes "Por favor me traga^0000CD10 Boneca Automática Communication Chips^000000para o repetidor. Eu acho que isso será suficiente para os dias de fornecimento.";
+			mes "Por favor me traga ^0000CD10 Boneca Automática Chips de Comunicação^000000 para o repetidor. Eu acho que isso será suficiente para os dias de fornecimento.";
 			next;
 			mes "[Gerente de Mansão ]";
-			mes "Ele também nos ajuda com o quebradobonecas automáticasPor favor, cuide de qualquerBeta Quebradovagueie pela mansão e traga seus chips de comunicação com você.";
+			mes "Ele também nos ajuda com o quebrado bonecas automáticas Por favor, cuide de qualquer Beta Quebradovagueie pela mansão e traga seus chips de comunicação com você.";
 			close3;
 		}
 		mes "[Gerente de Mansão ]";
 		mes "Isto é o suficiente para o dia. Obrigado pelo seu trabalho duro.";
-		mes "Se você tiver tempo, eu gostaria de pedir sua ajuda novamente^0000CDDepois do amanhecer^000000Se você não se importa, por favor, volte amanhã.";
+		mes "Se você tiver tempo, eu gostaria de pedir sua ajuda novamente ^0000CDDepois do amanhecer^000000Se você não se importa, por favor, volte amanhã.";
 		next;
 		mes "[Gerente de Mansão ]";
 		mes "Muito obrigado. Por favor, leve isto consigo.";
@@ -1198,7 +1198,7 @@ ba_maison,146,109,5	script	Tasty#172nw01	4_EP17_BASIC_B,{
 		emotion ET_QUESTION;
 		next;
 		mes "[Tasty]";
-		mes "Foi-me dito para não correr para os intrusos. Você está aqui para^0000CDAs minhas partes^000000É o fim de mim?";
+		mes "Foi-me dito para não correr para os intrusos. Você está aqui para ^0000CDAs minhas partes^000000É o fim de mim?";
 		next;
 		emotion ET_SWEAT, getcharid(3);
 		select( "Não sou esse tipo de pessoa." );
@@ -1206,7 +1206,7 @@ ba_maison,146,109,5	script	Tasty#172nw01	4_EP17_BASIC_B,{
 		mes "Então, que tipo de pessoa és tu?";
 		next;
 		mes "[Tasty]";
-		mes "Você não está babando, e seus olhos estão normais. Você não é um^0000CDintruder^000000?";
+		mes "Você não está babando, e seus olhos estão normais. Você não é um ^0000CDintruder^000000?";
 		emotion ET_QUESTION;
 		next;
 		select( "Sou hóspede da mansão, mas..." );
@@ -1233,15 +1233,15 @@ ba_maison,146,109,5	script	Tasty#172nw01	4_EP17_BASIC_B,{
 		next;
 		select( "O repetidor está quebrado, então..." );
 		mes "[Tasty]";
-		mes "Oh, não admira! A rede parou de funcionar de repente. O repetidor não está funcionando! Então por que não estáAlpha coming?";
+		mes "Oh, não admira! A rede parou de funcionar de repente. O repetidor não está funcionando! Então por que não está Alpha coming?";
 		next;
-		select( "Alphaestá ocupado agora." );
+		select( "Alpha está ocupado agora." );
 		mes "[Tasty]";
-		mes "AlphaEstá muito ocupado para vir? De jeito nenhum. Oh, você estava tentando me ajudar voluntariamente? Que convidado incomum. Venha pensar nisso, houve um^0000CDcliente como esse antes^000000.";
+		mes "Alpha Está muito ocupado para vir? De jeito nenhum. Oh, você estava tentando me ajudar voluntariamente? Que convidado incomum. Venha pensar nisso, houve um^0000CDcliente como esse antes^000000.";
 		next;
 		mes "[Tasty]";
 		mes "Desculpem.";
-		mes "O convidado que visitou a mansão mostrou interesse na mansão e em nós.bonecas automáticas, mas não havia convidados que nos ajudassem ao redor da mansão.";
+		mes "O convidado que visitou a mansão mostrou interesse na mansão e em nós. bonecas automáticas, mas não havia convidados que nos ajudassem ao redor da mansão.";
 		next;
 		mes "[Tasty]";
 		mes "De qualquer forma, se tivermos muitos convidados, eles virão para comer em breve. Tenho que me preparar. Faz muito tempo que não tenho convidados.";
@@ -1253,7 +1253,7 @@ ba_maison,146,109,5	script	Tasty#172nw01	4_EP17_BASIC_B,{
 		mes "Os invasores não duraram muito tempo, mas jogaram a mansão no caos naquele breve momento. Eles levaram as máquinas na mansão, os dools automáticos, tudo o que parecia útil para eles foi removido do lugar.";
 		next;
 		mes "[Tasty]";
-		mes "Esse repetidor deve ter um^0000CDbroken communication chip too^000000?";
+		mes "Esse repetidor deve ter um ^0000CDbroken Chip de Comunicação too^000000?";
 		next;
 		mes "[Tasty]";
 		mes "Malditos humanos. A maioria deles parece ter fugido agora, mas ainda restam alguns. Já os vi aqui algumas vezes. Eles estão atrás da comida.";
@@ -1288,25 +1288,25 @@ ba_maison,146,109,5	script	Tasty#172nw01	4_EP17_BASIC_B,{
 		next;
 		select( "Uh..." );
 		mes "[Tasty]";
-		mes "Por que você se parece assim? É porque você está relutante em machucar umboneca automáticaNa frente de outro? Não se preocupe com isso.";
+		mes "Por que você se parece assim? É porque você está relutante em machucar um boneca automática Na frente de outro? Não se preocupe com isso.";
 		next;
 		mes "[Tasty]";
 		mes "Precisamos repará-lo de qualquer maneira, mas precisamos capturá-lo primeiro.";
-		mes "Você pode pensar nisso como salvar o problema para nósbonecas automáticas.";
+		mes "Você pode pensar nisso como salvar o problema para nós bonecas automáticas.";
 		next;
 		mes "[Tasty]";
 		mes "Se você deixá-lo em paz, ele vai vagar pela mansão e destruí-lo, então você terá que lidar com ele o mais rápido possível.";
 		mes "É melhor capturá-lo, depois tirar o chip e usá-lo para consertar o repetidor.";
 		next;
 		mes "[Tasty]";
-		mes "Todo mundo tem feito isso desde que os intrusos apareceram. Mesmo que" + strcharinfo(0) + "não faz isso, é tudo por nossa contabonecas automáticas.";
+		mes "Todo mundo tem feito isso desde que os intrusos apareceram. Mesmo que" + strcharinfo(0) + "não faz isso, é tudo por nossa conta bonecas automáticas.";
 		mes "É bom trabalhar um pouco.";
 		next;
 		ep17_2_main = 11;
 		erasequest 17334;
 		setquest 17335;
 		mes "[Tasty]";
-		mes "Por favor, cuide daBeta Quebradoe trazer^0000CD1 Boneca Automática Communication Chip^000000.";
+		mes "Por favor, cuide da Beta Quebrado e trazer ^0000CD1 Boneca Automática Chip de Comunicação^000000.";
 		npctalk "Vamos para o jardim!!", "Strange Automatic Doll#172nw01", bc_self;
 		sleep2 300;
 		cloakonnpcself( "Strange Automatic Doll#172nw01" );
@@ -1319,10 +1319,10 @@ ba_maison,146,109,5	script	Tasty#172nw01	4_EP17_BASIC_B,{
 		next;
 		if (countitem(1000232) < 1) {
 			mes "[Tasty]";
-			mes "Você ainda não? Você está relutante em machucar umboneca automáticaNão te preocupes, vou fazê-lo mais tarde.";
+			mes "Você ainda não? Você está relutante em machucar um boneca automáticaNão te preocupes, vou fazê-lo mais tarde.";
 			next;
 			mes "[Tasty]";
-			mes "Eu vou cuidar dos quebradosbonecas automáticas, basta trazer^0000CD1 Boneca Automática Communication Chip^000000.";
+			mes "Eu vou cuidar dos quebrados bonecas automáticas, basta trazer ^0000CD1 Boneca Automática Chip de Comunicação^000000.";
 			close;
 		}
 		mes "[Tasty]";
@@ -1333,10 +1333,10 @@ ba_maison,146,109,5	script	Tasty#172nw01	4_EP17_BASIC_B,{
 		next;
 		select( "O pavilhão e o jardim..." );
 		mes "[Tasty]";
-		mes "Então vá em frente para o<NAVI>[pavilion]<INFO>ba_maison,334,143,0,0,0</INFO></NAVI>Primeiro, é o mais próximo aqui. Siga esta estrada aqui.";
+		mes "Então vá em frente para o <NAVI>[pavilion]<INFO>ba_maison,334,143,0,0,0</INFO></NAVI> Primeiro, é o mais próximo aqui. Siga esta estrada aqui.";
 		next;
 		mes "[Tasty]";
-		mes "Não toque no repetidor quebrado descuidadamente. Diga ao próximobonecas automáticasali e eles vão cuidar disso.";
+		mes "Não toque no repetidor quebrado descuidadamente. Diga ao próximo bonecas automáticas ali e eles vão cuidar disso.";
 		next;
 		mes "[Tasty]";
 		mes "Por acaso você tem um bilhete de Barmeal? É usado para comer no restaurante. Eu lhe dou isso, então venha e coma mais tarde! Vou preparar uma boa comida para você! Como obrigado!";
@@ -1352,10 +1352,10 @@ ba_maison,146,109,5	script	Tasty#172nw01	4_EP17_BASIC_B,{
 	}
 	if (ep17_2_main == 12) {
 		mes "[Tasty]";
-		mes "Vá em frente para o<NAVI>[pavilion]<INFO>ba_maison,334,143,0,0,0</INFO></NAVI>Primeiro, é o mais próximo aqui. Siga esta estrada aqui.";
+		mes "Vá em frente para o <NAVI>[pavilion]<INFO>ba_maison,334,143,0,0,0</INFO></NAVI> Primeiro, é o mais próximo aqui. Siga esta estrada aqui.";
 		next;
 		mes "[Tasty]";
-		mes "Não toque no repetidor quebrado descuidadamente. Diga ao próximobonecas automáticasali e eles vão cuidar disso.";
+		mes "Não toque no repetidor quebrado descuidadamente. Diga ao próximo bonecas automáticas ali e eles vão cuidar disso.";
 		close;
 	}
 	mes "[Tasty]";
@@ -1378,7 +1378,7 @@ ba_maison,334,143,3	script	Repeater#172nw02	2_POSTBOX,{
 	}
 	if (ep17_2_main == 12) {
 		mes "[" + strcharinfo(0) + "]";
-		mes "Não há ninguém aqui...? O que devo fazer com isto? É oboneca automáticachip de comunicação quebrado novamente...?";
+		mes "Não há ninguém aqui...? O que devo fazer com isto? É o boneca automática chip de comunicação quebrado novamente...?";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "E se eu abrir isto...?";
@@ -1435,7 +1435,7 @@ ba_maison,334,143,3	script	Repeater#172nw02	2_POSTBOX,{
 		mes "Toda vez que eu encontrar algo quebrado, eu vou repará-lo, mas como você pode ver, mesmo que eu tire meus olhos por um momento, Wary sai e quebra-lo assim.";
 		next;
 		mes "[Kimchi]";
-		mes "Está a acontecer desde que ele foi atacado pela polícia.^0000CDintruders^000000. Eu já consertei isso antes, mas Wary sempre sai e faz isso...";
+		mes "Está a acontecer desde que ele foi atacado pela polícia. ^0000CDintruders^000000. Eu já consertei isso antes, mas Wary sempre sai e faz isso...";
 		next;
 		mes "[Kimchi]";
 		mes "Há muitas bonecas que se tornaram assim.";
@@ -1445,7 +1445,7 @@ ba_maison,334,143,3	script	Repeater#172nw02	2_POSTBOX,{
 		mes "Ouvi os falcões vagarem pela mansão e arruiná-la.";
 		next;
 		mes "[Kimchi]";
-		mes "Lamento interrompê-lo no seu intervalo. Por favor, aproveite esta área doVarmundtMansão para o seu coração contente.";
+		mes "Lamento interrompê-lo no seu intervalo. Por favor, aproveite esta área do VarmundtMansão para o seu coração contente.";
 		next;
 		mes "[Worry]";
 		mes "Como essa coisa pode ser tão animada?";
@@ -1477,7 +1477,7 @@ ba_maison,334,143,3	script	Repeater#172nw02	2_POSTBOX,{
 		select( "O jardim em frente à mansão." );
 		mes "[Kimchi]";
 		mes "Também não está a funcionar lá.";
-		mes "Suba desta estrada e vire à esquerda para ir para o<NAVI>[jardim central]<INFO>ba_maison,245,206,0,0,0</INFO></NAVI>.";
+		mes "Suba desta estrada e vire à esquerda para ir para o <NAVI>[jardim central]<INFO>ba_maison,245,206,0,0,0</INFO></NAVI>.";
 		next;
 		mes "[Kimchi]";
 		mes "Vamos, Warry, vamos voltar.";
@@ -1494,7 +1494,7 @@ ba_maison,334,143,3	script	Repeater#172nw02	2_POSTBOX,{
 	}
 	if (ep17_2_main == 13) {
 		mes "[" + strcharinfo(0) + "]";
-		mes "A boneca me disse para subir a partir desta estrada e vire à esquerda para ir para o<NAVI>[jardim central]<INFO>ba_maison,245,206,0,0,0</INFO></NAVI>.";
+		mes "A boneca me disse para subir a partir desta estrada e vire à esquerda para ir para o <NAVI>[jardim central]<INFO>ba_maison,245,206,0,0,0</INFO></NAVI>.";
 		close;
 	}
 	npctalk "Em operação normal. Força de sinal alta.", "", bc_self;
@@ -1515,7 +1515,7 @@ ba_maison,245,206,5	script	Gabriel#172nw01	4_EP17_GUARD_B,5,5,{
 	}
 	if (ep17_2_main == 14) {
 		mes "[Gabriel]";
-		mes "Se este for o último, por favor volte para<NAVI>[Alpha]<INFO>ba_maison,74,150,0,0,0</INFO></NAVI>.";
+		mes "Se este for o último, por favor volte para <NAVI>[Alpha]<INFO>ba_maison,74,150,0,0,0</INFO></NAVI>.";
 		close;
 	}
 	mes "[Gabriel]";
@@ -1599,11 +1599,11 @@ OnTouch:
 		mes "O repetidor aqui está funcionando bem...";
 		next;
 		mes "[Gabriel]";
-		mes "Espere, isso não é um problema de sinal, de repente há um^0000CDhacking channel^000000Não é mesmo?";
+		mes "Espere, isso não é um problema de sinal, de repente há um ^0000CDhacking channel^000000 Não é mesmo?";
 		next;
 		select( "Hacking?" );
 		mes "[Gabriel]";
-		mes "Sabendo que obonecas automáticasna mansão enviar e receber sinais através do repetidor. s vezes, as pessoas^0000CDhackear o repetidor^000000para tentar controlar obonecas automáticasou para acompanhar o que está acontecendo dentro da mansão.";
+		mes "Sabendo que o bonecas automáticas na mansão enviar e receber sinais através do repetidor. s vezes, as pessoas ^0000CDhackear o repetidor^000000 para tentar controlar o bonecas automáticas ou para acompanhar o que está acontecendo dentro da mansão.";
 		next;
 		mes "[Gabriel]";
 		mes "Ainda há intrusos dentro da mansão.";
@@ -1616,7 +1616,7 @@ OnTouch:
 		mes "Mas isso não muda o fato de que eles são intrusos. Ao contrário do hóspede anterior que estava apenas curioso, eles se infiltraram nas instalações e cometeram todos os tipos de violência na mansão. Você não acha que eles são como um ladrão?";
 		next;
 		mes "[Gabriel]";
-		mes "" + strcharinfo(0) + "Se você não quer ser mal compreendido pelo outrobonecas automáticasna mansão, especialmente nas proximidades de áreas restritas, você deve identificar-se com antecedência.";
+		mes "" + strcharinfo(0) + "Se você não quer ser mal compreendido pelo outro bonecas automáticas na mansão, especialmente nas proximidades de áreas restritas, você deve identificar-se com antecedência.";
 		next;
 		select( "Esta é a última." );
 		mes "[Gabriel]";
@@ -1624,7 +1624,7 @@ OnTouch:
 		mes "Além disso, não é muito, mas por favor aceite isso como um pedido de desculpas.";
 		next;
 		mes "[Gabriel]";
-		mes "Se este for o último, por favor volte para<NAVI>[Alpha]<INFO>ba_maison,74,150,0,0,0</INFO></NAVI>. Também... Bem-vindo aoVarmundtSe você precisar de ajuda, sinta-se à vontade para pedir qualquerboneca automática.";
+		mes "Se este for o último, por favor volte para <NAVI>[Alpha]<INFO>ba_maison,74,150,0,0,0</INFO></NAVI>. Também... Bem-vindo ao VarmundtSe você precisar de ajuda, sinta-se à vontade para pedir qualquer boneca automática.";
 		ep17_2_main = 14;
 		erasequest 17337;
 		setquest 17338;
@@ -1634,7 +1634,7 @@ OnTouch:
 	}
 	if (ep17_2_main == 14) {
 		mes "[Gabriel]";
-		mes "Se este for o último, por favor volte para<NAVI>[Alpha]<INFO>ba_maison,74,150,0,0,0</INFO></NAVI>.";
+		mes "Se este for o último, por favor volte para <NAVI>[Alpha]<INFO>ba_maison,74,150,0,0,0</INFO></NAVI>.";
 		close;
 	}
 	end;
@@ -1662,7 +1662,7 @@ ba_in01,206,106,3	script	Philofontes#jh5_1	4_M_PHILOFONTES,{
 	if (ep17_2_main < 15) {
 		cutin "ep16_tes01",2;
 		mes "[Tess]";
-		mes "você pode conhecerAlphaPrimeiro e depois voltar aqui na casa de chá?";
+		mes "você pode conhecer Alpha Primeiro e depois voltar aqui na casa de chá?";
 		mes "Parece que a primeira coisa que você precisa fazer aqui é se registrar como convidado.";
 		mes "- Uma missão anterior ainda existe. -";
 		close3;
@@ -1671,7 +1671,7 @@ ba_in01,206,106,3	script	Philofontes#jh5_1	4_M_PHILOFONTES,{
 		cutin "ep16_tes01",2;
 		mes "[Tess]";
 		mes "DienPor favor, verifique a autenticidade novamente.";
-		mes "Este é um documento que o governo examinou quando os mercenários ficaram aqui noVarmundt Mansion.";
+		mes "Este é um documento que o governo examinou quando os mercenários ficaram aqui no Varmundt Mansion.";
 		next;
 		cutin "ep162_dn01",2;
 		mes "[Dien]";
@@ -1705,7 +1705,7 @@ ba_in01,206,106,3	script	Philofontes#jh5_1	4_M_PHILOFONTES,{
 		mes "Ah," + strcharinfo(0) + "Desde quando estás aqui? Mostrei-te um lado vergonhoso de mim.";
 		next;
 		mes "[Tess]";
-		mes "Estou a falar com oRebellion <NAVI>[Elders]<INFO>ba_in01,203,103,0,0,0</INFO></NAVI>, mas é difícil verificar eventos que aconteceram no passado...";
+		mes "Estou a falar com o Rebelião <NAVI>[Elders]<INFO>ba_in01,203,103,0,0,0</INFO></NAVI>, mas é difícil verificar eventos que aconteceram no passado...";
 		ep17_2_main = 16;
 		erasequest 17381;
 		setquest 16440;
@@ -1714,7 +1714,7 @@ ba_in01,206,106,3	script	Philofontes#jh5_1	4_M_PHILOFONTES,{
 	if (ep17_2_main == 16) {
 		cutin "ep16_tes03",2;
 		mes "[Tess]";
-		mes "Estou a falar com oRebellion <NAVI>[Elders]<INFO>ba_in01,203,103,0,0,0</INFO></NAVI>, mas eles são bastante teimosos, talvez porque eles já são idosos.";
+		mes "Estou a falar com o Rebelião <NAVI>[Elders]<INFO>ba_in01,203,103,0,0,0</INFO></NAVI>, mas eles são bastante teimosos, talvez porque eles já são idosos.";
 		next;
 		cutin "ep162_rds02",2;
 		mes "[Ridsh]";
@@ -1724,15 +1724,15 @@ ba_in01,206,106,3	script	Philofontes#jh5_1	4_M_PHILOFONTES,{
 	if (ep17_2_main == 17) {
 		cutin "ep16_tes01",2;
 		mes "[Tess]";
-		mes "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui emVarmundt Mansion.";
+		mes "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui em Varmundt Mansion.";
 		close3;
 	}
 	if (ep17_2_main == 18) {
-		npctalk "Tess: Por favor, preste atenção aRidsh.", "", bc_self;
+		npctalk "Tess: Por favor, preste atenção a Ridsh.", "", bc_self;
 		end;
 	}
 	if (ep17_2_main == 19) {
-		npctalk "Tess: Eu achoKaya TossTem algo a dizer.", "", bc_self;
+		npctalk "Tess: Eu acho Kaya Toss Tem algo a dizer.", "", bc_self;
 		end;
 	}
 	if (ep17_2_main < 25) {
@@ -1809,7 +1809,7 @@ ba_in01,203,103,5	script	Dien#jh5_1	4_F_DIENE,{
 		}
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Sim, oVarmundtNão é humano, mas provavelmente é uma fonte de dados mais neutra.";
+		mes "Sim, o Varmundt Não é humano, mas provavelmente é uma fonte de dados mais neutra.";
 		next;
 		cutin "ep162_rds02",2;
 		mes "[Ridsh]";
@@ -1846,7 +1846,7 @@ ba_in01,203,103,5	script	Dien#jh5_1	4_F_DIENE,{
 		next;
 		cutin "ep16_tes03",2;
 		mes "[Tess]";
-		mes "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui emVarmundt Mansion.";
+		mes "Aventureiro, por favor, vá para os gerentes da mansão e descobrir o que aconteceu sobre o tempo em que os mercenários ficaram aqui em Varmundt Mansion.";
 		next;
 		if (select( "Accept.", "Refuse." ) == 2) {
 			cutin "ep16_tes02",2;
@@ -1879,7 +1879,7 @@ ba_in01,203,103,5	script	Dien#jh5_1	4_F_DIENE,{
 		close3;
 	}
 	if (ep17_2_main == 18) {
-		npctalk "Dien: Você se importaria de ouvirRidsh's story?", "", bc_self;
+		npctalk "Dien: Você se importaria de ouvir Ridsh's story?", "", bc_self;
 		end;
 	}
 	if (ep17_2_main == 19) {
@@ -1908,7 +1908,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 			cutin "16loo_01",2;
 			mes "[Rookie]";
 			mes "Os gerentes sabem a verdade sobre a guerra mercenária.";
-			mes "Eles são todosbonecas automáticas, eles terão uma memória vívida e eles não vão contar mentiras.";
+			mes "Eles são todos bonecas automáticas, eles terão uma memória vívida e eles não vão contar mentiras.";
 			next;
 			mes "[Rookie]";
 			mes "Por favor, ouça as histórias daqueles dias, aventureiro.";
@@ -1934,7 +1934,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 		select( "Entregar dados específicos." );
 		cutin "ep162_rds03",2;
 		mes "[Ridsh]";
-		mes "Esta pessoa realmente não se parece com um mercenário. Por que uma pessoa como esta estaria pertoVarmundtMansão e ser morto?";
+		mes "Esta pessoa realmente não se parece com um mercenário. Por que uma pessoa como esta estaria perto Varmundt Mansão e ser morto?";
 		next;
 		cutin "ep16_tes01",2;
 		mes "[Tess]";
@@ -1956,7 +1956,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 		next;
 		mes "[Tess]";
 		mes "Diz-se que o comissário não voltou depois de ser enviado, o comissário foi mais tarde presumido como uma pessoa desaparecida.";
-		mes "Mais tarde, porém, foi encontrado morto noVarmundt Mansion.";
+		mes "Mais tarde, porém, foi encontrado morto no Varmundt Mansion.";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -1985,7 +1985,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 			next;
 			cutin "ep16_tes03",2;
 			mes "[Tess]";
-			mes "Mesmo que seja a oposição do governo, teria sido difícil cometer assassinato sem escapar dos olhos dos mercenários e dos trabalhadores dentro doVarmundt Mansion.";
+			mes "Mesmo que seja a oposição do governo, teria sido difícil cometer assassinato sem escapar dos olhos dos mercenários e dos trabalhadores dentro do Varmundt Mansion.";
 			break;
 		case 3:
 			cutin "ep162_dn03",2;
@@ -2000,7 +2000,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Teria sido difícil evitar os olhos dos mercenários e dos trabalhadores naVarmundt Mansion.";
+		mes "Teria sido difícil evitar os olhos dos mercenários e dos trabalhadores na Varmundt Mansion.";
 		mes "Mas os mercenários não são os culpados.";
 		next;
 		cutin "",255;
@@ -2038,7 +2038,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 		next;
 		cutin "ep162_dn03",2;
 		mes "[Dien]";
-		mes "Pedi a alguém para \\"descartar\\" o pessoal do governo para evitar o contacto com os mercenários... E disse-lhe para entrar.VarmundtMansão e rouboVarmundtOs dados de pesquisa...";
+		mes "Pedi a alguém para \"descartar\" o pessoal do governo para evitar o contacto com os mercenários... E disse-lhe para entrar. Varmundt Mansão e roubo VarmundtOs dados de pesquisa...";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -2068,7 +2068,7 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 		end;
 	}
 	if (ep17_2_main == 18) {
-		npctalk "Rookie: Vamos ouvirRidsh.", "", bc_self;
+		npctalk "Rookie: Vamos ouvir Ridsh.", "", bc_self;
 		end;
 	}
 	if (ep17_2_main == 19) {
@@ -2078,12 +2078,12 @@ ba_in01,202,108,5	script	Rookie#jh5	4_M_ROOKIE,{
 	if (ep17_2_main == 20) {
 		cutin "16loo_03",2;
 		mes "[Rookie]";
-		mes "Sr. Aventureiro, Sr.Kayaestava muito deprimido. você se importa de verificar o Sr.Kaya?";
+		mes "Sr. Aventureiro, Sr. Kaya estava muito deprimido. você se importa de verificar o Sr. Kaya?";
 		next;
 		cutin "16loo_02",2;
 		mes "[Rookie]";
 		mes "É sempre para algo ruim acontecer em momentos como este...";
-		mes "Eu ficaria tranquilo se pudesse dar uma olhada no<NAVI>[jardim]<INFO>ba_maison,103,92,0,101,0</INFO></NAVI>.";
+		mes "Eu ficaria tranquilo se pudesse dar uma olhada no <NAVI>[jardim]<INFO>ba_maison,103,92,0,101,0</INFO></NAVI>.";
 		close2;
 		cutin "",255;
 		ep17_2_main = 21;
@@ -2131,7 +2131,7 @@ ba_in01,208,110,3	script	Ridsh#jh5_1	4_F_LEEDSH,{
 		next;
 		cutin "ep162_dn01",2;
 		mes "[Dien]";
-		mes "Se descobrirmos mais sobre \\"H. Luckenberg\\" naquele momento...";
+		mes "Se descobrirmos mais sobre \"H. Luckenberg\" naquele momento...";
 		mes "A Guerra Mercenária poderia ter terminado de forma diferente.";
 		next;
 		cutin "ep16_tes02",2;
@@ -2176,12 +2176,12 @@ ba_in01,208,110,3	script	Ridsh#jh5_1	4_F_LEEDSH,{
 		mes "No entanto, o lugar para onde ele foi não foi documentado.";
 		next;
 		mes "[Kaya Toss]";
-		mes "Minha secretária,Grey, procurou através de registros incompletos e encontrou esta nota entre os memorandos de log de trabalho restantes.";
-		mes "\\"O mais rápido possível (Traços de memorando apagado) levá-los para a mansão\\"";
+		mes "Minha secretária, Grey, procurou através de registros incompletos e encontrou esta nota entre os memorandos de log de trabalho restantes.";
+		mes "\"O mais rápido possível (Traços de memorando apagado) levá-los para a mansão\"";
 		next;
 		mes "[Kaya Toss]";
 		mes "O assunto do memorando é vagamente escrito, mas pode ser claramente compreendido.";
-		mes "Isso, ele estava emVarmundt Mansion...";
+		mes "Isso, ele estava em Varmundt Mansion...";
 		next;
 		cutin "ep162_dn03",2;
 		mes "[Dien]";
@@ -2229,7 +2229,7 @@ ba_in01,207,102,3	script	Kaya Toss#jh5_1	4_EP17_KAYA,{
 		cutin "ep171_kaya02",2;
 		mes "[Kaya Toss]";
 		mes "Peço desculpa.";
-		mes "Como vice-presidente, eu me sinto responsável por tudo isso.";
+		mes "Como o Vice-PresidenteEu me sinto responsável por tudo isso.";
 		next;
 		cutin "ep162_dn01",2;
 		mes "[Dien]";
@@ -2242,7 +2242,7 @@ ba_in01,207,102,3	script	Kaya Toss#jh5_1	4_EP17_KAYA,{
 		next;
 		cutin "ep162_rds03",2;
 		mes "[Ridsh]";
-		mes "O passado? Não. É sobre o que está acontecendo agora, o tempo presente. AquelesRebellioncrianças e aqueles que ainda estão doentes em Cor estão acontecendo agora.";
+		mes "O passado? Não. É sobre o que está acontecendo agora, o tempo presente. Aqueles Rebelião crianças e aqueles que ainda estão doentes em Cor estão acontecendo agora.";
 		mes "Tudo o que você diz do passado continua até hoje.";
 		next;
 		cutin "ep162_dn03",2;
@@ -2266,7 +2266,7 @@ ba_in01,207,102,3	script	Kaya Toss#jh5_1	4_EP17_KAYA,{
 		ep17_2_main = 20;
 		erasequest 16447;
 		setquest 16448;
-		npctalk "Kaya TossEu voltarei depois de organizar meus pensamentos por um momento.", "", bc_self;
+		npctalk "Kaya Toss Eu voltarei depois de organizar meus pensamentos por um momento.", "", bc_self;
 		cloakonnpcself( "Kaya Toss#jh5_1" );
 		end;
 	}
@@ -2293,11 +2293,11 @@ ba_in01,205,109,3	script(CLOAKED)	Tatio#jh5_1	4_M_TATIO,{
 		next;
 		cutin "ep171_kaya01",2;
 		mes "[Kaya Toss]";
-		mes "Não, Tatio, já te mandei uma chamada.Grey, mas eu não esperava que você chegasse tão cedo!";
+		mes "Não, Tatio, já te mandei uma chamada. Grey, mas eu não esperava que você chegasse tão cedo!";
 		next;
 		cutin "ep15_tatio01",2;
 		mes "[Tatio]";
-		mes "Pelo que ouvi doGreyParecia um assunto urgente.";
+		mes "Pelo que ouvi do GreyParecia um assunto urgente.";
 		mes "Eu decidi que seria melhor visitar pessoalmente o mais rápido possível.";
 		next;
 		cutin "ep162_dn02",2;
@@ -2325,14 +2325,14 @@ ba_in01,205,109,3	script(CLOAKED)	Tatio#jh5_1	4_M_TATIO,{
 		next;
 		cutin "ep15_tatio01",2;
 		mes "[Tatio]";
-		mes "Saí assim que entrei em contato com o vice-presidenteKaya TossE acabou de chegar.";
+		mes "Saí assim que entrei em contato de Vice-Presidente Kaya Toss E acabou de chegar.";
 		mes "Eu sei o que você quer ouvir, mas eu não posso simplesmente decidir tudo aqui.";
 		next;
 		mes "[Tatio]";
 		mes "No entanto, vou dizer-lhe todas as promessas que posso fazer com a minha autoridade.";
 		next;
 		mes "[Tatio]";
-		mes "Vice President TossEu vi os relatos de que você trabalhou com os agentes do governo e aventureiros.";
+		mes "Vice-Presidente TossEu vi os relatos de que você trabalhou com os agentes do governo e aventureiros.";
 		mes "Obrigado pelo seu trabalho duro.";
 		next;
 		cutin "ep171_kaya01",2;
@@ -2361,7 +2361,7 @@ ba_in01,205,109,3	script(CLOAKED)	Tatio#jh5_1	4_M_TATIO,{
 		next;
 		cutin "ep15_tatio01",2;
 		mes "[Tatio]";
-		mes "Também aceitaremos o vice-presidenteKaya Toss\\"opinião e analisar completamente o que ele investigou até agora, e distribuir as compensações e punição em conformidade.";
+		mes "Também aceitaremos Vice-Presidente Kaya Toss\"opinião e analisar completamente o que ele investigou até agora, e distribuir as compensações e punição em conformidade.";
 		next;
 		cutin "ep162_dn01",2;
 		mes "[Dien]";
@@ -2372,7 +2372,7 @@ ba_in01,205,109,3	script(CLOAKED)	Tatio#jh5_1	4_M_TATIO,{
 		mes "Sim... claro.";
 		next;
 		mes "[Tatio]";
-		mes "Para isso, a empresa quer conversar mais com o governo e as Rebeliões.";
+		mes "Para esse fim, a empresa quer conversar mais com o governo e o Rebeliãos.";
 		next;
 		cutin "ep16_tes01",2;
 		mes "[Tess]";
@@ -2405,7 +2405,7 @@ ba_in01,205,109,3	script(CLOAKED)	Tatio#jh5_1	4_M_TATIO,{
 		mes "Fizeste um grande trabalho a vaguear pela mansão.";
 		next;
 		mes "[Rookie]";
-		mes "Além disso, é uma pequena quantidade, mas eu vou dar-lhe alguns bilhetes de Barmeal. Eu consegui-lo a partir dobonecas automáticasAqui.";
+		mes "Além disso, é uma pequena quantidade, mas eu vou dar-lhe alguns bilhetes de Barmeal. Eu consegui-lo a partir do bonecas automáticas Aqui.";
 		mes "Obrigado pelo seu trabalho duro!";
 		close2;
 		cutin "",255;
@@ -2432,7 +2432,7 @@ ba_in01,204,113,5	script	Cotnes#jh5_1	4_F_COATNEIS,{
 		close3;
 	}
 	if (ep17_2_main == 18) {
-		npctalk "Cotnes: Parece queRidshTem algo a dizer.", "", bc_self;
+		npctalk "Cotnes: Parece que Ridsh Tem algo a dizer.", "", bc_self;
 		end;
 	}
 	if (ep17_2_main == 19) {
@@ -2469,7 +2469,7 @@ ba_maison,103,92,3	script	Kaya Toss#jh5_2	4_EP17_KAYA,{
 		next;
 		cutin "",255;
 		mes "[???]";
-		mes "Vice-Presidente, estou com o Conselho do Rekenber, não precisas de saber a minha identidade.";
+		mes "Vice-PresidenteEstou com o Conselho do Rekenber, não precisas de saber a minha identidade.";
 		next;
 		cutin "ep171_kaya03",2;
 		mes "[Kaya Toss]";
@@ -2477,7 +2477,7 @@ ba_maison,103,92,3	script	Kaya Toss#jh5_2	4_EP17_KAYA,{
 		next;
 		cutin "",255;
 		mes "[???]";
-		mes "A empresa está preocupada com a ação do vice-presidente. Quanto tempo você vai ser influenciado por sua eloquência? O que você faria se um representante da empresa repetidamente agisse novamente o interesse da empresa?";
+		mes "A empresa está preocupada com o Vice-Presidenteação. Quanto tempo você vai ser influenciado pela eloquência deles? O que você faria se um representante da empresa repetidamente agisse contra o interesse da empresa?";
 		next;
 		cutin "ep171_kaya01",2;
 		mes "[Kaya Toss]";
@@ -2572,7 +2572,7 @@ ba_maison,103,92,3	script	Kaya Toss#jh5_2	4_EP17_KAYA,{
 		cloakoffnpcself( "Cotnes#jh5_2" );
 		cutin "ep171_kaya01",2;
 		mes "[Kaya Toss]";
-		mes "Eu vou entrar em contato com a empresa e pedir uma pessoa importante para falar mais profundamente com o governo e as Rebeliões.";
+		mes "Eu vou entrar em contato com a empresa e pedir a uma pessoa importante para falar mais profundamente com o governo e o governo. Rebeliãos.";
 		next;
 		mes "[Kaya Toss]";
 		mes "Devemos investigar este incidente corretamente e pegar o culpado.";
@@ -2655,12 +2655,12 @@ OnInit:
 }
 
 ba_maison,105,95,3	script(CLOAKED)	Ridsh#jh5_2	4_F_LEEDSH,{
-	npctalk "RidshDiga ao presidente para sair!", "", bc_self;
+	npctalk "Ridsh Diga ao presidente para sair!", "", bc_self;
 	end;
 }
 
 ba_maison,105,90,1	script(CLOAKED)	Cotnes#jh5_2	4_F_COATNEIS,{
-	npctalk "Ridsh: Você está bem, Sr.Kaya?", "", bc_self;
+	npctalk "Ridsh: Você está bem, Sr. Kaya?", "", bc_self;
 	end;
 }
 
@@ -2672,7 +2672,7 @@ ba_maison,189,56,3	script	Yunas#jh5	4_EP17_BASIC_B,{
 	if (ep17_2_main == 17) {
 		cutin "ep172_beta",2;
 		mes "[Yunas]";
-		mes "Bem-vindo, convidado honrado, eu sou umboneca automáticacom um identificador chamado Yunas.";
+		mes "Bem-vindo, convidado honrado, eu sou um boneca automática com um identificador chamado Yunas.";
 		mes "Claro, estou aqui para ajudar qualquer hóspede que precise.";
 		next;
 		cutin "",255;
@@ -2708,7 +2708,7 @@ ba_maison,189,56,3	script	Yunas#jh5	4_EP17_BASIC_B,{
 		emotion ET_THINK, getnpcid(0,"Mercenary#jh5_2");
 		next;
 		mes "[Mercenary]";
-		mes "Que tipo de pessoa éVarmundtQuem nos aceitou de bom grado?";
+		mes "Que tipo de pessoa é VarmundtQuem nos aceitou de bom grado?";
 		emotion ET_QUESTION, getnpcid(0,"Mercenary#jh5_1");
 		next;
 		mes "[Mercenary]";
@@ -2717,7 +2717,7 @@ ba_maison,189,56,3	script	Yunas#jh5	4_EP17_BASIC_B,{
 		emotion ET_THINK, getnpcid(0,"Mercenary#jh5_2");
 		next;
 		mes "[Mercenary]";
-		mes "Sim, estamos vivos graças ao Sr.Varmundte o Sr. H";
+		mes "Sim, estamos vivos graças ao Sr. Varmundt e o Sr. H";
 		mes "Se o Sr. H não nos tivesse pedido para vir aqui, já estaríamos todos mortos.";
 		emotion ET_THINK, getnpcid(0,"Mercenary#jh5_1");
 		next;
@@ -2803,7 +2803,7 @@ ba_maison,189,56,3	script	Yunas#jh5	4_EP17_BASIC_B,{
 	}
 	cutin "ep172_beta",2;
 	mes "[Yunas]";
-	mes "Bem-vindo aoVarmundtMansão. AVarmundtA Mansion oferece vários benefícios, como serviços médicos, compras e entretenimento e atividades de lazer.";
+	mes "Bem-vindo ao Varmundt Mansão. A Varmundt A Mansion oferece vários benefícios, como serviços médicos, compras e entretenimento e atividades de lazer.";
 	next;
 	mes "[Yunas]";
 	mes "Não é isso, por engano, disse-te a coisa errada.";
@@ -2996,7 +2996,7 @@ ba_maison,249,161,3	script	Adore#jh5	4_EP17_BASIC_B,{
 		cutin "ep172_beta",2;
 		mes "[Adore]";
 		mes "Através dos registos do robô de limpeza, posso guiá-lo até ao último local reconhecido nesse registo.";
-		mes "Eu lhe darei a coordenada. Por favor, siga este<NAVI>[guide]<INFO>ba_maison,357,291,0,101,0</INFO></NAVI>.";
+		mes "Eu lhe darei a coordenada. Por favor, siga este <NAVI>[guide]<INFO>ba_maison,357,291,0,101,0</INFO></NAVI>.";
 		close2;
 		cutin "",255;
 		if (isbegin_quest(16444) == 1) {
@@ -3216,23 +3216,23 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		next;
 		cutin "16loo_03",0;
 		mes "[Rookie]";
-		mes "Alphadisse que podemos consertar qualquer coisa que está quebrada, mas há um problema maior...";
+		mes "Alpha disse que podemos consertar qualquer coisa que está quebrada, mas há um problema maior...";
 		next;
 		mes "[Rookie]";
-		mes "O hackeadoboneca automáticaé imediatamente cortado da rede para evitar contaminação, assumindo queAlphatem um sinal forte.";
+		mes "O hackeado boneca automática é imediatamente cortado da rede para evitar contaminação, assumindo que Alpha tem um sinal forte.";
 		next;
 		mes "[Rookie]";
 		mes "Até o código de identificação está quebrado.";
-		mes "Alphadisse que teremos que usar a força parabonecas automáticasAssim.";
+		mes "Alpha disse que teremos que usar a força para bonecas automáticas Assim.";
 		next;
 		mes "[Rookie]";
-		mes "Se houver umboneca automáticaAtacando-nos, vamos tirá-lo, claro.";
-		mes "AlphaPediu-me para trazer o \\"Core\\".";
+		mes "Se houver um boneca automática Atacando-nos, vamos tirá-lo, claro.";
+		mes "Alpha Pediu-me para trazer o \"Core\".";
 		next;
 		select( "Core?" );
 		cutin "16loo_01",0;
 		mes "[Rookie]";
-		mes "Acho que é a única maneira de consertar obonecas automáticas.";
+		mes "Acho que é a única maneira de consertar o bonecas automáticas.";
 		mes "Fico feliz que possa recuperar os núcleos...";
 		next;
 		mes "[Rookie]";
@@ -3244,7 +3244,7 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		mes "Eu acho que eles estão trabalhando depois que o sol se põe, mas eles estão em apuros de muitas maneiras.";
 		next;
 		mes "[Rookie]";
-		mes "Anyway, AlphaDito isto, temos que lidar com os robôs automáticos que não são capazes de distinguir o código de identificação e recuperar os núcleos.";
+		mes "Anyway, Alpha Dito isto, temos que lidar com os robôs automáticos que não são capazes de distinguir o código de identificação e recuperar os núcleos.";
 		mes "Gostarias de vir comigo?";
 		next;
 		cloakoffnpcself( "Elyumina#ep172_m_el01" );
@@ -3271,17 +3271,17 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		next;
 		cutin "",255;
 		select( "O que aconteceu?" );
-		mes "[Rebellion]";
-		mes "O gerente que trouxe a refeição de repente mudou e atacouElyumina.";
+		mes "[Rebelião]";
+		mes "O gerente que trouxe a refeição de repente mudou e atacou Elyumina.";
 		mes "Felizmente, eu estava na lista de convidados, e o gerente voltou ao seu estado normal imediatamente,";
 		next;
-		mes "[Rebellion]";
-		mes "O gerente usou a bandeja que estava carregando para baterElyuminana cabeça tão forte, que fez um som alto.";
+		mes "[Rebelião]";
+		mes "O gerente usou a bandeja que estava carregando para bater Elyumina na cabeça tão forte, que fez um som alto.";
 		npctalk "Pensei que tinhas visto a alface a voar para ti.", "Rebellion#ep172_m_rb01", bc_self;
 		next;
 		cutin "16loo_02",0;
 		mes "[Rookie]";
-		mes "Eu ouvi uma história semelhante deAlphaE nunca pensei que fosses tu.";
+		mes "Eu ouvi uma história semelhante de AlphaE nunca pensei que fosses tu.";
 		mes "Se me contasse assim que o incidente acontecesse, teria sido óptimo.";
 		mes "Bem, estás bem?";
 		next;
@@ -3289,7 +3289,7 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		mes "[Elyumina]";
 		mes "Não foi o fim, seu bastardo sem coração!";
 		mes "Há também o gerente que estava varrendo o jardim, e de repente me atacou!";
-		mes "Ele continuou dizendo \\"matar o traidor\\"!";
+		mes "Ele continuou dizendo \"matar o traidor\"!";
 		npctalk "Seu bastardo, e a minha segurança?", "Elyumina#ep172_m_el01", bc_self;
 		next;
 		cutin "16loo_02",0;
@@ -3298,8 +3298,8 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		mes "Eu estava prestes a verificar, olhe aqui, o aventureiro aqui está indo comigo.";
 		next;
 		mes "[Rookie]";
-		mes "Vamos recuperar os núcleos dos gerentes hackeados queAlphaSobre o que se falou.";
-		mes "Porque não voltas e ficas com as outras Rebeliões?";
+		mes "Vamos recuperar os núcleos dos gerentes hackeados que Alpha Sobre o que se falou.";
+		mes "Por que você não volta e fica com o outro Rebeliãos?";
 		npctalk "Sempre tenho algo para fazer!", "Rebellion#ep172_m_rb01", bc_self;
 		next;
 		cutin "ep171_elyumina03",2;
@@ -3312,8 +3312,8 @@ ba_maison,116,67,5	script(CLOAKED)	Rookie#ep172_m_rk01	4_M_ROOKIE,{
 		cloakonnpcself( "Rebellion#ep172_m_rb01" );
 		cutin "16loo_02",0;
 		mes "[Rookie]";
-		mes "Eu não posso evitar. Estou preocupado comElyumina's safety.";
-		mes "Também estou preocupado com os gerentes que perderam seu código de identificação queAlpha mentioned.";
+		mes "Eu não posso evitar. Estou preocupado com Elyumina's safety.";
+		mes "Também estou preocupado com os gerentes que perderam seu código de identificação que Alpha mentioned.";
 		next;
 		mes "[Rookie]";
 		mes "Vamos recuperar os núcleos primeiro? Se você encontrou um 'Gerente Quebrado', recupere seu núcleo.";
@@ -3353,10 +3353,10 @@ ba_maison,150,47,0	script	#ep172_body-0	CLEAR_NPC,{
 		}
 		cloakonnpcself();
 		cloakoffnpcself( "#ep172_beta-" + .@id );
-		mes "O corpo deGerente Betaescondido sob as paisagens.";
+		mes "O corpo de Gerente Beta escondido sob as paisagens.";
 		next;
 		mes "Recuperei o núcleo.";
-		mes "Eu vou deixarAlphaSaiba mais tarde para que ela possa recuperar o corpo da boneca.";
+		mes "Eu vou deixar Alpha Saiba mais tarde para que ela possa recuperar o corpo da boneca.";
 		setquest .@quest;
 		completequest .@quest;
 		getitem 1000226,1;
@@ -3411,11 +3411,11 @@ ba_maison,303,141,3	script	Elena Bolkova#ep172_eln	4_F_ELENA,{
 		mes "[Elena Bolkova]";
 		mes "Aventureiro, por aqui, conseguiste algum resultado?";
 		next;
-		select( "Porquê,Elena?" );
+		select( "Porquê, Elena?" );
 		cutin "162elena_02",2;
 		mes "[Elena Bolkova]";
-		mes "LuckyPediu-me um favor.";
-		mes "ElyuminaParece ter sido atacado novamente.";
+		mes "Lucky Pediu-me um favor.";
+		mes "Elyumina Parece ter sido atacado novamente.";
 		mes "Acontece que eu estava por perto na época e de alguma forma a puxo para fora daquela situação.";
 		next;
 		select( "Mostra-lhe os núcleos." );
@@ -3513,7 +3513,7 @@ ba_maison,303,141,3	script	Elena Bolkova#ep172_eln	4_F_ELENA,{
 		cutin "162elena_01",2;
 		mes "[Elena Bolkova]";
 		mes "Pareces tão arrogante, não é?";
-		mes "Eu não sei o que você está planejando, mas euElenaO Bolkova vai levar-te.";
+		mes "Eu não sei o que você está planejando, mas eu Elena O Bolkova vai levar-te.";
 		next;
 		cutin "ep16_eisen02",0;
 		mes "[Eisen]";
@@ -3521,7 +3521,7 @@ ba_maison,303,141,3	script	Elena Bolkova#ep172_eln	4_F_ELENA,{
 		next;
 		cutin "162elena_01",2;
 		mes "[Elena Bolkova]";
-		mes "Vou levar este tipo comigo.RookieProvavelmente também está lá.";
+		mes "Vou levar este tipo comigo. Rookie Provavelmente também está lá.";
 		next;
 		cutin "162elena_02",2;
 		mes "[Elena Bolkova]";
@@ -3565,15 +3565,15 @@ ba_maison,301,148,5	duplicate(dummy_cloaked_npc)	Eisen Werner#ep172_eiz	4_M_EISE
 
 ba_in01,35,142,5	script	Rebellion#ep172_rb02	4_M_REBELLION3,{
 	if (ep17_2_main < 28) {
-		mes "[Rebellion]";
+		mes "[Rebelião]";
 		mes "Não há nada de especial aqui.";
 		close;
 	}
-	mes "[Rebellion]";
+	mes "[Rebelião]";
 	mes "Vais entrar?";
 	next;
 	if (select( "Yes.", "No." ) == 2) {
-		mes "[Rebellion]";
+		mes "[Rebelião]";
 		mes "Vou ficar aqui e manter este lugar seguro.";
 		close;
 	}
@@ -3587,13 +3587,13 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 	if (ep17_2_main == 28) {
 		cutin "162elena_02",2;
 		mes "[Elena Bolkova]";
-		mes "Oh, aqui está você, desta forma, éLuckyAinda não está aqui?";
+		mes "Oh, aqui está você, desta forma, é Lucky Ainda não está aqui?";
 		next;
 		cloakoffnpcself( "Rookie#ep172_rk02" );
 		cutin "16loo_01",1;
 		mes "[Rookie]";
 		mes "Não, não, também estou aqui, um pouco atrasado?";
-		mes "Eu falei comAlphaPor um momento.";
+		mes "Eu falei com Alpha Por um momento.";
 		next;
 		mes "[Rookie]";
 		mes "Quem é esse?";
@@ -3632,11 +3632,11 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		cutin "ep171_elyumina04",2;
 		mes "[Elyumina]";
 		mes "Por que eu seria mantido aqui quando eu não sou sequer um dos Illusion!";
-		mes "O que devo fazer, você não reconheceu o GrandeElyuminaQueres que te bata na cabeça?";
+		mes "O que devo fazer, você não reconheceu o Grande ElyuminaQueres que te bata na cabeça?";
 		next;
 		cutin "ep16_eisen01",0;
 		mes "[Eisen]";
-		mes "Hey, Rebellion, Eu preciso que você mude este para algo que fala corretamente.";
+		mes "Hey, Rebelião, Eu preciso que você mude este para algo que fala corretamente.";
 		mes "Se quiser alguma informação minha, traga-me um membro da Ilusão decente.";
 		next;
 		cutin "ep171_elyumina02",2;
@@ -3665,7 +3665,7 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		next;
 		cutin "ep171_elyumina04",2;
 		mes "[Elyumina]";
-		mes "- Ouviste isso?RookieChama-se \\"chip\\".";
+		mes "- Ouviste isso? RookieChama-se \"chip\".";
 		mes "Esta coisa estúpida arrancou-lhe tudo da boca.";
 		mes "Malditos bastardos, deixaram-me em paz.";
 		mes "Quer dizer, eu que estava no meio de tudo isso, era apenas um peão, certo?";
@@ -3678,7 +3678,7 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		mes "[Elyumina]";
 		mes "É tarde demais para fazer uma expressão estúpida agora?";
 		mes "Você é um auto-proclamado membro de elite da Ilusão?";
-		mes "RookieVou arrancar isto do pescoço dele e fazer um localizador para localizar aqueles \\"chips\\"!";
+		mes "RookieVou arrancar isto do pescoço dele e fazer um localizador para localizar aqueles \"chips\"!";
 		next;
 		mes "[Elyumina]";
 		mes "Sim, vamos lá! Vingança contra os traidores! Caos! Destruição! Vingança! Queda!";
@@ -3699,7 +3699,7 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		cutin "ep171_elyumina01",2;
 		mes "[Elyumina]";
 		mes "Como te atreves a brincar comigo?";
-		mes "Como você se atreve a ignorar o GrandeElyuminaA linha é muito curta, não é?";
+		mes "Como você se atreve a ignorar o Grande ElyuminaA linha é muito curta, não é?";
 		next;
 		cutin "162elena_02",2;
 		mes "[Elena Bolkova]";
@@ -3768,11 +3768,11 @@ ba_in01,20,145,3	script	Elena Bolkova#ep172_eln_	4_F_ELENA,{
 		cutin "162elena_01",2;
 		mes "[Elena]";
 		mes "Onde está Eisen Werner?";
-		mes "Ele foi tomado porTessParece que vão interrogá-lo por conta própria.";
+		mes "Ele foi tomado por TessParece que vão interrogá-lo por conta própria.";
 		next;
 		mes "[Elena]";
 		mes "E ele ficará preso em algum lugar pelo resto de sua vida.";
-		mes "ElyuminaTambém teria sido assim.ElyuminaTem muita sorte, certo?";
+		mes "Elyumina Também teria sido assim. ElyuminaTem muita sorte, certo?";
 		next;
 		mes "[Elena]";
 		mes "Não te preocupes com este lugar, vou mantê-lo seguro.";
@@ -3831,14 +3831,14 @@ ba_in01,15,147,3	script	Elyumina#ep172_elmn02	4_EP17_ELYUMINA,{
 		specialeffect EF_GUIDEDATTACK, AREA, "Eisen Werner#ep172_eiz2";
 		mes "[Elyumina]";
 		mes "Isso é uma boa captura!";
-		mes "Agora, com isso, vá atrás do remanescente doCaçador de Coraçãoe os traidores.";
+		mes "Agora, com isso, vá atrás do remanescente do Caçador de Coração e os traidores.";
 		next;
 		select( "By myself?" );
 		cutin "ep171_elyumina03",2;
 		mes "[Elyumina]";
 		mes "Você pode fazer isso sozinho quando eu estou segurando o rastreador?";
 		mes "Não acredito que fui apanhado por este tipo.";
-		mes "É uma desgraça para mim, o grandeElyumina.";
+		mes "É uma desgraça para mim, o grande Elyumina.";
 		next;
 		cutin "162elena_01",0;
 		mes "[Elena Bolkova]";
@@ -3895,7 +3895,7 @@ ba_in01,51,157,3	script	Est#ep172_est01	4_F_ESTLOVELOY,{
 		next;
 		cutin "ep162_est02",2;
 		mes "[Est]";
-		mes "Um rastreador que lhe diz onde a ilusão eCaçadores de CoraçãoA sério?";
+		mes "Um rastreador que lhe diz onde a ilusão e Caçadores de Coração A sério?";
 		mes "Isso é um pouco tentador.";
 		next;
 		mes "[Est]";
@@ -3930,7 +3930,7 @@ ba_in01,51,157,3	script	Est#ep172_est01	4_F_ESTLOVELOY,{
 		case 0:
 		case 1:
 			if (getcharid(1) < 1) {
-				mes "^0000CDEsta é umaMasmorra Memorial.^000000";
+				mes "^0000CDEsta é uma Masmorra Memorial.^000000";
 				mes "Por favor, crie uma grupo e tente novamente.";
 				mes "^0000CDUm partido pode ser criado usando o comando /organize partyname.^000000";
 				close;
@@ -3942,12 +3942,12 @@ ba_in01,51,157,3	script	Est#ep172_est01	4_F_ESTLOVELOY,{
 			.@md_name$ = "Twilight Garden";
 			if (select( "Criar '" + .@md_name$ + "'.", "Enter '" + .@md_name$ + "'.'" ) == 1) {
 				if (!is_party_leader()) {
-					mes "^4D4DFFEste lugar é umMasmorra Memorial.";
-					mes "Você tem que ser um líder do partido para criar umMasmorra Memorial.^000000";
+					mes "^4D4DFFEste lugar é um Masmorra Memorial.";
+					mes "Você tem que ser um líder do partido para criar um Masmorra Memorial.^000000";
 					close3;
 				}
 				if (instance_create(.@md_name$) == -3)
-					dispbottom "A reserva da instância \\"" + .@md_name$ + "\\"falhou devido a uma instância ativa.";
+					dispbottom "A reserva da instância \"" + .@md_name$ + "\"falhou devido a uma instância ativa.";
 				cutin "ep162_est01",2;
 				mes "[Est]";
 				mes "Então, vamos prosseguir em silêncio.";
@@ -3964,13 +3964,13 @@ ba_in01,51,157,3	script	Est#ep172_est01	4_F_ESTLOVELOY,{
 		case 2:
 			cutin "ep162_est03",2;
 			mes "[Est]";
-			mes "Entregámos o prisioneiro aAlpha.";
+			mes "Entregámos o prisioneiro a Alpha.";
 			mes "A propósito, preparei uma armadilha para causar uma comoção e para apanhar os membros não oficiais.";
 			next;
 			cutin "ep162_est01",2;
 			mes "[Est]";
 			mes "Eles não são fáceis de pegar...";
-			mes "Alphavai fazer mais pesquisas sobre o hangar do dirigível, então vá conferir.";
+			mes "Alpha vai fazer mais pesquisas sobre o hangar do dirigível, então vá conferir.";
 			next;
 			mes "[Est]";
 			mes "Vamos fazer uma pausa por agora.";
@@ -3991,7 +3991,7 @@ ba_in01,51,157,3	script	Est#ep172_est01	4_F_ESTLOVELOY,{
 		cutin "ep162_est01",2;
 		mes "[Est]";
 		mes "Vamos investigar o hangar do dirigível.";
-		mes "Vou explicar ao resto doRebellionPrimeiro, vá em frente e cuide disso.";
+		mes "Vou explicar ao resto do Rebelião Primeiro, vá em frente e cuide disso.";
 		close3;
 	}
 	mes "[Est]";
@@ -4033,7 +4033,7 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		mes "Depois que o mestre destruiu este lugar, eu tenho feito outra coisa por um tempo, mas...";
 		next;
 		mes "[Elly]";
-		mes "Agora estou de volta emAlpha's request.";
+		mes "Agora estou de volta em Alpha's request.";
 		mes "Por favor, deixe os assuntos do hangar para mim, Elly.";
 		next;
 		mes "[Elly]";
@@ -4049,7 +4049,7 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		mes "Os 'invasores' que os 'convidados' chamam de 'Ilusões' têm 99,9% de chance de terem feito modificações no sistema.";
 		next;
 		mes "[Elly]";
-		mes "Queridos \\"convidados\\", vocês estão aqui?";
+		mes "Queridos \"convidados\", vocês estão aqui?";
 		cloakoffnpcself( "Est#ep172_est02" );
 		cloakoffnpcself( "Rookie#ep172_rk03" );
 		next;
@@ -4060,7 +4060,7 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		next;
 		cutin "16loo_01",0;
 		mes "[Rookie]";
-		mes "Eu disseAlphaque os dados analisáveis no estado atual acabaram.";
+		mes "Eu disse Alpha que os dados analisáveis no estado atual acabaram.";
 		next;
 		cutin "ep172_beta",2;
 		mes "[Elly]";
@@ -4095,7 +4095,7 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		next;
 		cutin "ep162_est01",1;
 		mes "[Erst]";
-		mes "É uma jogada inteligente,Rookie.";
+		mes "É uma jogada inteligente, Rookie.";
 		mes "Com isso, seremos capazes de rastrear os outros colaboradores lá fora.";
 		next;
 		cutin "ep172_beta",2;
@@ -4105,17 +4105,17 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		next;
 		cutin "16loo_03",0;
 		mes "[Rookie]";
-		mes "Se tivermos sorte, podemos ser capazes de localizar a rota do dirigível que as \\"ilusões\\" costumavam fugir.";
+		mes "Se tivermos sorte, podemos ser capazes de localizar a rota do dirigível que as \"ilusões\" costumavam fugir.";
 		next;
 		cutin "ep162_est01",1;
 		mes "[Erst]";
-		mes "Então, nós realmente não pegamos as \\"ilusões\\" aqui, afinal.";
+		mes "Então, nós realmente não pegamos as \"ilusões\" aqui, afinal.";
 		mes "Excepto aquele miúdo.";
 		next;
 		cutin "16loo_01",0;
 		mes "[Rookie]";
 		mes "Nós protegemos a mansão... Não podemos estar um pouco satisfeitos?";
-		mes "TessParece estar trabalhando duro na coordenação com as empresas, então isso é tudo para nós.";
+		mes "Tess Parece estar trabalhando duro na coordenação com as empresas, então isso é tudo para nós.";
 		next;
 		cutin "16loo_03",0;
 		mes "[Rookie]";
@@ -4134,13 +4134,13 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		next;
 		cutin "16loo_03",0;
 		mes "[Rookie]";
-		mes "Então eu vou deixar todo mundo e ajudarAlpha.";
+		mes "Então eu vou deixar todo mundo e ajudar Alpha.";
 		mes "Cuide bem da Elly!";
 		next;
 		cutin "ep172_beta",2;
 		mes "[Elly]";
 		mes "Não se preocupe com este lugar.";
-		mes "Eu eAlmondvai cuidar disso.";
+		mes "Eu e Almond vai cuidar disso.";
 		mes "Você pode ter certeza.";
 		close2;
 		cutin "",255;
@@ -4179,9 +4179,9 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		mes "A parte mais longa acabou, então parece que passou em um flash.";
 		next;
 		mes "[Elly]";
-		mes "Há algo em^0000FFRachel^000000.";
+		mes "Há algo em ^0000FFRachel^000000.";
 		mes "Claro, eu só ouvi falar de Rachel, e eu nunca estive lá.";
-		mes "Os \\"colaboradores\\" naquele local parecem desconhecer os movimentos de seus líderes ainda.";
+		mes "Os \"colaboradores\" naquele local parecem desconhecer os movimentos de seus líderes ainda.";
 		next;
 		mes "[Elly]";
 		mes "Embora ainda não saibamos o paradeiro da Master's Collection No. 3, precisamos continuar a coletar informações vindas daqui...";
@@ -4219,7 +4219,7 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		cutin "ep162_est01.bmp",1;
 		mes "[Est]";
 		mes "Estou a ver.";
-		mes "Sim. Se oRebellionIsso pode se tornar uma questão diplomática.";
+		mes "Sim. Se o Rebelião Isso pode se tornar uma questão diplomática.";
 		next;
 		cutin "16loo_03.bmp",0;
 		mes "[Rookie]";
@@ -4310,7 +4310,7 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 		next;
 		mes "[Elly]";
 		mes "As coordenadas quase exatas da origem do sinal são...";
-		mes "em torno<NAVI>[aqui]<INFO>rachel,182,176,0,101,0</INFO></NAVI> or so.";
+		mes "em torno <NAVI>[aqui]<INFO>rachel,182,176,0,101,0</INFO></NAVI> or so.";
 		ep18_main = 1;
 		setquest 8681;
 		getitem 400127,1;	// Ep18_Mini_Elly
@@ -4332,7 +4332,7 @@ ba_in01,26,266,3	script	Smart Elly#ep172_ely01	4_EP17_TABLET,{
 	mes "O tempo está do nosso lado.";
 	next;
 	mes "[Elly]";
-	mes "Eu eAlphaanalisará a informação corretamente, assim que eu gostaria que você limpasse o resto dos intrusos.";
+	mes "Eu e Alpha analisará a informação corretamente, assim que eu gostaria que você limpasse o resto dos intrusos.";
 	close3;
 
 OnInit:
@@ -4374,7 +4374,7 @@ ba_maison,38,219,5	script(CLOAKED)	Crux#ep172_clx02	4_EP16_CRUX,{
 		mes "Tenho ouvido notícias ocasionalmente através do assistente da corte...";
 		next;
 		mes "[Crux]";
-		mes "Se você está agendado está aberto, você não vai vir comigo para oProntera Palace?";
+		mes "Se você está agendado está aberto, você não vai vir comigo para o Prontera Palace?";
 		next;
 		select( "O que aconteceu?" );
 		mes "[Crux]";
@@ -4403,7 +4403,7 @@ ba_maison,38,219,5	script(CLOAKED)	Crux#ep172_clx02	4_EP16_CRUX,{
 			cutin "ep16_tes01",0;
 			mes "[Philofontes]";
 			mes "Há uma casa de hóspedes na parte norte da mansão.";
-			mes "ARebellionatualmente estão usando-o como uma sala de estar, está tudo bem se você esperar lá?";
+			mes "A Rebelião atualmente estão usando-o como uma sala de estar, está tudo bem se você esperar lá?";
 			next;
 			cutin "ep16_crux_findel02",2;
 			mes "[Crux]";
@@ -4478,7 +4478,7 @@ OnTouch:
 		sleep2 2000;
 		specialeffect2 EF_DEVIL10;
 		setpcblock PCBLOCK_NPC, false;
-		mes "Eu cheguei com Crux para oPronteraPalácio, o palácio estava cheio de uma estranha emoção.";
+		mes "Eu cheguei com Crux para o Prontera Palácio, o palácio estava cheio de uma estranha emoção.";
 		next;
 		mes "As pessoas no salão eram a família real e a nobreza da família real que vimos antes.";
 		next;
@@ -4618,7 +4618,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		cloakoffnpcself( "Cyan#172ba01" );
 		cutin "ep172_beta",2;
 		mes "[Shrine]";
-		mes "Peço desculpa. ÉVarmundtA política da Mansion para manter os hóspedes de^0000CDsituações perigosas^000000Por favor, espere um pouco mais.";
+		mes "Peço desculpa. É Varmundt A política da Mansion para manter os hóspedes de ^0000CDsituações perigosas^000000Por favor, espere um pouco mais.";
 		npctalk "Por que demora tanto tempo a procurar? Deixe-nos entrar. Posso encontrá-lo mais rápido.", "Denny#172ba01", bc_self;
 		npctalk "Somos especialistas nesta área.", "Molar#172ba01", bc_self;
 		next;
@@ -4638,7 +4638,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "É-nos dito para cooperar com obonecas automáticasMas se você não se mover no final, não temos escolha a não ser usar a força, certo?";
+		mes "É-nos dito para cooperar com o bonecas automáticas Mas se você não se mover no final, não temos escolha a não ser usar a força, certo?";
 		next;
 		if (select( "RookieO que se passa?", "Parece complicado, vou passar por ele." ) == 2) {
 			cutin "ep172_beta",2;
@@ -4652,7 +4652,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		}
 		cutin "16loo_02",2;
 		mes "[Rookie]";
-		mes "Ah, o aventureiro também está aqui. Se você está aqui para um banho, temo que você não possa usá-lo por um tempo. Olhe para isso. Oboneca automáticaEstá bloqueando a entrada.";
+		mes "Ah, o aventureiro também está aqui. Se você está aqui para um banho, temo que você não possa usá-lo por um tempo. Olhe para isso. O boneca automática Está bloqueando a entrada.";
 		next;
 		cutin "ep172_beta",2;
 		mes "[Shrine]";
@@ -4662,19 +4662,19 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		cutin "16loo_01",2;
 		mes "[Rookie]";
 		mes "Como sabem, no momento em que entramos na mansão, todos se dispersaram para verificar as instalações.";
-		mes "A equipe de escoteiros, que foi verificar possíveis restos de Ilusão no balneário, voltou morta.^0000CDAlgo dentro da casa de banho^000000.";
+		mes "A equipe de escoteiros, que foi verificar possíveis restos de Ilusão no balneário, voltou morta. ^0000CDAlgo dentro da casa de banho^000000.";
 		npctalk "Não é um fantasma, é apenas uma conspiração em torno da mansão!", "Denny#172ba01", bc_self;
 		npctalk "É um fantasma, tem de ser um fantasma!", "Magenta#172ba01", bc_self;
 		npctalk "Isso é assustador, estou entusiasmado!", "Cyan#172ba01", bc_self;
 		next;
 		cutin "16loo_02",2;
 		mes "[Rookie]";
-		mes "Eu tive que descobrir o que realmente estava dentro, se era a brincadeira estranha da Ilusão, é por isso que desta vez^0000CDGonie^000000É perfeito mover-se calmamente sozinho.";
+		mes "Eu tive que descobrir o que realmente estava dentro, se era a brincadeira estranha da Ilusão, é por isso que desta vez ^0000CDGonie^000000 É perfeito mover-se calmamente sozinho.";
 		next;
 		select( "Por que você está aqui...?" );
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Bem... Já faz algum tempo desde queGonieEntrei, mas ainda não saiu. Se alguém com um poder comoGonienão sai após o limite de tempo, isso significa que há um problema.";
+		mes "Bem... Já faz algum tempo desde que Gonie Entrei, mas ainda não saiu. Se alguém com um poder como Gonie não sai após o limite de tempo, isso significa que há um problema.";
 		next;
 		mes "[Rookie]";
 		mes "Estou aqui para seguir o procedimento para descobrir qual é o perigoso porque tenho certeza de que há riscos desconhecidos. Não devemos deixar que riscos desconhecidos interfiram em nossa missão nesta mansão.";
@@ -4683,7 +4683,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		cutin "16loo_03",2;
 		mes "[Rookie]";
 		mes "Devíamos ter mais cuidado e, como podem ver, estão a bloquear-nos.";
-		npctalk "E éGonieÉ muito frio para perdas em meio a isso.", "Molar#172ba01", bc_self;
+		npctalk "E é Gonie É muito frio para perdas em meio a isso.", "Molar#172ba01", bc_self;
 		npctalk "Ele ainda está vivo, é o que as minhas tripas me dizem!", "Denny#172ba01", bc_self;
 		npctalk "O aventureiro está aqui também, podemos encontrá-lo mais rápido!", "Magenta#172ba01", bc_self;
 		next;
@@ -4696,7 +4696,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		mes "Há certos perigos nesta mansão agora. Se há mais ou não é uma questão muito importante para nós.";
 		next;
 		mes "[Rookie]";
-		mes "Precisamos verificar primeiro se o risco é sobrenatural ou se é o^0000CDIllusions^000000Talvez seja a razão pela qual a Ilusão veio a esta mansão, em primeiro lugar.";
+		mes "Precisamos verificar primeiro se o risco é sobrenatural ou se é o ^0000CDIllusions^000000Talvez seja a razão pela qual a Ilusão veio a esta mansão, em primeiro lugar.";
 		mes "Caso contrário, é provável que caia em suas mãos.";
 		next;
 		cutin "ep172_beta",2;
@@ -4736,13 +4736,13 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		next;
 		cutin "ep172_beta",0;
 		mes "[Boiler]";
-		mes "Santuário, não é isso? O longo verde escuro^0000CD hair^000000Apareceu há muito tempo.";
+		mes "Santuário, não é isso? O longo verde escuro ^0000CD hair^000000Apareceu há muito tempo.";
 		npctalk "Há uma possibilidade, não combina com nada na casa de banho.", "", bc_self;
 		next;
 		select( "Hair?" );
 		cutin "ep172_beta",2;
 		mes "[Shrine]";
-		mes "Literalmente comoBoilerdisse. Desde há muito tempo atrás, o cabelo desconhecido era frequentemente encontrado. Talvez o cabelo e os perigos desconhecidos do banho sejam os mesmos.";
+		mes "Literalmente como Boiler disse. Desde há muito tempo atrás, o cabelo desconhecido era frequentemente encontrado. Talvez o cabelo e os perigos desconhecidos do banho sejam os mesmos.";
 		npctalk "Do que estás a falar agora?", "Denny#172ba01", bc_self;
 		next;
 		cutin "ep172_beta",1;
@@ -4752,12 +4752,12 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		next;
 		cutin "ep172_beta",0;
 		mes "[Boiler]";
-		mes "Tem razão, o ser humano tem sentidos, talvez nos vejamos perdidos como umboneca automáticaTalvez desta vez possamos identificar de quem é esse cabelo.";
+		mes "Tem razão, o ser humano tem sentidos, talvez nos vejamos perdidos como um boneca automáticaTalvez desta vez possamos identificar de quem é esse cabelo.";
 		next;
 		cutin "ep172_beta",1;
 		mes "[Sweep]";
 		mes "Ouvimos a característica das pessoas desaparecidas, mas tenho certeza que os hóspedes humanos provavelmente as reconhecerão melhor.";
-		npctalk "Há umboneca automáticaAqui isso pode pensar.", "Cyan#172ba01", bc_self;
+		npctalk "Há um boneca automática Aqui isso pode pensar.", "Cyan#172ba01", bc_self;
 		next;
 		cutin "ep172_beta",2;
 		mes "[Shrine]";
@@ -4773,13 +4773,13 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		next;
 		mes "[Shrine]";
 		mes "Antes de entrarmos, gostaria de lhe perguntar uma coisa.";
-		mes "As habilidades tais como^CC0000Bola de Água e Aqua Benedita^000000É proibido em Meditatio, o grande banho.";
+		mes "As habilidades tais como ^CC0000Bola de Água e Aqua Benedita^000000 É proibido em Meditatio, o grande banho.";
 		mes "Peço a sua compreensão.";
 		next;
 		cutin "",255;
 		mes "[Magenta]";
-		mes "Há... tu sabes,LuckyNão me interprete mal, não seria melhor seLuckyFica aqui?";
-		npctalk "Sim, é isso mesmo. Vamos procurar porGonieÉ melhor ficares aqui.", "Cyan#172ba01", bc_self;
+		mes "Há... tu sabes, LuckyNão me interprete mal, não seria melhor se Lucky Fica aqui?";
+		npctalk "Sim, é isso mesmo. Vamos procurar por GonieÉ melhor ficares aqui.", "Cyan#172ba01", bc_self;
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -4787,7 +4787,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		next;
 		cutin "",255;
 		mes "[Magenta]";
-		mes "No!! LuckyVocê é o melhor! O melhor!! Você sabe que realmente não podemos viver semLuckyMas...";
+		mes "No!! Lucky Você é o melhor! O melhor!! Você sabe que realmente não podemos viver sem LuckyMas...";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -4797,7 +4797,7 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		cutin "16loo_02",2;
 		mes "[Rookie]";
 		mes "É reconfortante quando o aventureiro está conosco.";
-		mes "Então, venha e vá<NAVI>[dentro]<INFO>ba_bath,165,43,0,101,0</INFO></NAVI>Se encontrarmos alguma coisa, enviaremos um sinal.";
+		mes "Então, venha e vá <NAVI>[dentro]<INFO>ba_bath,165,43,0,101,0</INFO></NAVI>Se encontrarmos alguma coisa, enviaremos um sinal.";
 		ep17_2_bath = 1;
 		setquest 17363;
 		close2;
@@ -4819,14 +4819,14 @@ ba_in01,384,38,3	script	Shrine#172ba01	4_EP17_BUCKETS,5,5,{
 		navigateto("ba_bath",165,43);
 		next;
 		mes "^EE0000[ ¡ØCaution¡Ø ]^000000";
-		mes "Para proteção e gerenciamento da instalação, a grande casa de banho Meditatio proíbe o uso das habilidades, tais como:^CC0000Bola de Água e Aqua Benedita^000000.";
+		mes "Para proteção e gerenciamento da instalação, a grande casa de banho Meditatio proíbe o uso das habilidades, tais como: ^CC0000Bola de Água e Aqua Benedita^000000.";
 		close;
 	}
 	mes "[Shrine]";
 	mes "Olá. Sinta-se à vontade para usar a casa de banho para aliviar confortavelmente sua fadiga.";
 	next;
 	mes "^EE0000[ ¡ØCaution¡Ø ]^000000";
-	mes "Para proteção e gerenciamento da instalação, a grande casa de banho Meditatio proíbe o uso das habilidades, tais como:^CC0000Bola de Água e Aqua Benedita^000000.";
+	mes "Para proteção e gerenciamento da instalação, a grande casa de banho Meditatio proíbe o uso das habilidades, tais como: ^CC0000Bola de Água e Aqua Benedita^000000.";
 	close;
 
 OnTouch:
@@ -4867,7 +4867,7 @@ ba_bath,165,43,3	script	Shrine#172ba02	4_EP17_BUCKETS,5,5,{
 	if (ep17_2_bath == 0) {
 		cutin "ep172_beta",0;
 		mes "[Shrine]";
-		mes "VarmundtA casa de banho da mansão é famosa há muito tempo.VarmundtÉ uma pessoa que valoriza descansar no final de um dia cansativo.";
+		mes "Varmundt A casa de banho da mansão é famosa há muito tempo. Varmundt É uma pessoa que valoriza descansar no final de um dia cansativo.";
 		next;
 		mes "[Shrine]";
 		mes "Ele gostava de tomar banho como ele poderia aliviar sua fadiga, ficar energizado para amanhã, e organizar seus pensamentos, e como ele poderia melhorar seu fluxo de sangue e repor a umidade em sua pele.";
@@ -4897,11 +4897,11 @@ ba_bath,165,43,3	script	Shrine#172ba02	4_EP17_BUCKETS,5,5,{
 		next;
 		cutin "16loo_03",2;
 		mes "[Rookie]";
-		mes "Devemos nos concentrar em procurar os bens perigosos em vez das pessoas desaparecidas. A identidade do ser perigoso ainda não foi revelada, e vários testemunhos e circunstâncias presumiram que é um ser humano, monstro,boneca automáticae seres sobrenaturais.";
+		mes "Devemos nos concentrar em procurar os bens perigosos em vez das pessoas desaparecidas. A identidade do ser perigoso ainda não foi revelada, e vários testemunhos e circunstâncias presumiram que é um ser humano, monstro, boneca automáticae seres sobrenaturais.";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "DennyeCanine. Os seres humanos são susceptíveis de ser individuais ou grupos de restos de ilusão ou de um terceiro. Há também a possibilidade de eles usarem uma saída diferente do que é conhecido, portanto, verifique as instalações com cuidado.";
+		mes "Denny e Canine. Os seres humanos são susceptíveis de ser individuais ou grupos de restos de ilusão ou de um terceiro. Há também a possibilidade de eles usarem uma saída diferente do que é conhecido, portanto, verifique as instalações com cuidado.";
 		npctalk "Okay.", "Denny#172ba02", bc_self;
 		npctalk "Vamos embora.", "Canine#172ba02", bc_self;
 		next;
@@ -4915,7 +4915,7 @@ ba_bath,165,43,3	script	Shrine#172ba02	4_EP17_BUCKETS,5,5,{
 		cloakonnpcself( "Cyan#172ba02" );
 		cloakonnpcself( "Danae#172ba02" );
 		mes "[Rookie]";
-		mes "Se é um quebradoboneca automáticaVocê conhece bem esta mansão, então você terá que ouvir os gerentes de banho primeiro. Eu vou fazer isso.";
+		mes "Se é um quebrado boneca automáticaVocê conhece bem esta mansão, então você terá que ouvir os gerentes de banho primeiro. Eu vou fazer isso.";
 		next;
 		cutin "16loo_03",2;
 		mes "[Rookie]";
@@ -4934,7 +4934,7 @@ ba_bath,165,43,3	script	Shrine#172ba02	4_EP17_BUCKETS,5,5,{
 		cloakonnpcself( "Molar#172ba02" );
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Aventureiro se encontrar com os outros gerentes como eu para verificar se há algo suspeito sobre o outrobonecas automáticas. Eu tenho que pegar as plantas primeiro.";
+		mes "Aventureiro se encontrar com os outros gerentes como eu para verificar se há algo suspeito sobre o outro bonecas automáticas. Eu tenho que pegar as plantas primeiro.";
 		next;
 		cutin "",255;
 		specialeffect EF_DRAGONSMOKE, AREA, "Rookie#172ba02";
@@ -4944,13 +4944,13 @@ ba_bath,165,43,3	script	Shrine#172ba02	4_EP17_BUCKETS,5,5,{
 		specialeffect EF_DRAGONSMOKE, AREA, "Rookie#172ba02";
 		cutin "16loo_03",2;
 		mes "[Rookie]";
-		mes "Acho que devo começar com isso^0000CDsteam^000000.";
+		mes "Acho que devo começar com isso ^0000CDsteam^000000.";
 		mes "É tão desfocado que mal consigo ver as coisas.";
 		next;
-		select( "Eu vou para oBoilerQuarto." );
+		select( "Eu vou para o Boiler Quarto." );
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Vou pegar as plantas do Santuário aqui. Aventureiro, por favor, vá para o<NAVI>[Sala de estacionamento]<INFO>ba_bath,286,68,0,101,0</INFO></NAVI>Peço-lhes que se desliguem. Eu acompanho-te em breve.";
+		mes "Vou pegar as plantas do Santuário aqui. Aventureiro, por favor, vá para o <NAVI>[Sala de estacionamento]<INFO>ba_bath,286,68,0,101,0</INFO></NAVI> Peço-lhes que se desliguem. Eu acompanho-te em breve.";
 		ep17_2_bath = 2;
 		erasequest 17363;
 		setquest 17364;
@@ -4959,7 +4959,7 @@ ba_bath,165,43,3	script	Shrine#172ba02	4_EP17_BUCKETS,5,5,{
 	if (ep17_2_bath < 4) {
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Vou pegar as plantas do Santuário aqui. Aventureiro, por favor, vá para o<NAVI>[Sala de estacionamento]<INFO>ba_bath,286,68,0,101,0</INFO></NAVI>Peço-lhes que se desliguem. Eu acompanho-te em breve.";
+		mes "Vou pegar as plantas do Santuário aqui. Aventureiro, por favor, vá para o <NAVI>[Sala de estacionamento]<INFO>ba_bath,286,68,0,101,0</INFO></NAVI> Peço-lhes que se desliguem. Eu acompanho-te em breve.";
 		close3;
 	}
 	if (ep17_2_bath == 4) {
@@ -4978,7 +4978,7 @@ ba_bath,165,43,3	script	Shrine#172ba02	4_EP17_BUCKETS,5,5,{
 		select( "Não disseste que devíamos ir para o lago?" );
 		cutin "16loo_03",2;
 		mes "[Rookie]";
-		mes "Quem?... eu? Aventureiro, você realmente^0000CDme vê^000000?";
+		mes "Quem?... eu? Aventureiro, você realmente ^0000CDme vê^000000?";
 		next;
 		select( "Que bom que você gostou..." );
 		cutin "16loo_01",2;
@@ -4997,7 +4997,7 @@ ba_bath,165,43,3	script	Shrine#172ba02	4_EP17_BUCKETS,5,5,{
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Aventureiro, vamos ao<NAVI>[lounge]<INFO>ba_bath,203,58,0,101,0</INFO></NAVI>.";
+		mes "Aventureiro, vamos ao <NAVI>[lounge]<INFO>ba_bath,203,58,0,101,0</INFO></NAVI>.";
 		ep17_2_bath = 5;
 		erasequest 17366;
 		setquest 17367;
@@ -5009,7 +5009,7 @@ ba_bath,165,43,3	script	Shrine#172ba02	4_EP17_BUCKETS,5,5,{
 	if (ep17_2_bath == 5) {
 		cutin "ep172_beta",0;
 		mes "[Shrine]";
-		mes "grupo foi para o<NAVI>[lounge]<INFO>ba_bath,203,58,0,101,0</INFO></NAVI>.";
+		mes "grupo foi para o <NAVI>[lounge]<INFO>ba_bath,203,58,0,101,0</INFO></NAVI>.";
 		close2;
 		cutin "",255;
 		cloakonnpcself( "Rookie#172ba02" );
@@ -5066,7 +5066,7 @@ ba_bath,166,42,3	script(CLOAKED)	Rookie#172ba02	4_M_ROOKIE,{
 	if (ep17_2_bath < 4) {
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Vou pegar as plantas do Santuário aqui. Aventureiro, por favor, vá para o<NAVI>[Sala de estacionamento]<INFO>ba_bath,286,68,0,101,0</INFO></NAVI>Peço-lhes que se desliguem. Eu acompanho-te em breve.";
+		mes "Vou pegar as plantas do Santuário aqui. Aventureiro, por favor, vá para o <NAVI>[Sala de estacionamento]<INFO>ba_bath,286,68,0,101,0</INFO></NAVI> Peço-lhes que se desliguem. Eu acompanho-te em breve.";
 		close3;
 	}
 	end;
@@ -5114,10 +5114,10 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		select( "Não, nunca o vi antes." );
 		cutin "ep172_beta",1;
 		mes "[Boiler]";
-		mes "Apanhei-o no caminho para aqui, e parecia umboneca automáticaAcessório. Há tantas pessoas lá fora que eu pensei que eles estavam em todo o lugar. Eu ia buscá-lo e repará-lo.";
+		mes "Apanhei-o no caminho para aqui, e parecia um boneca automática Acessório. Há tantas pessoas lá fora que eu pensei que eles estavam em todo o lugar. Eu ia buscá-lo e repará-lo.";
 		next;
 		mes "[Boiler]";
-		mes "A propósito, bonecas quebradas ainda estão aparecendo fora de ordem. Por que isso mesmo se corrigirmosbonecas automáticas, bonecas quebradas ainda estão aparecendo? Os erros são auto-replicantes?";
+		mes "A propósito, bonecas quebradas ainda estão aparecendo fora de ordem. Por que isso mesmo se corrigirmos bonecas automáticas, bonecas quebradas ainda estão aparecendo? Os erros são auto-replicantes?";
 		mes "Nem consigo limpar bem, mas tenho de o fazer de qualquer maneira, tenho de lhe agradecer.";
 		npctalk "Eu limpo muitas vezes, mas há muitos deles.", "Sweep#172ba02", bc_self;
 		next;
@@ -5125,7 +5125,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		mes "Já desliguei a caldeira, não é por isso que vieste aqui?";
 		next;
 		cutin "",255;
-		select( "É umaboneca automática?" );
+		select( "É uma boneca automática?" );
 		cutin "ep172_beta",1;
 		mes "[Boiler]";
 		mes "O monstro?";
@@ -5143,7 +5143,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		select( "O que você acha do monstro?" );
 		cutin "ep172_beta",1;
 		mes "[Boiler]";
-		mes "Talvez seja o^0000CDfantasma na caldeira^000000.";
+		mes "Talvez seja o ^0000CDfantasma na caldeira^000000.";
 		next;
 		cutin "ep172_beta",2;
 		mes "[Sweep]";
@@ -5158,15 +5158,15 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		select( "Então, a identidade do fantasma..." );
 		cutin "ep172_beta",1;
 		mes "[Boiler]";
-		mes "Não é o que estás a pensar. Pensei que fosse um fantasma humano. Mas não, acho que foi oboneca automáticaque costumava gerir este lugar antes mesmo de eu vir.";
+		mes "Não é o que estás a pensar. Pensei que fosse um fantasma humano. Mas não, acho que foi o boneca automática que costumava gerir este lugar antes mesmo de eu vir.";
 		mes "Era uma caldeira de banho pequena na época, e muitas vezes era sobrecarregada com água de tantos banhos. Não podia suportar a alta pressão.";
 		next;
 		mes "[Boiler]";
-		mes "De qualquer maneira, ele explodiu enquanto eu estava trabalhando nele, e o outroboneca automáticaFoi queimado. Talvez seja issoboneca automática.";
+		mes "De qualquer maneira, ele explodiu enquanto eu estava trabalhando nele, e o outro boneca automática Foi queimado. Talvez seja isso boneca automática.";
 		mes "Pergunto-me se os dados da boneca foram gravados de alguma forma desconhecida.";
 		next;
 		mes "[Boiler]";
-		mes "Esta caldeira às vezes se move por conta própria sem que ninguém a use, mas acho que os dados do passadobonecas automáticasContinua e continua a cumprir os comandos.";
+		mes "Esta caldeira às vezes se move por conta própria sem que ninguém a use, mas acho que os dados do passado bonecas automáticas Continua e continua a cumprir os comandos.";
 		mes "Então faz sentido ouvir o som sem forma e fazer barulhos. Você também pode ver formas estranhas por causa do vapor que sai.";
 		next;
 		cutin "",255;
@@ -5181,7 +5181,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		next;
 		cutin "ep172_beta",2;
 		mes "[Sweep]";
-		mes "O espectro da caldeira, você acha que faz sentido? É provavelmente por causa de um problema que ainda não encontramos. Mas talvez porque estamosbonecas automáticas.";
+		mes "O espectro da caldeira, você acha que faz sentido? É provavelmente por causa de um problema que ainda não encontramos. Mas talvez porque estamos bonecas automáticas.";
 		next;
 		mes "[Sweep]";
 		mes "Achamos que deve haver algo faltando porque não podemos ouvir os sons ou sentir os sinais como os convidados humanos.";
@@ -5191,7 +5191,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		mes "Foi por isso que sugeri encontrar o problema com os convidados.";
 		next;
 		mes "[Sweep]";
-		mes "Honestamente, nós não sabíamos o que era estranho porque não havia clientes por muito tempo. Não até que os convidados humanos entraram, então não é razoável notar a diferença entre humanos ebonecas automáticas?";
+		mes "Honestamente, nós não sabíamos o que era estranho porque não havia clientes por muito tempo. Não até que os convidados humanos entraram, então não é razoável notar a diferença entre humanos e bonecas automáticas?";
 		next;
 		mes "[Sweep]";
 		mes "Ouvi dizer que os humanos desenvolveram sentidos e emoções e a capacidade de pensar para juntar tudo.";
@@ -5202,7 +5202,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		next;
 		cutin "ep172_beta",0;
 		mes "[Boiler]";
-		mes "Uma vez que a caldeira foi desligada. Por favor, diga o<NAVI>[other guests]<INFO>ba_bath,270,94,0,101,0</INFO></NAVI>para procurar livremente.";
+		mes "Uma vez que a caldeira foi desligada. Por favor, diga o <NAVI>[other guests]<INFO>ba_bath,270,94,0,101,0</INFO></NAVI> para procurar livremente.";
 		ep17_2_bath = 3;
 		erasequest 17364;
 		setquest 17365;
@@ -5213,7 +5213,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 	if (ep17_2_bath == 3) {
 		cutin "ep172_beta",2;
 		mes "[Boiler]";
-		mes "Sweep, vá conhecer o<NAVI>[other guests]<INFO>ba_bath,270,94,0,101,0</INFO></NAVI>. Eu tenho que manter meus olhos na caldeira. Se você descobrir alguma coisa, venha aqui e me avise. Porque eu estou curioso.";
+		mes "Sweep, vá conhecer o <NAVI>[other guests]<INFO>ba_bath,270,94,0,101,0</INFO></NAVI>. Eu tenho que manter meus olhos na caldeira. Se você descobrir alguma coisa, venha aqui e me avise. Porque eu estou curioso.";
 		close3;
 	}
 	if (ep17_2_bath < 13) {
@@ -5289,7 +5289,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		mes "Por que você coloca algas marinhas no banho e aplica a água em seu rosto?";
 		next;
 		mes "[Boiler]";
-		mes "Eu estava tão curioso que eu mesmo tentei, mas não sabia para que era bom. Talvez porque eu sou umboneca automática?";
+		mes "Eu estava tão curioso que eu mesmo tentei, mas não sabia para que era bom. Talvez porque eu sou um boneca automática?";
 		next;
 		mes "[Boiler]";
 		mes "Se eu tivesse cinco sentidos como humanos, poderia ter entendido melhor os humanos. Por que o mestre não nos deu isso?";
@@ -5367,7 +5367,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		mes "Se houvesse dois de mim, esta seria a melhor sala de caldeiras.";
 		next;
 		mes "[Boiler]";
-		mes "Eu vou perguntarAlphaNão sei se é possível, mas, logicamente, é mais eficiente se houver dois de mim.";
+		mes "Eu vou perguntar Alpha Não sei se é possível, mas, logicamente, é mais eficiente se houver dois de mim.";
 		mes "Mas, o que posso fazer agora? Não há outro eu. Devo pedir ajuda. Por favor, ajude-me se estiver livre.";
 		next;
 		cutin "",255;
@@ -5379,7 +5379,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		}
 		cutin "ep172_beta",2;
 		mes "[Boiler]";
-		mes "Obrigado. Então, você pode lidar com 20^0000CDbroken bonecas automáticas^000000? Também preciso de 5^0000CDbroken boneca automática parts^000000.";
+		mes "Obrigado. Então, você pode lidar com 20 ^0000CDbroken bonecas automáticas^000000? Também preciso de 5 ^0000CDbroken boneca automática parts^000000.";
 		next;
 		cutin "",255;
 		select( "Sure." );
@@ -5423,7 +5423,7 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 			close3;
 		}
 		mes "[Boiler]";
-		mes "Como pode haver um ser humano tão sincero? Então, hoje também, por favor, manuseie 20^0000CDbroken bonecas automáticas^000000e trazer 5^0000CDbroken boneca automática parts^000000.";
+		mes "Como pode haver um ser humano tão sincero? Então, hoje também, por favor, manuseie 20 ^0000CDbroken bonecas automáticas^000000 e trazer 5 ^0000CDbroken boneca automática parts^000000.";
 		setquest 17376;
 		if (isbegin_quest(17377) == 1)
 			erasequest 17377;
@@ -5435,15 +5435,15 @@ ba_bath,286,68,5	script	Boiler#172ba02	4_EP17_BASIC_B,{
 		next;
 		mes "[Boiler]";
 		if (countitem(1000231) < 5) {
-			mes "Onde está? Precisamos de 5 QuebradosBoneca AutomáticaEu acho que há um buraco em sua bolsa. Você deve verificá-lo.";
+			mes "Onde está? Precisamos de 5 Quebrados Boneca Automática Eu acho que há um buraco em sua bolsa. Você deve verificá-lo.";
 			close3;
 		}
-		mes "Você lidou com os 20 quebradosBonecas AutomáticasVocê está ferido em algum lugar?";
+		mes "Você lidou com os 20 quebrados Bonecas AutomáticasVocê está ferido em algum lugar?";
 		close3;
 	case 2:
 		if (countitem(1000231) < 5) {
 			mes "[Boiler]";
-			mes "Onde está? Precisamos de 5 QuebradosBoneca AutomáticaEu acho que há um buraco em sua bolsa. Você deve verificá-lo.";
+			mes "Onde está? Precisamos de 5 Quebrados Boneca Automática Eu acho que há um buraco em sua bolsa. Você deve verificá-lo.";
 			close3;
 		}
 		mes "[Boiler]";
@@ -5490,10 +5490,10 @@ ba_bath,270,94,5	script(CLOAKED)	Rookie#172ba03	4_M_ROOKIE,{
 		select( "Lucky?" );
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Sim, não há nada aqui, prefiro ir ao^0000CDlake^000000.";
+		mes "Sim, não há nada aqui, prefiro ir ao ^0000CDlake^000000.";
 		next;
 		mes "[Rookie]";
-		mes "Talvez haja algo<NAVI>[lá]<INFO>ba_bath,165,43,0,101,0</INFO></NAVI>Vamos dar uma olhada.";
+		mes "Talvez haja algo <NAVI>[lá]<INFO>ba_bath,165,43,0,101,0</INFO></NAVI>Vamos dar uma olhada.";
 		ep17_2_bath = 4;
 		erasequest 17365;
 		setquest 17366;
@@ -5554,13 +5554,13 @@ ba_bath,203,58,3	script(CLOAKED)	Rookie#172ba04	4_M_ROOKIE,{
 		next;
 		cutin "",255;
 		mes "[Denny]";
-		mes "Claro! SeLuckynão éLuckyEntão, quem é?";
+		mes "Claro! Se Lucky não é LuckyEntão, quem é?";
 		npctalk "Eu não mentiria para você.", "Cyan#172ba03", bc_self;
 		next;
 		cutin "16loo_03",2;
 		mes "[Rookie]";
 		mes "Então não parece ser um deles.";
-		mes "Ouça. Ainda não sabemos a identidade da entidade desconhecida aqui. Mas não é umboneca automáticaNem fantasma. Não é um monstro. Nem mesmo um ser sobrenatural.";
+		mes "Ouça. Ainda não sabemos a identidade da entidade desconhecida aqui. Mas não é um boneca automática Nem fantasma. Não é um monstro. Nem mesmo um ser sobrenatural.";
 		npctalk "Então o que é?", "Cyan#172ba03", bc_self;
 		next;
 		cutin "",255;
@@ -5580,7 +5580,7 @@ ba_bath,203,58,3	script(CLOAKED)	Rookie#172ba04	4_M_ROOKIE,{
 		cutin "16loo_01",2;
 		mes "[Rookie]";
 		mes "O aventureiro encontrou-se com o falso e quase foi para o lago.";
-		mes "Dadas as circunstâncias, é uma vida inteligente e não significa nos machucar. Está apenas tentando nos tirar deste lugar. Há uma grande possibilidade de queGonie's safe.";
+		mes "Dadas as circunstâncias, é uma vida inteligente e não significa nos machucar. Está apenas tentando nos tirar deste lugar. Há uma grande possibilidade de que Gonie's safe.";
 		next;
 		cutin "",255;
 		mes "[Magenta]";
@@ -5628,7 +5628,7 @@ ba_bath,203,58,3	script(CLOAKED)	Rookie#172ba04	4_M_ROOKIE,{
 		next;
 		cutin "16loo_02",2;
 		mes "[Rookie]";
-		mes "Aventureiro, leve estes^0000CDarmadilha congelante^000000. Por favor, plantá-lo em cada marcado??<NAVI>[places]<INFO>ba_bath,55,55,0,101,0</INFO></NAVI>. Você só tem que plantá-lo no lugar e mantê-lo firme. Por favor, se apresse.";
+		mes "Aventureiro, leve estes ^0000CDarmadilha congelante^000000. Por favor, plantá-lo em cada marcado?? <NAVI>[places]<INFO>ba_bath,55,55,0,101,0</INFO></NAVI>. Você só tem que plantá-lo no lugar e mantê-lo firme. Por favor, se apresse.";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
@@ -5711,7 +5711,7 @@ ba_bath,306,121,0	script(CLOAKED)	Marked Position#172ba02	4_ENERGY_BLUE,{
 	if (ep17_2_bath == 7) {
 		specialeffect EF_ICEMINE_1;
 		specialeffect EF_ICECRASH;
-		unittalk getcharid(3), "" + strcharinfo(0) + ": Eu coloquei a armadilha ondeLuckyPerguntei-me também. Vamos passar para o próximo local.", bc_self;
+		unittalk getcharid(3), "" + strcharinfo(0) + ": Eu coloquei a armadilha onde Lucky Perguntei-me também. Vamos passar para o próximo local.", bc_self;
 		cloakonnpcself();
 		ep17_2_bath = 8;
 		erasequest 17369;
@@ -5852,19 +5852,19 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		cloakoffnpcself( "Unknown Creature#172ba01" );
 		cloakoffnpcself( "Gonie#172ba01" );
 		mes "[Denny]";
-		mes "Não é isso?GonieE há... doisLucky?";
+		mes "Não é isso? GonieE há... dois Lucky?";
 		npctalk "Lucky...?", "Denny#172ba04", bc_self;
 		npctalk "Quem é real?", "Magenta#172ba05", bc_self;
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
 		mes "Claro que sou eu! Com quem é que vocês vieram até aqui? Estamos aqui para apanhar essa farsa.";
-		npctalk "Isto éLucky. Correcto.", "Molar#172ba04", bc_self;
+		npctalk "Isto é Lucky. Correcto.", "Molar#172ba04", bc_self;
 		npctalk "Claro que sou eu!", "Rookie#172ba05", bc_self;
 		next;
 		cutin "16loo_03",2;
 		mes "[Rookie]";
-		mes "Eu não sei quem você é, mas como você não tem um lugar para fugir, é melhor não pensar nisso. Este lugar é cercado por três partes.Denny, Magenta. Check Gonie.";
+		mes "Eu não sei quem você é, mas como você não tem um lugar para fugir, é melhor não pensar nisso. Este lugar é cercado por três partes. Denny, Magenta. Check Gonie.";
 		next;
 		cutin "16loo_01",0;
 		mes "[??????]";
@@ -5899,11 +5899,11 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "",255;
 		mes "[Magenta]";
-		mes "Lucky, afaste-se um pouco. Isso é realmenteGonieNão é falso, vamos ver.";
+		mes "Lucky, afaste-se um pouco. Isso é realmente GonieNão é falso, vamos ver.";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Como poderia não serGonieHá literalmente um falso eu ali.";
+		mes "Como poderia não ser GonieHá literalmente um falso eu ali.";
 		next;
 		cutin "16go_03.bmp",2;
 		mes "[Gonie]";
@@ -5937,15 +5937,15 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "",255;
 		mes "[Denny]";
-		mes "Agora,Gonie... há dois deles.";
-		npctalk "Hey, Lucky. GonieNem sequer sabe o código. O que devemos fazer?", "Denny#172ba05", bc_self;
-		npctalk "A esquerda não se parece comGonieParece que está a ter dificuldades?", "Magenta#172ba06", bc_self;
-		npctalk "GonieÉ obviamente o da direita, olha para aqueles olhos.", "Canine#172ba04", bc_self;
+		mes "Agora, Gonie... há dois deles.";
+		npctalk "Hey, Lucky. Gonie Nem sequer sabe o código. O que devemos fazer?", "Denny#172ba05", bc_self;
+		npctalk "A esquerda não se parece com GonieParece que está a ter dificuldades?", "Magenta#172ba06", bc_self;
+		npctalk "Gonie É obviamente o da direita, olha para aqueles olhos.", "Canine#172ba04", bc_self;
 		next;
 		cutin "16loo_02",2;
 		mes "[Rookie]";
-		mes "Todos fiquem quietos. Temos uma maneira fácil e segura de reconhecer o realGonie.";
-		mes "Gonie? Qual é o realGonie?";
+		mes "Todos fiquem quietos. Temos uma maneira fácil e segura de reconhecer o real Gonie.";
+		mes "Gonie? Qual é o real Gonie?";
 		next;
 		cutin "16go_03",2;
 		mes "[Gonie]";
@@ -5994,7 +5994,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		sleep2 1500;
 		cloakoffnpcself( "Gonie#172ba02" );
 		mes "[Magenta]";
-		mes "Hahaha! NossaGonieÉ uma pessoa muito silenciosa!!";
+		mes "Hahaha! Nossa Gonie É uma pessoa muito silenciosa!!";
 		npctalk "Revele quem você é! Seu vilão!!!", "Cyan#172ba04", bc_self;
 		npctalk "És mais um vilão, Cyan...", "Danae#172ba04", bc_self;
 		next;
@@ -6005,7 +6005,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "16loo_02",2;
 		mes "[Rookie]";
-		mes "Não podes fazer isso, ele é a vítima, não é verdade?Gonie?";
+		mes "Não podes fazer isso, ele é a vítima, não é verdade? Gonie?";
 		next;
 		cutin "16go_03",2;
 		mes "[Gonie]";
@@ -6041,7 +6041,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Eu estava procurando porGonie, mas isso não é tudo o que eu estava procurando. Eu estive procurando por aquele que colocouGonieem perigo. Pode ferir outras pessoas também.";
+		mes "Eu estava procurando por Gonie, mas isso não é tudo o que eu estava procurando. Eu estive procurando por aquele que colocou Gonie em perigo. Pode ferir outras pessoas também.";
 		mes "Não podemos voltar com riscos como este. Temos de fazer uma pesquisa...";
 		npctalk "Mas como pode fazê-lo bem!", "Denny#172ba05", bc_self;
 		next;
@@ -6090,7 +6090,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		mes "[??????]";
 		mes "Mas é complicado descrever a nossa espécie, então me chame o que quiser.";
-		mes "Mesmo se você me chamar assim de qualquer maneira, não há ninguém aqui que discuta sobre isso. Acima de tudo, não somos os mesmos convidados deVarmundt.";
+		mes "Mesmo se você me chamar assim de qualquer maneira, não há ninguém aqui que discuta sobre isso. Acima de tudo, não somos os mesmos convidados de Varmundt.";
 		next;
 		cutin "ep172_beta",1;
 		mes "[Shrine]";
@@ -6128,10 +6128,10 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		cutin "",255;
 		mes "[Princess]";
 		mes "Provavelmente não estou na lista, foi o que pedi.";
-		mes "Tenho andado a vaguear para longe de casa. É assim queVarmundtFoi capaz de me deixar usar a casa de banho da mansão sem ninguém entrar em contato com ele sobre mim.";
+		mes "Tenho andado a vaguear para longe de casa. É assim que Varmundt Foi capaz de me deixar usar a casa de banho da mansão sem ninguém entrar em contato com ele sobre mim.";
 		next;
 		mes "[Princess]";
-		mes "Não me lembro a hora exata desde que já faz algum tempo... eVarmundtNão aparece há muito tempo.";
+		mes "Não me lembro a hora exata desde que já faz algum tempo... e Varmundt Não aparece há muito tempo.";
 		next;
 		cutin "ep172_beta",1;
 		mes "[Shrine]";
@@ -6145,12 +6145,12 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		mes "Receio que não tenha nenhum, devia estar calado, em primeiro lugar.";
 		next;
 		mes "[Princess]";
-		mes "Eu tenho ficado na água por aqui. Então eu conheciVarmundtque estava dando um passeio fora da mansão.";
-		mes "VarmundtSabia da minha situação e foi muito gentil para me convidar para sua mansão e fazer a casa de banho disponível para mim a qualquer momento.";
+		mes "Eu tenho ficado na água por aqui. Então eu conheci Varmundt que estava dando um passeio fora da mansão.";
+		mes "Varmundt Sabia da minha situação e foi muito gentil para me convidar para sua mansão e fazer a casa de banho disponível para mim a qualquer momento.";
 		next;
 		mes "[Princess]";
-		mes "Estou a usá-lo em silêncio, sem deixar ninguém saber em relação à preocupação com a minha situação, é por isso que estou desconfiado das pessoas. Especialmente eu estou evitando o contato com obonecas automáticasque são diferentes das coisas vivas.";
-		mes "VarmundtTambém me deu um acesso especial para poder entrar na casa de banho.";
+		mes "Estou a usá-lo em silêncio, sem deixar ninguém saber em relação à preocupação com a minha situação, é por isso que estou desconfiado das pessoas. Especialmente eu estou evitando o contato com o bonecas automáticas que são diferentes das coisas vivas.";
+		mes "Varmundt Também me deu um acesso especial para poder entrar na casa de banho.";
 		next;
 		cutin "ep172_beta",1;
 		mes "[Shrine]";
@@ -6207,7 +6207,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		mes "[Princess]";
 		mes "Eu sempre tentei tirar as pessoas daqui, mas não funcionou. Eu não queria prejudicá-lo. Eu estava relutante em fazer contato em primeiro lugar.";
-		mes "É por isso queVarmundtDesde que fui perseguida há muito tempo, parei reflexivamente... é disso que se trata a minha ansiedade.";
+		mes "É por isso que Varmundt Desde que fui perseguida há muito tempo, parei reflexivamente... é disso que se trata a minha ansiedade.";
 		next;
 		select( "Por que você está tão relutante?" );
 		mes "[Princess]";
@@ -6231,13 +6231,13 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "ep172_beta",1;
 		mes "[Shrine]";
-		mes "Obrigado por esperar. Princesa do Mar do Leste, eu o registrei como um convidado oficial deVarmundtPeço desculpa se levou algum tempo desde que a comunicação é instável.";
-		mes "A princesa pode agora ficar nesta mansão como hóspede deVarmundt. Por favor, sinta-se livre para usá-lo.";
+		mes "Obrigado por esperar. Princesa do Mar do Leste, eu o registrei como um convidado oficial de Varmundt Peço desculpa se levou algum tempo desde que a comunicação é instável.";
+		mes "A princesa pode agora ficar nesta mansão como hóspede de Varmundt. Por favor, sinta-se livre para usá-lo.";
 		next;
 		cutin "",255;
 		mes "[Princess]";
-		mes "Estou curioso sobre alguma coisa. ÉVarmundtTenho andado à procura dele, mas ele não apareceu há algum tempo.";
-		mes "Eu deveria pensar queVarmundtNão vai aparecer em nenhum momento no futuro?";
+		mes "Estou curioso sobre alguma coisa. É Varmundt Tenho andado à procura dele, mas ele não apareceu há algum tempo.";
+		mes "Eu deveria pensar que Varmundt Não vai aparecer em nenhum momento no futuro?";
 		next;
 		cutin "ep172_beta",1;
 		mes "[Shrine]";
@@ -6267,30 +6267,30 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "ep172_beta",2;
 		mes "[Boiler]";
-		mes "Do que estás a falar? Este é o balneário doVarmundt Mansion.";
+		mes "Do que estás a falar? Este é o balneário do Varmundt Mansion.";
 		next;
 		cutin "",255;
 		mes "[Princess]";
-		mes "Varmundtvai entender. Ele tem um amplo senso de compreensão, então ele vai me permitir vaguear de sua casa, assim como ele me ajudou a me esconder neste balneário. Alegremente.";
+		mes "Varmundt vai entender. Ele tem um amplo senso de compreensão, então ele vai me permitir vaguear de sua casa, assim como ele me ajudou a me esconder neste balneário. Alegremente.";
 		next;
 		cutin "ep172_beta",1;
 		mes "[Shrine]";
 		mes "Embora o mestre lhe tenha concedido acesso à casa de banho e tenha sido generoso como você disse, você deve mostrar alguma sinceridade a ela.";
-		mes "Por favor, não ignore a bondade do mestreVarmundte mostrar cortesia.";
+		mes "Por favor, não ignore a bondade do mestre Varmundt e mostrar cortesia.";
 		npctalk "É extorsão ilegal adquirir imóveis de um objeto cuja intenção não pode ser expressa.", "Sweep#172ba03", bc_self;
 		next;
 		cutin "",255;
 		mes "[Princess]";
 		mes "Eu discordo. Se você vive em um determinado lugar por um longo tempo, essa propriedade deve pertencer a você. É assim que todo mundo vive.";
-		mes "Por que você não me reconhece como o sucessor oficial do legado deVarmundt. Você não pode reivindicar a propriedade legítima durante a ausência dos proprietários?";
+		mes "Por que você não me reconhece como o sucessor oficial do legado de Varmundt. Você não pode reivindicar a propriedade legítima durante a ausência dos proprietários?";
 		npctalk "Espera, o meu bom senso é estranho?", "Denny#172ba05", bc_self;
-		npctalk "Isso soa plausível, mas é estranho se você ouvi-lo com cuidado. Você forçouVarmundtpara adotá-lo?", "Magenta#172ba06", bc_self;
+		npctalk "Isso soa plausível, mas é estranho se você ouvi-lo com cuidado. Você forçou Varmundt para adotá-lo?", "Magenta#172ba06", bc_self;
 		npctalk "Acho... que sim?", "Molar#172ba04", bc_self;
 		next;
 		cutin "ep172_beta",1;
 		mes "[Shrine]";
-		mes "O legítimo proprietário desta mansão éVarmundte mesmo um residente de longa duração não pode reivindicar a propriedade.";
-		mes "Quando o mestreVarmundtVoltamos mais tarde, vamos discutir isso nós mesmos. Não é algo que possamos dizer-lhe sobre como convidado.";
+		mes "O legítimo proprietário desta mansão é Varmundte mesmo um residente de longa duração não pode reivindicar a propriedade.";
+		mes "Quando o mestre Varmundt Voltamos mais tarde, vamos discutir isso nós mesmos. Não é algo que possamos dizer-lhe sobre como convidado.";
 		npctalk "O estado real é assustador.", "Danae#172ba04", bc_self;
 		npctalk "Pessoas como nós devem seguir a lei.", "Denny#172ba05", bc_self;
 		npctalk "Por que você continua tomando a propriedade do mestre?", "Boiler#172ba04", bc_self;
@@ -6305,7 +6305,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		mes "Onde você pode obter a luz do sol e luar, o teto onde a luz grunhidos na água. Além desses tubos de drenagem... Ele fez aqueles para uma grande pesquisa que você não entenderia. Não é apenas um balneário.";
 		next;
 		mes "[Princess]";
-		mes "Existe alguém que entenda uma dessas coisas?VarmundtTambém não quer que a casa de banho seja abandonada e esquecida no longo tempo.";
+		mes "Existe alguém que entenda uma dessas coisas? Varmundt Também não quer que a casa de banho seja abandonada e esquecida no longo tempo.";
 		mes "Tenho tudo o que preciso aqui para vingar a desgraça da minha vida. Por que não posso usá-la?";
 		next;
 		cutin "ep172_beta",1;
@@ -6351,7 +6351,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		select( "Claro, não é assim tão difícil." );
 		mes "[Princess]";
 		mes "Muito obrigado. Estou ansioso para conhecê-lo para treinamento.";
-		mes "Desculpe-me por lhe causar problemas. Perdoe-me. Mas você sabe que as amizades se tornam carinhosas depois de uma briga? Nós não somos os mesmos convidados deVarmundt.";
+		mes "Desculpe-me por lhe causar problemas. Perdoe-me. Mas você sabe que as amizades se tornam carinhosas depois de uma briga? Nós não somos os mesmos convidados de Varmundt.";
 		next;
 		cutin "ep172_beta",1;
 		mes "[Shrine]";
@@ -6360,7 +6360,7 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		next;
 		cutin "ep172_beta",0;
 		mes "[Boiler]";
-		mes "Aventureiro, sempre que você estiver livre, por favor, venha para oBoilerVou dar-te uma coisa.";
+		mes "Aventureiro, sempre que você estiver livre, por favor, venha para o Boiler Vou dar-te uma coisa.";
 		mes "Bem, nós vamos agora.";
 		next;
 		mes "[Shrine]";
@@ -6371,8 +6371,8 @@ ba_bath,286,298,3	script(CLOAKED)	Unknown Creature#172ba01	4_EP17_MERMAID,{
 		cloakonnpcself( "Sweep#172ba03" );
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "EncontrámosGonie, e confirmamos que não há perigo na casa de banho, então vamos.";
-		npctalk "Obrigado por nos ajudar a encontrarGonie, aventureiro.", "Cyan#172ba04", bc_self;
+		mes "Encontrámos Gonie, e confirmamos que não há perigo na casa de banho, então vamos.";
+		npctalk "Obrigado por nos ajudar a encontrar Gonie, aventureiro.", "Cyan#172ba04", bc_self;
 		next;
 		cutin "",255;
 		cloakonnpcself( "Rookie#172ba05" );
@@ -6465,7 +6465,7 @@ ba_bath,288,68,3	script	Sweep#172ba02	4_EP17_CLEANER,{
 		mes "Bonecas automáticas para limpeza varre substâncias estranhas e sujeira em todo o lugar. Esta política básica é enviar todos os convidados para fora da casa de banho ao limpar, mas se o hóspede quiser continuar tomando um banho, não devemos incomodá-los e esperar.";
 		next;
 		mes "[Sweep]";
-		mes "No entanto, não é recomendado que obonecas automáticasque saem para limpeza não deve ser abordado tanto quanto possível, porque eles são perigosos e eles são apenas para fins de limpeza.";
+		mes "No entanto, não é recomendado que o bonecas automáticas que saem para limpeza não deve ser abordado tanto quanto possível, porque eles são perigosos e eles são apenas para fins de limpeza.";
 		mes "Na verdade, as bonecas de limpeza não eram tão fortes como são agora. A medida foi tomada inevitavelmente por causa dos intrusos.";
 		next;
 		cutin "",255;
@@ -6479,7 +6479,7 @@ ba_bath,288,68,3	script	Sweep#172ba02	4_EP17_CLEANER,{
 		mes "Graças a eles, a limpeza tornou-se mais difícil. O intruso até interferiu quando eu estava limpando. E eles nem se preocuparam em me ajudar a limpar depois.";
 		next;
 		mes "[Sweep]";
-		mes "Esta é uma casa de banho. Higiene deve ser a principal prioridade. O limpadorbonecas automáticassão fortalecidos por causa disso.";
+		mes "Esta é uma casa de banho. Higiene deve ser a principal prioridade. O limpador bonecas automáticas são fortalecidos por causa disso.";
 		next;
 		mes "[Sweep]";
 		mes "O intruso deu um passo para trás, no entanto, eles ainda não se foram completamente. Portanto, as bonecas mais limpas não tiveram escolha a não ser permanecer a forma fortalecida. Portanto, tenha cuidado ao entrar em contato durante o tempo de limpeza.";
@@ -6495,21 +6495,21 @@ ba_bath,288,68,3	script	Sweep#172ba02	4_EP17_CLEANER,{
 		mes "Havia dois grupos de intrusos. Um estava obcecado com o banho e o outro está em suas instalações. O que eles tinham em comum é que ambos são obcecados por algo.";
 		next;
 		mes "[Sweep]";
-		mes "Os seres humanos que são obcecados com o banho não cooperaram com a limpeza, e os seres humanos obcecados com as instalações destruíram as instalações e as instalações.bonecas automáticasGerenciá-lo.";
-		mes "A caldeira foi rasgada e roubada, os canos foram quebrados ebonecas automáticasOs outros dizem que não sabem quanto tempo levará para se recuperar disso. A situação na outra parte da mansão não é muito diferente, toda a mansão está nesta situação.";
+		mes "Os seres humanos que são obcecados com o banho não cooperaram com a limpeza, e os seres humanos obcecados com as instalações destruíram as instalações e as instalações. bonecas automáticas Gerenciá-lo.";
+		mes "A caldeira foi rasgada e roubada, os canos foram quebrados e bonecas automáticas Os outros dizem que não sabem quanto tempo levará para se recuperar disso. A situação na outra parte da mansão não é muito diferente, toda a mansão está nesta situação.";
 		next;
 		mes "[Sweep]";
 		mes "Qual é a maior característica que distingue os hóspedes dos intrusos? Por que os hóspedes e intrusos têm padrões de comportamento diferentes? Como os seres humanos dizem a diferença entre os dois?";
 		next;
 		mes "[Sweep]";
-		mes "Nós, obonecas automáticas, acho que é natural que nós não sabemos, porque nós só estivemos em contato com os hóspedes antes.";
+		mes "Nós, o bonecas automáticas, acho que é natural que nós não sabemos, porque nós só estivemos em contato com os hóspedes antes.";
 		mes "Não podemos sentir coisas que os humanos podem, nem sequer sinto o toque da ponta da minha mão.";
 		next;
 		mes "[Sweep]";
 		mes "Mas mesmo se eu não sei tal coisa, não vai impor um problema no meu trabalho. Eu posso limpar. Eu posso realizar a tarefa que foi dada a mim. O que é designado como lixo deve ser varrido.";
 		next;
 		mes "[Sweep]";
-		mes "Os seres humanos são seres humanos,bonecas automáticasE-bonecas automáticas.";
+		mes "Os seres humanos são seres humanos, bonecas automáticas E- bonecas automáticas.";
 		next;
 		mes "[Sweep]";
 		mes "Mas ficaria feliz se me pudesse ajudar com uma coisa.";
@@ -6523,7 +6523,7 @@ ba_bath,288,68,3	script	Sweep#172ba02	4_EP17_CLEANER,{
 		}
 		cutin "ep172_beta",2;
 		mes "[Sweep]";
-		mes "Então, posso pedir-lhe para exterminar^0000CD15 Boiling Piranha e 15 Boiling Marc^000000. Eles são uma das principais causas da falta na casa de banho.";
+		mes "Então, posso pedir-lhe para exterminar ^0000CD15 Boiling Piranha e 15 Boiling Marc^000000. Eles são uma das principais causas da falta na casa de banho.";
 		next;
 		mes "[Sweep]";
 		mes "Outras partes da mansão também estão faltando nas mãos, por isso temos que fazê-lo nós mesmos. Eu limpo sempre que posso, mas há muitos. Não deve ser muito atrasado porque é sobre higiene e segurança. Então, por favor.";
@@ -6559,7 +6559,7 @@ ba_bath,288,68,3	script	Sweep#172ba02	4_EP17_CLEANER,{
 	switch( .@hunting ) {
 	case -1:
 		mes "[Sweep]";
-		mes "Obrigado pela sua ajuda. Então, posso pedir-lhe para exterminar^0000CD15 Boiling Piranha e 15 Boiling Marc^000000?";
+		mes "Obrigado pela sua ajuda. Então, posso pedir-lhe para exterminar ^0000CD15 Boiling Piranha e 15 Boiling Marc^000000?";
 		next;
 		if (select( "Está bem.", "Eu gostaria de fazer uma pausa hoje.." ) == 2) {
 			mes "[Sweep]";
@@ -6578,7 +6578,7 @@ ba_bath,288,68,3	script	Sweep#172ba02	4_EP17_CLEANER,{
 		mes "Você já lidou com isso?";
 		next;
 		mes "[Boiler]";
-		mes "Esqueceu-se disso? então, por favor, exterminar^0000CD15 Boiling Piranha e 15 Boiling Marc^000000.";
+		mes "Esqueceu-se disso? então, por favor, exterminar ^0000CD15 Boiling Piranha e 15 Boiling Marc^000000.";
 		close3;
 	case 2:
 		mes "[Sweep]";
@@ -6625,7 +6625,7 @@ ba_bath,259,191,3	script	Footbath#bathifo	4_BOARD3,{
 
 ba_bath,162,139,3	script	Fountain of Wisdom#bathifo	4_BOARD3,{
 	mes "^006600Fonte de Sabedoria - Banho Público^000000";
-	mes "^006600O banho mais antigo e mais famoso emVarmundtMansão. Mergulhe neste banho e pense nas coisas mais profundas e difíceis em seu coração. A resposta certamente surgirá.^000000";
+	mes "^006600O banho mais antigo e mais famoso em Varmundt Mansão. Mergulhe neste banho e pense nas coisas mais profundas e difíceis em seu coração. A resposta certamente surgirá.^000000";
 	close;
 }
 
@@ -6687,7 +6687,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		mes "Lembro-me do ditado que diz que o ser humano não tem paciência.";
 		next;
 		mes "[Chirp]";
-		mes "Este é o segundo armazém doVarmundt Mansion.";
+		mes "Este é o segundo armazém do Varmundt Mansion.";
 		next;
 		cutin "",255;
 		select( "Warehouse...?" );
@@ -6704,7 +6704,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		mes "Escusado será dizer que também me lembro onde está o projeto.";
 		next;
 		mes "[Chirp]";
-		mes "Eu sou umboneca automática. Não perdemos memórias.";
+		mes "Eu sou um boneca automática. Não perdemos memórias.";
 		next;
 		cutin "",255;
 		if (select( "Não estou à procura de um plano.", "Este lugar é muito complicado." ) == 1) {
@@ -6714,7 +6714,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 			mes "Eu não pensei que haveria qualquer humano visitando o armazém. Normalmente os humanos que vêm até aqui eram geralmente ladrões.";
 			next;
 			mes "[Chirp]";
-			mes "Isso não significa que você é um ladrão. Becayse você não teria qualificado como convidado. OVarmundtA Mansion não convida todos como convidados.";
+			mes "Isso não significa que você é um ladrão. Becayse você não teria qualificado como convidado. O Varmundt A Mansion não convida todos como convidados.";
 			next;
 			mes "[Chirp]";
 			mes "Mesmo que você tenha essa intenção, não será fácil encontrar o que você quer aqui de qualquer maneira.";
@@ -6723,7 +6723,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		}
 		cutin "ep172_beta",2;
 		mes "[Chirp]";
-		mes "É claro que é um antigo armazém deVarmundt.";
+		mes "É claro que é um antigo armazém de Varmundt.";
 		mes "É tão grande agora porque não há espaço suficiente para manter todos os itens de todo o continente, é por isso que a expandimos e renovamos constantemente.";
 		next;
 		mes "[Chirp]";
@@ -6739,7 +6739,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		mes "Acho que me atrasarei um pouco por causa dos robôs de limpeza quebrados. É um robô automático que foi hackeado pelos intrusos. Estou pensando em como limpar a bagunça que fez.";
 		next;
 		mes "[Chirp]";
-		mes "^CC0000Ateando fogo^000000Será a maneira mais limpa, não acha?";
+		mes "^CC0000Ateando fogo^000000 Será a maneira mais limpa, não acha?";
 		next;
 		cutin "",255;
 		select( "Tudo será queimado." );
@@ -6857,7 +6857,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		if (select( "Não posso fazê-lo?", "Pareces perturbado." ) == 2) {
 			cutin "ep172_beta",2;
 			mes "[Chirp]";
-			mes "Você está mostrando pena de mim por estar desamparado na frente doboneca automáticaOs humanos se sentem responsáveis por coisas que não fizeram?";
+			mes "Você está mostrando pena de mim por estar desamparado na frente do boneca automática Os humanos se sentem responsáveis por coisas que não fizeram?";
 		}
 		else {
 			cutin "ep172_beta",2;
@@ -6872,7 +6872,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		mes "É por isso que incompreendimos, estão todos ligados, partilham tudo, culpa e responsabilidade.";
 		next;
 		cutin "",255;
-		select( "Varmundttambém é humano." );
+		select( "Varmundt também é humano." );
 		cutin "ep172_beta",2;
 		mes "[Chirp]";
 		mes "He's different. He's a wise man.";
@@ -6895,7 +6895,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		emotion ET_SWEAT, getcharid(3);
 		next;
 		mes "[Chirp]";
-		mes "Recolher por favor^0000CDFive Cleaning Robot^000000.";
+		mes "Recolher por favor ^0000CDFive Robô de Limpeza^000000.";
 		mes "Então eu vou ser capaz de passar por esta confusão.";
 		mes "Espero que você tenha prazer nisso.";
 		ep17_2_chirp = 1;
@@ -6911,7 +6911,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 			cutin "ep172_beta",2;
 			mes "[Chirp]";
 			mes "Ainda há muitos deles, preciso que trabalhes mais.";
-			mes "Recolher por favor^0000CDFive Cleaning Robot^000000.";
+			mes "Recolher por favor ^0000CDFive Robô de Limpeza^000000.";
 			mes "Então eu vou ser capaz de passar por esta confusão.";
 			close3;
 		case 2:
@@ -6941,7 +6941,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 			mes "-...Ooh... Uh... -";
 			next;
 			mes "[Chirp]";
-			mes "É o som feito por umboneca automáticacom base no padrão de voz. Mas não é um som de umbonecas automáticasÉ um pouco longe daqui.";
+			mes "É o som feito por um boneca automática com base no padrão de voz. Mas não é um som de um bonecas automáticas É um pouco longe daqui.";
 			next;
 			mes "[Chirp]";
 			mes "Acho que é do porão, se é mesmo do porão, é um grande negócio.";
@@ -6950,15 +6950,15 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 			select( "Por que?" );
 			cutin "ep172_beta",2;
 			mes "[Chirp]";
-			mes "Ao contrário deste espaço, apenasVarmundtpode entrar no porão. Há um monte de segredos e coisa perigosa lá.";
+			mes "Ao contrário deste espaço, apenas Varmundt pode entrar no porão. Há um monte de segredos e coisa perigosa lá.";
 			emotion ET_SURPRISE;
 			next;
 			mes "[Chirp]";
-			mes "Sebonecas automáticasou humano entrar e mexer com um objeto perigoso por engano.";
+			mes "Se bonecas automáticas ou humano entrar e mexer com um objeto perigoso por engano.";
 			mes "Uma destruição previsível certamente ocorrerá.";
 			next;
 			mes "[Chirp]";
-			mes "Se isso é realmente do subterrâneo, e isso é um som de umboneca automáticaSó a destruição nos espera.";
+			mes "Se isso é realmente do subterrâneo, e isso é um som de um boneca automáticaSó a destruição nos espera.";
 			next;
 			mes "[Chirp]";
 			mes "É só uma questão de tempo antes que este lugar se torne cinzas da explosão maciça. É um nível diferente do meu plano para incendiá-lo.";
@@ -6971,7 +6971,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 			mes "Precisamos fazer algo para parar com isso.";
 			next;
 			mes "[Chirp]";
-			mes "Eu tenho que ir pegar o projeto e os ingredientes enquanto o quebradobonecas automáticasé organizado.";
+			mes "Eu tenho que ir pegar o projeto e os ingredientes enquanto o quebrado bonecas automáticas é organizado.";
 			next;
 			mes "[Chirp]";
 			mes "" + strcharinfo(0) + "É um combatente.";
@@ -6986,7 +6986,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 			emotion ET_SWEAT, getcharid(3);
 			next;
 			mes "[Chirp]";
-			mes "Há uma escada que vai para o subsolo no^0000CDparte mais alta do armazém^000000Desça as escadas e verifique a situação abaixo. Não toque em nada lá.";
+			mes "Há uma escada que vai para o subsolo no ^0000CDparte mais alta do armazém^000000Desça as escadas e verifique a situação abaixo. Não toque em nada lá.";
 			next;
 			mes "[Chirp]";
 			mes "Vá em frente e volte quando terminar.";
@@ -7000,7 +7000,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 	if (ep17_2_chirp == 2) {
 		cutin "ep172_beta",2;
 		mes "[Chirp]";
-		mes "Há uma escada que vai para o subsolo no^0000CDparte mais alta do armazém^000000Desça as escadas e verifique a situação abaixo. Não toque em nada lá.";
+		mes "Há uma escada que vai para o subsolo no ^0000CDparte mais alta do armazém^000000Desça as escadas e verifique a situação abaixo. Não toque em nada lá.";
 		close3;
 	}
 	if (ep17_2_chirp == 3) {
@@ -7012,7 +7012,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		select( "Está trancada." );
 		cutin "ep172_beta",2;
 		mes "[Chirp]";
-		mes "Foi bloqueado? Mas como é que oboneca automáticaIsso é um problema ainda maior. Isso prova que há um buraco na segurança da mansão, os intrusos também entraram como passagem diferente da única entrada.";
+		mes "Foi bloqueado? Mas como é que o boneca automática Isso é um problema ainda maior. Isso prova que há um buraco na segurança da mansão, os intrusos também entraram como passagem diferente da única entrada.";
 		next;
 		mes "[Chirp]";
 		mes "Seria uma boa ideia verificar... Disseste que estava trancada. Não posso forçar-me a entrar, preciso de encontrar a chave de emergência.";
@@ -7030,7 +7030,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		mes "Você gosta de caça ao tesouro? Ou você tem um talento excepcional para a caça ao tesouro? Se não, espero que você o tenha a partir de agora.";
 		next;
 		mes "[Chirp]";
-		mes "O mestre escondeu a^0000CDno total de três chaves de emergência no armazém^000000. E ainda há um monte de quebradobonecas automáticasAqui dentro.";
+		mes "O mestre escondeu a ^0000CDno total de três chaves de emergência no armazém^000000. E ainda há um monte de quebrado bonecas automáticas Aqui dentro.";
 		next;
 		cutin "",255;
 		select( "Isso significa..." );
@@ -7045,10 +7045,10 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		mes "<NAVI>[Spinning World]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI>. Ele disse que toda a verdade está abaixo dela. Tente encontrar um lugar com tal item.";
 		next;
 		mes "[Chirp]";
-		mes "Ele também disse que em a<NAVI>[lugar]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI>onde sua respiração congela, tudo é dito para permanecer inalterado para sempre.";
+		mes "Ele também disse que em a <NAVI>[lugar]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI> onde sua respiração congela, tudo é dito para permanecer inalterado para sempre.";
 		next;
 		mes "[Chirp]";
-		mes "Por fim, ele disse que todo o ar deve ser oco. Ele também disse que usa muita energia. Eu não posso nem adivinhar onde<NAVI>[um lugar assim]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI>É.";
+		mes "Por fim, ele disse que todo o ar deve ser oco. Ele também disse que usa muita energia. Eu não posso nem adivinhar onde <NAVI>[um lugar assim]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI> É.";
 		next;
 		mes "[Chirp]";
 		mes "Não sei o que significam todas as dicas, mas você aventureiro é um ser humano como o nosso mestre. Você pode interpretá-las.";
@@ -7073,10 +7073,10 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		mes "<NAVI>[Spinning World]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI>. Ele disse que toda a verdade está abaixo dela. Tente encontrar um lugar com tal item.";
 		next;
 		mes "[Chirp]";
-		mes "Ele também disse que em a<NAVI>[lugar]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI>onde sua respiração congela, tudo é dito para permanecer inalterado para sempre.";
+		mes "Ele também disse que em a <NAVI>[lugar]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI> onde sua respiração congela, tudo é dito para permanecer inalterado para sempre.";
 		next;
 		mes "[Chirp]";
-		mes "Por fim, ele disse que todo o ar deve ser oco. Ele também disse que usa muita energia. Eu não posso nem adivinhar onde<NAVI>[um lugar assim]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI>É.";
+		mes "Por fim, ele disse que todo o ar deve ser oco. Ele também disse que usa muita energia. Eu não posso nem adivinhar onde <NAVI>[um lugar assim]<INFO>ba_2whs01,110,217,0,101,0</INFO></NAVI> É.";
 		next;
 		mes "[Chirp]";
 		mes "Não sei o que significam todas as dicas, mas você aventureiro é um ser humano como o nosso mestre. Você pode interpretá-las.";
@@ -7096,7 +7096,7 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		cutin "ep172_beta",2;
 		mes "[Chirp]";
 		mes "Você verificou a situação do subterrâneo?";
-		mes "Que bom que você voltou, eu já estava pensando em uma maneira de dizerAlphaA notícia de que o convidado" + strcharinfo(0) + "Morreu.";
+		mes "Que bom que você voltou, eu já estava pensando em uma maneira de dizer Alpha A notícia de que o convidado" + strcharinfo(0) + "Morreu.";
 		emotion ET_SWEAT, getcharid(3);
 		next;
 		mes "[Chirp]";
@@ -7133,10 +7133,10 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		mes "Pense nisso dessa maneira. Por que o mestre se preocupou em manter a cabeça na zona de perigo? Uma cabeça colocada sozinha em um lugar cheio de mercadorias perigosas. Talvez essa coisa também seja perigosa.";
 		next;
 		mes "[Chirp]";
-		mes "Mesmo a classe mais alta do combatebonecas automáticasnão são feitas na zona perigosa do porão. Pode ser uma próxima geração de armas. Você tem sorte se você foi capaz de distingui-lo como um aliado.";
+		mes "Mesmo a classe mais alta do combate bonecas automáticas não são feitas na zona perigosa do porão. Pode ser uma próxima geração de armas. Você tem sorte se você foi capaz de distingui-lo como um aliado.";
 		next;
 		mes "[Chirp]";
-		mes "Se esse é o caso, a catástrofe que oboneca automáticaIsso não é mais uma preocupação.";
+		mes "Se esse é o caso, a catástrofe que o boneca automática Isso não é mais uma preocupação.";
 		next;
 		mes "[Chirp]";
 		mes "Agora, como você gostaria de resolver esse problema?" + strcharinfo(0) + ", descendo para o porão com os braços e pernas, com boa intenção de terminar o seu corpo.";
@@ -7166,10 +7166,10 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		select( "Clear up?" );
 		cutin "ep172_beta",2;
 		mes "[Chirp]";
-		mes "Não foi um problema como os robôs de limpeza quebrados. Ao inspecionar o armazém, percebemos que há alguns intrusos residuais nele. Eles disseram que era umCaçador de Coraçãos. Como eu disse antes, eu tenho muito trabalho a fazer.";
+		mes "Não foi um problema como os robôs de limpeza quebrados. Ao inspecionar o armazém, percebemos que há alguns intrusos residuais nele. Eles disseram que era um Caçador de Coraçãos. Como eu disse antes, eu tenho muito trabalho a fazer.";
 		next;
 		mes "[Chirp]";
-		mes "Para proteger as mercadorias aqui no armazém, eu gostaria que você limpar essesCaçadores de CoraçãoE limpar o gerente de armazém quebrado no porão para que não façamos um inimigo com essa coisa no porão.";
+		mes "Para proteger as mercadorias aqui no armazém, eu gostaria que você limpar esses Caçadores de CoraçãoE limpar o gerente de armazém quebrado no porão para que não façamos um inimigo com essa coisa no porão.";
 		next;
 		mes "[Chirp]";
 		mes "Não há nada a perder, e você pode usá-lo para o seu entertaiment pessoal. Claro, eu vou pagar-lhe em conformidade. Vou registrar seus dados para que você possa entrar e sair do porão sem uma chave de emergência.";
@@ -7238,11 +7238,11 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 	case -1:
 		if (.@hunt == 17359) {
 			mes "[Chirp]";
-			mes "Você realmente gosta de lutar. Então, eu gostaria que você lidasse com^0000CD20 Caçador de Coração^000000no armazém.";
+			mes "Você realmente gosta de lutar. Então, eu gostaria que você lidasse com ^0000CD20 Caçador de Coração^000000 no armazém.";
 		}
 		else {
 			mes "[Chirp]";
-			mes "Você realmente gosta de lutar. Então, eu gostaria que você lidasse com^0000CD20 Gerente de Armazém Quebrado^000000No porão.";
+			mes "Você realmente gosta de lutar. Então, eu gostaria que você lidasse com ^0000CD20 Gerente de Armazém Quebrado^000000 No porão.";
 		}
 		next;
 		if (select( "Eu trato disso.", "Eu quero descansar hoje" ) == 2) {
@@ -7263,12 +7263,12 @@ ba_2whs01,150,51,5	script	Chirp#172wh01	4_EP17_BASKET,{
 		if (.@hunt == 17359) {
 			mes "[Chirp]";
 			mes "Não os vês a andar assim?";
-			mes "Então, eu gostaria que você lidasse com^0000CD20 Caçador de Coração^000000no armazém.";
+			mes "Então, eu gostaria que você lidasse com ^0000CD20 Caçador de Coração^000000 no armazém.";
 			close3;
 		}
 		mes "[Chirp]";
 		mes "Não os vês a andar assim?";
-		mes "Então, eu gostaria que você lidasse com^0000CD20 Gerente de Armazém Quebrado^000000No porão.";
+		mes "Então, eu gostaria que você lidasse com ^0000CD20 Gerente de Armazém Quebrado^000000 No porão.";
 		close3;
 	case 2:
 		mes "[Chirp]";
@@ -7485,7 +7485,7 @@ ba_2whs02,37,312,3	script(CLOAKED)	Head#ep172_2whs01	4_GHOSTRING,{
 		mes "[Head]";
 		mes "Mas... o teu rosto mudou muito. O que lhe aconteceu? Onde estiveste? O que tens feito?";
 		next;
-		select( "Eu não souVarmundt." );
+		select( "Eu não sou Varmundt." );
 		mes "[Head]";
 		mes "Então, quem és tu? Quem é o mestre? Como entraste aqui?";
 		next;
@@ -7502,7 +7502,7 @@ ba_2whs02,37,312,3	script(CLOAKED)	Head#ep172_2whs01	4_GHOSTRING,{
 		mes "Eu estava aqui desde que nasci. A única coisa que sei são as histórias que o meu mestre me contou.";
 		next;
 		mes "[T2WH-0448]";
-		mes "Ele disse que me levaria para fora quando me terminasse mais tarde. Ele disse que me ligaria ao outrobonecas automáticasÉ por isso que tenho estado à espera que o mestre volte.";
+		mes "Ele disse que me levaria para fora quando me terminasse mais tarde. Ele disse que me ligaria ao outro bonecas automáticasÉ por isso que tenho estado à espera que o mestre volte.";
 		next;
 		mes "[T2WH-0448]";
 		mes "Já faz muito tempo desde que o mestre chegou. Há quanto tempo estou a dormir?";
@@ -7522,7 +7522,7 @@ ba_2whs02,37,312,3	script(CLOAKED)	Head#ep172_2whs01	4_GHOSTRING,{
 		next;
 		select( "Havia um som suspeito no porão." );
 		mes "[T2WH-0448]";
-		mes "O som de mim a cantar, confundiste-me com um partido.boneca automáticaMas o que é aquilo que está atrás de ti?";
+		mes "O som de mim a cantar, confundiste-me com um partido. boneca automáticaMas o que é aquilo que está atrás de ti?";
 		next;
 		mes "[T2WH-0448]";
 		mes "Você disse que está quebrado, mas por que eles não estão caindo e piscando? Por que eles estão atacando? As bonecas automáticas não deveriam atacar os hóspedes, certo?";
@@ -7561,7 +7561,7 @@ ba_2whs02,37,312,3	script(CLOAKED)	Head#ep172_2whs01	4_GHOSTRING,{
 		mes "[T2WH-0448]";
 		mes "Este é o lugar onde o mestre costumava fazer as coisas de todas as coisas que ele tinha coletado.";
 		mes "Foi assim que eu nasci.";
-		mes "Por favor me traga algo que eu possa^0000CDusar e fazer o meu corpo^000000.";
+		mes "Por favor me traga algo que eu possa ^0000CDusar e fazer o meu corpo^000000.";
 		next;
 		mes "[T2WH-0448]";
 		mes "Um corpo... braços e pernas, certo?";
@@ -7572,7 +7572,7 @@ ba_2whs02,37,312,3	script(CLOAKED)	Head#ep172_2whs01	4_GHOSTRING,{
 		mes "Tenho certeza de que há um quarto lá embaixo que é bom para o corpo, e em algum lugar que é bom para os braços, e em algum lugar que é bom para as pernas.";
 		next;
 		mes "[T2WH-0448]";
-		mes "O lugar mais próximo é onde o<NAVI>[body]<INFO>ba_2whs02,31,50,0,101,0</INFO></NAVI>Vai lá primeiro, traz-me um depressa, estou com medo.";
+		mes "O lugar mais próximo é onde o <NAVI>[body]<INFO>ba_2whs02,31,50,0,101,0</INFO></NAVI> Vai lá primeiro, traz-me um depressa, estou com medo.";
 		ep17_2_chirp = 7;
 		erasequest 17349;
 		setquest 17350;
@@ -7608,18 +7608,18 @@ ba_2whs02,37,312,3	script(CLOAKED)	Head#ep172_2whs01	4_GHOSTRING,{
 		select( "Tenho que voltar e relatar a situação." );
 		mes "[T2WH-0448]";
 		mes "Qual é o nome dela?";
-		mes "É umaboneca automática? or human?";
+		mes "É uma boneca automática? or human?";
 		next;
 		select( "Adorei o seu blog,..." );
 		mes "[T2WH-0448]";
-		mes "A sério? Todo o velhobonecas automáticasfora tem um nome? Então me dê um nome também. Meu mestre não fez um nome para mim. É apenas um número de série.";
+		mes "A sério? Todo o velho bonecas automáticas fora tem um nome? Então me dê um nome também. Meu mestre não fez um nome para mim. É apenas um número de série.";
 		next;
 		select( "De repente?" );
 		mes "[T2WH-0448]";
 		mes "Não podes dar-me o nome? Só pode ser feito por seres humanos especiais? Mas também és um convidado especial.";
 		next;
 		mes "[T2WH-0448]";
-		mes "Então, não há nada que possamos fazer, não tenho escolha a não ser pensar.Varmundt.";
+		mes "Então, não há nada que possamos fazer, não tenho escolha a não ser pensar. Varmundt.";
 		next;
 		select( "O que?" );
 		mes "[T2WH-0448]";
@@ -7629,7 +7629,7 @@ ba_2whs02,37,312,3	script(CLOAKED)	Head#ep172_2whs01	4_GHOSTRING,{
 		mes "Posso pensar em evitá-los, ou posso pedir-lhe para me nomear quando ele voltar.";
 		next;
 		mes "[T2WH-0448]";
-		mes "Você disse, você deve subir e se reportar a outroboneca automáticaBem, tchau, obrigado pela ajuda.";
+		mes "Você disse, você deve subir e se reportar a outro boneca automáticaBem, tchau, obrigado pela ajuda.";
 		ep17_2_chirp = 11;
 		erasequest 17353;
 		setquest 17358;
@@ -7638,7 +7638,7 @@ ba_2whs02,37,312,3	script(CLOAKED)	Head#ep172_2whs01	4_GHOSTRING,{
 	}
 	if (ep17_2_chirp == 11) {
 		mes "[T2WH-0448]";
-		mes "Você disse, você deve subir e se reportar a outroboneca automáticaAchas que posso fazer isto?";
+		mes "Você disse, você deve subir e se reportar a outro boneca automáticaAchas que posso fazer isto?";
 		close;
 	}
 	mes "Ainda não decidi o que lhe dar o nome. Aqueles tipos estão bem, não me tocaram Estranhamente o suficiente.";
@@ -7768,44 +7768,44 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 	npctalk "(¢Á_¢Á*) ¢Ï Connect!!", "", bc_self;
 	sleep2 1000;
 	if (ep17_2_main < 9) {
-		npctalk "Cleaning Robot ¥Ø: Unauthorized user. Communication terminated.", "", bc_self;
+		npctalk "Robô de Limpeza: Unauthorized user. Communication terminated.", "", bc_self;
 		setpcblock PCBLOCK_NPC, false;
 		end;
 	}
-	npctalk "Robô de limpeza: Usuário autorizado. Prazer em conhecê-lo.";
+	npctalk "Robô de Limpeza: Usuário autorizado. Prazer em conhecê-lo.";
 	sleep2 1000;
 	setpcblock PCBLOCK_NPC, false;
 
 	if (isbegin_quest(5892) == 0) {
-		mes "[Cleaning Robot ¥Ø]";
-		mes "Olá, convidado! Prazer em conhecê-lo Eu sou o robô de limpeza";
+		mes "[Robô de Limpeza]";
+		mes "Olá, convidado! Prazer em conhecê-lo Estou Robô de Limpeza~";
 		next;
 		select( "Prazer em conhecê-lo." );
-		mes "[Cleaning Robot ¥Ø]";
+		mes "[Robô de Limpeza]";
 		mes "A tarefa do robô de limpeza é limpar o esgoto e a primeira usina.";
 		npctalk "┏(^▽^)┛Cleaning..", "", bc_self;
 		next;
-		mes "[Cleaning Robot ¥Ø]";
-		mes "Mas o robô de limpeza não pode limpar agora Sad";
+		mes "[Robô de Limpeza]";
+		mes "Mas Robô de Limpeza não pode limpar agora Sad";
 		npctalk "ㆀ(X_X)ㆀ", "", bc_self;
 		next;
-		mes "[Cleaning Robot ¥Ø]";
+		mes "[Robô de Limpeza]";
 		mes "Usuários não autorizados nos impedem de limpar robôs para fazer nosso trabalho";
 		npctalk "(-_-a);;;", "", bc_self;
 		next;
-		mes "[Cleaning Robot ¥Ø]";
-		mes "Robô de limpeza está tendo dificuldades. Bom convidado, preciso de sua ajuda Por favor";
+		mes "[Robô de Limpeza]";
+		mes "Robô de Limpeza Bom convidado, preciso da sua ajuda Por favor";
 		npctalk "☞☜ ☞♥☜ ☞☜", "", bc_self;
 		next;
 		if (select( "Está bem, eu ajudo-te.", "Eu não quero!" ) == 2) {
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Robô de limpeza é triste..";
+			mes "[Robô de Limpeza]";
+			mes "Robô de Limpezaé triste..";
 			npctalk "(ㅠ_ㅠ)ㆀ", "", bc_self;
 			close;
 		}
-		mes "[Cleaning Robot ¥Ø]";
+		mes "[Robô de Limpeza]";
 		mes "Os convidados são realmente amáveis -";
-		mes "Robô de limpeza está muito feliz";
+		mes "Robô de Limpezaé muito feliz";
 		npctalk "(≥▽≤)♥♡♥♡♥♡", "", bc_self;
 		setquest 5892;
 		completequest 5892;
@@ -7815,8 +7815,8 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 	.@status[1] = F_queststatus(HUNTING,5897,5898,5899);
 
 	if (.@status[0] == 2 || .@status[1] == 2) {
-		mes "[Cleaning Robot ¥Ø]";
-		mes "Muito obrigado, Cleaning Robot está feliz por poder limpar.";
+		mes "[Robô de Limpeza]";
+		mes "Muito obrigado, Robô de Limpeza É bom poder limpar.";
 		if (.@status[0] == 2) {
 			erasequest 5893;
 			erasequest 5894;
@@ -7852,7 +7852,7 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 	.@quest_menu$[0] = callsub( S_Menu, 5893,5894,5895,5896, "Sewage Plant Cleaning" );
 	.@quest_menu$[1] = callsub( S_Menu, 5897,5898,5899,5900, "1st Power Plant Cleaning" );
 
-	mes "[Cleaning Robot ¥Ø]";
+	mes "[Robô de Limpeza]";
 	mes "A limpeza é divertida –";
 	next;
 	switch( select( .@quest_menu$[0], .@quest_menu$[1], "Boa sorte." ) ) {
@@ -7866,7 +7866,7 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 		break;
 	case 3:
 		npctalk "(¥È_¥È)..(¥è_¥è)..(zZzZ)", "", bc_self;
-		mes "[Cleaning Robot ¥Ø]";
+		mes "[Robô de Limpeza]";
 		mes "Communication ended.";
 		close;
 	}
@@ -7876,12 +7876,12 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 	case 0:
 	case 1:
 		if (.@quest[0] == 5893) {
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Obrigado, bom convidado Cleaning Robot já tratou a estação de esgoto.";
+			mes "[Robô de Limpeza]";
+			mes "Obrigado, bom convidado Robô de Limpeza Já tratou da estação de esgoto.";
 		}
 		else {
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Obrigado, bom convidado Cleaning Robot já limpou a primeira usina.";
+			mes "[Robô de Limpeza]";
+			mes "Obrigado, bom convidado Robô de Limpeza já limpou a primeira usina.";
 		}
 		close;
 	case 2:
@@ -7891,35 +7891,35 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 	switch( checkquest(.@quest[0],HUNTING) ) {
 	case -1:
 		if (.@quest[0] == 5893) {
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Robô de limpeza era suposto ser o único a tratar a estação de esgoto.";
+			mes "[Robô de Limpeza]";
+			mes "Robô de Limpeza Era para ser o único a tratar da estação de esgoto.";
 			mes "Não podemos limpar porque há mais, Veneno, Cachoeira e Cãibras";
 		}
 		else {
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Robô de limpeza não pode limpar a primeira usina porque há muitos Elite Bellare, Magical Dolor e Unleashed Magic.";
+			mes "[Robô de Limpeza]";
+			mes "Robô de Limpeza não pode limpar a primeira usina de energia, porque há muitos Elite Bellare, Dolor Mágico e Magia Libertada.";
 		}
 		npctalk "(ㅠ^ㅠ) OTL..", "", bc_self;
 		next;
 		if (.@quest[0] == 5893) {
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Robô de limpeza é triste";
+			mes "[Robô de Limpeza]";
+			mes "Robô de Limpeza É triste...";
 			mes "Eu acho que eu vou ser capaz de tratar a estação de esgoto, se você é capaz de cuidar de 44 Veneno, Cachoeira e Cãibras.";
 		}
 		else {
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Robô de limpeza é triste";
+			mes "[Robô de Limpeza]";
+			mes "Robô de Limpeza É triste...";
 			mes "Eu acho que eu vou ser capaz de tratar a primeira usina de energia, se você puder cuidar de 44 Elite Bellare, Magical Dolor e Unleashed Magic.";
 		}
 		npctalk "(?▽?)~♡", "", bc_self;
 		next;
 		if (select( "Eu ajudo.", "Refuse." ) == 2) {
 			npctalk "ㆀ(@ㅠ@)ㆀ", "", bc_self;
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Robô de limpeza é triste..";
+			mes "[Robô de Limpeza]";
+			mes "Robô de Limpezaé triste..";
 			close;
 		}
-		mes "[Cleaning Robot ¥Ø]";
+		mes "[Robô de Limpeza]";
 		mes "Muito obrigado";
 		npctalk "(♡З♡)~♥", "", bc_self;
 		for ( .@i = 0; .@i < 3; ++.@i )
@@ -7929,13 +7929,13 @@ ba_in01,24,322,3	script	Cleaning Robot ¥Ø#ba_pw01_02Q	20640,{
 	case 1:
 	case 2:
 		if (.@quest[0] == 5893) {
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Robô de limpeza era suposto ser o único a tratar a estação de esgoto.";
+			mes "[Robô de Limpeza]";
+			mes "Robô de Limpeza Era para ser o único a tratar da estação de esgoto.";
 			mes "Estou triste porque não consigo limpar Monstros são tão assustadores";
 		}
 		else {
-			mes "[Cleaning Robot ¥Ø]";
-			mes "Robô de limpeza era para ser o único a limpar a primeira usina de energia.";
+			mes "[Robô de Limpeza]";
+			mes "Robô de Limpeza Era suposto ser o único a limpar a primeira central eléctrica.";
 			mes "Estou triste porque não consigo limpar Monstros são tão assustadores";
 		}
 		npctalk "ㆀ(ㅠ_≤)ㆀ", "", bc_self;
@@ -8060,7 +8060,7 @@ ba_maison,85,111,3	script	Fountain#ba	4_ENERGY_BLUE,{
 		next;
 		cutin "ep172_beta",2;
 		mes "[Gerente de Mansão ]";
-		mes "I'm Mansion Manager of [A Mansão do Grande Sábio]Varmundt].";
+		mes "I'm Gerente da Mansão of [A Mansão do Grande Sábio] Varmundt].";
 		mes "As instalações da mansão são públicas e estão sendo usadas por todos os hóspedes.";
 		mes "Por favor, siga as instruções ao usar a instalação.";
 		next;
@@ -8104,14 +8104,14 @@ ba_maison,85,111,3	script	Fountain#ba	4_ENERGY_BLUE,{
 		next;
 		cutin "bu_mark4",2;
 		mes "[Mark]";
-		mes "Como esperado daCaçadores de Coração...";
+		mes "Como esperado da Caçadores de Coração...";
 		mes "Não é hora de fazer isso.";
 		mes "Temos de nos apressar com a investigação.";
 		next;
 		cutin "bu_maggi3",2;
 		mes "[Magi]";
 		mes "Yes!";
-		mes "Eu não vou deixar oCaçadores de CoraçãoArruinar este lugar maravilhoso!";
+		mes "Eu não vou deixar o Caçadores de Coração Arruinar este lugar maravilhoso!";
 		next;
 		cutin "bu_mark1",2;
 		mes "[Mark]";
@@ -8124,7 +8124,7 @@ ba_maison,85,111,3	script	Fountain#ba	4_ENERGY_BLUE,{
 		cutin "bu_alp3",2;
 		mes "[Alp]";
 		mes "Oh!";
-		mes "Como esperado, você sabe alguma coisa!!! É o grande sábioVarmundt!!! Ele é uma lenda, que ninguém nunca o superou durante e depois de seu tempo.";
+		mes "Como esperado, você sabe alguma coisa!!! É o grande sábio Varmundt!!! Ele é uma lenda, que ninguém nunca o superou durante e depois de seu tempo.";
 		next;
 		mes "[Alp]";
 		mes "Diz-se que a ciência e a tecnologia estão apenas mantendo a base que ele estabeleceu, mas eles não podem implementar coisas que não têm dados restantes de sua pesquisa.";
@@ -8143,7 +8143,7 @@ ba_maison,85,111,3	script	Fountain#ba	4_ENERGY_BLUE,{
 		next;
 		cutin "bu_mark2",2;
 		mes "[Mark]";
-		mes "O Grande SábioVarmundtDiz-se que é excelente em magia e cura, certo?";
+		mes "O Grande Sábio Varmundt Diz-se que é excelente em magia e cura, certo?";
 		mes "Vamos para a biblioteca.";
 		ep17_2_library = 2;
 		erasequest 11621;
@@ -8174,7 +8174,7 @@ ba_maison,85,111,3	script	Fountain#ba	4_ENERGY_BLUE,{
 		cutin "bu_alp3",2;
 		mes "[Alp]";
 		mes "Oh!";
-		mes "Como esperado, você sabe alguma coisa!!! É o grande sábioVarmundt!!! Ele é uma lenda, que ninguém nunca o superou durante e depois de seu tempo.";
+		mes "Como esperado, você sabe alguma coisa!!! É o grande sábio Varmundt!!! Ele é uma lenda, que ninguém nunca o superou durante e depois de seu tempo.";
 		next;
 		mes "[Alp]";
 		mes "Diz-se que a ciência e a tecnologia estão apenas mantendo a base que ele estabeleceu, mas eles não podem implementar coisas que não têm dados restantes de sua pesquisa.";
@@ -8193,7 +8193,7 @@ ba_maison,85,111,3	script	Fountain#ba	4_ENERGY_BLUE,{
 		next;
 		cutin "bu_mark2",2;
 		mes "[Mark]";
-		mes "O Grande SábioVarmundtDiz-se que é excelente em magia e cura, certo?";
+		mes "O Grande Sábio Varmundt Diz-se que é excelente em magia e cura, certo?";
 		mes "Vamos para a biblioteca.";
 		close2;
 		cutin "",255;
@@ -8205,7 +8205,7 @@ ba_maison,85,111,3	script	Fountain#ba	4_ENERGY_BLUE,{
 		navigateto("ba_in01",211,83);
 		end;
 	}
-	mes "- É a fonte ondeDewlavou seu corpo.";
+	mes "- É a fonte onde Dew lavou seu corpo.";
 	mes "Felizmente, parece que já foi limpo. -";
 	close;
 
@@ -8507,8 +8507,8 @@ ba_lib,157,19,5	script	Mansion Manager ¥â#ep172_balib	4_EP17_BASIC_B,{
 	case -1:
 		if (.@hunt == 11634) {
 			mes "[Gerente de Mansão ]";
-			mes "Recentemente, recebemos um inquérito de que o número deTraça-de-Livros que se alimenta de livros mágicos aumentou exponencialmente, causando inconveniência no uso da biblioteca.";
-			mes "Por favor, cuide de 20Traça-de-Livros para melhorar o ambiente da biblioteca.";
+			mes "Recentemente, recebemos um inquérito de que o número de Traça-de-Livros que se alimenta de livros mágicos aumentou exponencialmente, causando inconveniência no uso da biblioteca.";
+			mes "Por favor, cuide de 20 Traça-de-Livros para melhorar o ambiente da biblioteca.";
 		}
 		else {
 			mes "[Gerente de Mansão ]";
@@ -8600,7 +8600,7 @@ ba_lib,84,85,3	script	Mark#ep172_balib	4_M_BLUEMAN,{
 			cutin "bu_mark2",2;
 			mes "[Mark]";
 			mes "Isso é inacreditável!!!!!!!";
-			mes "Eu não posso acreditar que existem tantos livros que eu não poderia encontrar noProntera library!";
+			mes "Eu não posso acreditar que existem tantos livros que eu não poderia encontrar no Prontera library!";
 			next;
 			cutin "bu_mark1",2;
 			mes "[Mark]";
@@ -8815,7 +8815,7 @@ ba_maison,306,206,5	script	Cotton#greeen	4_EP17_BASIC_B,{
 		close;
 	}
 	if (isbegin_quest(8586) < 2) {
-		mes "- Conheci os olhos com oboneca automáticana frente da área de reprodução. -";
+		mes "- Conheci os olhos com o boneca automática na frente da área de reprodução. -";
 		next;
 		mes "- A boneca olhou para mim para cima e para baixo, e virou a cabeça.";
 		close;
@@ -8850,7 +8850,7 @@ ba_maison,306,206,5	script	Cotton#greeen	4_EP17_BASIC_B,{
 				case 8594: .@color$ = "^9ABF94Green"; break;
 			}
 			mes "[Cotton]";
-			mes "Por favor, cuide de 20" + .@color$ + "Pitayas^000000Não, quero dizer, apenas acaricie-os!";
+			mes "Por favor, cuide de 20" + .@color$ + "Pitayas^000000 Não, quero dizer, apenas acaricie-os!";
 			close;
 		case 2:
 			switch( .@quest_id[.@i] ) {
@@ -8889,7 +8889,7 @@ ba_maison,306,206,5	script	Cotton#greeen	4_EP17_BASIC_B,{
 		}
 		mes "[Cotton]";
 		mes "Muito obrigado!";
-		mes "Por hoje. Eu gostaria que você jogasse com 20" + .@color$ + "Pitayas^000000Por favor.";
+		mes "Por hoje. Eu gostaria que você jogasse com 20" + .@color$ + "Pitayas^000000 Por favor.";
 		mes "Você pode distingui-los pela cor. Você pode entrar agora mesmo. Divirta-se!";
 		setquest .@quest;
 		break;
@@ -8973,7 +8973,7 @@ ba_maison,79,278,3	script	Europa#eorpa	4_EP17_BASIC_B,{
 			mes "O meu nome é Europa...";
 			next;
 			mes "[Europa]";
-			mes "Bem-vindo aoVarmundtMansão... bem-vindo... *buzz*...";
+			mes "Bem-vindo ao Varmundt Mansão... bem-vindo... *buzz*...";
 			next;
 			select( "Não pareces bem." );
 			mes "[Europa]";
@@ -9024,10 +9024,10 @@ ba_maison,79,278,3	script	Europa#eorpa	4_EP17_BASIC_B,{
 			mes "Olá. Obrigado por lidar com os chips de biointerferência. Agora eu posso me comunicar com a rede corretamente. Eu sou Europa, o gerente da segunda usina.";
 			next;
 			mes "[Europa]";
-			mes "Deixe-me falar sobre os biochips que você acabou de manusear. Os chips são instalados pelas Ilusões chamadas^0000CDMagic Poisoned Sanare^000000na segunda usina de potência com o único propósito de bloquear ondas de rádio.";
+			mes "Deixe-me falar sobre os biochips que você acabou de manusear. Os chips são instalados pelas Ilusões chamadas ^0000CDMagic Poisoned Sanare^000000 na segunda usina de potência com o único propósito de bloquear ondas de rádio.";
 			next;
 			mes "[Europa]";
-			mes "É um chip que é letal para obonecas automáticascapacidade de se comunicar, e hoje em dia, é uma grande interrupção para a gestão da segunda usina de potência.";
+			mes "É um chip que é letal para o bonecas automáticas capacidade de se comunicar, e hoje em dia, é uma grande interrupção para a gestão da segunda usina de potência.";
 			next;
 			mes "[Europa]";
 			mes "Eu mesmo entrei na segunda usina e recuperei os chips, mas não havia como lidar com eles, e tornou-se uma situação difícil por causa da falha da rede.";
@@ -9040,10 +9040,10 @@ ba_maison,79,278,3	script	Europa#eorpa	4_EP17_BASIC_B,{
 			next;
 			select( "O que foi?" );
 			mes "[Europa]";
-			mes "Como já mencionei, a ilusão,^0000CDMagic Poisoned Sanare^000000, ainda estão instalando os chips de bloqueio que mencionei na segunda usina de potência. Se eu entrei assim, provavelmente vou acabar funcionando mal novamente.";
+			mes "Como já mencionei, a ilusão, ^0000CDMagic Poisoned Sanare^000000, ainda estão instalando os chips de bloqueio que mencionei na segunda usina de potência. Se eu entrei assim, provavelmente vou acabar funcionando mal novamente.";
 			next;
 			mes "[Europa]";
-			mes "Aventureiro, você poderia ir na segunda usina de cavalos de potência e coletar 10^0000CDChips de Batata^000000?";
+			mes "Aventureiro, você poderia ir na segunda usina de cavalos de potência e coletar 10 ^0000CDChips de Batata^000000?";
 			next;
 			if (select( "Accept.", "Refuse." ) == 2) {
 				mes "[Europa]";
@@ -9051,10 +9051,10 @@ ba_maison,79,278,3	script	Europa#eorpa	4_EP17_BASIC_B,{
 				close;
 			}
 			mes "[Europa]";
-			mes "A melhor maneira é se livrar do^0000CDMagic Poisoned Sanare^000000e recolher os chips antes de instalá-lo.";
+			mes "A melhor maneira é se livrar do ^0000CDMagic Poisoned Sanare^000000 e recolher os chips antes de instalá-lo.";
 			next;
 			mes "[Europa]";
-			mes "Colete por favor 10^0000CDChips de Batata^000000.";
+			mes "Colete por favor 10 ^0000CDChips de Batata^000000.";
 			close2;
 			erasequest 3389;
 			setquest 3390;
@@ -9066,7 +9066,7 @@ ba_maison,79,278,3	script	Europa#eorpa	4_EP17_BASIC_B,{
 	case 1:
 		if (countitem(1000225) < 10) {
 			mes "[Europa]";
-			mes "Colete por favor 10Chips de Batatae trazê-los para mim.";
+			mes "Colete por favor 10 Chips de Batata e trazê-los para mim.";
 			close;
 		}
 		mes "[Europa]";
@@ -9101,7 +9101,7 @@ ba_maison,79,278,3	script	Europa#eorpa	4_EP17_BASIC_B,{
 	case 0:
 		mes "[Europa]";
 		mes "Aventureiro, estás aqui para me ajudar outra vez?";
-		mes "Então, você poderia coletar 10^0000CDChips de Batata^000000da^0000CDMagic Poisoned Sanare^000000Na segunda fábrica de cavalos de novo?";
+		mes "Então, você poderia coletar 10 ^0000CDChips de Batata^000000 da ^0000CDMagic Poisoned Sanare^000000 Na segunda fábrica de cavalos de novo?";
 		next;
 		if (select( "Accept.", "Refuse." ) == 2) {
 			mes "[Europa]";
@@ -9109,13 +9109,13 @@ ba_maison,79,278,3	script	Europa#eorpa	4_EP17_BASIC_B,{
 			close;
 		}
 		mes "[Europa]";
-		mes "Então, por favor, colete 10^0000CDChips de Batata^000000.";
+		mes "Então, por favor, colete 10 ^0000CDChips de Batata^000000.";
 		setquest 3392;
 		close;
 	case 1:
 		if (countitem(1000225) < 10) {
 			mes "[Europa]";
-			mes "Colete por favor 10Chips de Batatae trazê-los para mim.";
+			mes "Colete por favor 10 Chips de Batata e trazê-los para mim.";
 			close;
 		}
 		mes "[Europa]";
@@ -9164,7 +9164,7 @@ ba_in01,28,255,5	script	Manager Beta Almond#ep172_amd01	4_EP17_BASIC_B,{
 		mes "Você está no comando deste lugar a partir de hoje? Eu vou limpar bem.";
 		next;
 		mes "[Almond]";
-		mes "eu estou reparandoSweetyAs partes quebradas, ele é bom em quebrá-las.";
+		mes "eu estou reparando SweetyAs partes quebradas, ele é bom em quebrá-las.";
 		mes "Ele quer lutar muitas vezes, então você tem que ter cuidado";
 		next;
 		mes "[Almond]";
@@ -9175,7 +9175,7 @@ ba_in01,28,255,5	script	Manager Beta Almond#ep172_amd01	4_EP17_BASIC_B,{
 	if (isbegin_quest(18019) == 0) {
 		cutin "ep172_beta",2;
 		mes "[Almond]";
-		mes "SweetyEle pode saber alguma coisa.";
+		mes "Sweety Ele pode saber alguma coisa.";
 		mes "Pode falar com ele?";
 		setquest 18019;
 		close3;
@@ -9183,7 +9183,7 @@ ba_in01,28,255,5	script	Manager Beta Almond#ep172_amd01	4_EP17_BASIC_B,{
 	if (isbegin_quest(18019) == 1) {
 		cutin "ep172_beta",2;
 		mes "[Almond]";
-		mes "Almondnão entendeu metade do queSweetyEstava a dizer.";
+		mes "Almond não entendeu metade do que Sweety Estava a dizer.";
 		mes "Mas uma máquina de luta? Lembro-me de vê-lo lutar na biblioteca antes.";
 		close3;
 	}
@@ -9197,7 +9197,7 @@ ba_in01,28,255,5	script	Manager Beta Almond#ep172_amd01	4_EP17_BASIC_B,{
 		.@party_id = getcharid(1);
 		.@party_name$ = getpartyname(.@party_id);
 		if (.@party_id < 1) {
-			mes "^0000CDEsta é umaMasmorra Memorial.^000000";
+			mes "^0000CDEsta é uma Masmorra Memorial.^000000";
 			mes "Por favor, crie uma grupo e tente novamente.";
 			mes "^0000CDUm partido pode ser criado usando o comando /organize partyname.^000000";
 			close;
@@ -9205,27 +9205,27 @@ ba_in01,28,255,5	script	Manager Beta Almond#ep172_amd01	4_EP17_BASIC_B,{
 		if (checkquest(18025,PLAYTIME) == 2) {
 			cutin "ep172_beta.bmp",2;
 			mes "[Almond]";
-			mes "Você vai jogar contraSweetyOutra vez?";
+			mes "Você vai jogar contra Sweety Outra vez?";
 			mes "Então, quero perguntar-te uma coisa...";
 			erasequest 18025;
 			next;
 		}
 		mes "[Almond]";
-		mes "SweetyInscrições para uma batalha?";
-		mes "Tudo bem, desde queAlmondFique de olho nele.";
+		mes "Sweety Inscrições para uma batalha?";
+		mes "Tudo bem, desde que Almond Fique de olho nele.";
 		if (isbegin_quest(18024) == 0 && checkquest(18025,PLAYTIME) == -1) {
-			mes "Além disso, enquanto estiver no seu caminho, por favor, saia para o jardim e pegue os \\"núcleos\\" dos quebradosbonecas automáticas.";
+			mes "Além disso, enquanto estiver no seu caminho, por favor, saia para o jardim e pegue os \"núcleos\" dos quebrados bonecas automáticas.";
 			setquest 18024;
 		}
 		next;
 		if (select( "Criar '" + .@md_name$ + "'.", "Enter '" + .@md_name$ + "'.'" ) == 1) {
 			if (!is_party_leader()) {
-				mes "^4D4DFFEste lugar é umMasmorra Memorial.";
-				mes "Você tem que ser um líder do partido para criar umMasmorra Memorial.^000000";
+				mes "^4D4DFFEste lugar é um Masmorra Memorial.";
+				mes "Você tem que ser um líder do partido para criar um Masmorra Memorial.^000000";
 				close;
 			}
 			if (instance_create(.@md_name$) == -3)
-				dispbottom "A reserva da instância \\"" + .@md_name$ + "\\"falhou devido a uma instância ativa.";
+				dispbottom "A reserva da instância \"" + .@md_name$ + "\"falhou devido a uma instância ativa.";
 			mes "[Almond]";
 			mes "Vamos limpar a bagunça";
 			close3;
@@ -9255,20 +9255,20 @@ ba_in01,28,255,5	script	Manager Beta Almond#ep172_amd01	4_EP17_BASIC_B,{
 	case 2:
 		cutin "ep172_beta.bmp",2;
 		mes "[Almond]";
-		mes "Você vai jogar contraSweetyMais tarde?";
+		mes "Você vai jogar contra Sweety Mais tarde?";
 		mes "Então, quero perguntar-te uma coisa...";
 		erasequest 18025;
 		next;
 		cutin "ep172_beta.bmp",2;
 		mes "[Almond]";
-		mes "Sweetie deve ser consertado e o autômato deve ser restaurado.Almondestá ocupado";
+		mes "Sweetie deve ser consertado e o autômato deve ser restaurado. Almond está ocupado";
 		close3;
 	}
 	switch( isbegin_quest(18024) ) {
 	case 0:
 		cutin "ep172_beta",2;
 		mes "[Almond]";
-		mes "Repairing Sweety. Oboneca automática AlmondEstá ocupado.";
+		mes "Repairing Sweety. O boneca automática Almond Está ocupado.";
 		close3;
 	case 1:
 		if (countitem(1000226) < 10) {
@@ -9281,7 +9281,7 @@ ba_in01,28,255,5	script	Manager Beta Almond#ep172_amd01	4_EP17_BASIC_B,{
 		}
 		cutin "ep172_beta",2;
 		mes "[Almond]";
-		mes "Este núcleos é suficiente - vamos usá-lo para reparar o quebradobonecas automáticase aqueles com os dados restantes serão corrigidos em nenhum momento.";
+		mes "Este núcleos é suficiente - vamos usá-lo para reparar o quebrado bonecas automáticase aqueles com os dados restantes serão corrigidos em nenhum momento.";
 		mes "Dou-te este bilhete de Barmeal em troca.";
 		erasequest 18024;
 		setquest 18025;
@@ -9338,8 +9338,8 @@ ba_in01,32,250,3	script	Sweety#ep172_swty	4_EP17_SWEETY,{
 		mes "Não é um corpo novo, apenas reparamos os seus danos.";
 		next;
 		mes "[Almond]";
-		mes "É incrível que você seja compatível com o nossobonecas automáticas part.";
-		mes "Alphadisse que a base do corpo de Sweety é a mesma que a nossa.";
+		mes "É incrível que você seja compatível com o nosso bonecas automáticas part.";
+		mes "Alpha disse que a base do corpo de Sweety é a mesma que a nossa.";
 		next;
 		cutin "ep172_sweety03",2;
 		mes "[Sweety]";
@@ -9368,9 +9368,9 @@ ba_in01,32,250,3	script	Sweety#ep172_swty	4_EP17_SWEETY,{
 		select( "É uma boa história..." );
 		cutin "ep172_beta",0;
 		mes "[Almond]";
-		mes "Do meu ponto de vista...SweetyTem o cérebro de uma pessoa, certo?";
-		mes "Seu corpo foi modificado como umboneca automática.";
-		mes "Isso faz de você umboneca automática like us~?";
+		mes "Do meu ponto de vista... Sweety Tem o cérebro de uma pessoa, certo?";
+		mes "Seu corpo foi modificado como um boneca automática.";
+		mes "Isso faz de você um boneca automática like us~?";
 		next;
 		cutin "ep172_sweety03",2;
 		mes "[Sweety]";
@@ -9382,7 +9382,7 @@ ba_in01,32,250,3	script	Sweety#ep172_swty	4_EP17_SWEETY,{
 		select( "Soon?" );
 		cutin "ep172_beta",0;
 		mes "[Almond]";
-		mes "Parece que você está enganado,Sweety.";
+		mes "Parece que você está enganado, Sweety.";
 		mes "O líder dos ‘intruders’ ou aquele que os convidados chamam de Illusions fugiu, certo?";
 		mes "Isso não significa que eles te abandonaram?";
 		mes "Isso é o que eu entendi da situação atual.";
@@ -9396,7 +9396,7 @@ ba_in01,32,250,3	script	Sweety#ep172_swty	4_EP17_SWEETY,{
 		next;
 		mes "[Almond]";
 		mes "O que você acha que eu devo fazer, aventureiro?";
-		mes "Eu não poderia destruí-lo porque este garoto tem um cérebro de uma \\"criança humana\\".";
+		mes "Eu não poderia destruí-lo porque este garoto tem um cérebro de uma \"criança humana\".";
 		next;
 		cutin "ep172_sweety02",2;
 		mes "[Sweety]";
@@ -9407,10 +9407,10 @@ ba_in01,32,250,3	script	Sweety#ep172_swty	4_EP17_SWEETY,{
 		cutin "ep172_beta",0;
 		mes "[Almond]";
 		mes "Posso fazer uma sugestão?";
-		mes "SweetyEspera-se que expresse estresse extremo devido à ansiedade.";
+		mes "Sweety Espera-se que expresse estresse extremo devido à ansiedade.";
 		next;
 		mes "[Almond]";
-		mes "Não seria melhor se você lidasse com ele sempre queSweetyVai a um rampage?";
+		mes "Não seria melhor se você lidasse com ele sempre que Sweety Vai a um rampage?";
 		mes "Depois repará-lo-ei.";
 		next;
 		mes "[Almond]";
@@ -9465,7 +9465,7 @@ ba_in01,32,250,3	script	Sweety#ep172_swty	4_EP17_SWEETY,{
 		next;
 		cutin "ep172_sweety01",2;
 		mes "[Sweety]";
-		mes "Mas há um problema. Se você quiser lutar comigo, você tem que convencerAlmond.";
+		mes "Mas há um problema. Se você quiser lutar comigo, você tem que convencer Almond.";
 		mes "Consegues fazê-lo?";
 		next;
 		if (select( "Eu consigo.", "É impossível." ) == 2) {
@@ -9483,7 +9483,7 @@ ba_in01,32,250,3	script	Sweety#ep172_swty	4_EP17_SWEETY,{
 	case 1:
 		cutin "ep172_sweety03",2;
 		mes "[Sweety]";
-		mes "Vamos lá, diz-meAlmond!";
+		mes "Vamos lá, diz-me Almond!";
 		mes "Vou aquecer este corpo!";
 		mes "E hoje é o dia que eu vou te derrubar!";
 		close3;
@@ -9523,8 +9523,8 @@ ba_pw02,42,267,5	script	Lensis#jh_ba	20629,{
 		cloakoffnpcself( "Elyumina#jh_ba1" );
 		cutin "ep171_elyumina01",2;
 		mes "[Elyumina]";
-		mes "Acabei de perceber que o meu modo de pensar está errado.Varmundt isn't he amazing?";
-		mes "Para pensar essas lindasbonecas automáticasEu deveria ter entrado mais cedo.";
+		mes "Acabei de perceber que o meu modo de pensar está errado. Varmundt isn't he amazing?";
+		mes "Para pensar essas lindas bonecas automáticas Eu deveria ter entrado mais cedo.";
 		npctalk "Elyumina: Se eu tivesse, eu não teria sido pego.", "Elyumina#jh_ba1", bc_self;
 		emotion ET_SURPRISE, getnpcid(0,"Elyumina#jh_ba1");
 		next;
@@ -9549,18 +9549,18 @@ ba_pw02,42,267,5	script	Lensis#jh_ba	20629,{
 		next;
 		cutin "16lei_02",2;
 		mes "[Lazy]";
-		mes "Eu acho que você não pode nos ouvir porque você está muito absorvido nas novas máquinas eboneca automáticaVocê é como uma criança com um brinquedo novo, Sra. Cientista Criminal.";
+		mes "Eu acho que você não pode nos ouvir porque você está muito absorvido nas novas máquinas e boneca automáticaVocê é como uma criança com um brinquedo novo, Sra. Cientista Criminal.";
 		next;
 		cutin "ep171_elyumina01",2;
 		mes "[Elyumina]";
-		mes "Você é umboneca automáticaPosso falar com você por um momento?";
+		mes "Você é um boneca automática Posso falar com você por um momento?";
 		mes "Não se preocupe, eu não sou uma pessoa suspeita.";
 		emotion ET_DELIGHT, getnpcid(0,"Elyumina#jh_ba1");
 		next;
 		cutin "16lei_02",2;
 		mes "[Lazy]";
-		mes "É mais como uma pessoa do que umboneca automática.";
-		mes "Espera, oboneca automáticaParece um pouco estranho. Sra. Cientista Criminal, tenha cuidado...";
+		mes "É mais como uma pessoa do que um boneca automática.";
+		mes "Espera, o boneca automática Parece um pouco estranho. Sra. Cientista Criminal, tenha cuidado...";
 		next;
 		cutin "ep172_beta",2;
 		mes "[Lensis]";
@@ -9593,7 +9593,7 @@ ba_pw02,42,267,5	script	Lensis#jh_ba	20629,{
 		cutin "16loo_01",2;
 		mes "[Rookie]";
 		mes "Poderia ter sido um desastre.";
-		mes "Esta pessoa está connosco. Eu não sou um intruso.AlphaVocê disse que pode se comunicar com ela, mas por que você fez isso?";
+		mes "Esta pessoa está connosco. Eu não sou um intruso. Alpha Você disse que pode se comunicar com ela, mas por que você fez isso?";
 		npctalk "Lazy: O contexto de raiva é um pouco estranho. Tem certeza de que está bem?", "Lazy#jh_ba1", bc_self;
 		next;
 		cutin "ep172_beta",2;
@@ -9609,7 +9609,7 @@ ba_pw02,42,267,5	script	Lensis#jh_ba	20629,{
 		cutin "16loo_03",2;
 		mes "[Rookie]";
 		mes "Não brinques assim, Lazy!";
-		mes "Você sabeMinaNão é mais uma ilusão.";
+		mes "Você sabe Mina Não é mais uma ilusão.";
 		next;
 		cutin "ep171_elyumina03",2;
 		mes "[Elyumina]";
@@ -9625,15 +9625,15 @@ ba_pw02,42,267,5	script	Lensis#jh_ba	20629,{
 		select( "Não devias ir ao médico?" );
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Aventureiro, você pode ir em frente no<NAVI>[mansion]<INFO>ba_maison,169,270,0,101,0</INFO></NAVI>e dizer-lhes para prepararem uma instalação médica?";
-		mes "Eu e a Lazy cuidaremos deElyuminae siga rapidamente.";
+		mes "Aventureiro, você pode ir em frente no <NAVI>[mansion]<INFO>ba_maison,169,270,0,101,0</INFO></NAVI> e dizer-lhes para prepararem uma instalação médica?";
+		mes "Eu e a Lazy cuidaremos de Elyumina e siga rapidamente.";
 		next;
 		cutin "",255;
 		if (select( "Deixa comigo!", "Refuse." ) == 2) {
 			cutin "16loo_01",2;
 			mes "[Rookie]";
-			mes "Aventureiro, não há como você pensarMinaAinda é uma ilusão, certo?";
-			mes "Tendo recebido as armas e os módulos feitos porMina herself!";
+			mes "Aventureiro, não há como você pensar Mina Ainda é uma ilusão, certo?";
+			mes "Tendo recebido as armas e os módulos feitos por Mina herself!";
 			close3;
 		}
 		cutin "16loo_01",2;
@@ -9668,7 +9668,7 @@ OnInit:
 
 ba_pw02,45,267,3	script(CLOAKED)	Elyumina#jh_ba1	4_EP17_ELYUMINA,{
 	emotion ET_DELIGHT;
-	npctalk "Elyumina: Acabei de perceber que o meu modo de pensar está errado. Este tipo chamou-meVarmundt isn't he amazing?", "", bc_self;
+	npctalk "Elyumina: Acabei de perceber que o meu modo de pensar está errado. Este tipo chamou-me Varmundt isn't he amazing?", "", bc_self;
 	cloakonnpcself();
 	end;
 }
@@ -9753,7 +9753,7 @@ ba_maison,169,270,5	script	Need#jh_ba	4_EP17_BASIC_B,{
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "\\"Hmm, isso é um grande negócio - bem, não é um grande negócio!";
+		mes "\"Hmm, isso é um grande negócio - bem, não é um grande negócio!";
 		mes "Existe alguma maneira de decifrá-lo?";
 		npctalk "Lazy: Bem, é uma conversa agradável. Mas, você não está em uma situação como essa, está?", "Lazy#jh_ba2", bc_self;
 		next;
@@ -9781,24 +9781,24 @@ ba_maison,169,270,5	script	Need#jh_ba	4_EP17_BASIC_B,{
 		cutin "16loo_02",2;
 		mes "[Rookie]";
 		mes "Não tenho escolha a não ser usar esse método.";
-		mes "Alright, ^0000CDcomo um mercenário que veio aqui como convidado deVarmundt!!!^000000";
+		mes "Alright, ^0000CDcomo um mercenário que veio aqui como convidado de Varmundt!!!^000000";
 		mes "Quero salvar esta pessoa. Diga-me como!";
 		next;
 		cutin "ep171_elyumina03",2;
 		mes "[Elyumina]";
-		mes "... Por que você está fazendo isso? O que estou dizendo? Claro, eu sou o GrandeElyumina, mas tu...";
+		mes "... Por que você está fazendo isso? O que estou dizendo? Claro, eu sou o Grande Elyumina, mas tu...";
 		next;
 		cutin "ep172_beta",2;
 		mes "[Necessidade]";
 		mes "Se dizes isso...";
-		mes "Você pode fazer um antídoto usando o^0000CDFolhas da SilvaPapilla^000000, um material do jardim de água. Foi criado pelo mestre para esse fim.";
+		mes "Você pode fazer um antídoto usando o ^0000CDFolhas da Silva Papilla^000000, um material do jardim de água. Foi criado pelo mestre para esse fim.";
 		next;
 		mes "[Necessidade]";
 		mes "Mas não sei se os jardineiros vão deixar você entrar.";
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "A informação é suficiente. Porque a vida desta pessoa está em perigo! Você disse<NAVI>[Jardim Suspenso]<INFO>ba_maison,239,47,0,101,0</INFO></NAVI>, certo?";
+		mes "A informação é suficiente. Porque a vida desta pessoa está em perigo! Você disse <NAVI>[Jardim Aquático]<INFO>ba_maison,239,47,0,101,0</INFO></NAVI>, certo?";
 		mes "Vamos lá, vamos ver por nós mesmos.";
 		close2;
 		cutin "",255;
@@ -9813,7 +9813,7 @@ ba_maison,169,270,5	script	Need#jh_ba	4_EP17_BASIC_B,{
 	if (ep172_watergarden == 2) {
 		cutin "ep172_beta",2;
 		mes "[Necessidade]";
-		mes "Você pode fazer um antídoto usando o^0000CDFolhas da SilvaPapilla^000000, um material do<NAVI>[jardim de água]<INFO>ba_maison,239,47,0,101,0</INFO></NAVI>. Foi criado pelo mestre para esse fim.";
+		mes "Você pode fazer um antídoto usando o ^0000CDFolhas da Silva Papilla^000000, um material do <NAVI>[jardim de água]<INFO>ba_maison,239,47,0,101,0</INFO></NAVI>. Foi criado pelo mestre para esse fim.";
 		close2;
 		cutin "",255;
 		navigateto("ba_maison",239,47);
@@ -9835,7 +9835,7 @@ OnInit:
 }
 
 ba_maison,177,268,3	script(CLOAKED)	Rookie#jh_ba2	4_M_ROOKIE,{
-	npctalk "Rookie: Ah, Minaé tão fraco, eu não posso me acostumar com isso -!", "", bc_self;
+	npctalk "Rookie: Ah, Mina é tão fraco, eu não posso me acostumar com isso -!", "", bc_self;
 	cloakonnpcself();
 	end;
 }
@@ -9898,7 +9898,7 @@ ba_maison,234,51,5	script	Elyumina#jh_ba3	4_EP17_ELYUMINA,{
 			next;
 			cutin "16loo_01",2;
 			mes "[Rookie]";
-			mes "Eu preciso ficar de olhoMina, então eu vou ficar aqui, aventureiro.";
+			mes "Eu preciso ficar de olho Mina, então eu vou ficar aqui, aventureiro.";
 			next;
 			cutin "16lei_01",2;
 			mes "[Lazy]";
@@ -9963,8 +9963,8 @@ ba_maison,234,51,5	script	Elyumina#jh_ba3	4_EP17_ELYUMINA,{
 		mes "De qualquer maneira, você," + strcharinfo(0) + "Obrigado por me arranjares o antídoto.";
 		next;
 		mes "[Elyumina]";
-		mes "E tu... foste Rocky?Lucky? Anyways, RebellionObrigado por correr por mim.";
-		npctalk "......Rookie, éRookie.", "Rookie#jh_ba3", bc_self;
+		mes "E tu... foste Rocky? Lucky? Anyways, RebeliãoObrigado por correr por mim.";
+		npctalk "......Rookie, é Rookie.", "Rookie#jh_ba3", bc_self;
 		npctalk "Não estás a agradecer-me?", "Lazy#jh_ba3", bc_self;
 		next;
 		mes "[Elyumina]";
@@ -10020,7 +10020,7 @@ ba_maison,234,51,5	script	Elyumina#jh_ba3	4_EP17_ELYUMINA,{
 	next;
 	cutin "ep171_elyumina02",2;
 	mes "[Elyumina]";
-	mes "Você, se você vai tirar minha preciosa oportunidade de falar com obonecas automáticasVarmundtEu mato-te!";
+	mes "Você, se você vai tirar minha preciosa oportunidade de falar com o bonecas automáticas VarmundtEu mato-te!";
 	close2;
 	cutin "",255;
 	cloakonnpcself();
@@ -10077,7 +10077,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 		cutin "16loo_02",2;
 		mes "[Rookie]";
 		mes "Gostaria de obter permissão.";
-		mes "Podemos entrar no jardim da água? Eu tenho que obter um^0000CDFolha de PrataPapilla^000000Por dentro.";
+		mes "Podemos entrar no jardim da água? Eu tenho que obter um ^0000CDFolha de Prata Papilla^000000 Por dentro.";
 		next;
 		cutin "ep172_beta",2;
 		mes "[Seihyu]";
@@ -10096,7 +10096,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 		mes "Não podemos distinguir. É apenas coleta de dados. Cada palavra que você diz e ações são dados que coletamos.";
 		next;
 		mes "[Seihyu]";
-		mes "E nós compará-lo para produzir o melhor resultado. Em seguida, excluímos os intrusos, este é o curso de ação deAlpha.";
+		mes "E nós compará-lo para produzir o melhor resultado. Em seguida, excluímos os intrusos, este é o curso de ação de Alpha.";
 		next;
 		mes "[Seihyu]";
 		mes "Porque estás a tentar salvar essa pessoa?";
@@ -10111,7 +10111,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 		mes "Bem, isso é...";
 		next;
 		cutin "",255;
-		switch( select( "ElyuminaÉ o nosso colega.", "Ela ajudou o suficiente para pagar de volta o que ela fez.", "Não quero matar um inimigo ou um colega.") ) {
+		switch( select( "Elyumina É o nosso colega.", "Ela ajudou o suficiente para pagar de volta o que ela fez.", "Não quero matar um inimigo ou um colega.") ) {
 		case 1:
 			cutin "ep172_beta",2;
 			mes "[Seihyu]";
@@ -10138,7 +10138,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 			next;
 			cutin "ep171_elyumina04",2;
 			mes "[Elyumina]";
-			mes "Hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha... não é semelhante a umboneca automática?";
+			mes "Hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha... não é semelhante a um boneca automática?";
 			mes "Você está trabalhando assim para ser útil, para ajudar as pessoas.";
 			next;
 			cutin "ep172_beta",2;
@@ -10208,8 +10208,8 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 		next;
 		cutin "16loo_01",2;
 		mes "[Rookie]";
-		mes "Bem, então eu acho que vou ter que ficar para ficar de olho emMina.";
-		mes "Aventureiro, você poderia entrar e pegar as folhas da SilvaPapilla?";
+		mes "Bem, então eu acho que vou ter que ficar para ficar de olho em Mina.";
+		mes "Aventureiro, você poderia entrar e pegar as folhas da Silva Papilla?";
 		next;
 		cutin "16lei_01",2;
 		mes "[Lazy]";
@@ -10236,16 +10236,16 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 		next;
 		cutin "ep172_beta",2;
 		mes "[Seihyu]";
-		mes "Você pode falar com<NAVI>[Harad]<INFO>ba_maison,238,44,0,101,0</INFO></NAVI>Ao meu lado, e entre no jardim da água.";
+		mes "Você pode falar com <NAVI>[Harad]<INFO>ba_maison,238,44,0,101,0</INFO></NAVI> Ao meu lado, e entre no jardim da água.";
 		mes "Pode ser perigoso entrar, mas o aventureiro o escolheu, então tenha cuidado.";
 		next;
 		cutin "16lei_02",2;
 		mes "[Lazy]";
-		mes "Acho que está dentro e fora da mente, queboneca automática......";
+		mes "Acho que está dentro e fora da mente, que boneca automática......";
 		next;
 		cutin "ep171_elyumina01",2;
 		mes "[Elyumina]";
-		mes "Aboneca automáticaMas está tudo bem.";
+		mes "A boneca automática Mas está tudo bem.";
 		close2;
 		cutin "",255;
 		ep172_watergarden = 3;
@@ -10261,7 +10261,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 		case 1:
 			cutin "ep172_beta",2;
 			mes "[Seihyu]";
-			mes "Você pode falar com<NAVI>[Harad]<INFO>ba_maison,238,44,0,101,0</INFO></NAVI>Ao meu lado, e entre no jardim da água.";
+			mes "Você pode falar com <NAVI>[Harad]<INFO>ba_maison,238,44,0,101,0</INFO></NAVI> Ao meu lado, e entre no jardim da água.";
 			mes "Pode ser perigoso entrar, mas o aventureiro o escolheu, então tenha cuidado.";
 			close3;
 		case 2:
@@ -10275,12 +10275,12 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 			next;
 			cutin "16lei_01",2;
 			mes "[Lazy]";
-			mes "Nós temos as folhas da SilvaPapillaEntão vou pedir a alguém para criar um antídoto.";
+			mes "Nós temos as folhas da Silva PapillaEntão vou pedir a alguém para criar um antídoto.";
 			next;
 			cutin "ep172_beta",2;
 			mes "[Seihyu]";
 			mes "Posso fazer o antídoto.";
-			mes "Em primeiro lugar, as folhas de SilvaPapillaem si é um antídoto para vários tipos de sintomas, então tudo o que você precisa fazer é mudar para a formulação para tornar mais fácil para o hóspede a ingestão.";
+			mes "Em primeiro lugar, as folhas de Silva Papilla em si é um antídoto para vários tipos de sintomas, então tudo o que você precisa fazer é mudar para a formulação para tornar mais fácil para o hóspede a ingestão.";
 			next;
 			cutin "16loo_02",2;
 			mes "[Rookie]";
@@ -10288,10 +10288,10 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 			next;
 			cutin "ep172_beta",2;
 			mes "[Seihyu]";
-			mes "Tudo bem. Dê as folhas de SilvaPapillaPara mim.";
+			mes "Tudo bem. Dê as folhas de Silva Papilla Para mim.";
 			next;
 			cutin "",255;
-			select( "Mão sobre as folhas de SilvaPapilla" );
+			select( "Mão sobre as folhas de Silva Papilla" );
 			cutin "ep172_beta",2;
 			mes "[Seihyu]";
 			mes ".....................";
@@ -10307,7 +10307,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 			next;
 			cutin "ep171_elyumina01",2;
 			mes "[Elyumina]";
-			mes "É tão bom ver inteligentebonecas automáticas made by others.";
+			mes "É tão bom ver inteligente bonecas automáticas made by others.";
 			mes "Quero estudar e analisar... Se apenas esta tontura desaparecer...";
 			next;
 			cutin "ep172_beta",2;
@@ -10324,7 +10324,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 			next;
 			cutin "16loo_01",2;
 			mes "[Rookie]";
-			mes "Por favor, dê o antídoto para<NAVI>[Mina]<INFO>ba_maison,234,51,0,101,0</INFO></NAVI>.";
+			mes "Por favor, dê o antídoto para <NAVI>[Mina]<INFO>ba_maison,234,51,0,101,0</INFO></NAVI>.";
 			close2;
 			cutin "",255;
 			ep172_watergarden = 4;
@@ -10371,20 +10371,20 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 		case -1:
 			cutin "ep172_beta",2;
 			mes "[Seihyu]";
-			mes "Como você já sabe, uma planta chamada SilvaPapillavive na parte mais profunda do jardim da água.";
+			mes "Como você já sabe, uma planta chamada Silva Papilla vive na parte mais profunda do jardim da água.";
 			mes "É uma planta muito inteligente e sensível que pode controlar várias borboletas.";
 			next;
 			mes "[Seihyu]";
 			mes "Devido aos recentes eventos de intrusos, o número de bonecas foi muito reduzido, nossos jardineiros não podem lidar com a planta complicada a partir de agora.";
 			next;
 			mes "[Seihyu]";
-			mes "você pode entrar no jardim da água para caçar e me garantir um^0000CDSilva Papilla^000000?";
+			mes "você pode entrar no jardim da água para caçar e me garantir um ^0000CDSilva Papilla^000000?";
 			next;
 			cutin "",255;
 			if (select( "Eu ajudo-te.", "Não posso ajudá-lo agora." ) == 2)
 				break;
 			mes "Depois de caçar um, os outros jardineiros vão tratar do resto.";
-			mes "Você pode falar com<NAVI>[Harad]<INFO>ba_maison,238,44,0,101,0</INFO></NAVI>Ao meu lado, e entre no jardim da água.";
+			mes "Você pode falar com <NAVI>[Harad]<INFO>ba_maison,238,44,0,101,0</INFO></NAVI> Ao meu lado, e entre no jardim da água.";
 			close2;
 			setquest 16431;
 			end;
@@ -10395,12 +10395,12 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 			mes "Devido aos recentes eventos de intrusos, o número de bonecas foi muito reduzido, nossos jardineiros não podem lidar com a planta complicada a partir de agora.";
 			next;
 			mes "[Seihyu]";
-			mes "você pode entrar no jardim da água para caçar e me garantir um^0000CDSilva Papilla^000000?";
+			mes "você pode entrar no jardim da água para caçar e me garantir um ^0000CDSilva Papilla^000000?";
 			close3;
 		case 2:
 			cutin "ep172_beta",2;
 			mes "[Harad]";
-			mes "Você garantiu uma SilvaPapilla.";
+			mes "Você garantiu uma Silva Papilla.";
 			mes "Eu já confirmei com um dos jardineiros lá dentro.";
 			next;
 			mes "[Harad]";
@@ -10425,7 +10425,7 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 			mes "Para fazer esse favor de mim, temo que vou colocar o hóspede em perigo.";
 			next;
 			mes "[Seihyu]";
-			mes "Desde o GrandPapillaEu prefiro perguntar isso se você já está mais acostumado com o jardim da água.";
+			mes "Desde o Grand Papilla Eu prefiro perguntar isso se você já está mais acostumado com o jardim da água.";
 			next;
 			mes "Você deve estar pelo menos no nível 180 para levar esta missão.";
 			close3;
@@ -10452,21 +10452,21 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 		case -1:
 			cutin "ep172_beta",2;
 			mes "[Seihyu]";
-			mes "Como você já sabe, uma planta chamada GrandePapillavive na parte mais profunda do jardim da água.";
+			mes "Como você já sabe, uma planta chamada Grande Papilla vive na parte mais profunda do jardim da água.";
 			mes "É uma planta muito inteligente e sensível que pode controlar várias borboletas.";
 			next;
 			mes "[Seihyu]";
 			mes "Devido aos recentes eventos de intrusos, o número de bonecas foi muito reduzido, nossos jardineiros não podem lidar com a planta complicada a partir de agora.";
 			next;
 			mes "[Seihyu]";
-			mes "você pode entrar no jardim da água para caçar e me garantir um^0000CDGrand Papilla^000000?";
+			mes "você pode entrar no jardim da água para caçar e me garantir um ^0000CDGrand Papilla^000000?";
 			next;
 			cutin "",255;
 			if (select( "Eu ajudo-te.", "Não posso ajudá-lo agora." ) == 2)
 				break;
 			mes "[Seihyu]";
 			mes "Depois de caçar um, os outros jardineiros vão tratar do resto.";
-			mes "Você pode falar com<NAVI>[Harad]<INFO>ba_maison,238,44,0,101,0</INFO></NAVI>Ao meu lado, e entre no jardim da água.";
+			mes "Você pode falar com <NAVI>[Harad]<INFO>ba_maison,238,44,0,101,0</INFO></NAVI> Ao meu lado, e entre no jardim da água.";
 			close2;
 			setquest 16433;
 			end;
@@ -10477,12 +10477,12 @@ ba_maison,239,47,3	script	Seihyu#jh_ba	4_EP17_SCISSORE,{
 			mes "Devido aos recentes eventos de intrusos, o número de bonecas foi muito reduzido, nossos jardineiros não podem lidar com a planta complicada a partir de agora.";
 			next;
 			mes "[Seihyu]";
-			mes "você pode entrar no jardim da água para caçar e me garantir um^0000CDGrand Papilla^000000?";
+			mes "você pode entrar no jardim da água para caçar e me garantir um ^0000CDGrand Papilla^000000?";
 			close3;
 		case 2:
 			cutin "ep172_beta",2;
 			mes "[Harad]";
-			mes "Você garantiu um GrandPapilla.";
+			mes "Você garantiu um Grand Papilla.";
 			mes "Eu já confirmei com um dos jardineiros lá dentro.";
 			next;
 			mes "[Harad]";
